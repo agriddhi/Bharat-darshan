@@ -1,0 +1,299 @@
+/* ============================================================
+   ui/TopBar.module.css
+
+   Surface is soft stone, text is navy ink, and ochre appears only on
+   things you can act on: the active filter, the focus ring, the clear
+   button when something is set. The search field is the one steel-blue
+   element in the app, which is how you can spot it without reading.
+   ============================================================ */
+
+.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 9px clamp(12px, 2.4vw, 22px);
+  background: color-mix(in srgb, var(--soft-stone) 93%, transparent);
+  backdrop-filter: blur(9px);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 0 rgba(22, 36, 61, 0.05);
+  flex-wrap: wrap;
+}
+
+/* ---- identity ---- */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+/* the ochre accent: a small mark, not a wash */
+.mark {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  background: var(--ochre);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 1.22rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink-navy);
+  white-space: nowrap;
+}
+
+.subtitle {
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ink-navy) 58%, transparent);
+  white-space: nowrap;
+}
+
+/* ---- filters ---- */
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.select {
+  appearance: none;
+  padding: 6px 24px 6px 10px;
+  font-size: 0.79rem;
+  font-weight: 500;
+  color: var(--ink-navy);
+  background-color: var(--surface-sunk);
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-navy) 50%),
+    linear-gradient(135deg, var(--ink-navy) 50%, transparent 50%);
+  background-position: right 11px center, right 6px center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: border-color var(--dur-fast), background-color var(--dur-fast);
+}
+
+.select:hover {
+  border-color: color-mix(in srgb, var(--ink-navy) 40%, transparent);
+}
+
+/* an active filter is ochre-bordered, because ochre means "this is on" */
+.selectActive {
+  border-color: var(--ochre);
+  background-color: color-mix(in srgb, var(--ochre) 16%, var(--surface-sunk));
+  font-weight: 600;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  font-size: 0.79rem;
+  font-weight: 500;
+  color: var(--ink-navy);
+  background: var(--surface-sunk);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  transition: border-color var(--dur-fast), background-color var(--dur-fast);
+}
+
+.toggleOn {
+  border-color: var(--ochre);
+  background: color-mix(in srgb, var(--ochre) 16%, var(--surface-sunk));
+  font-weight: 600;
+}
+
+/* ---- search: the only steel-blue thing in the app ---- */
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  width: 13px;
+  height: 13px;
+  border: 1.6px solid var(--steel-blue);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.searchIcon::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  bottom: -3px;
+  width: 6px;
+  height: 1.6px;
+  background: var(--steel-blue);
+  transform: rotate(45deg);
+}
+
+.input {
+  width: clamp(140px, 17vw, 230px);
+  padding: 7px 10px 7px 30px;
+  font-size: 0.82rem;
+  color: var(--ink-navy);
+  background: var(--surface-sunk);
+  /* steel blue, per the brief */
+  border: 1.5px solid var(--steel-blue);
+  border-radius: var(--radius-pill);
+  transition: box-shadow var(--dur-fast), background-color var(--dur-fast);
+}
+
+.input::placeholder {
+  color: color-mix(in srgb, var(--steel-blue) 78%, transparent);
+}
+
+.input:focus {
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--steel-blue) 26%, transparent);
+}
+
+/* ---- results dropdown ---- */
+
+.results {
+  position: absolute;
+  top: calc(100% + 7px);
+  right: 0;
+  width: min(330px, 84vw);
+  max-height: 58vh;
+  overflow-y: auto;
+  background: var(--soft-stone);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lift);
+  padding: 5px;
+  z-index: 50;
+}
+
+.result {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  width: 100%;
+  padding: 7px 8px;
+  border-radius: var(--radius-sm);
+  text-align: left;
+  transition: background-color var(--dur-fast);
+}
+
+.result:hover,
+.resultActive {
+  background: color-mix(in srgb, var(--ochre) 20%, transparent);
+}
+
+.resultImg {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;
+  background: var(--surface-sunk);
+}
+
+.resultName {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink-navy);
+}
+
+.resultMeta {
+  font-size: 0.71rem;
+  color: color-mix(in srgb, var(--ink-navy) 64%, transparent);
+}
+
+.resultsEmpty {
+  padding: 13px 11px;
+  font-size: 0.82rem;
+  color: color-mix(in srgb, var(--ink-navy) 66%, transparent);
+}
+
+/* ---- counter + clear ---- */
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+}
+
+.counter {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ink-navy);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.counter em {
+  font-style: normal;
+  color: var(--ochre);
+}
+
+.clear {
+  padding: 5px 10px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--ink-navy);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  transition: border-color var(--dur-fast), color var(--dur-fast);
+}
+
+.clear:hover {
+  border-color: var(--ochre);
+  color: color-mix(in srgb, var(--ink-navy) 78%, var(--ochre));
+}
+
+/* nothing set = nothing to clear, so it is quiet rather than loud */
+.clearOff {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ---- responsive ---- */
+
+@media (max-width: 900px) {
+  .bar {
+    gap: 9px;
+    padding: 8px 12px;
+  }
+  .subtitle {
+    display: none;
+  }
+  .search {
+    margin-left: 0;
+    order: 3;
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+  .results {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}

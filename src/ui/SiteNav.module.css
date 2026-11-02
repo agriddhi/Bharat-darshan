@@ -1,0 +1,154 @@
+/* ============================================================
+   ui/SiteNav.module.css — navigation for the inner pages.
+
+   Deliberately NOT the TopBar. TopBar carries filters, a search box
+   and a live counter; that belongs on the archive index and would be
+   noise on a story page. This is the quiet one: brand, five links,
+   nothing else.
+
+   It sticks to the top on scroll with a backdrop blur, so the page
+   content slides underneath it rather than colliding with it — which
+   is the difference between a bar that looks designed and one that
+   looks pasted on.
+   ============================================================ */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px clamp(16px, 4vw, 56px);
+  background: rgba(14, 22, 38, 0.72);
+  backdrop-filter: blur(16px) saturate(1.25);
+  -webkit-backdrop-filter: blur(16px) saturate(1.25);
+  border-bottom: 1px solid var(--glass-line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--paper);
+  flex-shrink: 0;
+}
+
+.mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--ochre);
+  transform: rotate(45deg);
+  box-shadow: 0 0 14px rgba(222, 160, 68, 0.8);
+}
+
+.brandName {
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ---- links ---- */
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 1.4vw, 10px);
+}
+
+.link {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--paper-dim);
+  text-decoration: none;
+  padding: 8px clamp(7px, 1.1vw, 13px);
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: color var(--dur-fast), background-color var(--dur-fast);
+}
+
+.link:hover {
+  color: var(--paper);
+  background: var(--glass);
+}
+
+/* The current section is marked with ochre text and a soft wash —
+   never a filled tab. One accent doing one job. */
+.linkOn {
+  color: var(--ochre);
+  background: rgba(222, 164, 68, 0.14);
+}
+
+/* ---- back link, shown on detail pages ---- */
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper-faint);
+  text-decoration: none;
+  margin-right: 4px;
+  transition: color var(--dur-fast);
+}
+
+.back:hover {
+  color: var(--ochre);
+}
+
+/* ---- responsive ---- */
+
+/* The full label set does not fit under ~900px. Drop to a shorter
+   wording rather than wrapping to two rows or overflowing — a nav
+   that wraps looks broken even when it works. */
+@media (max-width: 900px) {
+  .link {
+    font-size: 0.64rem;
+    letter-spacing: 0.06em;
+    padding: 7px 7px;
+  }
+}
+
+/* Below 720px there is genuinely no room for brand + back link + six
+   section links on one line — measured at 360px they need ~374px
+   inside a 328px box. The back link is the one to drop: the nav
+   already contains a link to every section it points at, so "← All
+   sites" is a convenience, while the brand mark is the only route
+   home. */
+@media (max-width: 720px) {
+  .nav {
+    gap: 10px;
+    padding-left: clamp(12px, 3.5vw, 20px);
+    padding-right: clamp(12px, 3.5vw, 20px);
+  }
+  .brandName {
+    display: none;
+  }
+  .back {
+    display: none;
+  }
+  .links {
+    gap: 0;
+    justify-content: flex-end;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .link {
+    font-size: 0.6rem;
+    letter-spacing: 0.03em;
+    padding: 7px 6px;
+  }
+}

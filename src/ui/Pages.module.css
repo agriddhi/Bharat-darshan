@@ -1,0 +1,1054 @@
+/* ============================================================
+   ui/Pages.module.css — shared shell for Journey, Quiz, About, Atlas.
+
+   These four pages differ in content but not in structure: a header
+   with a photograph behind it, a reading column, and a set of
+   sections divided by hairlines. Writing that four times would
+   guarantee the four pages drift apart after the first styling
+   change, so it lives here once.
+
+   The one rule this file holds to: sections are separated by rules
+   and space, never by boxes. A page made of nested cards reads as a
+   dashboard, and a dashboard is the wrong register for an archive.
+   ============================================================ */
+
+.page {
+  min-height: 100vh;
+  background: var(--canvas-deep);
+  color: var(--paper);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.head {
+  position: relative;
+  padding: clamp(40px, 7vw, 92px) clamp(16px, 5vw, 64px) clamp(26px, 3.4vw, 44px);
+  overflow: hidden;
+}
+
+.headPhoto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  opacity: 0.3;
+  filter: saturate(0.82);
+  animation: headDrift 44s ease-in-out infinite alternate;
+}
+
+@keyframes headDrift {
+  from {
+    transform: scale(1.05) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.14) translate3d(-2.2%, -1%, 0);
+  }
+}
+
+.headScrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to top,
+      var(--canvas-deep) 4%,
+      rgba(14, 22, 38, 0.76) 56%,
+      rgba(14, 22, 38, 0.62) 100%
+    ),
+    radial-gradient(78% 62% at 84% 6%, rgba(222, 164, 68, 0.2), transparent 64%);
+  pointer-events: none;
+}
+
+.headInner {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 15px;
+}
+
+.eyebrowLine {
+  width: clamp(26px, 4vw, 50px);
+  height: 1px;
+  background: linear-gradient(90deg, var(--ochre), transparent);
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: clamp(2.3rem, 5.6vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbf7ef;
+  margin: 0;
+}
+
+.titleEm {
+  display: block;
+  font-style: italic;
+  color: var(--ochre);
+}
+
+.lede {
+  font-family: var(--sans);
+  font-size: var(--text-lead);
+  line-height: 1.7;
+  color: rgba(244, 235, 217, 0.82);
+  max-width: 62ch;
+  margin: 20px 0 0;
+}
+
+/* ============================================================
+   CONTENT SHELL
+   ============================================================ */
+
+.wrap {
+  padding: clamp(28px, 4vw, 54px) clamp(16px, 5vw, 64px) clamp(60px, 8vw, 110px);
+  max-width: 1120px;
+}
+
+.wrapNarrow {
+  max-width: 78ch;
+}
+
+.section + .section {
+  margin-top: clamp(34px, 4.6vw, 58px);
+  padding-top: clamp(30px, 4vw, 46px);
+  border-top: 1px solid var(--glass-line);
+}
+
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  font-weight: 600;
+  line-height: 1.14;
+  color: #fbf7ef;
+  margin: 0;
+}
+
+.sectionNote {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--paper-faint);
+}
+
+.body {
+  font-family: var(--sans);
+  font-size: 0.99rem;
+  line-height: 1.78;
+  color: rgba(244, 235, 217, 0.82);
+  margin: 0;
+}
+
+.body + .body {
+  margin-top: 15px;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: var(--radius-pill);
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--dur-fast), border-color var(--dur-fast),
+    color var(--dur-fast), transform var(--dur-fast) var(--ease-panel);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btnPrimary {
+  background: var(--ochre);
+  color: var(--ink-navy);
+  border: 1px solid var(--ochre);
+}
+
+.btnPrimary:hover {
+  background: color-mix(in srgb, var(--ochre) 88%, #fff);
+}
+
+.btnGhost {
+  background: var(--glass);
+  color: var(--paper);
+  border: 1px solid var(--glass-line);
+}
+
+.btnGhost:hover {
+  border-color: rgba(222, 164, 68, 0.58);
+  background: rgba(222, 164, 68, 0.11);
+}
+
+.btnDanger {
+  background: transparent;
+  color: rgba(191, 130, 80, 0.95);
+  border: 1px solid rgba(191, 130, 80, 0.55);
+}
+
+.btnDanger:hover {
+  background: rgba(191, 130, 80, 0.16);
+  border-color: rgba(191, 130, 80, 0.85);
+}
+
+.btnDisabled,
+.btn:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btnRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  align-items: center;
+}
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+
+.empty {
+  padding: clamp(50px, 9vw, 120px) 0;
+  text-align: center;
+}
+
+.emptyMark {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(222, 164, 68, 0.14);
+  border: 1px solid rgba(222, 164, 68, 0.42);
+  color: var(--ochre);
+  font-size: 1.4rem;
+}
+
+.emptyTitle {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 4vw, 2.7rem);
+  font-weight: 600;
+  color: #fbf7ef;
+  margin: 0 0 12px;
+}
+
+.emptyBody {
+  font-family: var(--sans);
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--paper-dim);
+  max-width: 48ch;
+  margin: 0 auto 26px;
+}
+
+/* ============================================================
+   JOURNEY
+   ============================================================ */
+
+.stops {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: stop;
+}
+
+.stop {
+  display: grid;
+  grid-template-columns: 3rem 74px 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 0;
+  counter-increment: stop;
+}
+
+.stop + .stop {
+  border-top: 1px solid rgba(244, 235, 217, 0.1);
+}
+
+.stopNum {
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: rgba(222, 164, 68, 0.55);
+  text-align: center;
+}
+
+.stopThumb {
+  width: 74px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: #0a1120;
+}
+
+.stopBody {
+  min-width: 0;
+}
+
+.stopTitle {
+  font-family: var(--serif);
+  font-size: 1.24rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fbf7ef;
+  text-decoration: none;
+}
+
+.stopTitle:hover {
+  color: var(--ochre);
+}
+
+.stopMeta {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  color: var(--paper-faint);
+  margin-top: 4px;
+}
+
+/* The leg distance is always explicitly approximate — an unlabelled
+   haversine number reads as a driving distance. */
+.stopLeg {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--ochre);
+  margin-top: 5px;
+}
+
+.stopRemove {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+  color: var(--paper-dim);
+  font-size: 0.85rem;
+  transition: background-color var(--dur-fast), color var(--dur-fast),
+    border-color var(--dur-fast);
+}
+
+.stopRemove:hover {
+  background: rgba(191, 130, 80, 0.2);
+  border-color: rgba(191, 130, 80, 0.7);
+  color: var(--paper);
+}
+
+/* ---- totals ---- */
+
+.totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1px;
+  background: var(--glass-line);
+  border: 1px solid var(--glass-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 26px;
+}
+
+.total {
+  background: rgba(14, 22, 38, 0.72);
+  padding: 18px 20px;
+}
+
+.totalLabel {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 7px;
+}
+
+.totalValue {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 600;
+  color: #fbf7ef;
+  line-height: 1.1;
+}
+
+.totalNote {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  color: var(--paper-faint);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   BADGES
+   ============================================================ */
+
+.badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  gap: 13px;
+}
+
+.badgeCard {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  padding: 16px 17px;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+}
+
+/* Earned badges get the ochre ring; unearned stay neutral and simply
+   state what is missing — a greyed-out badge with no explanation is
+   a dead end. */
+.badgeCardOn {
+  background: rgba(222, 164, 68, 0.1);
+  border-color: rgba(222, 164, 68, 0.55);
+}
+
+.badgeIcon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--glass-strong);
+  border: 1px solid var(--glass-line);
+  color: var(--paper-faint);
+  font-size: 0.92rem;
+}
+
+.badgeCardOn .badgeIcon {
+  background: var(--ochre);
+  border-color: var(--ochre);
+  color: var(--ink-navy);
+  font-weight: 700;
+}
+
+.badgeName {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #fbf7ef;
+  line-height: 1.2;
+}
+
+.badgeHint {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--paper-faint);
+  margin-top: 5px;
+}
+
+/* ============================================================
+   QUIZ
+   ============================================================ */
+
+.quizTop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.streak {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 17px;
+  border-radius: var(--radius-pill);
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--paper-dim);
+}
+
+.streakOn {
+  background: rgba(222, 164, 68, 0.15);
+  border-color: rgba(222, 164, 68, 0.6);
+  color: var(--ochre);
+}
+
+.progress {
+  display: flex;
+  gap: 5px;
+  flex: 1;
+  max-width: 320px;
+}
+
+.progressPip {
+  flex: 1;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: rgba(244, 235, 217, 0.16);
+  transition: background-color var(--dur-base);
+}
+
+.progressPipDone {
+  background: var(--ochre);
+}
+
+.progressPipWrong {
+  background: rgba(191, 130, 80, 0.85);
+}
+
+/* ---- the question ---- */
+
+.question {
+  border: 1px solid var(--glass-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--glass);
+}
+
+/* A heavily cropped photograph — the reader has to know the place
+   from a fragment, which is the whole difficulty of the question. */
+.qPhoto {
+  position: relative;
+  height: clamp(190px, 30vh, 320px);
+  overflow: hidden;
+  background: #0a1120;
+}
+
+.qPhotoImg {
+  position: absolute;
+  width: 260%;
+  height: 260%;
+  /* Positioned off-centre per question so the crop never falls in the
+     same place twice — a fixed centre crop would give the answer away
+     on well-known monuments. */
+  object-fit: cover;
+}
+
+.qPhotoScrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 13, 24, 0.88), transparent 62%);
+  pointer-events: none;
+}
+
+.qPhotoTag {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  z-index: 2;
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ochre);
+}
+
+.qBody {
+  padding: clamp(20px, 3vw, 30px);
+}
+
+.qText {
+  font-family: var(--serif);
+  font-size: clamp(1.3rem, 2.8vw, 1.85rem);
+  font-weight: 600;
+  line-height: 1.26;
+  color: #fbf7ef;
+  margin: 0 0 22px;
+}
+
+.options {
+  display: grid;
+  gap: 11px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  text-align: left;
+  padding: 14px 17px;
+  border-radius: var(--radius-sm);
+  background: rgba(14, 22, 38, 0.6);
+  border: 1px solid var(--glass-line);
+  color: var(--paper);
+  font-family: var(--sans);
+  font-size: 0.94rem;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: border-color var(--dur-fast), background-color var(--dur-fast),
+    transform var(--dur-fast) var(--ease-panel);
+}
+
+.option:hover:not(:disabled) {
+  border-color: rgba(222, 164, 68, 0.66);
+  background: rgba(222, 164, 68, 0.1);
+  transform: translateX(3px);
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.optionKey {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--glass-strong);
+  border: 1px solid var(--glass-line);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--paper-dim);
+}
+
+/* Right answer in ochre, wrong in terracotta — the same two colours
+   the rest of the app uses for "interactive" and "warning". */
+.optionRight {
+  border-color: rgba(222, 164, 68, 0.8);
+  background: rgba(222, 164, 68, 0.16);
+}
+
+.optionRight .optionKey {
+  background: var(--ochre);
+  border-color: var(--ochre);
+  color: var(--ink-navy);
+}
+
+.optionWrong {
+  border-color: rgba(191, 130, 80, 0.72);
+  background: rgba(191, 130, 80, 0.14);
+}
+
+.optionWrong .optionKey {
+  background: var(--rust);
+  border-color: var(--rust);
+  color: #fff;
+}
+
+/* ---- reveal ---- */
+
+.reveal {
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-radius: var(--radius-sm);
+  background: rgba(222, 164, 68, 0.08);
+  border-left: 3px solid var(--ochre);
+}
+
+.revealTitle {
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 8px;
+}
+
+.revealBody {
+  font-family: var(--sans);
+  font-size: 0.93rem;
+  line-height: 1.72;
+  color: rgba(244, 235, 217, 0.86);
+  margin: 0;
+}
+
+.revealLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 13px;
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  text-decoration: none;
+}
+
+.revealLink:hover {
+  text-decoration: underline;
+}
+
+/* ---- result ---- */
+
+.result {
+  text-align: center;
+  padding: clamp(40px, 7vw, 80px) 0;
+}
+
+.resultScore {
+  font-family: var(--serif);
+  font-size: clamp(3.4rem, 10vw, 6.4rem);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ochre);
+}
+
+.resultOf {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--paper-faint);
+  margin-top: 10px;
+}
+
+.resultTitle {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 600;
+  color: #fbf7ef;
+  margin: 26px 0 10px;
+}
+
+.resultBody {
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--paper-dim);
+  max-width: 46ch;
+  margin: 0 auto 28px;
+}
+
+/* ============================================================
+   ABOUT — credits table
+   ============================================================ */
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--glass-line);
+  border-radius: var(--radius);
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+.table th {
+  text-align: left;
+  padding: 13px 16px;
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  background: rgba(222, 164, 68, 0.09);
+  border-bottom: 1px solid var(--glass-line);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 12px 16px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: rgba(244, 235, 217, 0.84);
+  border-bottom: 1px solid rgba(244, 235, 217, 0.08);
+  vertical-align: top;
+}
+
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+.table tbody tr:hover td {
+  background: rgba(222, 164, 68, 0.05);
+}
+
+.tableSite {
+  color: #fbf7ef;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tableSite:hover {
+  color: var(--ochre);
+}
+
+.mono {
+  font-family: ui-monospace, "Cascadia Mono", Menlo, Consolas, monospace;
+  font-size: 0.79rem;
+  color: var(--paper-faint);
+  word-break: break-all;
+}
+
+/* ---- "what we did not do" list ---- */
+
+.donts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.dont {
+  display: grid;
+  grid-template-columns: 1.4rem 1fr;
+  gap: 13px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.72;
+  color: rgba(244, 235, 217, 0.82);
+}
+
+.dontMark {
+  color: var(--ochre);
+  font-weight: 700;
+}
+
+.dontStrong {
+  color: #fbf7ef;
+  font-weight: 600;
+}
+
+/* ---- team ---- */
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.member {
+  padding: 20px;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+}
+
+.memberRole {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 9px;
+}
+
+.memberName {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fbf7ef;
+  line-height: 1.2;
+}
+
+.memberNote {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: var(--paper-faint);
+  margin-top: 9px;
+}
+
+/* TODO markers are shown, not hidden — the project rule is that
+   unfinished is visible rather than papered over. */
+.todo {
+  display: inline-block;
+  margin-top: 11px;
+  padding: 4px 10px;
+  border: 1px dashed rgba(244, 235, 217, 0.3);
+  border-radius: var(--radius-pill);
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  letter-spacing: 0.07em;
+  color: var(--paper-faint);
+}
+
+/* ============================================================
+   ATLAS — gallery
+   ============================================================ */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: clamp(14px, 2vw, 22px);
+}
+
+.tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #0a1120;
+  border: 1px solid var(--glass-line);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--dur-base) var(--ease-panel),
+    border-color var(--dur-base), box-shadow var(--dur-base);
+}
+
+/* The gallery's signature: cards sit at slightly different heights and
+   depths so the wall reads as hung rather than tiled. Purely visual —
+   it carries no data and is disabled for reduced motion. */
+.tile:nth-child(3n) {
+  transform: translateY(16px);
+}
+.tile:nth-child(3n + 1) {
+  transform: translateY(-8px);
+}
+
+.tile:hover {
+  transform: translateY(-6px);
+  border-color: rgba(222, 164, 68, 0.6);
+  box-shadow: 0 24px 52px rgba(6, 10, 20, 0.62);
+  z-index: 2;
+}
+
+.tilePhoto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 750ms var(--ease-panel);
+}
+
+.tile:hover .tilePhoto {
+  transform: scale(1.08);
+}
+
+.tileScrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(8, 13, 24, 0.96) 0%,
+    rgba(8, 13, 24, 0.6) 38%,
+    transparent 74%
+  );
+  pointer-events: none;
+}
+
+.tileBody {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 17px;
+  z-index: 2;
+}
+
+.tileRegion {
+  font-family: var(--sans);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 6px;
+}
+
+.tileTitle {
+  font-family: var(--serif);
+  font-size: 1.32rem;
+  font-weight: 600;
+  line-height: 1.16;
+  color: #fbf7ef;
+  margin: 0 0 4px;
+}
+
+.tileMeta {
+  font-family: var(--sans);
+  font-size: 0.69rem;
+  color: rgba(244, 235, 217, 0.68);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 700px) {
+  .stop {
+    grid-template-columns: 2.2rem 56px 1fr auto;
+    gap: 11px;
+  }
+  .stopThumb {
+    width: 56px;
+    height: 44px;
+  }
+  .stopNum {
+    font-size: 1.3rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+  .tile:nth-child(3n),
+  .tile:nth-child(3n + 1) {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headPhoto {
+    animation: none;
+  }
+  .tile,
+  .tilePhoto,
+  .option {
+    transition: none;
+  }
+  .tile:nth-child(3n),
+  .tile:nth-child(3n + 1) {
+    transform: none;
+  }
+}

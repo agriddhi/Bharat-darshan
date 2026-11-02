@@ -1,0 +1,50 @@
+/* ui/HintBar.module.css — the single line that teaches the controls. */
+
+.bar {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 15px;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--soft-stone) 88%, transparent);
+  background: color-mix(in srgb, var(--ink-navy) 76%, transparent);
+  backdrop-filter: blur(8px);
+  border: 1px solid color-mix(in srgb, var(--soft-stone) 20%, transparent);
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity var(--dur-base) var(--ease-panel);
+}
+
+/* quiet once the user has had a moment to read it */
+.faded {
+  opacity: 0.34;
+}
+
+.sep {
+  opacity: 0.42;
+}
+
+.key {
+  color: var(--ochre);
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .bar {
+    font-size: 0.68rem;
+    padding: 6px 11px;
+    gap: 6px;
+    bottom: 12px;
+    max-width: calc(100vw - 20px);
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+  }
+}

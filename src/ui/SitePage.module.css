@@ -1,0 +1,803 @@
+/* ============================================================
+   ui/SitePage.module.css — the full-page site detail.
+
+   WHY A PAGE AND NOT A PANEL
+   The old 468px drawer had to compress a five-part narrative, a
+   history, twelve quick facts, a Hindi translation and a full source
+   list into something that scrolled forever. Every section lost. A
+   page gives each of those its own width and its own vertical space,
+   which is the whole reason 87% of the content was invisible before.
+
+   THE LAYOUT IS A NEWSPAPER FEATURE, NOT A CARD
+   One column of prose at a readable measure (~70ch), with facts and
+   sources breaking out wider. That rhythm — narrow, wide, narrow — is
+   what makes a long page feel edited rather than dumped.
+   ============================================================ */
+
+.page {
+  min-height: 100vh;
+  background: var(--canvas-deep);
+  color: var(--paper);
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero {
+  position: relative;
+  height: clamp(300px, 52vh, 560px);
+  overflow: hidden;
+  background: #0a1120;
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Same Ken Burns vocabulary as the landing screen, so entering a
+     site feels like a continuation rather than a context switch. */
+  animation: heroDrift 30s ease-in-out infinite alternate;
+}
+
+@keyframes heroDrift {
+  from {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.14) translate3d(-2%, -1.4%, 0);
+  }
+}
+
+/* Bottom scrim: the title sits on this, so it must guarantee
+   contrast no matter how bright the photograph is underneath. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to top,
+      rgba(14, 22, 38, 0.97) 0%,
+      rgba(14, 22, 38, 0.82) 24%,
+      rgba(14, 22, 38, 0.34) 56%,
+      rgba(14, 22, 38, 0.20) 100%
+    );
+  pointer-events: none;
+}
+
+/* Light raking in from the top-right, matching the landing. */
+.heroGrade {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    90% 70% at 80% 0%,
+    rgba(222, 164, 68, 0.16),
+    transparent 62%
+  );
+  pointer-events: none;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    115% 90% at 50% 45%,
+    transparent 46%,
+    rgba(14, 22, 38, 0.62) 100%
+  );
+  pointer-events: none;
+}
+
+.heroInner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 clamp(16px, 5vw, 64px) clamp(22px, 3.4vw, 44px);
+  z-index: 2;
+}
+
+/* ---- badges ---- */
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: var(--radius-pill);
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(244, 235, 217, 0.12);
+  border: 1px solid rgba(244, 235, 217, 0.24);
+  color: var(--paper);
+  backdrop-filter: blur(8px);
+}
+
+/* UNESCO is the one badge backed by a real external reference, so it
+   gets the ochre treatment. Everything else stays neutral — a page
+   where every badge shouts means none of them do. */
+.badgeUnesco {
+  background: rgba(222, 164, 68, 0.20);
+  border-color: rgba(222, 164, 68, 0.62);
+  color: var(--ochre);
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 6vw, 4.6rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.018em;
+  color: #fbf7ef;
+  margin: 0;
+  text-shadow: 0 6px 40px rgba(14, 22, 38, 0.8);
+}
+
+.nameHi {
+  font-family: var(--deva);
+  font-size: clamp(1.05rem, 2.2vw, 1.6rem);
+  font-weight: 500;
+  color: var(--ochre);
+  margin-top: 9px;
+  opacity: 0.95;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  margin-top: 15px;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(244, 235, 217, 0.78);
+}
+
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.metaDot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(244, 235, 217, 0.45);
+}
+
+/* ============================================================
+   ACTIONS BAR — sticks under the nav
+   ============================================================ */
+
+.actions {
+  position: sticky;
+  top: 57px;
+  z-index: 40;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 11px clamp(16px, 5vw, 64px);
+  background: rgba(14, 22, 38, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--glass-line);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 17px;
+  border-radius: var(--radius-pill);
+  font-family: var(--sans);
+  font-size: 0.79rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background-color var(--dur-fast), border-color var(--dur-fast),
+    color var(--dur-fast), transform var(--dur-fast) var(--ease-panel);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btnPrimary {
+  background: var(--ochre);
+  color: var(--ink-navy);
+  border: 1px solid var(--ochre);
+}
+
+.btnPrimary:hover {
+  background: color-mix(in srgb, var(--ochre) 88%, #fff);
+}
+
+.btnGhost {
+  background: var(--glass);
+  color: var(--paper);
+  border: 1px solid var(--glass-line);
+}
+
+.btnGhost:hover {
+  border-color: rgba(222, 164, 68, 0.6);
+  background: rgba(222, 164, 68, 0.12);
+}
+
+/* A state that is already true reads as a filled ghost, not a second
+   primary — two ochre buttons side by side would compete. */
+.btnOn {
+  border-color: rgba(222, 164, 68, 0.62);
+  background: rgba(222, 164, 68, 0.16);
+  color: var(--ochre);
+}
+
+.btnDisabled {
+  opacity: 0.44;
+  cursor: not-allowed;
+}
+
+.btnDisabled:hover {
+  border-color: var(--glass-line);
+  background: var(--glass);
+}
+
+.counter {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper-faint);
+  margin-left: auto;
+}
+
+/* ---- language toggle ---- */
+
+.langToggle {
+  display: inline-flex;
+  border: 1px solid var(--glass-line);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.langBtn {
+  padding: 7px 14px;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  background: transparent;
+  color: var(--paper-dim);
+  border: 0;
+  cursor: pointer;
+  transition: background-color var(--dur-fast), color var(--dur-fast);
+}
+
+.langBtn:hover {
+  color: var(--paper);
+}
+
+.langOn {
+  background: rgba(222, 164, 68, 0.2);
+  color: var(--ochre);
+}
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.wrap {
+  padding: clamp(30px, 5vw, 64px) clamp(16px, 5vw, 64px) clamp(50px, 7vw, 100px);
+}
+
+/* Prose measure. Anything past ~72ch gets hard to track, so the
+   reading column stops there and the fact/source blocks are allowed
+   to break out wider. */
+.prose {
+  max-width: 72ch;
+}
+
+.section + .section {
+  margin-top: clamp(38px, 5vw, 64px);
+}
+
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--glass-line);
+}
+
+.sectionNum {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ochre);
+  line-height: 1;
+  min-width: 1.6em;
+}
+
+.sectionTitle {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: #fbf7ef;
+  margin: 0;
+}
+
+.sectionTitleHi {
+  font-family: var(--deva);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ochre);
+  margin-top: 5px;
+}
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 10px;
+}
+
+/* ---- lede ---- */
+
+.lede {
+  font-family: var(--sans);
+  font-size: var(--text-lead);
+  line-height: 1.72;
+  color: rgba(244, 235, 217, 0.9);
+  margin: 0;
+}
+
+.ledeHi {
+  font-family: var(--deva);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: rgba(244, 235, 217, 0.9);
+  margin: 0;
+}
+
+/* ---- quick facts: breaks out wider than prose ---- */
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 1px;
+  background: var(--glass-line);
+  border: 1px solid var(--glass-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.fact {
+  background: rgba(14, 22, 38, 0.72);
+  padding: 15px 17px;
+  transition: background-color var(--dur-fast);
+}
+
+.fact:hover {
+  background: rgba(222, 164, 68, 0.07);
+}
+
+.factLabel {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 6px;
+}
+
+.factValue {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--paper);
+}
+
+/* ---- story stages ---- */
+
+.stage {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr;
+  gap: 0 20px;
+}
+
+.stage + .stage {
+  margin-top: clamp(26px, 3.4vw, 40px);
+  padding-top: clamp(26px, 3.4vw, 40px);
+  border-top: 1px dashed rgba(244, 235, 217, 0.14);
+}
+
+/* The big serif numeral in the left gutter is what makes this read as
+   a sequence rather than five paragraphs. */
+.stageNum {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  line-height: 0.86;
+  color: rgba(222, 164, 68, 0.42);
+  text-align: right;
+  user-select: none;
+}
+
+.stageTitle {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fbf7ef;
+  margin: 0 0 9px;
+}
+
+.stageTitleHi {
+  font-family: var(--deva);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ochre);
+  margin: 0 0 9px;
+}
+
+.stageBody {
+  font-family: var(--sans);
+  font-size: 0.97rem;
+  line-height: 1.76;
+  color: rgba(244, 235, 217, 0.82);
+  margin: 0;
+}
+
+.stageBodyHi {
+  font-family: var(--deva);
+  font-size: 1rem;
+  line-height: 1.95;
+  color: rgba(244, 235, 217, 0.86);
+  margin: 0;
+}
+
+/* v1 carried these as TODO and the migration preserved them. Shown
+   honestly as a placeholder slot rather than silently omitted — a
+   reader can see the archive knows it is missing an image here. */
+.stageImagePending {
+  margin-top: 13px;
+  padding: 11px 14px;
+  border: 1px dashed rgba(244, 235, 217, 0.24);
+  border-radius: var(--radius-sm);
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: var(--paper-faint);
+  background: rgba(244, 235, 217, 0.03);
+}
+
+/* ---- history ---- */
+
+.history {
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  line-height: 1.78;
+  color: rgba(244, 235, 217, 0.84);
+  margin: 0;
+}
+
+.historyHi {
+  font-family: var(--deva);
+  font-size: 1.02rem;
+  line-height: 1.98;
+  color: rgba(244, 235, 217, 0.86);
+  margin: 0;
+}
+
+/* ============================================================
+   SOURCES — verbatim, never rewritten
+   ============================================================ */
+
+.official {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 16px 18px;
+  border-radius: var(--radius);
+  background: rgba(222, 164, 68, 0.09);
+  border: 1px solid rgba(222, 164, 68, 0.36);
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 18px;
+  transition: background-color var(--dur-fast), border-color var(--dur-fast);
+}
+
+.official:hover {
+  background: rgba(222, 164, 68, 0.16);
+  border-color: rgba(222, 164, 68, 0.68);
+}
+
+.officialMark {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-navy);
+  background: var(--ochre);
+  padding: 4px 8px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.officialLabel {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--paper);
+  line-height: 1.45;
+}
+
+.officialUrl {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--paper-faint);
+  margin-top: 5px;
+  word-break: break-all;
+}
+
+.links {
+  display: grid;
+  gap: 9px;
+}
+
+.linkRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 12px 15px;
+  border-radius: var(--radius-sm);
+  background: var(--glass);
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--dur-fast), background-color var(--dur-fast);
+}
+
+.linkRow:hover {
+  border-color: rgba(222, 164, 68, 0.5);
+  background: rgba(222, 164, 68, 0.08);
+}
+
+.linkArrow {
+  color: var(--ochre);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+.linkLabel {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--paper);
+  line-height: 1.5;
+}
+
+.linkUrl {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--paper-faint);
+  margin-top: 4px;
+  word-break: break-all;
+}
+
+/* ---- plain source list ---- */
+
+.sourceList {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: src;
+  display: grid;
+  gap: 8px;
+}
+
+.sourceList li {
+  counter-increment: src;
+  display: grid;
+  grid-template-columns: 1.7rem 1fr;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  line-height: 1.62;
+  color: rgba(244, 235, 217, 0.72);
+}
+
+.sourceList li::before {
+  content: counter(src) ".";
+  color: var(--ochre);
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding-top: 2px;
+}
+
+/* ============================================================
+   CREDITS
+   ============================================================ */
+
+.credits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+}
+
+.creditItem {
+  min-width: 0;
+}
+
+.creditLabel {
+  font-family: var(--sans);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 5px;
+}
+
+.creditValue {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  color: var(--paper);
+  word-break: break-word;
+}
+
+/* ============================================================
+   PAGER — prev / next through the archive
+   ============================================================ */
+
+.pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: clamp(40px, 6vw, 72px);
+  padding-top: clamp(26px, 3.4vw, 40px);
+  border-top: 1px solid var(--glass-line);
+}
+
+.pagerLink {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 17px 19px;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--dur-fast), background-color var(--dur-fast),
+    transform var(--dur-fast) var(--ease-panel);
+}
+
+.pagerLink:hover {
+  border-color: rgba(222, 164, 68, 0.5);
+  background: rgba(222, 164, 68, 0.08);
+  transform: translateY(-2px);
+}
+
+.pagerNext {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.pagerDir {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--paper-faint);
+}
+
+.pagerName {
+  font-family: var(--serif);
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #fbf7ef;
+  line-height: 1.2;
+}
+
+.pagerMeta {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--paper-faint);
+}
+
+/* ============================================================
+   NOT FOUND
+   ============================================================ */
+
+.missing {
+  padding: clamp(60px, 12vh, 130px) clamp(16px, 5vw, 64px);
+  max-width: 640px;
+}
+
+.missingTitle {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 600;
+  color: #fbf7ef;
+  margin: 0 0 14px;
+}
+
+.missingBody {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--paper-dim);
+  margin: 0 0 26px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 680px) {
+  .stage {
+    grid-template-columns: 2.2rem 1fr;
+    gap: 0 13px;
+  }
+  .stageNum {
+    font-size: 1.8rem;
+  }
+  .pager {
+    grid-template-columns: 1fr;
+  }
+  .pagerNext {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .actions {
+    top: 53px;
+  }
+  .counter {
+    display: none;
+  }
+  .langToggle {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo {
+    animation: none;
+    transform: scale(1.04);
+  }
+}

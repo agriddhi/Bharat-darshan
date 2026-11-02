@@ -1,0 +1,3951 @@
+[
+  {
+    "id": "taj-mahal",
+    "title": "Taj Mahal",
+    "state": "Uttar Pradesh",
+    "region": "North",
+    "type": "tomb",
+    "era": "mughal",
+    "description": "A white marble mausoleum in Agra, built for Mumtaz Mahal and widely read as the high point of Mughal architecture.",
+    "descriptionHi": "आगरा की सफ़ेद संगमरमर की समाधि, मुमताज़ महल के लिए बनवाई गई — मुग़ल वास्तुकला की चरम कृति मानी जाती है।",
+    "lat": 27.174653,
+    "lng": 78.042503,
+    "tags": [
+      "islamic"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Taj Mahal",
+        "url": "https://whc.unesco.org/en/list/252/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Arul Prakasam T",
+      "license": "CC BY-SA 4.0",
+      "filename": "taj-mahal.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/taj-mahal.jpg",
+        "caption": "Taj Mahal — Agra",
+        "credit": "Arul Prakasam T",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Taj Mahal",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO — Taj Mahal (No. 252)",
+      "url": "https://whc.unesco.org/en/list/252/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/252/",
+    "city": "Agra",
+    "history": "Shah Jahan commissioned the Taj Mahal in 1632 as a tomb for his wife Mumtaz Mahal, who died the previous year. Construction continued for roughly two decades and the complex was completed in the mid-17th century. It combines a domed mausoleum, a formal garden, a mosque, a guest house and four minarets. UNESCO inscribed it as a World Heritage Site in 1983.",
+    "historyHi": "शाह जहाँ ने 1632 में अपनी पत्नी मुमताज़ महल की समाधि के रूप में ताज महल बनवाना शुरू करवाया; उनका निधन पिछले वर्ष हुआ था। निर्माण लगभग दो दशक चला। इसमें एक गुंबददार समाधि, औपचारिक उद्यान, मस्जिद, मेहमानखाना और चार मीनारें शामिल हैं। यूनेस्को ने इसे 1983 में विश्व धरोहर स्थल घोषित किया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Shah Jahan commissioned the Taj Mahal in 1632 as a mausoleum for his wife Mumtaz Mahal, who died in childbirth the previous year. The project was meant to be a permanent, monumental statement of love and of Mughal imperial power.",
+        "bodyHi": "शाह जहाँ ने 1632 में अपनी पत्नी मुमताज़ महल की समाधि के लिए ताज महल बनवाया, जिनका निधन पिछले वर्ष प्रसव के दौरान हुआ था। यह स्थायी प्रेम और मुग़ल साम्राज्य की शक्ति का प्रतीक था।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Thousands of artisans and labourers worked on it — stone cutters, marble carvers, inlay specialists, calligraphers and gardeners brought in from across the empire and beyond. Traditional accounts name Ustad Ahmad Lahori as the lead architect, but contemporary records are incomplete, so treat that attribution as traditional rather than proven.",
+        "bodyHi": "हज़ारों कारीगरों ने इस पर काम किया — पत्थर तोड़ने वाले, संगमरमर के नक्काशीकार, पत्थर जड़ाई के विशेषज्ञ, लिपिकार और माली। पारंपरिक विवरण में स्थापत्यकार उस्ताद अहमद लाहौरी का नाम आता है, पर उस समय के अभिलेख पूर्ण नहीं हैं — इसलिए इसे परंपरागत मान्यता मानें, सिद्ध तथ्य नहीं।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Look for the chamfered octagonal plan of the main block, the four minarets that lean very slightly outward so they fall away from the dome, the pietra dura inlay of semi-precious stone in the marble, and the calligraphic panels framing the great gate.",
+        "bodyHi": "मुख्य भवन की कटी हुई अष्टभुजी योजना, थोड़ा बाहर झुकी चार मीनारें, संगमरमर पर बहुमूल्य पत्थरों की पिएत्रा ड्यूरा जड़ाई, और बड़े दरवाज़े को घेरती क़लाबद्ध पट्टियाँ देखें।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The formal Mughal garden was later changed to a more open lawn layout during the British period. In the late 20th century industrial pollution damaged the marble, and a 1996 Supreme Court order led to the creation of the Taj Trapezium Zone to control emissions around the monument.",
+        "bodyHi": "ब्रिटिश काल में मुग़ल शैली का औपचारिक उद्यान खुले लॉन में बदल दिया गया। बीसवीं सदी के अंत में औद्योगिक प्रदूषण से संगमरमर को नुक़सान हुआ, और 1996 के सुप्रीम कोर्ट के आदेश से स्मारक के चारों ओर उत्सर्जन नियंत्रित करने के लिए ताज ट्रेपेज़ियम ज़ोन बना।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "The Taj Mahal is one of the most visited monuments in the world and a recognisable symbol of India abroad. It is also a working case study in marble conservation and in balancing mass tourism with heritage protection.",
+        "bodyHi": "ताज महल विश्व के सबसे अधिक देखे जाने वाले स्मारकों में से है और विदेशों में भारत की पहचान बन चुका है। यह संगमरमर संरक्षण और भीड़-पर्यटन के बीच संतुलन का भी एक व्यावहारिक उदाहरण है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Commissioned",
+        "value": "1632"
+      },
+      {
+        "label": "Completed",
+        "value": "Mid-17th century"
+      },
+      {
+        "label": "Material",
+        "value": "White Makrana marble"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "1983 (No. 252)"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Who commissioned the Taj Mahal?",
+        "options": [
+          "Akbar",
+          "Shah Jahan",
+          "Humayun",
+          "Aurangzeb"
+        ],
+        "answer": 1,
+        "explain": "Shah Jahan had it built as a tomb for his wife Mumtaz Mahal."
+      },
+      {
+        "q": "Which UNESCO World Heritage number is the Taj Mahal?",
+        "options": [
+          "No. 233",
+          "No. 241",
+          "No. 252",
+          "No. 524"
+        ],
+        "answer": 2,
+        "explain": "It was inscribed in 1983 under number 252."
+      },
+      {
+        "q": "What is pietra dura?",
+        "options": [
+          "A style of marble carving",
+          "Inlay of semi-precious stone into marble",
+          "A type of minaret",
+          "A garden channel"
+        ],
+        "answer": 1,
+        "explain": "Pietra dura is the technique of setting cut stones into marble to form pictures and patterns."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 252",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO — Taj Mahal (No. 252)",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/252/",
+    "pano360": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Taj_Mahal_360%C2%B0_View.jpg",
+    "pano360Note": "2:1 equirectangular, 2048×1024. Photographed from the terrace — the main dome sits at u≈0.475 in the panorama.",
+    "featured": true,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Taj_Mahal_360%C2%B0_View.jpg/1280px-Taj_Mahal_360%C2%B0_View.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Taj_Mahal_360%C2%B0_View.jpg/1280px-Taj_Mahal_360%C2%B0_View.jpg",
+    "nameHi": "ताज महल",
+    "slug": "taj-mahal"
+  },
+  {
+    "id": "golden-temple",
+    "title": "Golden Temple",
+    "state": "Punjab",
+    "region": "North",
+    "type": "temple",
+    "era": "medieval",
+    "description": "Harmandir Sahib, the holiest gurdwara of Sikhism, standing in the middle of a sacred pool in Amritsar.",
+    "descriptionHi": "सिख धर्म का सबसे पवित्र गुरुद्वारा हरमंदिर साहब, अमृतसर के पवित्र सरोवर के बीच स्थित है।",
+    "lat": 31.627444,
+    "lng": 74.868222,
+    "tags": [
+      "sikh"
+    ],
+    "sourceLinks": [
+      {
+        "label": "SGPC — official management body",
+        "url": "https://www.sgpc.net"
+      },
+      {
+        "label": "UNESCO Tentative List — Sri Harimandir Sahib",
+        "url": "https://whc.unesco.org/en/tentativelists/1858/"
+      }
+    ],
+    "credits": {
+      "photographer": "Oleg Yunakov",
+      "license": "CC BY-SA 3.0",
+      "filename": "golden-temple.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/golden-temple.jpg",
+        "caption": "Golden Temple — Amritsar",
+        "credit": "Oleg Yunakov",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "sources": [
+      "SGPC — official management body",
+      "UNESCO Tentative List — Sri Harimandir Sahib"
+    ],
+    "officialSource": {
+      "label": "Shiromani Gurdwara Parbandhak Committee (SGPC)",
+      "url": "https://www.sgpc.net"
+    },
+    "folkloreNote": null,
+    "govLink": "https://www.sgpc.net",
+    "city": "Amritsar",
+    "history": "Guru Ram Das began the sacred pool and the town of Amritsar in the 16th century. The shrine was completed under Guru Arjan Dev, who in 1604 placed the Adi Granth inside it. The present gold-plated upper floors date from the reign of Maharaja Ranjit Singh in the early 19th century. The shrine is on the UNESCO Tentative List, not the World Heritage List.",
+    "historyHi": "गुरु रामदास ने 16वीं सदी में पवित्र सरोवर और अमृतसर नगर की नींव रखी। गुरु अर्जन देव ने इसे पूरा करवाया और 1604 में यहाँ आदि ग्रंथ साहब विराजमान किया। वर्तमान स्वर्ण-आवरण ऊपरी मंज़िलें 19वीं सदी के महाराजा रणजीत सिंह के काल की हैं। यह यूनेस्को की अस्थायी सूची में है, विश्व धरोहर सूची में नहीं।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Guru Ram Das founded the settlement and the sacred pool at Amritsar in the 1570s. The shrine grew around that pool, which is why the complex is centred on water rather than on a hill or a city wall.",
+        "bodyHi": "गुरु रामदास ने 1570 के दशक में अमृतसर में बस्ती और पवित्र सरोवर की स्थापना की। मंदिर उसी सरोवर के चारों ओर विकसित हुआ, इसलिए यह परिसर किसी पहाड़ी या दीवार के बजाय जल के केंद्र में है।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "The Gurus shaped the site: Guru Ram Das began it and Guru Arjan Dev completed the shrine and installed the Adi Granth in 1604. The gold plating seen today was added under Maharaja Ranjit Singh in the early 1800s.",
+        "bodyHi": "गुरुओं ने इस स्थान को आकार दिया — गुरु रामदास ने शुरुआत की और गुरु अर्जन देव ने 1604 में गुरुद्वारा पूरा कर आदि ग्रंथ स्थापित किया। आज का स्वर्ण-आवरण महाराजा रणजीत सिंह के काल में जुड़ा।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Notice the four doors — one on each side — which symbolise openness to all directions and all people. Look at the marble inlay work, the gold-plated upper storeys, and the causeway across the Amrit Sarovar.",
+        "bodyHi": "चारों ओर चार दरवाज़े देखें, जो सभी दिशाओं और सभी लोगों के प्रति खुलेपन का प्रतीक हैं। मार्बल इनलाई, स्वर्ण-आवरण ऊपरी मंज़िल और अमृत सरोवर पर बना पुल ध्यान से देखें।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The building was damaged and repaired several times across the 18th and 19th centuries. It was also damaged during Operation Blue Star in 1984 and was subsequently restored.",
+        "bodyHi": "18वीं और 19वीं सदी में इस भवन को कई बार क्षति पहुँची और मरम्मत हुई। 1984 के ऑपरेशन ब्लू स्टार के दौरान भी क्षति हुई, जिसके बाद इसका पुनर्निर्माण किया गया।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is the holiest gurdwara in Sikhism and an active place of worship. Its langar — the community kitchen — serves free meals to huge numbers of visitors every day regardless of background.",
+        "bodyHi": "यह सिख धर्म का सबसे पवित्र गुरुद्वारा और सक्रिय आराधना स्थल है। इसका लंगर — सामुदायिक रसोई — हर दिन बिना किसी भेदभाव के बड़ी संख्या में मेहमानों को निःशुल्क भोजन कराता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Sacred pool begun",
+        "value": "16th century"
+      },
+      {
+        "label": "Adi Granth installed",
+        "value": "1604"
+      },
+      {
+        "label": "Present gold plating",
+        "value": "Early 19th century"
+      },
+      {
+        "label": "UNESCO status",
+        "value": "Tentative List — not inscribed"
+      },
+      {
+        "label": "Managed by",
+        "value": "SGPC"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Which river-like pool is the shrine built around?",
+        "options": [
+          "Ganga",
+          "Amrit Sarovar",
+          "Yamuna",
+          "Beas"
+        ],
+        "answer": 1,
+        "explain": "The shrine stands in the middle of the Amrit Sarovar, the pool that gives Amritsar its name."
+      },
+      {
+        "q": "Which scripture was installed inside in 1604?",
+        "options": [
+          "Guru Granth Sahib (Adi Granth)",
+          "Rig Veda",
+          "Tripitaka",
+          "Gita"
+        ],
+        "answer": 0,
+        "explain": "Guru Arjan Dev compiled the Adi Granth and installed it in the shrine in 1604."
+      },
+      {
+        "q": "How many doors does the shrine have?",
+        "options": [
+          "One",
+          "Two",
+          "Four",
+          "Eight"
+        ],
+        "answer": 2,
+        "explain": "Four doors, one on each side, symbolising welcome to people from every direction."
+      }
+    ],
+    "isUnesco": false,
+    "isUnescoRef": "On the UNESCO Tentative List as Sri Harimandir Sahib — not yet inscribed",
+    "isOfficiallyProtected": false,
+    "protectedBy": "Managed by the Shiromani Gurdwara Parbandhak Committee (SGPC), not ASI",
+    "officialSourceLabel": "Shiromani Gurdwara Parbandhak Committee (SGPC)",
+    "officialSourceUrl": "https://www.sgpc.net",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Hamandir_Sahib_%28Golden_Temple%29.jpg/1280px-Hamandir_Sahib_%28Golden_Temple%29.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Hamandir_Sahib_%28Golden_Temple%29.jpg/1280px-Hamandir_Sahib_%28Golden_Temple%29.jpg",
+    "nameHi": "स्वर्ण मंदिर",
+    "slug": "golden-temple"
+  },
+  {
+    "id": "qutub-minar",
+    "title": "Qutub Minar",
+    "state": "Delhi",
+    "region": "North",
+    "type": "monument",
+    "era": "medieval",
+    "description": "A 73-metre red sandstone victory minaret begun in 1192, standing in a complex of early Delhi Sultanate monuments.",
+    "descriptionHi": "1192 में शुरू की गई 73 मीटर ऊँची लाल बलुआ पत्थर की विजय मीनार, दिल्ली सल्तनत के प्रारंभिक स्मारकों के परिसर में स्थित।",
+    "lat": 28.524355,
+    "lng": 77.185248,
+    "tags": [
+      "islamic"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Qutub Minar",
+        "url": "https://whc.unesco.org/en/list/233/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Syed Sajidul Islam",
+      "license": "CC BY-SA 4.0",
+      "filename": "qutub-minar.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/qutub-minar.jpg",
+        "caption": "Qutub Minar — Delhi",
+        "credit": "Syed Sajidul Islam",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Qutub Minar",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO — Qutub Minar and its Monuments (No. 233)",
+      "url": "https://whc.unesco.org/en/list/233/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/233/",
+    "city": "Delhi",
+    "history": "Qutb-ud-din Aibak began the tower in 1192 as a victory monument. It was left unfinished at his death and completed by Iltutmish. The complex also holds the Quwat-ul-Islam Mosque and the Iron Pillar of Delhi. UNESCO inscribed the site in 1993.",
+    "historyHi": "क़ुतबुद्दीन ऐबक ने 1192 में विजय स्मारक के रूप में यह मीनार शुरू करवाई। उनकी मृत्यु पर यह अधूरी रह गई, जिसे इल्तुतमिश ने पूरा करवाया। इस परिसर में क़ुव्वतुल-इस्लाम मस्जिद और लौह स्तंभ भी हैं। यूनेस्को ने 1993 में इसे सूचीबद्ध किया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "It was begun in 1192 as a victory monument marking the establishment of Turkish rule in northern India. Minarets of this kind were also used to call people to prayer and to show the power of a new dynasty.",
+        "bodyHi": "यह 1192 में उत्तर भारत में तुर्की शासन की स्थापना की विजय के प्रतीक के रूप में शुरू की गई। इस तरह की मीनारें नमाज़ के लिए बुलावे और नई वंश की शक्ति दिखाने के लिए भी बनाई जाती थीं।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Qutb-ud-din Aibak started it in 1192 and died before it was finished. His successor Iltutmish added the upper storeys, and later rulers repaired storm and earthquake damage.",
+        "bodyHi": "क़ुतबुद्दीन ऐबक ने 1192 में इसकी शुरुआत की, पर मृत्यु से पहले यह पूरी नहीं हो सकी। उनके उत्तराधिकारी इल्तुतमिश ने ऊपरी मंज़िलें जोड़ीं, और बाद के शासकों ने तूफ़ान व भूकंप से हुई क्षति की मरम्मत करवाई।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Look at the tapering storeys separated by projecting balconies supported by muqarnas brackets. Read the bands of Quranic calligraphy and the alternating fluted and plain columns around the base.",
+        "bodyHi": "मुकरनस ब्रैकेट से सहारा प्राप्त उभरे बालकनी वाली चढ़ती हुई मंज़िलें देखें। अरबी क़ुरान की लिपियों की पट्टियों और नीचे वैकल्पिक खांचेदार व सपाट स्तंभों को ध्यान से पढ़ें।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "Lightning and earthquakes damaged the tower repeatedly. Firoz Shah Tughlaq rebuilt the top storey in the 14th century, and further restoration work took place in later periods.",
+        "bodyHi": "बार-बार बिजली गिरने और भूकंप से मीनार को नुक़सान हुआ। फ़िरोज़ शाह तुग़लक ने 14वीं सदी में ऊपरी मंज़िल दोबारा बनवाई, और बाद में भी मरम्मत कार्य होते रहे।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is one of the earliest surviving monuments of the Delhi Sultanate and still stands at the centre of a working archaeological complex that people visit daily.",
+        "bodyHi": "यह दिल्ली सल्तनत के जीवित बचे सबसे प्रारंभिक स्मारकों में से है, और आज भी एक सक्रिय पुरातात्विक परिसर के केंद्र में खड़ा है जहाँ लोग प्रतिदिन आते हैं।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Begun",
+        "value": "1192"
+      },
+      {
+        "label": "Height",
+        "value": "About 73 metres"
+      },
+      {
+        "label": "Material",
+        "value": "Red sandstone and marble"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "1993 (No. 233)"
+      },
+      {
+        "label": "Complex also holds",
+        "value": "Iron Pillar of Delhi"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Who began the Qutub Minar?",
+        "options": [
+          "Iltutmish",
+          "Qutb-ud-din Aibak",
+          "Alauddin Khalji",
+          "Firoz Shah Tughlaq"
+        ],
+        "answer": 1,
+        "explain": "Qutb-ud-din Aibak began it in 1192; Iltutmish completed the upper storeys."
+      },
+      {
+        "q": "How tall is the minaret?",
+        "options": [
+          "About 33 metres",
+          "About 53 metres",
+          "About 73 metres",
+          "About 93 metres"
+        ],
+        "answer": 2,
+        "explain": "It stands roughly 73 metres tall."
+      },
+      {
+        "q": "What other famous object sits in the same complex?",
+        "options": [
+          "Iron Pillar of Delhi",
+          "Ashokan Pillar at Sarnath",
+          "Buddha image of Sanchi",
+          "Iron Stupa of Delhi"
+        ],
+        "answer": 0,
+        "explain": "The Iron Pillar of Delhi stands in the same courtyard."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 233",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO — Qutub Minar and its Monuments (No. 233)",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/233/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/View_of_Qutub_Minar_%281%29.jpg/1280px-View_of_Qutub_Minar_%281%29.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/View_of_Qutub_Minar_%281%29.jpg/1280px-View_of_Qutub_Minar_%281%29.jpg",
+    "nameHi": "कुतुब मीनार",
+    "slug": "qutub-minar"
+  },
+  {
+    "id": "hampi",
+    "title": "Hampi",
+    "state": "Karnataka",
+    "region": "South",
+    "type": "monument",
+    "era": "medieval",
+    "description": "The boulder-strewn ruins of the Vijayanagara capital — temples, market streets and palace remains spread over a wide landscape.",
+    "descriptionHi": "विजयनगर की राजधानी के विशाल खंडहर — मंदिर, बाज़ार की सड़कें और राजमहल के अवशेष चट्टानों भरे विस्तार में बिखरे हैं।",
+    "lat": 15.3343,
+    "lng": 76.4592,
+    "tags": [
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Hampi",
+        "url": "https://whc.unesco.org/en/list/241/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Ingo Mehling",
+      "license": "CC BY-SA 4.0",
+      "filename": "hampi.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/hampi.jpg",
+        "caption": "Hampi — Hospet",
+        "credit": "Ingo Mehling",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Hampi",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO — Group of Monuments at Hampi (No. 241)",
+      "url": "https://whc.unesco.org/en/list/241/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/241/",
+    "city": "Hospet",
+    "history": "Hampi was the capital of the Vijayanagara Empire, which flourished from the 14th to the 16th century. The site holds temples, market streets, bazaars and palace remains across a landscape of roughly 4,100 hectares. UNESCO listed it as a World Heritage Site in 1986.",
+    "historyHi": "हम्पी विजयनगर साम्राज्य की राजधानी थी, जो 14वीं से 16वीं सदी तक फलती-फूलती रही। इस स्थल पर लगभग 4,100 हेक्टेयर में मंदिर, बाज़ार, मंडियाँ और राजमहल के अवशेष हैं। यूनेस्को ने 1986 में इसे विश्व धरोहर स्थल घोषित किया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "The location sits between the Tungabhadra river and a belt of huge boulders, which made it easy to defend. That combination of water, farmland and natural fortification suited a capital city.",
+        "bodyHi": "यह स्थान तुंगभद्रा नदी और विशाल शिलाओं की पट्टी के बीच है, जिससे इसकी रक्षा करना आसान था। जल, कृषि भूमि और प्राकृतिक क़िलेबंदी का यह संयोजन राजधानी के लिए उपयुक्त था।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "The Vijayanagara rulers developed it over two centuries. Harihara and Bukka founded the empire in the mid-14th century, and much of what survives was built under later kings including Krishnadevaraya.",
+        "bodyHi": "विजयनगर शासकों ने दो शताब्दियों में इसे विकसित किया। हरिहर और बुक्का ने 14वीं सदी के मध्य में साम्राज्य की स्थापना की, और बचे हुए अधिकांश भाग कृष्णदेवराय जैसे बाद के राजाओं के काल में बना।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Look for the stone chariot at the Vittala temple, the musical pillars of its hall, the market streets laid out in a grid, and the Virupaksha temple still in use on Hemakuta hill.",
+        "bodyHi": "विठ्ठल मंदिर का रथ, उसके मंडप के संगीत स्तंभ, जालीदार योजना में बनी बाज़ार सड़कें, और हेमकुटा पहाड़ी पर आज भी चलने वाला विरुपक्ष मंदिर देखें।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "After the Battle of Talikota in 1565 the empire lost the city, which was then sacked and largely abandoned. It fell into ruin and was later surveyed, excavated and protected.",
+        "bodyHi": "1565 की तालिकोटा की लड़ाई के बाद साम्राज्य ने यह शहर खो दिया; उसे लूटा गया और ज़्यादातर ख़ाली कर दिया गया। वह खंडहर में बदल गया, जिसे बाद में सर्वेक्षित, उत्खनित और संरक्षित किया गया।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "The scale of the ruins and the surviving inscriptions make it one of the best-documented ruined capitals in the world, and it remains a living site with temples still in worship.",
+        "bodyHi": "खंडहरों का विस्तार और बचे अभिलेख इसे विश्व की सबसे अच्छी तरह दस्तावेज़ीकृत नष्ट राजधानियों में से एक बनाते हैं; साथ ही यह एक जीवित स्थल भी है जहाँ मंदिरों में पूजा आज भी होती है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Empire",
+        "value": "Vijayanagara"
+      },
+      {
+        "label": "Period",
+        "value": "14th–16th century"
+      },
+      {
+        "label": "Extent",
+        "value": "About 4,100 hectares of ruins"
+      },
+      {
+        "label": "River",
+        "value": "Tungabhadra"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "1986 (No. 241)"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Which empire had Hampi as its capital?",
+        "options": [
+          "Chola",
+          "Vijayanagara",
+          "Maurya",
+          "Mughal"
+        ],
+        "answer": 1,
+        "explain": "Hampi was the capital of the Vijayanagara Empire from the 14th to the 16th century."
+      },
+      {
+        "q": "Which famous stone chariot stands at Hampi?",
+        "options": [
+          "At Konark",
+          "At the Vittala temple",
+          "At Sanchi",
+          "At Mahabalipuram"
+        ],
+        "answer": 1,
+        "explain": "The stone chariot is part of the Vittala temple complex at Hampi."
+      },
+      {
+        "q": "When did Hampi lose its status as a capital?",
+        "options": [
+          "After 1565",
+          "After 1192",
+          "After 1947",
+          "After 1653"
+        ],
+        "answer": 0,
+        "explain": "After the Battle of Talikota in 1565 the city was sacked and largely abandoned."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 241",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO — Group of Monuments at Hampi (No. 241)",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/241/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hampi_-_Hemakuta_Hill%2C_Virupaksha_Temple.jpg/1280px-Hampi_-_Hemakuta_Hill%2C_Virupaksha_Temple.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hampi_-_Hemakuta_Hill%2C_Virupaksha_Temple.jpg/1280px-Hampi_-_Hemakuta_Hill%2C_Virupaksha_Temple.jpg",
+    "nameHi": "हम्पी",
+    "slug": "hampi"
+  },
+  {
+    "id": "meenakshi",
+    "title": "Meenakshi Temple",
+    "state": "Tamil Nadu",
+    "region": "South",
+    "type": "temple",
+    "era": "medieval",
+    "description": "A historic temple in Madurai famous for its towering gopurams covered in thousands of brightly painted sculptures.",
+    "descriptionHi": "मदुरै का ऐतिहासिक मंदिर, जो हज़ारों रंगीन मूर्तियों से सजी ऊँची-ऊँची गोपुरम शिखरों के लिए प्रसिद्ध है।",
+    "lat": 9.920277,
+    "lng": 78.120277,
+    "tags": [
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "Tamil Nadu Tourism",
+        "url": "https://www.tntourism.com"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Richard Mortel",
+      "license": "CC BY 2.0",
+      "filename": "meenakshi.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/meenakshi.jpg",
+        "caption": "Meenakshi Temple — Madurai",
+        "credit": "Richard Mortel",
+        "license": "CC BY 2.0"
+      }
+    ],
+    "sources": [
+      "Tamil Nadu Tourism",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "Tamil Nadu Tourism",
+      "url": "https://www.tntourism.com"
+    },
+    "folkloreNote": null,
+    "govLink": "https://www.tntourism.com",
+    "city": "Madurai",
+    "history": "The temple is dedicated to Goddess Meenakshi, a form of Parvati, and Lord Sundareswarar, a form of Shiva. It has been a major pilgrimage centre for centuries. The structure as it stands today was largely rebuilt and enlarged by the Nayak dynasty in the 16th and 17th centuries, on a much older sacred site.",
+    "historyHi": "यह मंदिर देवी मीनाक्षी (पार्वती का रूप) और भगवान सुंदरेश्वर (शिव का रूप) को समर्पित है। यह सदियों से एक प्रमुख तीर्थस्थल रहा है। आज जो संरचना दिखती है, वह 16वीं-17वीं सदी में नायक वंश द्वारा बहुत पुराने पवित्र स्थान पर पुनर्निर्मित और विस्तारित की गई।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "The temple honours Goddess Meenakshi and Lord Sundareswarar and grew into one of the most important pilgrimage centres of southern India, drawing worshippers for centuries.",
+        "bodyHi": "यह मंदिर देवी मीनाक्षी और भगवान सुंदरेश्वर को समर्पित है और सदियों में दक्षिण भारत के सबसे महत्वपूर्ण तीर्थस्थलों में से एक बन गया।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "The site is far older than the visible buildings. Much of what you see today — the gopurams, the halls and the enclosures — was built or rebuilt under the Nayak dynasty in the 16th and 17th centuries.",
+        "bodyHi": "यह स्थान दिखने वाले भवनों से कहीं पुराना है। आज जो गोपुरम, मंडप और परिखाएँ दिखती हैं, उनका निर्माण या पुनर्निर्माण 16वीं-17वीं सदी में नायक वंश के शासनकाल में हुआ।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Count the towering gopurams — the tallest rise well over 45 metres and are covered in densely packed figures. Inside, look for the thousand-pillared hall and the sacred pool.",
+        "bodyHi": "ऊँचे गोपुरम गिनें — सबसे ऊँचा 45 मीटर से कहीं अधिक ऊँचा है और उस पर घने ढंग से मूर्तियाँ हैं। अंदर हज़ार-स्तंभ मंडप और पवित्र कुंड देखें।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The complex was damaged and rebuilt more than once over the centuries. Later rulers, including the Nayaks and the Marathas, carried out repairs and additions.",
+        "bodyHi": "शताब्दियों में इस परिसर को कई बार क्षति पहुँची और पुनर्निर्माण हुआ। नायकों और मराठों सहित बाद के शासकों ने मरम्मत और विस्तार करवाए।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is an active place of worship and one of the clearest surviving examples of Dravidian temple architecture, with a festival calendar that still structures the life of the city.",
+        "bodyHi": "यह एक सक्रिय आराधना स्थल है और द्रविड़ मंदिर वास्तुकला के स्पष्ट उदाहरणों में से एक; इसका उत्सव-कैलेंडर आज भी शहर की जीवनशैली को दिशा देता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "City",
+        "value": "Madurai, Tamil Nadu"
+      },
+      {
+        "label": "Dedicated to",
+        "value": "Meenakshi and Sundareswarar"
+      },
+      {
+        "label": "Present structure",
+        "value": "Largely Nayak-era, 16th–17th century"
+      },
+      {
+        "label": "Tallest gopuram",
+        "value": "Over 45 metres"
+      },
+      {
+        "label": "UNESCO status",
+        "value": "Tentative List (as part of Madurai)"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Which city is the Meenakshi Temple in?",
+        "options": [
+          "Thanjavur",
+          "Madurai",
+          "Kanchipuram",
+          "Srirangam"
+        ],
+        "answer": 1,
+        "explain": "It stands in Madurai, on the banks of the Vaigai river."
+      },
+      {
+        "q": "What are the tall gateway towers called?",
+        "options": [
+          "Shikharas",
+          "Gopurams",
+          "Toranas",
+          "Stupas"
+        ],
+        "answer": 1,
+        "explain": "Gopurams are the tall, sculpture-covered gateway towers of Dravidian temples."
+      },
+      {
+        "q": "Which dynasty largely rebuilt the present structure?",
+        "options": [
+          "Chola",
+          "Nayak",
+          "Pallava",
+          "Chera"
+        ],
+        "answer": 1,
+        "explain": "Much of the visible temple dates from the Nayak period of the 16th–17th centuries."
+      }
+    ],
+    "isUnesco": false,
+    "isUnescoRef": "The wider 'Historic City of Madurai' is on the UNESCO Tentative List — the temple itself is not inscribed",
+    "isOfficiallyProtected": null,
+    "protectedBy": null,
+    "officialSourceLabel": "Tamil Nadu Tourism",
+    "officialSourceUrl": "https://www.tntourism.com",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Gopuram_of_the_Meenakshi_Temple_at_Madurai.jpg/1280px-Gopuram_of_the_Meenakshi_Temple_at_Madurai.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Gopuram_of_the_Meenakshi_Temple_at_Madurai.jpg/1280px-Gopuram_of_the_Meenakshi_Temple_at_Madurai.jpg",
+    "nameHi": "मीनाक्षी मंदिर",
+    "slug": "meenakshi"
+  },
+  {
+    "id": "charminar",
+    "title": "Charminar",
+    "state": "Telangana",
+    "region": "South",
+    "type": "monument",
+    "era": "medieval",
+    "description": "A 1591 square monument with four grand arches facing the four main roads of Hyderabad's old city.",
+    "descriptionHi": "1591 का चौकोर स्मारक, जिसके चार विशाल मेहराब हैदराबाद के पुराने शहर की चार मुख्य सड़कों की ओर खुलते हैं।",
+    "lat": 17.361111,
+    "lng": 78.474444,
+    "tags": [
+      "islamic"
+    ],
+    "sourceLinks": [
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      },
+      {
+        "label": "UNESCO Tentative List — Qutb Shahi Monuments",
+        "url": "https://whc.unesco.org/en/tentativelists/5573/"
+      }
+    ],
+    "credits": {
+      "photographer": "Rangan Datta Wiki",
+      "license": "CC BY-SA 4.0",
+      "filename": "charminar.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/charminar.jpg",
+        "caption": "Charminar — Hyderabad",
+        "credit": "Rangan Datta Wiki",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "Archaeological Survey of India",
+      "UNESCO Tentative List — Qutb Shahi Monuments"
+    ],
+    "officialSource": {
+      "label": "Archaeological Survey of India",
+      "url": "https://asi.nic.in"
+    },
+    "folkloreNote": null,
+    "govLink": "https://asi.nic.in",
+    "city": "Hyderabad",
+    "history": "The Charminar was built in 1591 by Muhammad Quli Qutb Shah, the fifth sultan of the Qutb Shahi dynasty. Local tradition holds that he raised it to mark the end of a deadly plague. Its four arches open onto the four main roads of the old city. The structure carries the ASI monument number N-AP-78.",
+    "historyHi": "चारमीनार 1591 में क़ुतब शाही वंश के पाँचवें सुल्तान मुहम्मद क़ुली क़ुतब शाह ने बनवाया। स्थानीय परंपरा के अनुसार उन्होंने इसे भयंकर महामारी के समाप्त होने के संकेत के रूप में खड़ा करवाया। इसके चार मेहराब पुराने शहर की चार मुख्य सड़कों की ओर खुलते हैं। संरचना पर एएसआई स्मारक संख्या N-AP-78 अंकित है।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Local tradition says Muhammad Quli Qutb Shah built it to commemorate the end of a devastating plague. Whatever the exact reason, it was placed to anchor the new city he was laying out.",
+        "bodyHi": "स्थानीय परंपरा के अनुसार मुहम्मद क़ुली क़ुतब शाह ने भयंकर महामारी के समाप्त होने की स्मृति में इसे बनवाया। चाहे सही कारण जो भी हो, यह उस नए शहर के केंद्र में रखा गया जिसे वह बसा रहे थे।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Muhammad Quli Qutb Shah, the fifth sultan of the Qutb Shahi dynasty, is credited with commissioning it shortly after he moved his capital to Hyderabad.",
+        "bodyHi": "क़ुतब शाही वंश के पाँचवें सुल्तान मुहम्मद क़ुली क़ुतब शाह को इसका निर्माता माना जाता है, जिन्होंने राजधानी हैदराबाद स्थानांतरित करने के थोड़ी देर बाद इसे बनवाया।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Stand under one of the four grand arches and look up: a mosque sits on the top storey, and four minarets rise from the corners. The square plan and stucco decoration are characteristic of Qutb Shahi building.",
+        "bodyHi": "चार मेहराबों में से किसी एक के नीचे खड़े होकर ऊपर देखें: ऊपरी मंज़िल पर मस्जिद है और कोनों से चार मीनारें उठती हैं। चौकोर योजना और स्टुको सजावट क़ुतब शाही निर्माण की पहचान है।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "A dense market grew up around it, so the monument now sits inside one of the busiest parts of the old city rather than in an open compound. It has survived floods and repeated repairs.",
+        "bodyHi": "इसके चारों ओर घना बाज़ार विकसित हो गया, इसलिए यह स्मारक अब खुले परिसर के बजाय पुराने शहर के सबसे व्यस्त हिस्से के बीच में है। इसने बाढ़ और बार-बार की मरम्मत दोनों सहे।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is the visual symbol of Hyderabad and one of the few surviving monuments of the Qutb Shahi capital, still standing at the heart of a living old city.",
+        "bodyHi": "यह हैदराबाद का दृश्य प्रतीक है और क़ुतब शाही राजधानी के जीवित बचे गिने-चुने स्मारकों में से एक, जो आज भी एक जीवंत पुराने शहर के केंद्र में खड़ा है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "1591"
+      },
+      {
+        "label": "Builder",
+        "value": "Muhammad Quli Qutb Shah"
+      },
+      {
+        "label": "Structure",
+        "value": "Four arches, four minarets, mosque on top"
+      },
+      {
+        "label": "ASI monument no.",
+        "value": "N-AP-78"
+      },
+      {
+        "label": "UNESCO status",
+        "value": "Tentative List (Qutb Shahi Monuments)"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "In which year was the Charminar built?",
+        "options": [
+          "1519",
+          "1591",
+          "1653",
+          "1739"
+        ],
+        "answer": 1,
+        "explain": "It was built in 1591 by Muhammad Quli Qutb Shah."
+      },
+      {
+        "q": "How many arches open onto the main roads?",
+        "options": [
+          "Two",
+          "Three",
+          "Four",
+          "Six"
+        ],
+        "answer": 2,
+        "explain": "Four grand arches face the four main roads of the old city — hence 'Charminar'."
+      },
+      {
+        "q": "What sits on the top storey?",
+        "options": [
+          "A museum",
+          "A mosque",
+          "A palace hall",
+          "A clock"
+        ],
+        "answer": 1,
+        "explain": "A mosque occupies the top storey of the Charminar."
+      }
+    ],
+    "isUnesco": false,
+    "isUnescoRef": "Part of the Qutb Shahi Monuments on the UNESCO Tentative List — not inscribed",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India — monument N-AP-78",
+    "officialSourceLabel": "Archaeological Survey of India",
+    "officialSourceUrl": "https://asi.nic.in",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Char_Minar_1.jpg/1280px-Char_Minar_1.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Char_Minar_1.jpg/1280px-Char_Minar_1.jpg",
+    "nameHi": "चारमीनार",
+    "slug": "charminar"
+  },
+  {
+    "id": "ajanta",
+    "title": "Ajanta Caves",
+    "state": "Maharashtra",
+    "region": "West",
+    "type": "cave",
+    "era": "ancient",
+    "description": "Thirty rock-cut Buddhist caves whose murals and sculpture rank among the finest surviving examples of ancient Indian art.",
+    "descriptionHi": "तीस रॉक-कट बौद्ध गुफाएँ, जिनकी भित्तिचित्र और मूर्तियाँ प्राचीन भारतीय कला के श्रेष्ठ बचे उदाहरणों में गिनी जाती हैं।",
+    "lat": 20.552836,
+    "lng": 75.700636,
+    "tags": [
+      "buddhist"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Ajanta Caves",
+        "url": "https://whc.unesco.org/en/list/242/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Biswas Dibyendu",
+      "license": "CC0 — no credit required",
+      "filename": "ajanta.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/ajanta.jpg",
+        "caption": "Ajanta Caves — Aurangabad",
+        "credit": "Biswas Dibyendu",
+        "license": "CC0 — no credit required"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Ajanta Caves",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO — Ajanta Caves (No. 242)",
+      "url": "https://whc.unesco.org/en/list/242/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/242/",
+    "city": "Aurangabad",
+    "history": "The caves were carved in two main phases: the first beginning around the 2nd century BCE, the second around the 5th–6th century CE. They served as monasteries and prayer halls for Buddhist monks. UNESCO inscribed them as a World Heritage Site in 1983.",
+    "historyHi": "गुफाएँ दो मुख्चरणों में बनीं: पहला लगभग ईसा-पूर्व दूसरी शताब्दी से, दूसरा लगभग छठी-सातवीं शताब्दी ईस्वी से। ये बौद्ध भिक्षुओं के विहार और प्रार्थना-स्थल थीं। यूनेस्को ने 1983 में इन्हें विश्व धरोहर स्थल घोषित किया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "The caves were cut into a horseshoe-shaped cliff so monks would have quiet places to live, study and pray through the monsoon. Patronage came from rulers and wealthy merchants who gained merit by funding them.",
+        "bodyHi": "गुफाएँ घोड़े की नाल जैसी चट्टान में काटी गईं ताकि भिक्षुओं को मानसून में रहने, पढ़ने और पूजा करने के शांत स्थान मिलें। शासकों और धनी व्यापारियों ने धन देकर पुण्य अर्जित किया।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "They were sponsored over several centuries by different dynasties, including the Satavahanas in the earlier phase and the Vakatakas in the later one. Inscriptions record some of these donors.",
+        "bodyHi": "इन्हें कई शताब्दियों में अलग-अलग वंशों ने प्रायोजित किया — पहले चरण में शातवाहनों ने, बाद के चरण में वाकाटकों ने। कुछ दानदाताओं के अभिलेख मिलते हैं।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Look for the tall chaitya arches that imitate timber roofs in stone, the viharas with rows of cells, and the painted ceilings — including the Padmapani bodhisattva in Cave 1.",
+        "bodyHi": "लकड़ी की छत को पत्थर में दोहराते ऊँचे चैत्य-मेहराब, कोठरियों की पंक्तियों वाले विहार, और चित्रित छतें देखें — गुफ़ा 1 में पद्मपाणि बोधिसत्त्व विशेष रूप से उल्लेखनीय है।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The caves were abandoned and overgrown, then lost to memory for centuries. They were rediscovered in 1819 by a British hunting party, after which they were surveyed, photographed and conserved.",
+        "bodyHi": "गुफाएँ छोड़ दी गईं और जंगल से ढक गईं, फिर शताब्दियों तक भुला दी गईं। 1819 में एक ब्रिटिश शिकार दल ने इनकी फिर से खोज की, जिसके बाद इनका सर्वेक्षण, छायांकन और संरक्षण हुआ।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "The murals are among the earliest surviving examples of Indian painting, and the caves document how Buddhist art and architecture travelled across the subcontinent.",
+        "bodyHi": "ये भित्तिचित्र भारतीय चित्रकला के जीवित बचे सबसे प्रारंभिक उदाहरणों में हैं, और ये गुफाएँ बताती हैं कि बौद्ध कला और वास्तुकला उपमहाद्वीप में कैसे फैली।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Number of caves",
+        "value": "30 (numbered 1–30)"
+      },
+      {
+        "label": "First phase",
+        "value": "Around 2nd–1st century BCE"
+      },
+      {
+        "label": "Second phase",
+        "value": "Around 5th–6th century CE"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "1983 (No. 242)"
+      },
+      {
+        "label": "Rediscovered",
+        "value": "1819"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "What were the Ajanta caves originally used for?",
+        "options": [
+          "Royal granaries",
+          "Monasteries and prayer halls",
+          "Mines",
+          "Fortifications"
+        ],
+        "answer": 1,
+        "explain": "They served as Buddhist viharas — places to live, study and pray."
+      },
+      {
+        "q": "In which year were they rediscovered?",
+        "options": [
+          "1619",
+          "1819",
+          "1919",
+          "1847"
+        ],
+        "answer": 1,
+        "explain": "A British hunting party came across them in 1819."
+      },
+      {
+        "q": "Which famous painted figure is in Cave 1?",
+        "options": [
+          "Padmapani bodhisattva",
+          "Ashoka",
+          "Nataraja",
+          "Hanuman"
+        ],
+        "answer": 0,
+        "explain": "The Padmapani bodhisattva holding a lotus is one of Ajanta's best-known paintings."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 242",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO — Ajanta Caves (No. 242)",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/242/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Ajanta_Caves_Exterior_View-59.jpg/1280px-Ajanta_Caves_Exterior_View-59.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Ajanta_Caves_Exterior_View-59.jpg/1280px-Ajanta_Caves_Exterior_View-59.jpg",
+    "nameHi": "अजंठा गुफाएँ",
+    "slug": "ajanta"
+  },
+  {
+    "id": "rani-ki-vav",
+    "title": "Rani Ki Vav",
+    "state": "Gujarat",
+    "region": "West",
+    "type": "stepwell",
+    "era": "medieval",
+    "description": "An 11th-century stepwell in Patan that descends seven levels and is covered with hundreds of sculpted panels.",
+    "descriptionHi": "पाटन की 11वीं सदी की बावड़ी, जो सात मंज़िल नीचे उतरती है और सैकड़ों खोदी गई मूर्तिपट्टियों से सुसज्जित है।",
+    "lat": 23.858997,
+    "lng": 72.10175,
+    "tags": [
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Rani-ki-Vav",
+        "url": "https://whc.unesco.org/en/list/922/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0",
+      "filename": "rani-ki-vav.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/rani-ki-vav.jpg",
+        "caption": "Rani Ki Vav — Patan",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Rani-ki-Vav",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO — Rani-ki-Vav (No. 922)",
+      "url": "https://whc.unesco.org/en/list/922/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/922/",
+    "city": "Patan",
+    "history": "Rani Ki Vav was built in the 11th century by Queen Udayamati as a memorial to her husband, King Bhima I of the Chaulukya dynasty. It descends seven levels and carries more than 500 principal sculptures. The Saraswati river silted it up, and the Archaeological Survey of India excavated it in 1963. UNESCO listed it in 2014.",
+    "historyHi": "रानी की बावड़ी 11वीं सदी में रानी उदयमती ने अपने पति चौलुक्य वंश के राजा भीम प्रथम की स्मृति में बनवाई। यह सात मंज़िल नीचे उतरती है और इसमें 500 से अधिक प्रमुख मूर्तियाँ हैं। सरस्वती नदी ने इसे मिट्टी से ढक दिया; एएसआई ने 1963 में इसका उत्खनन किया। यूनेस्को ने 2014 में इसे सूचीबद्ध किया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "It was built as a memorial by Queen Udayamati to her husband, King Bhima I. Stepwells were also practical — they gave water in a dry region — so a memorial here doubled as public infrastructure.",
+        "bodyHi": "रानी उदयमती ने अपने पति राजा भीम प्रथम की स्मृति में इसे बनवाया। बावड़ियाँ व्यावहारिक भी थीं — सूखे क्षेत्र में ये जल देती थीं — इसलिए यहाँ का स्मारक सार्वजनिक सुविधा भी बन गया।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Queen Udayamati commissioned it during the Chaulukya, or Solanki, rule over Gujarat. Sculptors and craftsmen of the period carved the panels in red and yellow sandstone.",
+        "bodyHi": "रानी उदयमती ने गुजरात पर चौलुक्य (सोलंकी) शासन के दौरान इसे बनवाया। उस काल के शिल्पकारों ने लाल और पीले बलुआ पत्थर में पट्टियाँ खोदीं।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Follow the descent level by level and read the walls like a storybook: Vishnu in his different forms, Durga, celestial dancers and long rows of geometric and floral panels.",
+        "bodyHi": "एक-एक मंज़िल उतरते हुए दीवारों को कहानी की तरह पढ़ें: विष्णु के विभिन्न रूप, दुर्गा, अप्सराएँ और ज्यामितीय व पुष्प-पट्टियों की लंबी कतारें।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The Saraswati river changed course and flooded the stepwell, burying it under silt for centuries. That burial actually protected the sculpture. The ASI excavated it in 1963.",
+        "bodyHi": "सरस्वती नदी का मार्ग बदला और उसने बावड़ी में जल भर दिया, जिससे वह शताब्दियों तक मिट्टी के नीचे दबी रही। यही दबाव मूर्तियों की रक्षा बना। एएसआई ने 1963 में इसका उत्खनन किया।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is considered one of the finest stepwells in India, and it shows how a water structure could also be a work of art. It became a UNESCO World Heritage Site in 2014.",
+        "bodyHi": "यह भारत की सबसे उत्कृष्ट बावड़ियों में गिनी जाती है और दिखाती है कि जल-संरचना कलाकृति भी हो सकती है। 2014 में यह यूनेस्को विश्व धरोहर स्थल बनी।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "11th century"
+      },
+      {
+        "label": "Built by",
+        "value": "Queen Udayamati"
+      },
+      {
+        "label": "Levels",
+        "value": "Seven"
+      },
+      {
+        "label": "Principal sculptures",
+        "value": "More than 500"
+      },
+      {
+        "label": "Excavated",
+        "value": "1963, by ASI"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "2014 (No. 922)"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Who commissioned Rani Ki Vav?",
+        "options": [
+          "Queen Udayamati",
+          "Emperor Ashoka",
+          "Shah Jahan",
+          "Krishnadevaraya"
+        ],
+        "answer": 0,
+        "explain": "Queen Udayamati built it as a memorial to her husband, King Bhima I."
+      },
+      {
+        "q": "How many levels does it descend?",
+        "options": [
+          "Three",
+          "Five",
+          "Seven",
+          "Nine"
+        ],
+        "answer": 2,
+        "explain": "It goes down seven levels."
+      },
+      {
+        "q": "Why did the sculptures survive so well?",
+        "options": [
+          "They were marble",
+          "They were buried under silt",
+          "They were rebuilt in 2014",
+          "They were underground vaults"
+        ],
+        "answer": 1,
+        "explain": "Flood silt buried and sealed the stepwell, which protected the carvings until excavation in 1963."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 922",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO — Rani-ki-Vav (No. 922)",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/922/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Rani_ki_vav_12.jpg/1280px-Rani_ki_vav_12.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Rani_ki_vav_12.jpg/1280px-Rani_ki_vav_12.jpg",
+    "nameHi": "रानी की बावड़ी",
+    "slug": "rani-ki-vav"
+  },
+  {
+    "id": "konark",
+    "title": "Konark Sun Temple",
+    "state": "Odisha",
+    "region": "East",
+    "type": "temple",
+    "era": "medieval",
+    "description": "A 13th-century temple shaped like the Sun God's chariot, with 24 carved wheels that also work as sundials.",
+    "descriptionHi": "13वीं सदी का वह मंदिर जो सूर्य देव के रथ के रूप में बना है, जिसके 24 चक्र सूर्यघड़ी का भी काम करते हैं।",
+    "lat": 19.8871,
+    "lng": 86.0932,
+    "tags": [
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Sun Temple, Konarak",
+        "url": "https://whc.unesco.org/en/list/246/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Ankur Panchbudhe",
+      "license": "CC BY 2.0",
+      "filename": "konark.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/konark.jpg",
+        "caption": "Konark Sun Temple — Konark",
+        "credit": "Ankur Panchbudhe",
+        "license": "CC BY 2.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Sun Temple, Konarak",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO — Sun Temple, Konarak (No. 246)",
+      "url": "https://whc.unesco.org/en/list/246/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/246/",
+    "city": "Konark",
+    "history": "The Konark Sun Temple was built in the 13th century under the Eastern Ganga dynasty of Odisha as a temple to Surya, the Sun God. It is designed as the god's chariot, with 24 carved wheels and seven horses. The main sanctum collapsed centuries ago; the surviving assembly hall was stabilised in later conservation work. UNESCO listed it in 1984.",
+    "historyHi": "कोणार्क सूर्य मंदिर 13वीं सदी में ओडिशा के पूर्वी गंगा वंश के शासनकाल में सूर्य देव को समर्पित बनाया गया। यह देवता के रथ के रूप में बना है, जिसमें 24 चक्र और सात घोड़े हैं। मुख्य गर्भगृह शताब्दियों पहले गिर गया; बचा मंडप बाद के संरक्षण कार्य में स्थिर किया गया। यूनेस्को ने 1984 में इसे सूचीबद्ध किया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "It was built as a temple to Surya, the Sun God. Placing a temple on the sea-facing shore let the first rays of the sun reach the deity — and showed off the dynasty's power.",
+        "bodyHi": "इसे सूर्य देव को समर्पित मंदिर के रूप में बनाया गया। समुद्र की ओर खुले तट पर मंदिर रखने से सूर्य की पहली किरणें देवता तक पहुँचती थीं — और वंश की शक्ति भी झलकती थी।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "It was built under the Eastern Ganga dynasty, which ruled Odisha at the time. Traditional accounts name a Ganga king as the patron, though sources differ on exactly which one.",
+        "bodyHi": "इसे पूर्वी गंगा वंश ने बनवाया, जिसका उस समय ओडिशा पर शासन था। पारंपरिक विवरणों में किसी गंगा राजा को प्रायोजक बताया गया है, पर स्रोत किसी एक राजा पर सहमत नहीं हैं।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Count the 24 wheels — their spokes and rims can be read as a sundial. Then look for the seven horses and the long narrative bands of sculpture, including musicians, dancers and everyday life.",
+        "bodyHi": "24 चक्र गिनें — इनकी तिक्की और धुरी को सूर्यघड़ी की तरह पढ़ा जा सकता है। फिर सात घोड़ों और संगीतकारों, नर्तकों तथा रोज़मर्रा के जीवन वाली लंबी कथा-पट्टियों को देखें।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The main sanctum collapsed, most likely from structural failure and storm damage, centuries ago. What survives is largely the assembly hall, which has since been repaired and partly filled to keep it standing.",
+        "bodyHi": "मुख्य गर्भगृह शताब्दियों पहले संरचनात्मक कमज़ोरी और तूफ़ान से गिर गया। जो बचा है वह मुख्यतः मंडप है, जिसकी मरम्मत की गई और खड़ा रखने के लिए उसे आंशिक रूप से भर दिया गया।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is a UNESCO World Heritage Site, the venue of the annual Konark Dance Festival, and a benchmark for Odisha's temple sculpture.",
+        "bodyHi": "यह यूनेस्को विश्व धरोहर स्थल है, वार्षिक कोणार्क नृत्य महोत्सव का आयोजन-स्थल है, और ओडिशा की मंदिर-शिल्प का मानक मानी जाती है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "13th century"
+      },
+      {
+        "label": "Form",
+        "value": "Sun God's chariot"
+      },
+      {
+        "label": "Wheels",
+        "value": "24, doubling as sundials"
+      },
+      {
+        "label": "Horses",
+        "value": "Seven"
+      },
+      {
+        "label": "Dynasty",
+        "value": "Eastern Ganga"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "1984 (No. 246)"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "What shape is the Konark temple designed as?",
+        "options": [
+          "A lotus",
+          "The Sun God's chariot",
+          "A stupa",
+          "A fortress"
+        ],
+        "answer": 1,
+        "explain": "It is built as Surya's chariot, complete with wheels and horses."
+      },
+      {
+        "q": "How many carved wheels are there?",
+        "options": [
+          "Seven",
+          "Twelve",
+          "Twenty-four",
+          "Thirty-two"
+        ],
+        "answer": 2,
+        "explain": "There are 24 wheels, and their spokes can be read as a sundial."
+      },
+      {
+        "q": "Which dynasty built it?",
+        "options": [
+          "Eastern Ganga",
+          "Chandela",
+          "Chola",
+          "Rajput Sisodia"
+        ],
+        "answer": 0,
+        "explain": "It was built under the Eastern Ganga dynasty of Odisha in the 13th century."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 246",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO — Sun Temple, Konarak (No. 246)",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/246/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Konark_Sun_Temple_wheel.jpg/1280px-Konark_Sun_Temple_wheel.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Konark_Sun_Temple_wheel.jpg/1280px-Konark_Sun_Temple_wheel.jpg",
+    "nameHi": "कोणार्क सूर्य मंदिर",
+    "slug": "konark"
+  },
+  {
+    "id": "sanchi",
+    "title": "Sanchi Stupa",
+    "state": "Madhya Pradesh",
+    "region": "Central",
+    "type": "monument",
+    "era": "ancient",
+    "description": "One of India's oldest stone structures, with a Great Stupa commissioned by Emperor Ashoka in the 3rd century BCE.",
+    "descriptionHi": "भारत की सबसे प्राचीन स्थापत्य संरचनाओं में से एक, जिसका महास्तूप सम्राट अशोक ने ईसा-पूर्तिशताब्दी में बनवाया।",
+    "lat": 23.479478,
+    "lng": 77.739058,
+    "tags": [
+      "buddhist"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Sanchi",
+        "url": "https://whc.unesco.org/en/list/524/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0",
+      "filename": "sanchi.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/sanchi.jpg",
+        "caption": "Sanchi Stupa — Sanchi",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Sanchi",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO — Buddhist Monuments at Sanchi (No. 524)",
+      "url": "https://whc.unesco.org/en/list/524/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/524/",
+    "city": "Sanchi",
+    "history": "The Great Stupa at Sanchi was commissioned by Emperor Ashoka in the 3rd century BCE to house Buddhist relics. It was later enlarged, and four elaborately carved gateways — toranas — were added in the centuries that followed. The site fell into disuse and was excavated in the 19th century. UNESCO listed it in 1989.",
+    "historyHi": "सांची का महास्तूप सम्राट अशोक ने ईसा-पूर्तिशताब्दी में बौद्ध अवशेषों की रक्षा के लिए बनवाया। बाद में इसका विस्तार हुआ और चार सुंदर नक्काशीदार द्वार (तोरण) जुड़े। यह स्थल उपेक्षित हो गया और 19वीं सदी में उत्खनित हुआ। यूनेस्को ने 1989 में इसे सूचीबद्ध किया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Ashoka had the Great Stupa built to enshrine relics of the Buddha. A stupa is a mound that marks a sacred place — walking around it is itself an act of devotion.",
+        "bodyHi": "अशोक ने बुद्ध के अवशेषों को रखने के लिए महास्तूप बनवाया। स्तूप एक टीला है जो पवित्र स्थान का चिह्न है — उसकी परिक्रमा करना ही भक्ति का एक रूप है।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Ashoka started it. Later dynasties, including the Satavahanas, enlarged it and added the four carved toranas, funded by merchants, monks and ordinary donors whose names appear in inscriptions.",
+        "bodyHi": "अशोक ने इसकी शुरुआत की। बाद में शातवाहनों सहित अन्य वंशों ने इसका विस्तार किया और चार नक्काशीदार तोरण जोड़े; व्यापारियों, भिक्षुओं और साधारण दानदाताओं ने धन दिया, जिनके नाम अभिलेखों में मिलते हैं।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Read the four toranas like picture books — each band tells episodes from the Buddha's life, often showing him through symbols such as a footprint or an empty throne rather than in human form.",
+        "bodyHi": "चार तोरणों को चित्र-पुस्तक की तरह पढ़ें — हर पट्टी बुद्ध के जीवन के दृश्य कहती है, जहाँ उन्हें अक्सर मनुष्य रूप में नहीं, बल्कि पदचिह्न या खाली सिंहासन जैसे प्रतीकों से दर्शाया गया है।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The stupa was enlarged at least twice as Buddhism's patrons changed. The site then fell out of use, was covered by vegetation, and was excavated by archaeologists in the 19th century.",
+        "bodyHi": "बौद्ध धर्म के संरक्षक बदलने के साथ स्तूप को कम से कम दो बार बढ़ाया गया। बाद में यह स्थल उपेक्षित हो गया, वनस्पति से ढक गया, और 19वीं सदी में पुरातत्वविदों ने इसका उत्खनन किया।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is one of the oldest stone structures in India and the best place to see how early Buddhist art developed into the narrative sculpture we recognise today.",
+        "bodyHi": "यह भारत की सबसे प्राचीन पत्थर संरचनाओं में से है और यह देखने का सबसे अच्छा स्थान है कि प्रारंभिक बौद्ध कला आज की कथा-शैली की मूर्तिकला में कैसे विकसित हुई।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Great Stupa begun",
+        "value": "3rd century BCE, by Ashoka"
+      },
+      {
+        "label": "Carved gateways",
+        "value": "Four toranas"
+      },
+      {
+        "label": "Excavated",
+        "value": "19th century"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "1989 (No. 524)"
+      },
+      {
+        "label": "State",
+        "value": "Madhya Pradesh"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Who commissioned the Great Stupa at Sanchi?",
+        "options": [
+          "Emperor Ashoka",
+          "Shah Jahan",
+          "Krishnadevaraya",
+          "Qutb-ud-din Aibak"
+        ],
+        "answer": 0,
+        "explain": "Ashoka had it built in the 3rd century BCE to enshrine Buddhist relics."
+      },
+      {
+        "q": "How many carved toranas surround it?",
+        "options": [
+          "Two",
+          "Three",
+          "Four",
+          "Eight"
+        ],
+        "answer": 2,
+        "explain": "Four elaborately carved gateways stand at the cardinal points."
+      },
+      {
+        "q": "How is the Buddha usually shown on them?",
+        "options": [
+          "Only in human form",
+          "Through symbols like a footprint",
+          "As a horse",
+          "Not at all"
+        ],
+        "answer": 1,
+        "explain": "Early Buddhist art often used symbols — a footprint, an empty throne — rather than a human image."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 524",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO — Buddhist Monuments at Sanchi (No. 524)",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/524/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Stupa_1%2C_Sanchi_02.jpg/1280px-Stupa_1%2C_Sanchi_02.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Stupa_1%2C_Sanchi_02.jpg/1280px-Stupa_1%2C_Sanchi_02.jpg",
+    "nameHi": "सांची स्तूप",
+    "slug": "sanchi"
+  },
+  {
+    "id": "khajuraho",
+    "title": "Khajuraho Temples",
+    "state": "Madhya Pradesh",
+    "region": "Central",
+    "type": "temple",
+    "era": "medieval",
+    "description": "A group of Hindu and Jain temples built by the Chandela dynasty between the 10th and 12th centuries.",
+    "descriptionHi": "10वीं से 12वीं सदी के बीच चंदेल वंश द्वारा निर्मित हिंदू और जैन मंदिरों का समूह।",
+    "lat": 24.8318,
+    "lng": 79.9199,
+    "tags": [
+      "hindu",
+      "jain"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Khajuraho",
+        "url": "https://whc.unesco.org/en/list/240/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in"
+      }
+    ],
+    "credits": {
+      "photographer": "Rajenver",
+      "license": "CC BY-SA 3.0",
+      "filename": "khajuraho.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/khajuraho.jpg",
+        "caption": "Khajuraho Temples — Chhatarpur",
+        "credit": "Rajenver",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Khajuraho",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO — Khajuraho Group of Monuments (No. 240)",
+      "url": "https://whc.unesco.org/en/list/240/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/240/",
+    "city": "Chhatarpur",
+    "history": "The Khajuraho temples were built by the Chandela dynasty between the 10th and 12th centuries. The Kandariya Mahadeva temple is the largest and is covered with carved deities, dancers and celestial figures. Only about twenty of an original group of roughly eighty-five temples survive. UNESCO listed them in 1986.",
+    "historyHi": "खजुराहो के मंदिर 10वीं से 12वीं सदी के बीच चंदेल वंश ने बनवाए। कंदारिया महादेव मंदिर सबसे बड़ा है और उस पर देवता, नर्तक व स्वर्गीय आकृतियाँ खुदी हैं। लगभग 85 मंदिरों के समूह में से केवल लगभग बीस बचे हैं। यूनेस्को ने 1986 में इन्हें सूचीबद्ध किया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "The Chandela kings built a large group of temples as royal and religious monuments. Temples of this scale advertised a dynasty's piety, wealth and permanence.",
+        "bodyHi": "चंदेल राजाओं ने राजसी व धार्मिक स्मारकों के रूप में मंदिरों का एक बड़ा समूह बनवाया। इतने बड़े मंदिर किसी वंश की भक्ति, संपन्नता और स्थायित्व को दर्शाते थे।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "The Chandela dynasty. Several of the surviving temples carry inscriptions naming their donors and the years they were dedicated.",
+        "bodyHi": "चंदेल वंश ने। बचे कई मंदिरों पर अभिलेख हैं जिनमें दानदाताओं के नाम और समर्पण के वर्ष अंकित हैं।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Look at the Kandariya Mahadeva temple's stepped mountain shape, then read the horizontal bands of sculpture from bottom to top — gods, dancers, celestial women and animals, in ever-tighter groupings.",
+        "bodyHi": "कंदारिया महादेव मंदिर की सीढ़ीनुमा पर्वताकार ऊँचाई देखें, फिर खड़ी मूर्ति-पट्टियों को नीचे से ऊपर तक पढ़ें — देवता, नर्तक, स्वर्गीय नारियाँ और जानवर, लगातार घने होते समूहों में।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "Most of the original temples were lost over time. The site was rediscovered in 1838 by a British surveyor, and later cleared, surveyed and protected.",
+        "bodyHi": "मूल मंदिरों में से अधिकांश समय के साथ नष्ट हो गए। 1838 में एक ब्रिटिश सर्वेक्षक ने इस स्थल की फिर से खोज की, जिसके बाद इसे साफ़, सर्वेक्षित और संरक्षित किया गया।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is the best-known surviving example of Chandela temple architecture and a UNESCO World Heritage Site, still studied for its sculpture and its planning.",
+        "bodyHi": "यह चंदेल मंदिर वास्तुकला का सबसे प्रसिद्ध जीवित उदाहरण और यूनेस्को विश्व धरोहर स्थल है, जहाँ की शिल्प और योजना आज भी अध्ययन का विषय है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "10th–12th century"
+      },
+      {
+        "label": "Dynasty",
+        "value": "Chandela"
+      },
+      {
+        "label": "Surviving temples",
+        "value": "About 20 of roughly 85"
+      },
+      {
+        "label": "Largest",
+        "value": "Kandariya Mahadeva"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "1986 (No. 240)"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Which dynasty built the Khajuraho temples?",
+        "options": [
+          "Chandela",
+          "Chola",
+          "Gupta",
+          "Mughal"
+        ],
+        "answer": 0,
+        "explain": "The Chandela dynasty built them between the 10th and 12th centuries."
+      },
+      {
+        "q": "Roughly how many of the original temples survive?",
+        "options": [
+          "About 5",
+          "About 20",
+          "About 50",
+          "About 85"
+        ],
+        "answer": 1,
+        "explain": "About twenty survive out of an original group of roughly eighty-five."
+      },
+      {
+        "q": "Which is the largest temple there?",
+        "options": [
+          "Kandariya Mahadeva",
+          "Virupaksha",
+          "Brihadeeswarar",
+          "Sun Temple"
+        ],
+        "answer": 0,
+        "explain": "The Kandariya Mahadeva temple is the largest and most elaborately carved."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 240",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO — Khajuraho Group of Monuments (No. 240)",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/240/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Khajuraho_India%2C_Kandariya_Mahadev_Temple_Sculpture.JPG/1280px-Khajuraho_India%2C_Kandariya_Mahadev_Temple_Sculpture.JPG",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Khajuraho_India%2C_Kandariya_Mahadev_Temple_Sculpture.JPG/1280px-Khajuraho_India%2C_Kandariya_Mahadev_Temple_Sculpture.JPG",
+    "nameHi": "खजुराहो मंदिर",
+    "slug": "khajuraho"
+  },
+  {
+    "id": "red-fort",
+    "title": "Red Fort",
+    "state": "Delhi",
+    "region": "North",
+    "type": "fort",
+    "era": "mughal",
+    "description": "The red sandstone fortress of Shahjahanabad, the walled city Shah Jahan built as the new Mughal capital.",
+    "descriptionHi": "लाल बलुआ पत्थर का यह क़िला शाहजहानाबाद का हिस्सा है — नए मुग़ल राजधानी के रूप में शाहजहाँ ने जो शहर बसाया था।",
+    "lat": 28.656195,
+    "lng": 77.24103,
+    "tags": [
+      "islamic"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Red Fort Complex (No. 231)",
+        "url": "https://whc.unesco.org/en/list/231/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "filename": "red-fort.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/red-fort.jpg",
+        "caption": "Red Fort — Delhi",
+        "credit": "Jakub Hałun",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Red Fort Complex (No. 231)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/231/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/231/",
+    "city": "Delhi",
+    "history": "Shah Jahan moved the Mughal capital from Agra to Delhi and built Shahjahanabad around 1638–1648, with the Red Fort as its ceremonial heart. Inside are the Diwan-i-Am (hall of public audience), the Diwan-i-Khas (hall of private audience), the Rang Mahal and the Moti Masjid. The complex combines Persian palace planning with Indian building craft, and its red sandstone gave the older name Lal Qila its English form.",
+    "historyHi": "शाहजहाँ ने मुग़ल राजधानी आगरा से दिल्ली स्थानांतरित की और लगभग 1638–1648 में शाहजहानाबाद बसाया, जिसका केंद्र यह लालक़िला था। इसके भीतर दीवान-ए-आम, दीवान-ए-ख़ास, रंग महल और मोती मस्जिद हैं। यह परिसर फ़ारसी राजमहल योजना और भारतीय शिल्प का मेल है, और इसके लाल बलुआ पत्थर से ही इसे अंग्रेज़ी में Red Fort कहा गया।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Akbar had ruled from Agra and later from Fatehpur Sikri. Shah Jahan wanted a capital of his own, on the Yamuna, where he could build a planned city rather than inherit one. Shahjahanabad was that city, and the fort was its centre.",
+        "bodyHi": "अकबर आगरा और बाद में फ़तेहपुर सीकरी से शासन करते थे। शाहजहाँ को यमुना किनारे अपनी एक नई राजधानी चाहिए थी, जहाँ वे योजनाबद्ध शहर बना सकें, जो विरासत में न मिला हो। शाहजहानाबाद वही शहर था और यह क़िला उसका केंद्र।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Shah Jahan commissioned it. The fort's planning is credited to Mughal court architects working in a Persianate tradition, but the labour, stone and craft came from across northern India.",
+        "bodyHi": "इसका निर्माण शाहजहाँ ने करवाया। क़िले की योजना मुग़ल दरबार के वास्तुकारों को श्रेय दी जाती है, लेकिन श्रम, पत्थर और शिल्प पूरे उत्तर भारत से आया।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Look for the Lahori Gate and the bazaar avenue that once ran from it. Inside, the Diwan-i-Am uses rows of scalloped arches on a raised platform, and the Diwan-i-Khas held the famous Peacock Throne. The pavilions use red sandstone with white marble inlay rather than solid marble.",
+        "bodyHi": "लाहौरी दरवाज़ा और उससे जुड़ा बाज़ार-मार्ग देखें। भीतर, दीवान-ए-आम में उठे हुए चबूतरे पर कटे हुए मेहराबों की कतारें हैं, और दीवान-ए-ख़ास में मशहूर मोर सिंहासन रखा था। यहाँ लाल बलुआ पत्थर पर सफ़ेद संगमरमर की जड़ाई की गई है।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "After the Mughals, the fort passed to the Marathas, then to the British, who stripped much of its interior fittings and removed valuable material. Several marble pavilions were altered in the 19th century. Conservation by the Archaeological Survey of India followed independence.",
+        "bodyHi": "मुग़लों के बाद क़िला मराठों के पास गया, फिर ब्रिटिशों के पास, जिन्होंने इसके भीतरी सजावट का बड़ा हिस्सा हटा दिया और मूल्यवान सामान निकाल लिया। 19वीं सदी में कई संगमरमर मंडप बदले गए। स्वतंत्रता के बाद भारतीय पुरातत्व सर्वेक्षण ने संरक्षण किया।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "The Prime Minister raises the national flag here each Independence Day, which keeps the fort at the centre of public life. It also anchors a dense archaeological landscape along the Yamuna that includes Salimgarh and the nearby Shahjahanabad streets.",
+        "bodyHi": "हर स्वतंत्रता दिवस पर प्रधानमंत्री यहाँ राष्ट्रध्वज फहराते हैं, जिससे यह क़िला जनजीवन के केंद्र में बना रहता है। यह यमुना किनारे सलीमगढ़ और शाहजहानाबाद की गलियों समेत पूरे पुरातात्विक परिदृश्य का आधार भी है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "c. 1638–1648"
+      },
+      {
+        "label": "Commissioned by",
+        "value": "Shah Jahan"
+      },
+      {
+        "label": "Also called",
+        "value": "Lal Qila"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 231"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Which emperor moved the Mughal capital to Delhi and built the Red Fort?",
+        "options": [
+          "Akbar",
+          "Jahangir",
+          "Shah Jahan",
+          "Aurangzeb"
+        ],
+        "answer": 2,
+        "explain": "Shah Jahan founded Shahjahanabad and built the Red Fort as its centre."
+      },
+      {
+        "q": "Which hall inside the fort was used for public audience?",
+        "options": [
+          "Diwan-i-Am",
+          "Diwan-i-Khas",
+          "Rang Mahal",
+          "Moti Masjid"
+        ],
+        "answer": 0,
+        "explain": "The Diwan-i-Am was the hall of public audience, where the emperor appeared before ordinary petitioners."
+      },
+      {
+        "q": "What gives the fort its common name?",
+        "options": [
+          "Its gold domes",
+          "Its red sandstone walls",
+          "Its moat",
+          "Its white marble"
+        ],
+        "answer": 1,
+        "explain": "The walls are built of red sandstone, hence Lal Qila — the Red Fort."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 231",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/231/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/20191203_Czerwony_Fort_w_Delhi_0528_6405_DxO.jpg/1280px-20191203_Czerwony_Fort_w_Delhi_0528_6405_DxO.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/20191203_Czerwony_Fort_w_Delhi_0528_6405_DxO.jpg/1280px-20191203_Czerwony_Fort_w_Delhi_0528_6405_DxO.jpg",
+    "nameHi": "लालक़िला",
+    "slug": "red-fort"
+  },
+  {
+    "id": "humayuns-tomb",
+    "title": "Humayun's Tomb",
+    "state": "Delhi",
+    "region": "North",
+    "type": "tomb",
+    "era": "mughal",
+    "description": "The first great Mughal garden tomb, and the architectural ancestor of the Taj Mahal.",
+    "descriptionHi": "पहला बड़ा मुग़ल बग़ीचा-मक़बरा, और ताजमहल का वास्तुकला का पूर्वज।",
+    "lat": 28.593295,
+    "lng": 77.250664,
+    "tags": [
+      "islamic"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Humayun's Tomb, Delhi (No. 232)",
+        "url": "https://whc.unesco.org/en/list/232/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Komal Sambhudas",
+      "license": "CC0",
+      "filename": "humayuns-tomb.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/humayuns-tomb.jpg",
+        "caption": "Humayun's Tomb — Delhi",
+        "credit": "Komal Sambhudas",
+        "license": "CC0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Humayun's Tomb, Delhi (No. 232)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/232/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/232/",
+    "city": "Delhi",
+    "history": "Humayun's first wife, Haji Begum (also called Bega Begum), commissioned the tomb after his death in 1556. It was designed by the Persian architect Mirak Mirza Ghiyas and completed around 1570–72. The building sits at the centre of a charbagh garden on the Yamuna, and it became the model for later Mughal tomb architecture, including the Taj Mahal.",
+    "historyHi": "हुमायूँ की पहली पत्नी हाजी बेगम, जिन्हें बेगा बेगम भी कहा जाता है, ने 1556 में उनकी मृत्यु के बाद यह मक़बरा बनवाया। इसका डिज़ाइन फ़ारसी वास्तुकार मीरक मिर्ज़ा घियास ने किया और लगभग 1570–72 में यह पूरा हुआ। भवन यमुना किनारे चारबाग़ बग़ीचे के बीच स्थित है, और यही बाद की मुग़ल मक़बरा वास्तुकला का आदर्श बना, जिसमें ताजमहल भी शामिल है।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Humayun died in 1556, and his widow Haji Begum had his remains brought to Delhi and built a tomb around them. Mughal practice placed tombs in garden settings, so the building was planned with its garden from the start.",
+        "bodyHi": "हुमायूँ की मृत्यु 1556 में हुई, और उनकी पत्नी हाजी बेगम उनके अवशेष दिल्ली ले आईं और उनके चारों ओर यह मक़बरा बनवाया। मुग़ल परंपरा में मक़बरे बग़ीचों में रखे जाते थे, इसलिए भवन को पहले दिन से बग़ीचे के साथ योजित किया गया।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Haji Begum, Humayun's first wife and chief consort, funded and oversaw it. The design is attributed to Mirak Mirza Ghiyas, a Persian architect of a family that had served Timurid patrons.",
+        "bodyHi": "हुमायूँ की पहली पत्नी और मुख्य रानी हाजी बेगम ने इसे धन देकर बनवाया। डिज़ाइन फ़ारसी वास्तुकार मीरक मिर्ज़ा घियास को श्रेय दिया जाता है, जिनका परिवार पहले तैमूरी संरक्षकों की सेवा में था।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "The white and red sandstone dome sits on a high drum and is framed by four smaller chhatris. Count the arches — the facade is a grid of recessed arched bays. Then look outward: the tomb is the centre of a nine-part charbagh, and it is surrounded by smaller garden tombs in the same enclosure.",
+        "bodyHi": "सफ़ेद और लाल बलुआ पत्थर का गुम्बद ऊँची चौड़ी नींव पर है और चार छोटे छतरियों से घिरा है। मेहराब गिनिए — सामने की दीवार अंदर धँसी हुई अर्ध-गोलाकार खिड़कियों की जाली है। फिर बाहर देखें: मक़बरा नौ-भाग वाले चारबाग़ का केंद्र है, और इसी परिसर में छोटे बग़ीचा-मक़बरे भी हैं।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The garden and several ancillary tombs fell into neglect over the centuries. The Yamuna shifted course away from the complex. Major conservation followed in the 20th century, including work by the Aga Trust and later by the Archaeological Survey of India.",
+        "bodyHi": "शताब्दियों में बग़ीचा और कई सहायक मक़बरे उपेक्षित हो गए। यमुना इस परिसर से दूर बहने लगी। 20वीं सदी में बड़ा संरक्षण हुआ, जिसमें आगा ट्रस्ट और बाद में भारतीय पुरातत्व सर्वेक्षण का काम शामिल है।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is the key reference point for understanding the Taj Mahal, because it shows the same idea — dome, charbagh, plinth — two generations earlier. The surrounding necropolis also makes it one of the densest Mughal burial landscapes still standing.",
+        "bodyHi": "यह ताजमहल को समझने का मुख्य संदर्भ बिंदु है, क्योंकि यह वही विचार — गुम्बद, चारबाग़, चबूतरा — दो पीढ़ी पहले दिखाता है। आसपास का समाधि-परिसर इसे मुग़ल काल के सबसे घने स्मारक-समूहों में से एक भी बनाता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Completed",
+        "value": "c. 1570–72"
+      },
+      {
+        "label": "Commissioned by",
+        "value": "Haji Begum"
+      },
+      {
+        "label": "Architect",
+        "value": "Mirak Mirza Ghiyas"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 232"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Who commissioned Humayun's Tomb?",
+        "options": [
+          "Humayun himself",
+          "Akbar",
+          "Haji Begum",
+          "Shah Jahan"
+        ],
+        "answer": 2,
+        "explain": "His first wife, Haji Begum (Bega Begum), had it built after his death in 1556."
+      },
+      {
+        "q": "Which later monument is often compared to it?",
+        "options": [
+          "Qutub Minar",
+          "Taj Mahal",
+          "Charminar",
+          "Hawa Mahal"
+        ],
+        "answer": 1,
+        "explain": "The dome, charbagh and plinth arrangement anticipates the Taj Mahal by two generations."
+      },
+      {
+        "q": "What type of garden does the tomb sit at the centre of?",
+        "options": [
+          "Charbagh",
+          "Terrace garden",
+          "Forest grove",
+          "Water garden only"
+        ],
+        "answer": 0,
+        "explain": "It stands at the centre of a charbagh — a garden divided into four quarters by water channels."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 232",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/232/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Humayun%27s_Tomb-Delhi_front_view.jpg/1280px-Humayun%27s_Tomb-Delhi_front_view.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Humayun%27s_Tomb-Delhi_front_view.jpg/1280px-Humayun%27s_Tomb-Delhi_front_view.jpg",
+    "nameHi": "हुमायूँ का मक़बरा",
+    "slug": "humayuns-tomb"
+  },
+  {
+    "id": "agra-fort",
+    "title": "Agra Fort",
+    "state": "Uttar Pradesh",
+    "region": "North",
+    "type": "fort",
+    "era": "mughal",
+    "description": "The red sandstone Mughal fortress on the Yamuna, containing palaces built by Akbar, Jahangir and Shah Jahan.",
+    "descriptionHi": "यमुना किनारे लाल बलुआ पत्थर का मुग़ल क़िला, जिसमें अकबर, जहाँगीर और शाहजहाँ के बनाए महल हैं।",
+    "lat": 27.179494,
+    "lng": 78.021109,
+    "tags": [
+      "islamic"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Agra Fort (No. 251)",
+        "url": "https://whc.unesco.org/en/list/251/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "filename": "agra-fort.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/agra-fort.jpg",
+        "caption": "Agra Fort — Agra",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Agra Fort (No. 251)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/251/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/251/",
+    "city": "Agra",
+    "history": "Akbar began the present fort around 1565, using red sandstone on the site of an earlier stronghold. Jahangir and Shah Jahan later added palaces in white marble inside the same walls. Shah Jahan, who was imprisoned here by his son Aurangzeb in his final years, is said to have watched the Taj Mahal from the Musamman Burj.",
+    "historyHi": "अकबर ने लगभग 1565 में वर्तमान क़िले की नींव रखी और पहले के किलेबंद स्थान पर लाल बलुआ पत्थर का निर्माण किया। जहाँगीर और शाहजहाँ ने बाद में उन्हीं दीवारों के भीतर सफ़ेद संगमरमर के महल बनाए। शाहजहाँ ने अपने अंतिम वर्षों में पुत्र औरंगज़ेब द्वारा यहाँ क़ैद किए जाने पर मुसम्मन बुर्ज से ताजमहल देखा होगा।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Agra was the early Mughal capital, and the Yamuna bend here was already a strategic crossing. Akbar rebuilt the defences in stone so the capital had a fortress to match its political weight.",
+        "bodyHi": "आगरा मुग़लों की प्रारंभिक राजधानी थी, और यहाँ यमुना का मोड़ पहले से एक रणनीतिक पार था। अकबर ने राजधानी को उसके राजनीतिक महत्व के अनुरूप किला देने के लिए दुर्ग को पत्थर से दोबारा बनवाया।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Akbar started the stone fort around 1565. Jahangir added gardens and pavilions. Shah Jahan, best known for marble, built the Khas Mahal, the Musamman Burj and the Diwan-i-Khas inside the same enclosure.",
+        "bodyHi": "अकबर ने लगभग 1565 में पत्थर के क़िले की शुरुआत की। जहाँगीर ने बग़ीचे और मंडप जोड़े। संगमरमर के लिए मशहूर शाहजहाँ ने उसी परिसर में ख़ास महल, मुसम्मन बुर्ज और दीवान-ए-ख़ास बनवाए।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "The outer circuit is red sandstone and military — a moat, massive walls and the Amar Singh Gate. Inside, the character changes: the Jahangir Palace mixes Indian and Islamic forms, while Shah Jahan's marble pavilions are delicate and nearly sculpture-like.",
+        "bodyHi": "बाहरी हिस्सा लाल बलुआ पत्थर का और सैनिक है — खाई, विशाल दीवारें और अमर सिंह दरवाज़ा। भीतर बदलाव दिखता है: जहाँगीर महल भारतीय और इस्लामी रूपों का मेल है, जबकि शाहजहाँ के संगमरमर मंडप सुंदर और लगभग मूर्ति-जैसे हैं।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The fort passed from the Mughals to the Marathas in the 18th century and then to the British, who used it as a garrison. British occupation damaged and altered parts of the interior. Conservation is now carried out by the Archaeological Survey of India.",
+        "bodyHi": "क़िला 18वीं सदी में मुग़लों से मराठों के पास गया, फिर ब्रिटिशों के पास, जिन्होंने इसे छावनी के रूप में इस्तेमाल किया। ब्रिटिश कब्ज़े में भीतरी हिस्से क्षतिग्रस्त और बदले गए। अब संरक्षण भारतीय पुरातत्व सर्वेक्षण करता है।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "Three emperors built inside one set of walls, which makes the fort a compressed history of Mughal architecture. The Taj Mahal sits just downstream and is clearly visible from the upper pavilions, which is why the two are almost always visited together.",
+        "bodyHi": "तीन सम्राटों ने एक ही दीवार के भीतर निर्माण किया, जिससे यह क़िला मुग़ल वास्तुकला का संक्षिप्त इतिहास बन जाता है। ताजमहल ठीक नीचे बहती यमुना के किनारे है और ऊपरी मंडपों से साफ़ दिखता है, इसलिए दोनों लगभग हमेशा साथ देखे जाते हैं।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Stone fort begun",
+        "value": "c. 1565, under Akbar"
+      },
+      {
+        "label": "Marble palaces",
+        "value": "Under Shah Jahan"
+      },
+      {
+        "label": "Later name",
+        "value": "Agra Fort"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 251"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Which emperor began the present red sandstone fort?",
+        "options": [
+          "Babur",
+          "Akbar",
+          "Jahangir",
+          "Aurangzeb"
+        ],
+        "answer": 1,
+        "explain": "Akbar began the stone fort around 1565, replacing earlier defences."
+      },
+      {
+        "q": "Which Mughal emperor spent his last years imprisoned here?",
+        "options": [
+          "Humayun",
+          "Akbar",
+          "Shah Jahan",
+          "Bahadur Shah Zafar"
+        ],
+        "answer": 2,
+        "explain": "Shah Jahan was imprisoned here by Aurangzeb and is said to have watched the Taj Mahal from the fort."
+      },
+      {
+        "q": "What material are the later palaces inside built from?",
+        "options": [
+          "Red sandstone",
+          "Brick and lime",
+          "White marble",
+          "Basalt"
+        ],
+        "answer": 2,
+        "explain": "Shah Jahan's palaces, including the Khas Mahal and Musamman Burj, are marble, unlike Akbar's sandstone works."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 251",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/251/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Agra_Fort_walls.jpg/1280px-Agra_Fort_walls.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Agra_Fort_walls.jpg/1280px-Agra_Fort_walls.jpg",
+    "nameHi": "आगरा क़िला",
+    "slug": "agra-fort"
+  },
+  {
+    "id": "fatehpur-sikri",
+    "title": "Fatehpur Sikri",
+    "state": "Uttar Pradesh",
+    "region": "North",
+    "type": "monument",
+    "era": "mughal",
+    "description": "Akbar's planned capital on a ridge, occupied for roughly fourteen years and then left standing empty.",
+    "descriptionHi": "पहाड़ी की चोटी पर अकबर की योजनाबद्ध राजधानी, लगभग चौदह वर्ष बसी रही, फिर ख़ाली छोड़ दी गई।",
+    "lat": 27.094511,
+    "lng": 77.667867,
+    "tags": [
+      "islamic",
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Fatehpur Sikri (No. 255)",
+        "url": "https://whc.unesco.org/en/list/255/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "filename": "fatehpur-sikri.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/fatehpur-sikri.jpg",
+        "caption": "Fatehpur Sikri — Fatehpur Sikri",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Fatehpur Sikri (No. 255)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/255/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/255/",
+    "city": "Fatehpur Sikri",
+    "history": "Akbar built Fatehpur Sikri between about 1571 and 1585 and used it as his capital for roughly fourteen years before the settlement was largely abandoned. The most commonly given reason is difficulty securing water for a city of that size on the ridge, though the full explanation is debated. The site survives unusually complete: the Buland Darwaza, the Panch Mahal, the Diwan-i-Khas, the Jodha Bai palace and the white marble tomb of the Sufi saint Salim Chishti.",
+    "historyHi": "अकबर ने लगभग 1571 से 1585 के बीच फ़तेहपुर सीकरी बसाई और लगभग चौदह वर्ष तक इसे राजधानी बनाए रखा, फिर बस्ती बड़े पैमाने पर ख़ाली कर दी गई। सबसे आम कारण बताया जाता है कि इतने बड़े शहर के लिए पहाड़ी पर पानी जुटाना कठिन था, हालाँकि पूरा कारण बहस का विषय है। स्थल असामान्य रूप से सुरक्षित है: बुलंद दरवाज़ा, पंच महल, दीवान-ए-ख़ास, जोधा बाई का महल और सूफ़ी संत सलीम चिश्ती का सफ़ेद संगमरमर मक़बरा।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Akbar had visited the Sufi saint Salim Chishti, who lived on the ridge and predicted he would have sons. After a son was born, Akbar founded a city on that ridge and made it his capital.",
+        "bodyHi": "अकबर सूफ़ी संत सलीम चिश्ती के पास गए थे, जो उसी पहाड़ी पर रहते थे और जिन्होंने संतान का वरदान दिया था। पुत्र के जन्म के बाद अकबर ने उसी पहाड़ी पर शहर बसाकर उसे राजधानी बनाया।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Akbar commissioned the city. The buildings show a deliberate mixing of Indian and Islamic craftsmen and forms — carved brackets, chhatris and lotus motifs sit alongside Persian arches and iwans.",
+        "bodyHi": "अकबर ने शहर बनवाया। भवनों में भारतीय और इस्लामी कारीगरों व रूपों का जान-बूझकर किया गया मेल दिखता है — कटे हुए कंधे, छतरियों और कमल के अलंकरणों के साथ फ़ारसी मेहराब और इवान।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "The Buland Darwaza rises as a monumental gate up a flight of steps. The Panch Mahal is a five-storey open pavilion of columns with no enclosing walls — a wind-catching structure borrowed from earlier Indian building. Inside the Diwan-i-Khas stands the famous central pillar with radiating brackets.",
+        "bodyHi": "बुलंद दरवाज़ा सीढ़ियों के ऊपर विशाल द्वार के रूप में खड़ा है। पंच महल बिना दीवारों वाला पाँच मंज़िला खुला मंडप है — हवा पकड़ने वाली यह संरचना पहले की भारतीय वास्तुकला से ली गई है। दीवान-ए-ख़ास के भीतर वह मशहूर मध्य स्तंभ है जिससे कंधे चारों ओर फैलते हैं।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The capital shifted back to Agra in the mid-1580s and the city was not substantially reoccupied. Because it was never rebuilt over, the buildings survive with much of their original fabric intact — unusual for a Mughal urban site.",
+        "bodyHi": "1580 के दशक के मध्य में राजधानी आगरा लौट गई और शहर फिर बड़े पैमाने पर बसाया नहीं गया। चूँकि इस पर दोबारा निर्माण नहीं हुआ, भवन अपनी मूल सामग्री के साथ सुरक्षित हैं — मुग़ल नगर-स्थलों के लिए यह दुर्लभ है।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is the best surviving example of an entire planned Mughal capital, rather than a single monument. It also shows Mughal architecture at its most openly mixed, before later court style became more uniformly Persianate.",
+        "bodyHi": "यह किसी एक स्मारक के बजाय पूरी योजनाबद्ध मुग़ल राजधानी का सबसे अच्छा बचा हुआ उदाहरण है। यह मुग़ल वास्तुकला के सबसे खुले मिश्रण को भी दिखाता है, जब दरबारी शैली बाद में अधिक एकसमान फ़ारसी हो गई।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "c. 1571–1585"
+      },
+      {
+        "label": "Founder",
+        "value": "Akbar"
+      },
+      {
+        "label": "Used as capital",
+        "value": "About 14 years"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 255"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Which emperor built Fatehpur Sikri as his capital?",
+        "options": [
+          "Babur",
+          "Humayun",
+          "Akbar",
+          "Shah Jahan"
+        ],
+        "answer": 2,
+        "explain": "Akbar founded it in the 1570s after visiting the saint Salim Chishti."
+      },
+      {
+        "q": "Why is the city most often said to have been abandoned?",
+        "options": [
+          "Enemy invasion",
+          "Difficulty securing water",
+          "Earthquake",
+          "Famine in the plains"
+        ],
+        "answer": 1,
+        "explain": "Water supply for a city of that size on the ridge is the most commonly given reason, though the explanation is debated."
+      },
+      {
+        "q": "What is the Panch Mahal?",
+        "options": [
+          "A five-storey open pillared pavilion",
+          "A five-domed mosque",
+          "A five-gate entrance",
+          "A five-level stepwell"
+        ],
+        "answer": 0,
+        "explain": "The Panch Mahal is an open, five-storey structure of columns with no enclosing walls."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 255",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/255/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Fatehpur-Fatehpur_Sikri_India0002.JPG/1280px-Fatehpur-Fatehpur_Sikri_India0002.JPG",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Fatehpur-Fatehpur_Sikri_India0002.JPG/1280px-Fatehpur-Fatehpur_Sikri_India0002.JPG",
+    "nameHi": "फ़तेहपुर सीकरी",
+    "slug": "fatehpur-sikri"
+  },
+  {
+    "id": "jantar-mantar",
+    "title": "Jantar Mantar, Jaipur",
+    "state": "Rajasthan",
+    "region": "North",
+    "type": "monument",
+    "era": "mughal",
+    "description": "An 18th-century open-air observatory of enormous masonry instruments, built to measure the sky.",
+    "descriptionHi": "18वीं सदी का खुला खगोलीय वेधशाला, जहाँ आकाश मापने के लिए विशाल पत्थर के यंत्र बनाए गए।",
+    "lat": 26.924792,
+    "lng": 75.824569,
+    "tags": [
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — The Jantar Mantar, Jaipur (No. 1338)",
+        "url": "https://whc.unesco.org/en/list/1338/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "filename": "jantar-mantar.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/jantar-mantar.jpg",
+        "caption": "Jantar Mantar, Jaipur — Jaipur",
+        "credit": "Jakub Hałun",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — The Jantar Mantar, Jaipur (No. 1338)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1338/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/1338/",
+    "city": "Jaipur",
+    "history": "Sawai Jai Singh II, the Rajput ruler of Jaipur, built five observatories in the early 18th century, and the Jaipur one is the largest and best preserved. Jai Singh had found that the small brass instruments in use were not accurate enough for the astronomical tables he wanted to correct, so he built instruments on an architectural scale instead. The largest instrument, the Samrat Yantra, is a giant equinoctial sundial.",
+    "historyHi": "जयपुर के राजपूत शासक सवाई जय सिंह द्वितीय ने 18वीं सदी के आरंभ में पाँच वेधशालाएँ बनवाईं, जिनमें जयपुर वाली सबसे बड़ी और सबसे सुरक्षित है। जय सिंह को लगा कि उस समय प्रचलित छोटे पीतल के यंत्र उन खगोलीय सारणियों के लिए पर्याप्त सटीक नहीं हैं जिन्हें वे सुधारना चाहते थे, इसलिए उन्होंने यंत्रों को वास्तुकला के पैमाने पर बनवाया। सबसे बड़ा यंत्र सम्रत यंत्र एक विशाल विषुवी सूर्यघड़ी है।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Jai Singh wanted to correct astronomical tables and needed more accurate measurements than brass instruments could give. He reasoned that scaling the instruments up in masonry would reduce error, so he built a working observatory at city scale.",
+        "bodyHi": "जय सिंह खगोलीय सारणियाँ सुधारना चाहते थे और पीतल के यंत्रों से मिलने वाली तुलना में अधिक सटीक माप चाहिए था। उन्होंने सोचा कि यंत्रों को चूने-पत्थर से बड़ा बनाने पर त्रुटि घटेगी, इसलिए शहर के पैमाने पर एक कार्यरत वेधशाला बनवाई।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Sawai Jai Singh II designed the instruments himself and had them built between about 1727 and 1734, around the time he founded the city of Jaipur.",
+        "bodyHi": "सवाई जय सिंह द्वितीय ने यंत्रों का डिज़ाइन स्वयं किया और लगभग 1727 से 1734 के बीच उन्हें बनवाया, लगभग उसी समय जब उन्होंने जयपुर नगर बसाया।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Every object here is a measuring device, not decoration. The Samrat Yantra's huge right-angled gnomon points at the pole star and casts a shadow onto a curved quadrant. The Jai Prakash Yantra is a sunken hemisphere you can walk down into, with markings that map the sky onto your own body.",
+        "bodyHi": "यहाँ की हर वस्तु सजावट नहीं, मापने का यंत्र है। सम्रत यंत्र का विशाल समकोण घड़ियां ध्रुव तारे की ओर इशारा करता है और उसकी छाया वक्र चतुर्थांश पर पड़ती है। जय प्रकाश यंत्र एक धँसा हुआ गोलार्ध है जिसमें उतरा जा सकता है, जहाँ आकाश के चिह्न आपके शरीर पर अंकित होते हैं।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "Astronomical work at the site continued into the 19th century and then wound down as telescopic methods took over. The instruments were repaired and conserved in the 20th century, and the site entered the UNESCO list in 2010.",
+        "bodyHi": "यहाँ खगोलीय कार्य 19वीं सदी तक चला, फिर दूरबीन-आधारित विधियों के प्रचलन से घटता गया। 20वीं सदी में यंत्रों की मरम्मत और संरक्षण हुआ, और 2010 में यह स्थल यूनेस्को सूची में शामिल हुआ।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is one of the few places where pre-telescopic astronomy was pursued deliberately and at scale, and it still works: the sundials still tell time. It also shows scientific ambition expressed as architecture rather than as instruments in a cabinet.",
+        "bodyHi": "यह उन गिने-चुने स्थानों में से है जहाँ दूरबीन से पहले की खगोल विद्या को जान-बूझकर और बड़े पैमाने पर अपनाया गया, और यह आज भी काम करता है: सूर्यघड़ी आज भी समय बताती है। यह विज्ञान की महत्वाकांक्षा को किसी संग्रह के यंत्र के बजाय वास्तुकला के रूप में दिखाता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "c. 1727–1734"
+      },
+      {
+        "label": "Built by",
+        "value": "Sawai Jai Singh II"
+      },
+      {
+        "label": "Largest instrument",
+        "value": "Samrat Yantra sundial"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 1338, in 2010"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Why did Jai Singh II build such large instruments?",
+        "options": [
+          "To impress visiting kings",
+          "To reduce measurement error",
+          "To shade a garden",
+          "To mark the city boundary"
+        ],
+        "answer": 1,
+        "explain": "He reasoned that larger masonry instruments would be more accurate than small brass ones."
+      },
+      {
+        "q": "What is the Samrat Yantra?",
+        "options": [
+          "A water tank",
+          "A giant equinoctial sundial",
+          "A wind vane",
+          "A star map wall"
+        ],
+        "answer": 1,
+        "explain": "It is a giant equinoctial sundial whose gnomon shadows a curved quadrant."
+      },
+      {
+        "q": "Who commissioned the observatory?",
+        "options": [
+          "Akbar",
+          "Maharana Pratap",
+          "Sawai Jai Singh II",
+          "Tipu Sultan"
+        ],
+        "answer": 2,
+        "explain": "Sawai Jai Singh II, the Rajput ruler of Jaipur, designed and built it in the early 18th century."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 1338",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/1338/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg/1280px-20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg/1280px-20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg",
+    "nameHi": "जंतर मंतर, जयपुर",
+    "slug": "jantar-mantar"
+  },
+  {
+    "id": "ellora",
+    "title": "Ellora Caves",
+    "state": "Maharashtra",
+    "region": "West",
+    "type": "cave",
+    "era": "ancient",
+    "description": "Thirty-four rock-cut caves in a basalt cliff, carved by Hindu, Buddhist and Jain communities over four centuries.",
+    "descriptionHi": "बेसाल्ट की चट्टान में काटी गईं चौंतीस गुफ़ाएँ, जिन्हें चार सदियों तक हिंदू, बौद्ध और जैन समुदायों ने मिलकर बनाया।",
+    "lat": 20.026896,
+    "lng": 75.17901,
+    "tags": [
+      "hindu",
+      "buddhist",
+      "jain"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Ellora Caves (No. 243)",
+        "url": "https://whc.unesco.org/en/list/243/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Shishirdasika",
+      "license": "CC BY-SA 4.0",
+      "filename": "ellora.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/ellora.jpg",
+        "caption": "Ellora Caves — Aurangabad (Chhatrapati Sambhajinagar)",
+        "credit": "Shishirdasika",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Ellora Caves (No. 243)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/243/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/243/",
+    "city": "Aurangabad (Chhatrapati Sambhajinagar)",
+    "history": "The caves were cut into the western face of a basalt cliff between roughly the 6th and 10th centuries. Twelve are Buddhist, seventeen Hindu and five Jain, and they sit together along the same rock face. Cave 16, the Kailasa temple, was commissioned by the Rashtrakuta king Krishna I and is carved downward from a single mass of rock, which makes it the largest monolithic rock-cut structure at the site.",
+    "historyHi": "ये गुफ़ाएँ लगभग छठी से दसवीं सदी के बीच बेसाल्ट चट्टान के पश्चिमी भिट्ठी में काटी गईं। बारह बौद्ध, सत्रह हिंदू और पाँच जैन हैं, और ये सब उसी चट्टान पर साथ-साथ बनी हैं। गुफ़ा 16, यानी कैलास मंदिर, राष्ट्रकूट राजा कृष्ण प्रथम ने बनवाया और यह एक ही चट्टान के द्रव्य को ऊपर से नीचे काटकर बनाया गया है।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "The Deccan basalt here is hard but continuous, which makes it possible to carve a whole building out of one cliff instead of assembling it. Monastic and religious communities used that property to make halls, shrines and temples that would survive weather far better than built structures.",
+        "bodyHi": "यहाँ का डेक्कन बेसाल्ट कठिन है लेकिन निरंतर, जिससे पूरी इमारत चट्टान से काटी जा सकती है, जोड़ी नहीं जाती। धार्मिक और मठवासी समुदायों ने इस गुण का उपयोग कर ऐसे हॉल और मंदिर बनाए जो मौसम से बहुत बेहतर बचे रहते।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Several successive dynasties supported the work — the Kalachuris, the Rashtrakutas and the Yadavas among them. The Kailasa temple is attributed to the Rashtrakuta king Krishna I. The three faiths carved next to one another rather than competing for the same rock.",
+        "bodyHi": "कई राजवंशों ने इस काम में सहयोग दिया — कलचुरी, राष्ट्रकूट और यादव उनमें शामिल हैं। कैलास मंदिर राष्ट्रकूट राजा कृष्ण प्रथम को श्रेय दिया जाता है। तीनों धर्मों ने एक-दूसरे के बगल में काम किया, एक ही चट्टान के लिए प्रतिस्पर्धा नहीं की।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "At Kailasa, look down before you look up: the temple stands in a U-shaped courtyard dug out of the cliff, and the stone removed from that pit is the stone the temple is made of. The gate and the bridge over the trench were part of the same single excavation. Inside, the Buddhist viharas have multi-storey facades with carved brackets.",
+        "bodyHi": "कैलास में पहले नीचे देखें: मंदिर चट्टान से खोदे गए आकार के आँगन में है, और उस गड्ढे से निकाला गया पत्थर ही मंदिर की सामग्री है। द्वार और खाई पर पुल उसी एक खुदाई का हिस्सा थे। भीतर, बौद्ध विहारों में कटे कंधों वाले बहु-मंज़िला भिट्ठे हैं।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "Work at the site stopped around the 10th or 11th century and the caves were not built over afterwards. Some sculpture was damaged over the centuries, and plasterwork and paint survive only in patches. Systematic clearing and conservation came under the Archaeological Survey of India.",
+        "bodyHi": "लगभग दसवीं या ग्यारहवीं सदी में काम रुक गया और बाद में यहाँ निर्माण नहीं हुआ। शताब्दियों में कुछ मूर्तियाँ क्षतिग्रस्त हुईं, और चित्रकारी अब केवल टुकड़ों में बची है। व्यवस्थित सफ़ाई और संरक्षण भारतीय पुरातत्व सर्वेक्षण के अधीन हुआ।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "Ellora is unusual because three religious traditions share one continuous cliff, which makes it readable as a record of coexistence as much as of architecture. Kailasa alone is a global reference point for rock-cut building.",
+        "bodyHi": "एलोरा इसलिए अनोखा है क्योंकि तीन धार्मिक परंपराएँ एक ही चट्टान साझा करती हैं, जिससे यह वास्तुकला के साथ-साथ सहअस्तित्व का भी अभिलेख बनता है। अकेला कैलास मंदिर चट्टान-कटाई वास्तुकला का वैश्विक संदर्भ बिंदु है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Caves",
+        "value": "34"
+      },
+      {
+        "label": "Cut over",
+        "value": "Roughly 6th–10th centuries"
+      },
+      {
+        "label": "Faiths represented",
+        "value": "Buddhist, Hindu, Jain"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 243"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "How many caves are there at Ellora?",
+        "options": [
+          "12",
+          "22",
+          "34",
+          "52"
+        ],
+        "answer": 2,
+        "explain": "There are 34 caves — 12 Buddhist, 17 Hindu and 5 Jain."
+      },
+      {
+        "q": "What is unusual about the Kailasa temple?",
+        "options": [
+          "It was built from imported marble",
+          "It is carved downward from a single mass of rock",
+          "It has no roof",
+          "It is the smallest structure at the site"
+        ],
+        "answer": 1,
+        "explain": "The whole temple was excavated top-down from one rock, making it monolithic."
+      },
+      {
+        "q": "Which three traditions carved caves here?",
+        "options": [
+          "Hindu, Buddhist and Jain",
+          "Muslim, Christian and Hindu",
+          "Buddhist, Zoroastrian and Muslim",
+          "Jain, Sikh and Buddhist"
+        ],
+        "answer": 0,
+        "explain": "Buddhist, Hindu and Jain communities all worked on the same cliff."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 243",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/243/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Kailasa_Ellora.jpg/1280px-Kailasa_Ellora.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Kailasa_Ellora.jpg/1280px-Kailasa_Ellora.jpg",
+    "nameHi": "एलोरा गुफ़ाएँ",
+    "slug": "ellora"
+  },
+  {
+    "id": "mahabalipuram",
+    "title": "Shore Temple, Mahabalipuram",
+    "state": "Tamil Nadu",
+    "region": "South",
+    "type": "temple",
+    "era": "ancient",
+    "description": "An 8th-century granite temple complex facing the Bay of Bengal, built by the Pallavas.",
+    "descriptionHi": "बंगाल की खाड़ी की ओर मुख किए 8वीं सदी का ग्रेनाइट मंदिर-समूह, पल्लवों द्वारा निर्मित।",
+    "lat": 12.61657,
+    "lng": 80.193913,
+    "tags": [
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Group of Monuments at Mahabalipuram (No. 249)",
+        "url": "https://whc.unesco.org/en/list/249/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0",
+      "filename": "mahabalipuram.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/mahabalipuram.jpg",
+        "caption": "Shore Temple, Mahabalipuram — Mahabalipuram",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Group of Monuments at Mahabalipuram (No. 249)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/249/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/249/",
+    "city": "Mahabalipuram",
+    "history": "The Shore Temple was built in the 8th century under the Pallava king Narasimhavarman II, also known as Rajasimha. It is part of a wider group of monuments at Mahabalipuram that includes the rathas, the Varaha cave and the great bas-relief. Unlike most South Indian temples it is built of cut granite blocks rather than moulded brick, and it stands directly on the shore.",
+    "historyHi": "शोर मंदिर 8वीं सदी में पल्लव राजा नरसिंहवर्मन द्वितीय, जिन्हें राजसिंह भी कहा जाता है, के काल में बना। यह महाबलीपुरम के व्यापक स्मारक-समूह का हिस्सा है, जिसमें रथ, वराह गुफ़ा और विशाल भित्ति-चित्र शामिल हैं। अधिकांश दक्षिण भारतीय मंदिरों से भिन्न, यह ढले हुए ईंट के बजाय कटे ग्रेनाइट खंडों से बना है, और सीधे तट पर खड़ा है।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Mahabalipuram was a Pallava port. Building a stone temple on the open seafront was a statement of both religious patronage and naval power — it would have been the first thing sailors saw approaching the coast.",
+        "bodyHi": "महाबलीपुरम पल्लवों का बंदरगाह था। खुले तट पर पत्थर का मंदिर बनाना धार्मिक संरक्षण और नौसैनिक शक्ति दोनों का प्रदर्शन था — तट के पास आते नाविकों को यही सबसे पहले दिखाई देता।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "It is attributed to Narasimhavarman II (Rajasimha) of the Pallava dynasty. The Pallavas pioneered rock-cut and structural temple building in the Tamil country, and this is among their mature stone works.",
+        "bodyHi": "इसे पल्लव वंश के नरसिंहवर्मन द्वितीय (राजसिंह) को श्रेय दिया जाता है। पल्लवों ने तमिल देश में चट्टान-कटाई और संरचनात्मक मंदिर-निर्माण की नींव रखी, और यह उनके परिपक्व पत्थर-कार्यों में से एक है।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "There are actually three shrines: one facing east to the rising sun, one to the west, and a smaller one between them. Look for the friezes of Nandi bulls around the base, and the stepped pyramidal vimana. Sea salt and wind have worn the granite smooth, which is part of why it looks so weathered compared with inland temples.",
+        "bodyHi": "वास्तव में यहाँ तीन गर्भगृह हैं: पूर्व की ओर उगते सूर्य के लिए एक, पश्चिम की ओर एक, और बीच में एक छोटा। नींव के चारों ओर नंदि की पंक्तियाँ और सीढ़ीनुमा विमान देखें। समुद्री नमक और हवा ने ग्रेनाइट को चिकना कर दिया है, जिससे यह अंदरूनी मंदिरों की तुलना में अधिक जर्जर दिखता है।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The temple stopped being actively used for worship in the later medieval period. Coastal erosion and salt damaged the stone, and parts of the complex were lost to the sea. Modern conservation stabilised what remained, and the site entered the UNESCO list in 1984.",
+        "bodyHi": "उत्तर-मध्यकाल में मंदिर में पूजा बंद हो गई। तटीय कटाव और नमक से पत्थर क्षतिग्रस्त हुआ, और परिसर के कुछ हिस्से समुद्र में समा गए। आधुनिक संरक्षण ने शेष को स्थिर किया, और 1984 में यह स्थल यूनेस्को सूची में शामिल हुआ।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is the only surviving structural stone temple of its group — the rathas are monoliths, not buildings you enter. Combined with the nearby bas-reliefs it shows Pallava architecture at its most complete, on a coast that is still eroding.",
+        "bodyHi": "यह अपने समूह का एकमात्र बचा संरचनात्मक पत्थर मंदिर है — रथ एकशिला हैं, भीतर प्रवेश योग्य भवन नहीं। पास के भित्ति-चित्रों के साथ यह पल्लव वास्तुकला को उसकी सबसे संपूर्ण अवस्था में दिखाता है, उस तट पर जो आज भी कट रहा है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "8th century"
+      },
+      {
+        "label": "Built by",
+        "value": "Pallavas, under Narasimhavarman II"
+      },
+      {
+        "label": "Material",
+        "value": "Cut granite blocks"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 249, in 1984"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Which dynasty built the Shore Temple?",
+        "options": [
+          "Chola",
+          "Pallava",
+          "Pandya",
+          "Vijayanagara"
+        ],
+        "answer": 1,
+        "explain": "It was built by the Pallavas in the 8th century."
+      },
+      {
+        "q": "How many shrines does the complex contain?",
+        "options": [
+          "One",
+          "Two",
+          "Three",
+          "Five"
+        ],
+        "answer": 2,
+        "explain": "Two large shrines, one facing east and one west, plus a smaller one between them."
+      },
+      {
+        "q": "Why does the stone look more worn than inland temples?",
+        "options": [
+          "It was deliberately polished",
+          "Sea salt and wind have weathered it",
+          "It is softer stone",
+          "It was rebuilt in the 19th century"
+        ],
+        "answer": 1,
+        "explain": "Centuries of sea salt and coastal wind have weathered the granite."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 249",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/249/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Shore_Temple_01.jpg/1280px-Shore_Temple_01.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Shore_Temple_01.jpg/1280px-Shore_Temple_01.jpg",
+    "nameHi": "शोर मंदिर, महाबलीपुरम",
+    "slug": "mahabalipuram"
+  },
+  {
+    "id": "brihadeeswarar",
+    "title": "Brihadisvara Temple",
+    "state": "Tamil Nadu",
+    "region": "South",
+    "type": "temple",
+    "era": "medieval",
+    "description": "Raja Raja Chola I's great Shiva temple at Thanjavur, with one of the tallest vimanas in India.",
+    "descriptionHi": "तंजौर का राजराज चोल प्रथम का विशाल शिव मंदिर, जिसका विमान भारत के सबसे ऊँचे विमानों में गिना जाता है।",
+    "lat": 10.782817,
+    "lng": 79.131826,
+    "tags": [
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Great Living Chola Temples (No. 250)",
+        "url": "https://whc.unesco.org/en/list/250/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Rainer Halama (derivative work by Unpetit)",
+      "license": "CC BY-SA 4.0",
+      "filename": "brihadeeswarar.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/brihadeeswarar.jpg",
+        "caption": "Brihadisvara Temple — Thanjavur",
+        "credit": "Rainer Halama (derivative work by Unpetit)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Great Living Chola Temples (No. 250)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/250/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/250/",
+    "city": "Thanjavur",
+    "history": "Raja Raja Chola I built the temple between about 1003 and 1010 CE, and it became the architectural statement of a dynasty that dominated much of southern India. Its vimana, the tower over the sanctum, rises to roughly 66 metres and is topped by a single granite block. The walls carry extensive Tamil inscriptions recording grants, which makes the building a document as well as a monument.",
+    "historyHi": "राजराज चोल प्रथम ने लगभग ई. 1003 से 1010 के बीच यह मंदिर बनवाया, और यह उस राजवंश का वास्तुकला-वक्तव्य बन गया जिसने दक्षिण भारत के बड़े भाग पर राज किया। गर्भगृह के ऊपर का विमान लगभग 66 मीटर ऊँचा है और उस पर एक ही ग्रेनाइट खंड रखा है। दीवारों पर व्यापक तमिल अभिलेख हैं जो दान-अनुदान दर्ज करते हैं, जिससे यह भवन स्मारक के साथ-साथ अभिलेख भी है।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "Raja Raja Chola I wanted a temple that matched the scale of his conquests and his revenue. He chose Thanjavur, his capital, and commissioned a Shiva temple on a scale the region had not seen, with a permanent endowment attached to sustain its rituals.",
+        "bodyHi": "राजराज चोल प्रथम को ऐसा मंदिर चाहिए था जो उनकी विजयों और आय के अनुरूप हो। उन्होंने अपनी राजधानी तंजौर चुना और उस पैमाने का शिव मंदिर बनवाया जो क्षेत्र ने पहले नहीं देखा था, साथ में अनुष्ठान चलाने के लिए स्थायी दान भी जोड़ा।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Raja Raja Chola I, with his chief priest Karuvur Tevar and a large workforce of masons, sculptors and labourers. The temple records name many of the donors and craftspeople involved, which is unusually direct for a medieval building.",
+        "bodyHi": "राजराज चोल प्रथम ने, अपने मुख्य पुरोहित करुवुर तेवर और चित्रकारों, मूर्तिकारों और श्रमिकों की बड़ी टुकड़ी के साथ। मंदिर के अभिलेखों में कई दानदाता और कारीगरों के नाम दर्ज हैं, जो मध्यकालीन भवन के लिए असामान्य रूप से सीधा है।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "The compound is square and enormous, with a single high wall and a gopuram gate. The vimana steps back in tiers and is crowned by the kumbam, a single granite block said to weigh many tens of tonnes. Look for the massive Nandi facing the sanctum, and the painted corridors that still carry Chola-era frescoes.",
+        "bodyHi": "परिसर वर्गाकार और विशाल है, एक ऊँची दीवार और गोपुरम द्वार के साथ। विमान सोपानों में पीछे हटता है और उसके शीर्ष पर कुंभ है — एक ही ग्रेनाइट खंड जिसका भार कई दसियों टन बताया जाता है। गर्भगृह की ओर मुख किए विशाल नंदि और चोल काल के भित्ति-चित्र वाले गलियारे देखें।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "Later Chola, Pandya, Nayak and Maratha rulers all added to the complex, mainly gates, enclosures and additional sculpture. Worship continued without a break, which is what makes it one of the 'Great Living Chola Temples' rather than a ruin. Conservation is shared between the ASI and the temple administration.",
+        "bodyHi": "बाद के चोल, पांड्य, नायक और मराठा शासकों ने सबने परिसर में जोड़ किया, मुख्यतः द्वार, परिखाएँ और अतिरिक्त मूर्तियाँ। पूजा बिना रुके चलती रही, यही कारण है कि यह खंडहर नहीं बल्कि 'जीवित महान चोल मंदिरों' में गिना जाता है। संरक्षण भारतीय पुरातत्व सर्वेक्षण और मंदिर प्रशासन संयुक्त रूप से करते हैं।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is a thousand-year-old building that is still a working temple, which is rare. It also sets the standard against which Chola temple architecture is measured, and its inscriptions are a primary source for Chola administration and economy.",
+        "bodyHi": "यह हज़ार वर्ष पुराना भवन है जो आज भी चालू मंदिर है, जो दुर्लभ है। यह चोल मंदिर वास्तुकला का मानक भी है, और इसके अभिलेख चोल प्रशासन और अर्थव्यवस्था का प्राथमिक स्रोत हैं।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "c. 1003–1010 CE"
+      },
+      {
+        "label": "Built by",
+        "value": "Raja Raja Chola I"
+      },
+      {
+        "label": "Vimana height",
+        "value": "About 66 m"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 250 (Great Living Chola Temples)"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Who built the Brihadisvara Temple?",
+        "options": [
+          "Raja Raja Chola I",
+          "Krishna Deva Raya",
+          "Pallava Narasimhavarman",
+          "Vikramaditya VI"
+        ],
+        "answer": 0,
+        "explain": "Raja Raja Chola I commissioned it around 1003–1010 CE."
+      },
+      {
+        "q": "About how tall is the vimana?",
+        "options": [
+          "20 metres",
+          "40 metres",
+          "66 metres",
+          "110 metres"
+        ],
+        "answer": 2,
+        "explain": "The tower over the sanctum rises to roughly 66 metres."
+      },
+      {
+        "q": "Why is the temple listed as one of the 'Great Living Chola Temples'?",
+        "options": [
+          "It was rebuilt recently",
+          "Worship has continued there without a break",
+          "It is made of living wood",
+          "It is still being carved"
+        ],
+        "answer": 1,
+        "explain": "It is still an active temple, not a ruin — worship never stopped."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 250 (Great Living Chola Temples)",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/250/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
+    "nameHi": "बृहदीश्वर मंदिर",
+    "slug": "brihadeeswarar"
+  },
+  {
+    "id": "mysore-palace",
+    "title": "Mysore Palace",
+    "state": "Karnataka",
+    "region": "South",
+    "type": "palace",
+    "era": "colonial",
+    "description": "The Indo-Saracenic palace of the Wadiyar dynasty, rebuilt in stone and marble in the early 20th century.",
+    "descriptionHi": "वाडियार राजवंश का इंडो-सरासेनिक पैलेस, 20वीं सदी के आरंभ में पत्थर और संगमरमर से दोबारा बनाया गया।",
+    "lat": 12.305218,
+    "lng": 76.655179,
+    "tags": [
+      "multi"
+    ],
+    "sourceLinks": [
+      {
+        "label": "TODO: add a verified official source for Mysore Palace",
+        "url": null
+      }
+    ],
+    "credits": {
+      "photographer": "Whistleraja",
+      "license": "CC BY-SA 4.0",
+      "filename": "mysore-palace.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/mysore-palace.jpg",
+        "caption": "Mysore Palace — Mysuru",
+        "credit": "Whistleraja",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "TODO: add a verified official source for Mysore Palace"
+    ],
+    "officialSource": {
+      "label": "TODO: add a verified official source",
+      "url": null
+    },
+    "folkloreNote": null,
+    "govLink": null,
+    "city": "Mysuru",
+    "history": "An earlier wooden palace on this site burned down in 1897. The present building was designed by the British architect Henry Irwin and completed around 1912. It combines a Hindu temple-derived plan with Moorish, Rajput and Gothic elements, which is the definition of the Indo-Saracenic style. The Wadiyar dynasty had ruled the Mysore region for centuries, and the palace was their official residence.",
+    "historyHi": "इस स्थान पर पहला लकड़ी का महल 1897 में जल गया था। वर्तमान इमारत ब्रिटिश वास्तुकार हेनरी इरविन ने डिज़ाइन की और लगभग 1912 में पूरी हुई। इसमें हिंदू मंदिर से ली गई योजना के साथ मूरिश, राजपूत और गॉथिक तत्व जुड़े हैं — यही इंडो-सरासेनिक शैली है। वाडियार राजवंश सदियों से मैसूर क्षेत्र पर शासन कर रहा था, और यह महल उनका आधिकारिक निवास था।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "The old palace burned during Dasara festivities in 1897. Rather than restore it, the court decided to rebuild in permanent materials, on a much larger scale, as a statement of the dynasty's continuity.",
+        "bodyHi": "1897 में दसरा उत्सव के दौरान पुराना महल जल गया था। उसे ठीक करने के बजाय दरबार ने स्थायी सामग्री से बहुत बड़े पैमाने पर दोबारा बनाने का निर्णय लिया, ताकि राजवंश की निरंतरता दिखे।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "The commission came from Krishnaraja Wadiyar IV, the Maharaja of Mysore. The architect was Henry Irwin, a British engineer with the Public Works Department, working with Indian and British craftspeople.",
+        "bodyHi": "यह आदेश मैसूर के महाराजा कृष्णराज वाडियार चतुर्थ ने दिया। वास्तुकार हेनरी इरविन थे, जो सार्वजनिक निर्माण विभाग में ब्रिटिश अभियंता थे, और उनके साथ भारतीय और ब्रिटिश कारीगर काम कर रहे थे।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "Count the domes and the granite pillars in the colonnade. The interior is famous for its stained glass, mosaic floors and a silver door. The building mixes styles so openly that it is often described as Indo-Saracenic rather than as a temple or a palace in a single tradition.",
+        "bodyHi": "गुम्बद और स्तंभमाला में ग्रेनाइट स्तंभ गिनिए। भीतरी हिस्सा रंगीन शीशे, मोज़ेक फ़र्श और चाँदी के दरवाज़े के लिए जाना जाता है। भवन इतनी खुलासे से शैलियाँ मिलाता है कि उसे किसी एक परंपरा का मंदिर या महल नहीं, बल्कि इंडो-सरासेनिक कहा जाता है।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The palace was the Wadiyar residence until Indian independence, after which the family's privileges were reorganised. The building continued in ceremonial use and now operates as a public museum, which is why it appears on most heritage itineraries even though it is not a protected archaeological site in the ASI sense.",
+        "bodyHi": "महल स्वतंत्रता तक वाडियारों का निवास था, उसके बाद परिवार के विशेषाधिकार पुनर्गठित हुए। भवन औपचारिक उपयोग में रहा और अब सार्वजनिक संग्रहालय के रूप में चलता है, इसलिए यह भारतीय पुरातत्व सर्वेक्षण की दृष्टि से संरक्षित पुरातात्विक स्थल न होते हुए भी अधिकांश विरासत-यात्राओं में शामिल है।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is one of the most visited monuments in India and a clear example of a hybrid colonial-era style. It also shows a different kind of heritage — a living dynastic residence — beside the ASI's archaeological monuments.",
+        "bodyHi": "यह भारत के सबसे अधिक देखे जाने वाले स्मारकों में से है और उपनिवेश-काल की मिश्रित शैली का स्पष्ट उदाहरण है। यह भारतीय पुरातत्व सर्वेक्षण के पुरातात्विक स्मारकों के बगल में विरासत का दूसरा रूप — एक जीवित राजवासी निवास — भी दिखाता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Present building completed",
+        "value": "c. 1912"
+      },
+      {
+        "label": "Architect",
+        "value": "Henry Irwin"
+      },
+      {
+        "label": "Style",
+        "value": "Indo-Saracenic"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No"
+      },
+      {
+        "label": "Status",
+        "value": "Working museum — TODO: verify custodian"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "What happened to the earlier palace on this site?",
+        "options": [
+          "It was demolished for a road",
+          "It burned down in 1897",
+          "It sank into the ground",
+          "It is still standing behind the new one"
+        ],
+        "answer": 1,
+        "explain": "The earlier wooden palace burned during Dasara festivities in 1897."
+      },
+      {
+        "q": "Which architectural style is the palace usually described as?",
+        "options": [
+          "Dravidian",
+          "Gothic",
+          "Indo-Saracenic",
+          "Mughal"
+        ],
+        "answer": 2,
+        "explain": "It openly blends Hindu, Moorish, Rajput and Gothic elements — the Indo-Saracenic style."
+      },
+      {
+        "q": "Why is it included here even though it is not UNESCO listed?",
+        "options": [
+          "It is a UNESCO tentative site",
+          "It is an ASI protected monument",
+          "It shows a different kind of heritage — a dynastic residence now used as a museum",
+          "It was recently added"
+        ],
+        "answer": 2,
+        "explain": "We deliberately include living, non-ASI heritage alongside archaeological sites."
+      }
+    ],
+    "isUnesco": false,
+    "isUnescoRef": "Not on the UNESCO World Heritage List",
+    "isOfficiallyProtected": null,
+    "protectedBy": "TODO: verify current custodian — not an ASI monument; run as a museum by the Wadiyar trust",
+    "officialSourceLabel": "TODO: add a verified official source",
+    "officialSourceUrl": null,
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mysore_Palace_-_Amba_Vilas_Palace.jpg/1280px-Mysore_Palace_-_Amba_Vilas_Palace.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mysore_Palace_-_Amba_Vilas_Palace.jpg/1280px-Mysore_Palace_-_Amba_Vilas_Palace.jpg",
+    "nameHi": "मैसूर पैलेस",
+    "slug": "mysore-palace"
+  },
+  {
+    "id": "champaner",
+    "title": "Champaner-Pavagadh Archaeological Park",
+    "state": "Gujarat",
+    "region": "West",
+    "type": "monument",
+    "era": "medieval",
+    "description": "A whole unexcavated medieval landscape — mosques, temples, stepwells, forts and tanks at the foot of Pavagadh hill.",
+    "descriptionHi": "पावागढ़ पहाड़ी की तलहटी में एक अखंड मध्यकालीन परिदृश्य — मस्जिदें, मंदिर, बावड़ियाँ, क़िले और तालाब।",
+    "lat": 22.485635,
+    "lng": 73.53723,
+    "tags": [
+      "islamic",
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Champaner-Pavagadh Archaeological Park (No. 1101)",
+        "url": "https://whc.unesco.org/en/list/1101/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Rupeshsarkar",
+      "license": "CC BY-SA 4.0",
+      "filename": "champaner.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/champaner.jpg",
+        "caption": "Champaner-Pavagadh Archaeological Park — Champaner",
+        "credit": "Rupeshsarkar",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Champaner-Pavagadh Archaeological Park (No. 1101)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1101/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/1101/",
+    "city": "Champaner",
+    "history": "The area was occupied from roughly the 8th century onward. Champaner became the capital of the Gujarat Sultanate under Mahmud Begada in the late 15th and early 16th centuries, and he strengthened the fortifications climbing Pavagadh hill. The Jama Masjid is the finest building on the site. Unlike most heritage parks, the monuments here are spread across an unexcavated landscape rather than tidied into a single compound.",
+    "historyHi": "यह क्षेत्र लगभग 8वीं सदी से बसा हुआ था। देर मध्यकाल में चंपानेर गुजरात सल्तनत की राजधानी बना और महमूद बेगड़ा ने पावागढ़ पहाड़ी तक चढ़ने वाली किलेबंदी मज़बूत की। जामा मस्जिद स्थल की सबसे सुंदर इमारत है। अधिकांश विरासत-पार्कों से भिन्न, यहाँ के स्मारक किसी एक परिसर में समेटे नहीं, बल्कि अनअन्वेषित परिदृश्य में फैले हैं।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "The hill and its springs made this a defensible and well-watered position on the Gujarat plain. Several powers held it in turn, and the Gujarat Sultanate made it a capital because it controlled routes into southern Gujarat.",
+        "bodyHi": "पहाड़ी और उसके झरने इसे गुजरात के मैदान पर एक सुरक्षित और पानी वाला स्थान बनाते थे। कई शक्तियों ने बारी-बारी से इस पर कब्ज़ा किया, और गुजरात सल्तनत ने इसे दक्षिणी गुजरात के मार्गों पर नियंत्रण के लिए राजधानी बनाया।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "Hindu and Jain builders left temples and tanks from the earlier centuries. The Sultanate-era buildings, including the Jama Masjid and the fortifications, are attributed to Mahmud Begada's reign. The two traditions left work in the same landscape.",
+        "bodyHi": "हिंदू और जैन कारीगरों ने पहली सदियों के मंदिर और जलाशय छोड़े। सल्तनत-काल की इमारतें, जिनमें जामा मस्जिद और किलेबंदी शामिल हैं, महमूद बेगड़ा के शासनकाल से जुड़ी हैं। दोनों परंपराओं ने एक ही परिदृश्य में काम छोड़ा है।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "The Jama Masjid uses a broad courtyard with a colonnade and a minaret that still has its upper storey. Look for the blend of temple carving techniques in Islamic buildings — pierced stone screens, brackets and floral borders that come from local Hindu and Jain craft. Several stepwells survive in the same plain.",
+        "bodyHi": "जामा मस्जिद में विशाल आँगन, स्तंभमाला और एक मीनार है जिसकी ऊपरी मंज़िल आज भी बची है। इस्लामी इमारतों में मंदिर-शैली की नक्काशी देखें — जालीदार पत्थर की खिड़कियाँ, कंधे और पुष्प-सीमाएँ, जो स्थानीय हिंदू और जैन शिल्प से आए हैं। उसी मैदान में कई बावड़ियाँ भी बची हैं।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The capital moved away in the 1530s and the town declined. Because it was never rebuilt on, buildings from different centuries survived side by side. The site entered the UNESCO list in 2004, largely because the whole cultural landscape — not just one monument — is intact.",
+        "bodyHi": "1530 के दशक में राजधानी चली गई और नगर सिमटता गया। चूँकि यहाँ दोबारा बसाव नहीं हुआ, अलग-अलग सदियों की इमारतें साथ-साथ बच गईं। 2004 में यह स्थल यूनेस्को सूची में शामिल हुआ, मुख्यतः इसलिए कि पूरा सांस्कृतिक परिदृश्य — केवल एक स्मारक नहीं — अक्षत है।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is a rare example where the setting is the heritage, not a backdrop to it. That makes it directly relevant to the problem of unstructured archives: the value is in the scattered, unlabelled spread, which is exactly what a database has to capture.",
+        "bodyHi": "यह दुर्लभ उदाहरण है जहाँ विरासत परिवेश है, पृष्ठभूमि नहीं। यह बिखरे और बिना नामांकित अभिलेखों की समस्या से सीधे जुड़ता है: मूल्य इसी फैलाव में है, और यही डेटाबेस को पकड़ना होता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Occupied from",
+        "value": "About the 8th century onward"
+      },
+      {
+        "label": "Capital under",
+        "value": "Mahmud Begada, Gujarat Sultanate"
+      },
+      {
+        "label": "Fineest building",
+        "value": "Jama Masjid"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 1101, in 2004"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "What makes Champaner unusual among heritage parks?",
+        "options": [
+          "It has no stone buildings",
+          "The monuments sit in an unexcavated landscape rather than one compound",
+          "It is entirely underground",
+          "It was built in a single decade"
+        ],
+        "answer": 1,
+        "explain": "Mosques, temples, stepwells, forts and tanks are spread across the plain and hillside."
+      },
+      {
+        "q": "Which ruler made Champaner the capital of the Gujarat Sultanate?",
+        "options": [
+          "Ahmad Shah I",
+          "Mahmud Begada",
+          "Bahadur Shah",
+          "Gujarat Shah"
+        ],
+        "answer": 1,
+        "explain": "Mahmud Begada made it a capital in the late 15th and early 16th centuries."
+      },
+      {
+        "q": "Why is Hindu temple carving visible inside Islamic buildings here?",
+        "options": [
+          "They are the same building",
+          "Local Hindu and Jain craftspeople worked on the Sultanate buildings",
+          "The mosques were converted temples",
+          "It is a restoration error"
+        ],
+        "answer": 1,
+        "explain": "Local craftspeople carried their own carving vocabulary into the Sultanate-era work."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 1101",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/1101/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Champaner-Pavagadh_-_Gujarat_-_001.jpg/1280px-Champaner-Pavagadh_-_Gujarat_-_001.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Champaner-Pavagadh_-_Gujarat_-_001.jpg/1280px-Champaner-Pavagadh_-_Gujarat_-_001.jpg",
+    "nameHi": "चंपानेर-पावागढ़ पुरातात्विक उद्यान",
+    "slug": "champaner"
+  },
+  {
+    "id": "gateway-india",
+    "title": "Gateway of India",
+    "state": "Maharashtra",
+    "region": "West",
+    "type": "monument",
+    "era": "colonial",
+    "description": "The basalt triumphal arch on Mumbai's harbour front, built for the 1911 royal visit.",
+    "descriptionHi": "मुंबई के हार्बर फ़्रंट पर बेसाल्ट का विजय-मेहराब, 1911 के शाही दौरे के लिए बनाया गया।",
+    "lat": 18.921984,
+    "lng": 72.834648,
+    "tags": [
+      "colonial"
+    ],
+    "sourceLinks": [
+      {
+        "label": "TODO: add a verified official source for the Gateway of India",
+        "url": null
+      }
+    ],
+    "credits": {
+      "photographer": "Joe Ravi",
+      "license": "CC BY-SA 3.0",
+      "filename": "gateway-india.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/gateway-india.jpg",
+        "caption": "Gateway of India — Mumbai",
+        "credit": "Joe Ravi",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "sources": [
+      "TODO: add a verified official source for the Gateway of India"
+    ],
+    "officialSource": {
+      "label": "TODO: add a verified official source",
+      "url": null
+    },
+    "folkloreNote": null,
+    "govLink": null,
+    "city": "Mumbai",
+    "history": "The arch was designed by George Wittet and built between 1913 and 1924 to mark the landing of King George V and Queen Mary at Bombay in 1911. The landing happened before the arch was finished, so the structure commemorated a visit that had already taken place. It is 26 metres high, built of yellow basalt, and the last British troops to leave India passed through it in 1948.",
+    "historyHi": "यह मेहराब जॉर्ज विटेट ने डिज़ाइन किया और 1913 से 1924 के बीच बनाया, ताकि 1911 में बंबई पहुँचे किंग जॉर्ज पंचम और क्वीन मैरी के आगमन को चिह्नित किया जा सके। उद्घाटन से पहले ही दौरा हो चुका था, इसलिए यह संरचना एक पहले हो चुकी यात्रा को समर्पित है। यह 26 मीटर ऊँची है, पीले बेसाल्ट से बनी है, और 1948 में भारत छोड़ने वाली ब्रिटिश सेना इसी से होकर गुज़री।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "King George V and Queen Mary landed at Bombay in 1911, and the colonial government wanted a permanent ceremonial entrance on the water where such arrivals would be received.",
+        "bodyHi": "किंग जॉर्ज पंचम और क्वीन मैरी 1911 में बंबई पहुँचे, और उपनिवेश सरकार ने समुद्र किनारे एक स्थायी औपचारिक प्रवेशद्वार चाहिए, जहाँ ऐसे आगमन हों।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "George Wittet, a Scottish architect with the Bombay Public Works Department, designed it. Construction ran for about eleven years and involved contractors working in yellow basalt from the Deccan.",
+        "bodyHi": "बंबई सार्वजनिक निर्माण विभाग के स्कॉटिश वास्तुकार जॉर्ज विटेट ने इसे डिज़ाइन किया। निर्माण लगभग ग्यारह वर्ष चला और इसमें डेक्कन के पीले बेसाल्ट पर काम करने वाले ठेकेदार शामिल थे।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "The central span is a 26-metre arch with a domed hall on each side. Look up at the lattice work in the upper corners, and at the small domes that crown the four corner towers — the whole thing is a hybrid, drawing on Gujarati temple elements as much as on Roman triumphal arches.",
+        "bodyHi": "मध्य विस्तार 26 मीटर का मेहराब है जिसके दोनों ओर गुम्बद वाले हॉल हैं। ऊपरी कोनों में जालीदार काम और चार कोने की मीनारों पर छोटे गुम्बद देखें — पूरी संरचना मिश्रित है, जो रोमन विजय-मेहराब के साथ-साथ गुजराती मंदिर के तत्व भी उधार लेती है।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "The harbour in front of it was reclaimed and redeveloped, so the arch no longer stands at the water's edge the way it originally did. The Apollo Bunder area around it was reshaped into the open plaza that exists now. In 1948 the last British troops to leave India paraded through it.",
+        "bodyHi": "इसके सामने का बंदरगाह पाटा और पुनर्विकसित किया गया, इसलिए अब यह मेहराब उस तरह जल के किनारे नहीं खड़ा जैसे मूल रूप में था। आसपास के अपोलो बंडर क्षेत्र को आज के खुले चौराहे में ढाला गया। 1948 में भारत छोड़ने वाली ब्रिटिश सेना यहीं से गुज़री।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is the single most recognised image of Mumbai and a rare colonial monument whose meaning has been inherited and reworked rather than simply rejected. It also anchors the harbour waterfront as public space.",
+        "bodyHi": "यह मुंबई की सबसे पहचानी जाने वाली छवि है और एक दुर्लभ उपनिवेशी स्मारक है जिसका अर्थ सिर्फ़ अस्वीकार नहीं, बल्कि आत्मसात करके नया रूप दिया गया। यह हार्बर तटरेखा को सार्वजनिक स्थान के रूप में भी जोड़ता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Built",
+        "value": "1913–1924"
+      },
+      {
+        "label": "Architect",
+        "value": "George Wittet"
+      },
+      {
+        "label": "Height",
+        "value": "26 metres"
+      },
+      {
+        "label": "Material",
+        "value": "Yellow basalt"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "What was the arch built to commemorate?",
+        "options": [
+          "Indian independence",
+          "The 1911 landing of King George V and Queen Mary",
+          "The opening of the harbour",
+          "A naval battle"
+        ],
+        "answer": 1,
+        "explain": "It marked the royal landing at Bombay in 1911, which happened before the arch was finished."
+      },
+      {
+        "q": "What happened at the Gateway in 1948?",
+        "options": [
+          "It was bombed",
+          "The last British troops to leave India passed through it",
+          "It was renamed",
+          "It was briefly underwater"
+        ],
+        "answer": 1,
+        "explain": "The last British troops to leave India paraded through it in 1948."
+      },
+      {
+        "q": "Why is it included here despite not being UNESCO listed?",
+        "options": [
+          "It was added in 2024",
+          "It is ASI protected",
+          "It shows 20th-century colonial heritage alongside ancient sites",
+          "It was a mistake"
+        ],
+        "answer": 2,
+        "explain": "We deliberately span eras and protection statuses rather than only UNESCO archaeology."
+      }
+    ],
+    "isUnesco": false,
+    "isUnescoRef": "Not on the UNESCO World Heritage List",
+    "isOfficiallyProtected": null,
+    "protectedBy": "TODO: verify protecting body",
+    "officialSourceLabel": "TODO: add a verified official source",
+    "officialSourceUrl": null,
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gateway_Of_India.jpg/1280px-Gateway_Of_India.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gateway_Of_India.jpg/1280px-Gateway_Of_India.jpg",
+    "nameHi": "गेटवे ऑफ़ इंडिया",
+    "slug": "gateway-india"
+  },
+  {
+    "id": "mahabodhi",
+    "title": "Mahabodhi Temple",
+    "state": "Bihar",
+    "region": "East",
+    "type": "temple",
+    "era": "ancient",
+    "description": "The temple marking the spot where the Buddha is said to have attained enlightenment.",
+    "descriptionHi": "यह मंदिर उस स्थान को चिह्नित करता है जहाँ बुद्ध को ज्ञान प्राप्त होने की बात कही जाती है।",
+    "lat": 24.69609,
+    "lng": 84.991108,
+    "tags": [
+      "buddhist"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Mahabodhi Temple Complex at Bodh Gaya (No. 1056)",
+        "url": "https://whc.unesco.org/en/list/1056/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Rohit Sharma",
+      "license": "CC BY-SA 4.0",
+      "filename": "mahabodhi.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/mahabodhi.jpg",
+        "caption": "Mahabodhi Temple — Bodh Gaya",
+        "credit": "Rohit Sharma",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Mahabodhi Temple Complex at Bodh Gaya (No. 1056)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1056/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/1056/",
+    "city": "Bodh Gaya",
+    "history": "A shrine has stood on this spot from a very early period, and the core of the present temple is generally dated to the Gupta period, around the 5th or 6th century CE. The tall pyramidal tower that now dominates the site is largely a 19th-century restoration carried out after long neglect, directed by Alexander Cunningham and others working with the Archaeological Survey of India. The complex also contains the Diamond Throne, the Bodhi Tree, a raised platform, and a rail added later.",
+    "historyHi": "इस स्थान पर प्राचीन काल से एक अभयदान रहा है, और वर्तमान मंदिर का मूल भाग गुप्त काल, लगभग ई. 5वीं या 6वीं सदी, का माना जाता है। अब स्थल पर हावी ऊँचा पिरामिडनुमा विमान मुख्यतः 19वीं सदी का पुनर्निर्माण है, जो लंबी उपेक्षा के बाद अलेक्ज़ेंडर कनिंघम और भारतीय पुरातत्व सर्वेक्षण के लोगों के निर्देशन में हुआ। परिसर में वज्रासन, बोधि वृक्ष, ऊँचा चबूतरा और बाद में जोड़ी गई रेल भी है।",
+    "story": [
+      {
+        "title": "Why it was built",
+        "titleHi": "इसका निर्माण क्यों हुआ",
+        "body": "This is where the Buddha is said to have sat under the Bodhi Tree and attained enlightenment. Buildings appeared at the spot to mark it for pilgrims, and Bodh Gaya became one of the main centres of Buddhist pilgrimage.",
+        "bodyHi": "यही वह स्थान है जहाँ बुद्ध ने बोधि वृक्ष के नीचे बैठकर ज्ञान प्राप्त किया। तीर्थयात्रियों के लिए स्थान को चिह्नित करने हैं यहाँ भवन बने, और बोधगया बौद्ध तीर्थयात्रा के प्रमुण केंद्रों में गिना जाता है।",
+        "image": null
+      },
+      {
+        "title": "Who built it",
+        "titleHi": "किसने बनवाया",
+        "body": "The earliest structures were built by pilgrims and rulers over many centuries. The temple core is generally assigned to the Gupta period. The present tower was rebuilt in the late 19th century under Alexander Cunningham of the Archaeological Survey of India.",
+        "bodyHi": "सबसे पुरानी संरचनाएँ शताब्दियों तक तीर्थयात्रियों और शासकों ने बनवाईं। मंदिर का मूल भाग गुप्त काल का माना जाता है। वर्तमान विमान देर 19वीं सदी में भारतीय पुरातत्व सर्वेक्षण के अलेक्ज़ेंडर कनिंघम के निर्देशन में दोबारा बनाया गया।",
+        "image": null
+      },
+      {
+        "title": "What to notice in its architecture",
+        "titleHi": "वास्तुकला में क्या देखें",
+        "body": "The tower tapers upward in receding storeys and is faced with niches holding Buddha images. On the east is the stone lotus from which, according to tradition, the Buddha first walked toward the Bodhi Tree. Around the platform you can see rail posts and the Diamond Throne behind the tree.",
+        "bodyHi": "विमान ऊपर की ओर संकुचित होता है और उसमें बुद्ध की मूर्तियों वाली अलिंदें हैं। पूर्व में वह पत्थर का कमल है जिससे, परंपरा के अनुसार, बुद्ध पहली बार बोधि वृक्ष की ओर चले। चबूतरे के चारों ओर रेल-स्तंभ और वृक्ष के पीछे वज्रासन दिखाई देता है।",
+        "image": null
+      },
+      {
+        "title": "How it changed over time",
+        "titleHi": "समय के साथ इसमें क्या बदलाव आया",
+        "body": "Bodh Gaya fell into neglect after Buddhism declined in the region and the site was overgrown. The 19th-century restoration rebuilt much of what visitors see today, which is worth knowing when reading claims about the 'original' temple. The complex was inscribed by UNESCO in 2002.",
+        "bodyHi": "बौद्ध धर्म के क्षेत्र में कमज़ोर होने के बाद बोधगया उपेक्षित हो गई और स्थल पेड़ों से घिर गया। 19वीं सदी के पुनर्निर्माण में वही बनाया गया जो आज आगंतुक देखते हैं — 'मूल' मंदिर के दावे पढ़ते समय यह जानना उपयोगी है। 2002 में यह परिसर यूनेस्को सूची में शामिल हुआ।",
+        "image": null
+      },
+      {
+        "title": "Why it matters today",
+        "titleHi": "आज यह क्यों महत्वपूर्ण है",
+        "body": "It is one of the oldest Buddhist temples still in use, and it hosts pilgrims from across Asia throughout the year. It is also a useful honesty lesson for any heritage database: what looks ancient is often a careful reconstruction of something older.",
+        "bodyHi": "यह अभी भी पूजित प्राचीन बौद्ध मंदिरों में से एक है और साल भर एशिया भर से तीर्थयात्रियों को आश्रय देता है। यह किसी भी विरासत डेटाबेस के लिए ईमानदारी का पाठ भी है: जो प्राचीन दिखता है वह अक्सर किसी और भी पुरानी चीज़ का सावधानीपूर्वक पुनर्निर्माण होता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Temple core",
+        "value": "Generally dated to the Gupta period"
+      },
+      {
+        "label": "Present tower",
+        "value": "19th-century restoration"
+      },
+      {
+        "label": "Restoration led by",
+        "value": "Alexander Cunningham"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 1056, in 2002"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "What event does this temple mark?",
+        "options": [
+          "The birth of the Buddha",
+          "The Buddha's first sermon",
+          "The Buddha's attainment of enlightenment",
+          "The Buddha's death"
+        ],
+        "answer": 2,
+        "explain": "The temple marks the spot where the Buddha is said to have attained enlightenment."
+      },
+      {
+        "q": "How old is the tall tower visitors see today?",
+        "options": [
+          "It is the original Gupta structure",
+          "It is largely a 19th-century restoration",
+          "It was built in the 1990s",
+          "It is a modern replica"
+        ],
+        "answer": 1,
+        "explain": "The core is ancient, but the dominant tower was rebuilt in the late 19th century."
+      },
+      {
+        "q": "Who directed the 19th-century restoration?",
+        "options": [
+          "John Marshall",
+          "Alexander Cunningham",
+          "Mortimer Wheeler",
+          "R.D. Banerji"
+        ],
+        "answer": 1,
+        "explain": "Alexander Cunningham of the Archaeological Survey of India directed the work."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 1056",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/1056/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Mahabodhi_temple_complex%2C_Bodhgaya_07.jpg/1280px-Mahabodhi_temple_complex%2C_Bodhgaya_07.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Mahabodhi_temple_complex%2C_Bodhgaya_07.jpg/1280px-Mahabodhi_temple_complex%2C_Bodhgaya_07.jpg",
+    "nameHi": "महाबोधिमंदिर",
+    "slug": "mahabodhi"
+  },
+  {
+    "id": "bhimbetka",
+    "title": "Rock Shelters of Bhimbetka",
+    "state": "Madhya Pradesh",
+    "region": "Central",
+    "type": "cave",
+    "era": "ancient",
+    "description": "Hundreds of sandstone shelters carrying paintings that run from the Palaeolithic to medieval times.",
+    "descriptionHi": "सैंडस्टोन के सैकड़ों आश्रय, जिन पर पुरापाषाण से मध्यकाल तक के चित्र बने हैं।",
+    "lat": 22.936286,
+    "lng": 77.607565,
+    "tags": [
+      "multi"
+    ],
+    "sourceLinks": [
+      {
+        "label": "UNESCO World Heritage Centre — Rock Shelters of Bhimbetka (No. 925)",
+        "url": "https://whc.unesco.org/en/list/925/"
+      },
+      {
+        "label": "Archaeological Survey of India",
+        "url": "https://asi.nic.in/"
+      }
+    ],
+    "credits": {
+      "photographer": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0",
+      "filename": "bhimbetka.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/bhimbetka.jpg",
+        "caption": "Rock Shelters of Bhimbetka — Raisen",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "sources": [
+      "UNESCO World Heritage Centre — Rock Shelters of Bhimbetka (No. 925)",
+      "Archaeological Survey of India"
+    ],
+    "officialSource": {
+      "label": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/925/"
+    },
+    "folkloreNote": null,
+    "govLink": "https://whc.unesco.org/en/list/925/",
+    "city": "Raisen",
+    "history": "The Bhimbetka cluster contains more than 700 shelters in the Vindhyan hills of Raisen district. Painting sequences have been identified from the Palaeolithic and Mesolithic through to historic and medieval periods, so the rock face is a very long-running record rather than a single layer. The site was documented by V.S. Wakankar in 1957–58 and inscribed by UNESCO in 2003.",
+    "historyHi": "भीमबेटका में रायसेन ज़िले की विंध्यन पहाड़ियों में 700 से अधिक आश्रय हैं। यहाँ पुरापाषाण और मेसोलिथिक से लेकर ऐतिहासिक व मध्यकाल तक के चित्रक्रम पहचाने गए हैं, इसलिए चट्टान की भिट्ठी किसी एक परत का नहीं, बहुत लंबे अभिलेख का हिस्सा है। व.एस. वाक़नकर ने 1957–58 में इसका दस्तावेज़ीकरण किया और 2003 में यूनेस्को ने इसे सूचीबद्ध किया।",
+    "story": [
+      {
+        "title": "Why it matters",
+        "titleHi": "यह क्यों महत्वपूर्ण है",
+        "body": "These shelters were used by people who lived in them, not built by rulers. That makes them a record of ordinary life — hunting, dancing, animals, processions — across an enormous span of time, which monumental architecture almost never shows.",
+        "bodyHi": "ये आश्रय उन लोगों ने इस्तेमाल किए जो यहाँ रहते थे, शासकों ने नहीं बनाए। इसलिए ये सामान्य जीवन — शिकार, नृत्य, जानवर, जुलूस — का अभिलेख हैं, जो विशाल कालखंड में राजमहल लगभग कभी नहीं दिखाते।",
+        "image": null
+      },
+      {
+        "title": "Who painted them",
+        "titleHi": "इन्हें किसने बनाया",
+        "body": "Many different groups over thousands of years. The exact communities cannot be named from the paintings alone, so the honest answer is that the artists are unknown. What can be established is the sequence of styles and the animals and actions depicted.",
+        "bodyHi": "हज़ारों वर्षों में कई अलग-अलग समूहों ने। चित्रों से अलग-अलग समुदायों के नाम तय नहीं किए जा सकते, इसलिए ईमानदार उत्तर यह है कि कलाकार अज्ञात हैं। जो तय किया जा सकता है वह है शैलियों का क्रम और चित्रित जानवर व कर्म।",
+        "image": null
+      },
+      {
+        "title": "What to notice",
+        "titleHi": "क्या देखें",
+        "body": "Look for layered painting, where later figures are drawn over earlier ones — that is the clearest sign this is one long record rather than one moment. Also note the range of animals, which tells you what the landscape was like. The shelters themselves are low sandstone overhangs, and the paintings are kept in shade for that reason.",
+        "bodyHi": "स्तरित चित्र देखें, जहाँ बाद की आकृतियाँ पहले के ऊपर बनी हैं — यही सबसे स्पष्ट संकेत है कि यह एक लंबा अभिलेख है, एक क्षण नहीं। जानवरों की विविधता भी देखें, जो बताती है कि परिवेश कैसा था। आश्रय निम्न सैंडस्टोन के ओट हुए हिस्से हैं, और चित्र छाया में रहते हैं।",
+        "image": null
+      },
+      {
+        "title": "How it changed",
+        "titleHi": "इसमें क्या बदलाव आया",
+        "body": "The shelters fell out of use and were effectively rediscovered in 1957–58 by V.S. Wakankar. Since inscription, access has been managed to limit damage, because open-air pigment is fragile and cannot easily be restored once lost.",
+        "bodyHi": "आश्रय उपयोग से बाहर हो गए और 1957–58 में व.एस. वाक़नकर ने पुनः खोज जैसा किया। सूचीबद्धता के बाद पहुँच नियंत्रित की गई, क्योंकि खुले आसमान तले रंग नाज़ुक हैं और एक बार नष्ट होने पर आसानी से बहाल नहीं होते।",
+        "image": null
+      },
+      {
+        "title": "Why it is useful for this project",
+        "titleHi": "इस परियोजना के लिए यह क्यों उपयोगी है",
+        "body": "A painted shelter is exactly the kind of heritage that archives lose: unnamed, undated in any precise sense, located in scrub, and hard to describe in one record. If a database can hold it honestly, it can hold almost anything.",
+        "bodyHi": "चित्रित आश्रय ठीक वह तरह की विरासत है जो अभिलेखों में खो जाती है: बिना नाम, बिना सटीक तिथि, झाड़ियों में स्थित, और एक अभिलेख में बताना कठिन। यदि डेटाबेस इसे ईमानदारी से रख सकता है, तो वह लगभग कुछ भी रख सकता है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Shelters",
+        "value": "More than 700"
+      },
+      {
+        "label": "Range of painting",
+        "value": "Palaeolithic to medieval"
+      },
+      {
+        "label": "Documented by",
+        "value": "V.S. Wakankar, 1957–58"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No. 925, in 2003"
+      },
+      {
+        "label": "Protected by",
+        "value": "Archaeological Survey of India"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Roughly how many rock shelters are at Bhimbetka?",
+        "options": [
+          "24",
+          "120",
+          "More than 700",
+          "About 2,000"
+        ],
+        "answer": 2,
+        "explain": "The cluster contains more than 700 shelters."
+      },
+      {
+        "q": "What makes the paintings unusually valuable as an archive?",
+        "options": [
+          "They are painted in gold",
+          "They span from the Palaeolithic to medieval times in layered sequences",
+          "They are signed by the artists",
+          "They use imported pigment"
+        ],
+        "answer": 1,
+        "explain": "Later figures are drawn over earlier ones, so many periods share one rock face."
+      },
+      {
+        "q": "Who is the earliest painting attributed to?",
+        "options": [
+          "A named Gupta court artist",
+          "An unknown community — the artists cannot be identified",
+          "Alexander Cunningham",
+          "V.S. Wakankar"
+        ],
+        "answer": 1,
+        "explain": "The paintings cannot be attributed to named individuals; claiming otherwise would be invention."
+      }
+    ],
+    "isUnesco": true,
+    "isUnescoRef": "UNESCO World Heritage List No. 925",
+    "isOfficiallyProtected": true,
+    "protectedBy": "Archaeological Survey of India",
+    "officialSourceLabel": "UNESCO World Heritage Centre",
+    "officialSourceUrl": "https://whc.unesco.org/en/list/925/",
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Rock_Shelter_8%2C_Bhimbetka_02.jpg/1280px-Rock_Shelter_8%2C_Bhimbetka_02.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Rock_Shelter_8%2C_Bhimbetka_02.jpg/1280px-Rock_Shelter_8%2C_Bhimbetka_02.jpg",
+    "nameHi": "भीमबेटका की चट्टानी आश्रय",
+    "slug": "bhimbetka"
+  },
+  {
+    "id": "kamakhya",
+    "title": "Kamakhya Temple",
+    "state": "Assam",
+    "region": "Northeast",
+    "type": "temple",
+    "era": "medieval",
+    "description": "A Shakti pitha on Nilachal hill above Guwahati, among the most important Shakta temples in India.",
+    "descriptionHi": "गुवाहाटी के ऊपर नीलाचल पहाड़ी पर स्थित शक्तिपीठ, भारत के प्रमुण शाक्त मंदिरों में से एक।",
+    "lat": 26.166494,
+    "lng": 91.706999,
+    "tags": [
+      "hindu"
+    ],
+    "sourceLinks": [
+      {
+        "label": "TODO: add a verified official source for Kamakhya Temple",
+        "url": null
+      }
+    ],
+    "credits": {
+      "photographer": "JyotiPN",
+      "license": "CC BY-SA 4.0",
+      "filename": "kamakhya.jpg"
+    },
+    "media": [
+      {
+        "kind": "photo",
+        "src": "media/kamakhya.jpg",
+        "caption": "Kamakhya Temple — Guwahati",
+        "credit": "JyotiPN",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "sources": [
+      "TODO: add a verified official source for Kamakhya Temple"
+    ],
+    "officialSource": {
+      "label": "TODO: add a verified official source",
+      "url": null
+    },
+    "folkloreNote": null,
+    "govLink": null,
+    "city": "Guwahati",
+    "history": "Kamakhya is counted among the oldest Shakti pithas, and the spot is described in the Kalika Purana and other texts. The present structure is medieval: the temple was damaged several times and rebuilt, and its current form is usually associated with the later medieval period in Assam. The temple is also the centre of the annual Ambubachi Mela. The exact dates and sequence of rebuilding are not settled, and this entry deliberately does not guess at them.",
+    "historyHi": "कामाख्या सबसे पुराने शक्तिपीठों में गिना जाता है, और यह स्थान कालिका पुराण व अन्य ग्रंथों में वर्णित है। वर्तमान संरचना मध्यकालीन है: मंदिर कई बार क्षतिग्रस्त होकर दोबारा बना, और उसका वर्तमान रूप सामान्यतः असम के उत्तर-मध्यकाल से जोड़ा जाता है। यहाँ वार्षिक अंबुबाची मेला लगता है। पुनर्निर्माण की सटीक तिथियाँ और क्रम तय नहीं हैं, और यह प्रविष्टि जान-बूझकर अनुमान नहीं लगाती।",
+    "story": [
+      {
+        "title": "Why it is important",
+        "titleHi": "यह क्यों महत्वपूर्ण है",
+        "body": "Kamakhya is one of the pithas where, in Shakta tradition, a part of the goddess Sati is said to have fallen. That makes it a destination for pilgrims from across India, and a major centre of Tantric practice in the northeast.",
+        "bodyHi": "कामाख्या उन पीठों में से है जहाँ, शाक्त परंपरा के अनुसार, देवी सती का एक अंग गिरा माना जाता है। इससे यह पूरे भारत से तीर्थयात्रियों का गंतव्य और उत्तर-पूर्व का प्रमुण तांत्रिक केंद्र बन गया।",
+        "image": null
+      },
+      {
+        "title": "Who built the present temple",
+        "titleHi": "वर्तमान मंदिर किसने बनवाया",
+        "body": "The site has been rebuilt several times by different rulers and communities, and the present form is generally placed in the later medieval period in Assam. We do not assign a single patron here, because the evidence does not support a clean attribution.",
+        "bodyHi": "इस स्थल को विभिन्न शासकों और समुदायों ने कई बार दोबारा बनाया, और वर्तमान रूप सामान्यतः असम के उत्तर-मध्यकाल का माना जाता है। हम यहाँ किसी एक संरक्षक का नाम नहीं दे रहे, क्योंकि प्रमाण साफ़ श्रेय-निर्धारण की अनुमति नहीं देता।",
+        "image": null
+      },
+      {
+        "title": "What to notice",
+        "titleHi": "क्या देखें",
+        "body": "The temple has a distinctive beehive-shaped shikhara with carved panels. The hill above the river is covered in smaller shrines, so the whole Nilachal slope reads as one religious landscape rather than a single building. The temple's inner sanctum follows a Shakta form that differs from a standard Vaishnava temple plan.",
+        "bodyHi": "मंदिर का शिखर अलग शैली का मधुमक्खी-सदृश है जिसमें नक्काशीदार पट्टियाँ हैं। नदी के ऊपर पहाड़ी छोटे मंदिरों से ढकी है, इसलिए पूरी नीलाचल ढलान एक ही धार्मिक परिदृश्य लगती है, कोई एक भवन नहीं। गर्भगृह शाक्त रूप का है, जो मानक वैष्णव मंदिर-योजना से भिन्न है।",
+        "image": null
+      },
+      {
+        "title": "How it changed",
+        "titleHi": "इसमें क्या बदलाव आया",
+        "body": "The temple was damaged during historical conflicts and rebuilt repeatedly. Much of what is visible today reflects the later medieval rebuilding. Conservation and management are handled by the temple authorities rather than by the ASI.",
+        "bodyHi": "मंदिर ऐतिहासिक संघर्षों में क्षतिग्रस्त हुआ और बार-बार पुनर्निर्मित हुआ। आज जो दिखता है उसका बड़ा हिस्सा उत्तर-मध्यकालीन पुनर्निर्माण का है। संरक्षण और प्रबंधन भारतीय पुरातत्व सर्वेक्षण के बजाय मंदिर प्रशासन करता है।",
+        "image": null
+      },
+      {
+        "title": "Why it is included here",
+        "titleHi": "इसे यहाँ क्यों शामिल किया गया है",
+        "body": "Most heritage databases under-represent the northeast. Including Kamakhya with explicit TODOs on its custodian and dates is more useful than leaving the region empty or filling the gaps with confident guesses.",
+        "bodyHi": "अधिकांश विरासत डेटाबेसों में उत्तर-पूर्व का प्रतिनिधित्व कम है। कामाख्या को स्पष्ट TODO के साथ शामिल करना क्षेत्र को ख़ाली छोड़ने या अनुमान से भरने से बेहतर है।",
+        "image": null
+      }
+    ],
+    "quickFacts": [
+      {
+        "label": "Location",
+        "value": "Nilachal hill, Guwahati"
+      },
+      {
+        "label": "Significance",
+        "value": "Major Shakti pitha"
+      },
+      {
+        "label": "Present structure",
+        "value": "Medieval — exact date TODO"
+      },
+      {
+        "label": "Annual festival",
+        "value": "Ambubachi Mela"
+      },
+      {
+        "label": "UNESCO listed",
+        "value": "No"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "What kind of site is Kamakhya?",
+        "options": [
+          "A Buddhist monastery",
+          "A Shakti pitha",
+          "A Jain basadi",
+          "A Sikh takht"
+        ],
+        "answer": 1,
+        "explain": "It is counted among the oldest Shakti pithas in Shakta tradition."
+      },
+      {
+        "q": "Where does it stand?",
+        "options": [
+          "On a plain beside the Brahmaputra",
+          "On Nilachal hill above Guwahati",
+          "On an island",
+          "Inside a fort"
+        ],
+        "answer": 1,
+        "explain": "It sits on Nilachal hill overlooking Guwahati."
+      },
+      {
+        "q": "Why does this entry give fewer dates than others?",
+        "options": [
+          "The team forgot",
+          "The rebuilding sequence is not settled, so we do not guess",
+          "The temple has no history",
+          "Dates are secret"
+        ],
+        "answer": 1,
+        "explain": "Where the evidence is unclear we mark it TODO rather than invent a date."
+      }
+    ],
+    "isUnesco": false,
+    "isUnescoRef": "Not on the UNESCO World Heritage List",
+    "isOfficiallyProtected": null,
+    "protectedBy": "TODO: verify current protection status and custodian",
+    "officialSourceLabel": "TODO: add a verified official source",
+    "officialSourceUrl": null,
+    "pano360": null,
+    "featured": false,
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/The_Kamakhya_Temple%2C_Guwahati%2C_Assam.jpg/1280px-The_Kamakhya_Temple%2C_Guwahati%2C_Assam.jpg",
+    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/The_Kamakhya_Temple%2C_Guwahati%2C_Assam.jpg/1280px-The_Kamakhya_Temple%2C_Guwahati%2C_Assam.jpg",
+    "nameHi": "कामाख्या मंदिर",
+    "slug": "kamakhya"
+  }
+]

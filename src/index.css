@@ -1,0 +1,102 @@
+/* ============================================================
+   index.css — global reset and the app shell.
+
+   Deliberately thin. Component styling lives in *.module.css files so
+   nothing here can accidentally override a panel; this file only
+   establishes the page, the fonts, and the fact that the canvas is
+   fixed behind everything.
+   ============================================================ */
+
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  /* min-height, not height: a site page is several thousand pixels
+     tall and forcing the root to exactly 100% fights that for no
+     benefit. The landing screen does not need a locked body either —
+     it is position:fixed, so it cannot scroll the document away. */
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* No sideways scroll ever. Vertical scrolling belongs to the pages;
+     the hero and the atlas canvas are both fixed and manage their own
+     framing. */
+  overflow-x: hidden;
+  background: var(--canvas-deep);
+  color: var(--paper);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  position: relative;
+  isolation: isolate;
+  /* A page route and the landing screen are different heights; without
+     this the root collapses to its smallest child. */
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+a {
+  color: inherit;
+}
+
+/* Focus is always visible and always ochre — ochre means interactive,
+   and keyboard users get the same signal mouse users get from hover. */
+:focus-visible {
+  outline: 2px solid var(--ochre);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Screen-reader-only text, used for counters and live regions. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

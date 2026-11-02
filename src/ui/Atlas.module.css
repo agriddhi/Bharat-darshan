@@ -1,0 +1,355 @@
+/* ============================================================
+   ui/Atlas.module.css — the gallery room.
+
+   WHAT REPLACED THE BEIGE BOXES
+   The first version of this page was 25 identical cylinders on a
+   black plane. It communicated nothing a flat list would not say
+   better, and it was the single biggest reason the build did not
+   match the plan. This replaces it with the thing the project
+   actually has: 26 licensed photographs of real monuments, hung in
+   space.
+
+   WHY CSS 3D AND NOT three.js FOR THIS
+   Not because three.js cannot do it — because this page's job is to
+   be *seen*, and a CSS-transformed gallery renders identically
+   everywhere with no WebGL context, no texture loading and no render
+   loop to fail. The depth here is real (perspective, translateZ,
+   parallax), it is measurable, and it cannot end up as an empty
+   canvas. The archive's job is to show photographs, and this shows
+   them at full fidelity rather than as textures on a plane.
+
+   THE DEPTH CARRIES NOTHING
+   Prints sit at different depths for the same reason photographs on
+   a real wall are not all flush — it reads as a room. No value,
+   rank or date is encoded in the Z position. The only data on a
+   print is its title, region and type.
+   ============================================================ */
+
+/* ============================================================
+   ROOM
+   ============================================================ */
+
+.room {
+  position: relative;
+  /* The vanishing point sits above centre so the wall leans back
+     slightly, which is how a viewer standing close to a hung wall
+     actually sees it. */
+  perspective: 1500px;
+  perspective-origin: 50% 42%;
+  padding: clamp(30px, 5vw, 70px) clamp(16px, 5vw, 64px) clamp(70px, 9vw, 120px);
+  overflow: hidden;
+  /* A faint floor glow so the wall has somewhere to stand. Without
+     it the prints float in a void and the perspective reads as a
+     skew rather than as depth. */
+  background:
+    radial-gradient(120% 55% at 50% 104%, rgba(222, 164, 68, 0.15), transparent 62%),
+    radial-gradient(90% 60% at 50% -10%, rgba(65, 106, 129, 0.16), transparent 68%),
+    linear-gradient(to bottom, #0a1120, var(--canvas-deep) 60%, #0b1322);
+}
+
+/* The faint grid on the back wall. Purely spatial cue — it gives the
+   eye something to measure the depth against. */
+.roomGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(244, 235, 217, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 235, 217, 0.045) 1px, transparent 1px);
+  background-size: 74px 74px;
+  mask-image: radial-gradient(75% 62% at 50% 46%, #000 12%, transparent 82%);
+  -webkit-mask-image: radial-gradient(75% 62% at 50% 46%, #000 12%, transparent 82%);
+  pointer-events: none;
+}
+
+/* ============================================================
+   THE WALL
+   ============================================================ */
+
+.wall {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
+  gap: clamp(20px, 3vw, 42px);
+  transform-style: preserve-3d;
+  /* Set from JS on pointer move. Small values only — past about
+     seven degrees the wall stops reading as a wall and starts
+     reading as a tilting card. */
+  transform: rotateY(var(--yaw, 0deg)) rotateX(var(--pitch, 0deg))
+    translateZ(var(--push, 0px));
+  transition: transform 620ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+
+.print {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #0a1120;
+  text-decoration: none;
+  color: inherit;
+  transform-style: preserve-3d;
+  /* Each print sits at its own depth. The sequence repeats so the
+     wall has rhythm rather than a gradient — a wall where every row
+     recedes further looks like a ramp, not a hang. */
+  transform: translateZ(var(--z, 0px)) rotateY(var(--ry, 0deg))
+    rotateX(var(--rx, 0deg));
+  transition: transform 460ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    box-shadow 460ms ease, border-color 460ms ease;
+  border: 1px solid rgba(244, 235, 217, 0.14);
+  /* A print needs a shadow or it does not read as an object hanging
+     off a wall — it reads as a div. */
+  box-shadow: 0 14px 34px rgba(4, 8, 16, 0.6);
+  will-change: transform;
+}
+
+/* Depth sequence — seven steps, repeating. */
+.print:nth-child(7n + 1) {
+  --z: 0px;
+  --ry: 0deg;
+}
+.print:nth-child(7n + 2) {
+  --z: 34px;
+  --ry: -2.4deg;
+}
+.print:nth-child(7n + 3) {
+  --z: -22px;
+  --ry: 1.8deg;
+}
+.print:nth-child(7n + 4) {
+  --z: 52px;
+  --ry: -1.2deg;
+}
+.print:nth-child(7n + 5) {
+  --z: -38px;
+  --ry: 2.6deg;
+}
+.print:nth-child(7n + 6) {
+  --z: 16px;
+  --ry: -3deg;
+}
+.print:nth-child(7n + 7) {
+  --z: -8px;
+  --ry: 0.6deg;
+}
+
+/* Hovered print comes forward out of the wall and straightens —
+   the motion of picking a photograph up to look at it. */
+.print:hover,
+.print:focus-visible {
+  transform: translateZ(calc(var(--z, 0px) + 96px)) rotateY(0deg) rotateX(0deg)
+    scale(1.03);
+  border-color: rgba(222, 164, 68, 0.78);
+  box-shadow: 0 34px 74px rgba(4, 8, 16, 0.76), 0 0 0 1px rgba(222, 164, 68, 0.4);
+  z-index: 5;
+}
+
+.printPhoto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 800ms var(--ease-panel), filter 500ms ease;
+  /* Prints that are further back are slightly dimmer — aerial
+     perspective, the same cue that makes distant hills look pale. */
+  filter: brightness(var(--b, 1)) saturate(0.95);
+}
+
+.print:hover .printPhoto {
+  transform: scale(1.07);
+  filter: brightness(1.04) saturate(1.05);
+}
+
+.printScrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(6, 10, 20, 0.95) 0%,
+    rgba(6, 10, 20, 0.6) 34%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.printBody {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px 16px;
+  z-index: 2;
+}
+
+.printRegion {
+  font-family: var(--sans);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 6px;
+}
+
+.printTitle {
+  font-family: var(--serif);
+  font-size: 1.26rem;
+  font-weight: 600;
+  line-height: 1.16;
+  color: #fbf7ef;
+  margin: 0 0 4px;
+}
+
+.printMeta {
+  font-family: var(--sans);
+  font-size: 0.67rem;
+  color: rgba(244, 235, 217, 0.68);
+}
+
+/* UNESCO ring, drawn as a hairline on the frame. Real data only. */
+.printUnesco {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  z-index: 3;
+  padding: 4px 9px;
+  border-radius: var(--radius-pill);
+  font-family: var(--sans);
+  font-size: 0.53rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  background: rgba(14, 22, 38, 0.8);
+  border: 1px solid rgba(222, 164, 68, 0.72);
+  color: var(--ochre);
+  backdrop-filter: blur(8px);
+}
+
+/* ============================================================
+   FILTER BAR (over the room)
+   ============================================================ */
+
+.chips {
+  position: sticky;
+  top: 57px;
+  z-index: 40;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 13px clamp(16px, 5vw, 64px);
+  background: rgba(14, 22, 38, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--glass-line);
+  border-bottom: 1px solid var(--glass-line);
+}
+
+.chip {
+  padding: 8px 15px;
+  border-radius: var(--radius-pill);
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--paper-dim);
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+  cursor: pointer;
+  transition: color var(--dur-fast), border-color var(--dur-fast),
+    background-color var(--dur-fast);
+}
+
+.chip:hover {
+  color: var(--paper);
+  border-color: rgba(222, 164, 68, 0.5);
+}
+
+.chipOn {
+  color: var(--ochre);
+  background: rgba(222, 164, 68, 0.15);
+  border-color: rgba(222, 164, 68, 0.66);
+}
+
+.chipCount {
+  opacity: 0.6;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+/* ============================================================
+   INSTRUCTION LINE
+   ============================================================ */
+
+.hint {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 clamp(20px, 3vw, 32px);
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  color: var(--paper-faint);
+}
+
+.hintMark {
+  color: var(--ochre);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 760px) {
+  .chips {
+    top: 53px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar {
+    display: none;
+  }
+  .chip {
+    flex-shrink: 0;
+  }
+  .wall {
+    grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+    gap: 16px;
+    /* Parallax on a phone is handled by the gyroscope-free scroll
+       alone; a pointer-driven tilt would fight the touch scroll. */
+    transform: none !important;
+  }
+  .print {
+    transform: none !important;
+  }
+  .print:hover,
+  .print:focus-visible {
+    transform: none !important;
+  }
+  .room {
+    perspective: none;
+    overflow: visible;
+  }
+}
+
+/* Reduced motion: the wall becomes a flat grid. Depth is a nicety,
+   never the only way to reach a print — every one is still an anchor
+   in normal document order. */
+@media (prefers-reduced-motion: reduce) {
+  .wall,
+  .print,
+  .printPhoto {
+    transition: none !important;
+    transform: none !important;
+  }
+  .printPhoto {
+    filter: none;
+  }
+}

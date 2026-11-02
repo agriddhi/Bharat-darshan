@@ -1,0 +1,130 @@
+/* ============================================================
+   BHARAT DARSHAN v2 — tokens.css
+   The single source of truth for every colour in this app.
+
+   TWO RULES THAT ARE NOT NEGOTIABLE
+
+   1. Ochre (#DEA044) is the ONLY interactive accent. If something is
+      clickable, it is ochre. Nothing else competes for that job.
+
+   2. The --scene-* tokens below are for the 3D canvas ONLY — lighting
+      tint, fog tint, and region identity. They must never appear as a
+      flat UI fill, a button background, or a text colour. Keeping them
+      out of the DOM is what stops the interface turning into a rainbow.
+
+   ------------------------------------------------------------
+   PROVENANCE — please read before changing any value.
+
+   Five of these hex values were printed on the reference image the
+   team supplied (a Palace of Fine Arts swatch set), so they are exact:
+
+       softStone #CDC8B8   ochre     #DEA044
+       terracotta#BF8250   rust      #9D473A   steelBlue #416A81
+
+   The ink navy and the four scene moods are NOT printed anywhere we
+   can read. The brief gave us Pantone codes for them and asked for a
+   hex conversion recorded as an approximation, which is what the
+   comments below do. These are chosen values, not measured samples.
+   Do not describe them as "the Pantone colour" in any write-up — they
+   are approximations of it, and the distinction matters because this
+   project's whole standard is not claiming more than we verified.
+   ============================================================ */
+
+:root {
+  /* ---- the printed five: exact, do not tweak ---- */
+  --soft-stone:  #CDC8B8;  /* surfaces, panels, the UI shell */
+  --ochre:       #DEA044;  /* PRIMARY INTERACTIVE ACCENT — hover, focus,
+                              active marker, route line, CTA underline */
+  --terracotta:  #BF8250;  /* secondary warm, sparingly */
+  --rust:        #9D473A;  /* rare emphasis only */
+  --steel-blue:  #416A81;  /* the search field, and only the search field */
+
+  /* ---- ink navy ----
+     Reference: PANTONE 20-0141 TPM.
+     APPROXIMATION, not a measured sample. Chosen to sit well above
+     WCAG AA (4.5:1) against --soft-stone, which is why it is this
+     dark rather than a lighter navy. */
+  --ink-navy:    #16243D;
+  --ink-navy-rgb: 22 36 61;
+
+  /* ---- surfaces built from soft stone ---- */
+  --surface:      #E4DFD2;  /* soft stone darkened a step, for panels */
+  --surface-sunk: #D3CEBE;  /* wells, inputs, inset areas */
+  --line:         #B9B3A1;  /* hairlines on stone */
+
+  /* ---- the dark page theme ----
+     Inner pages continue the language of the hero rather than
+     switching back to a light chrome: dark ground, warm paper text,
+     glass surfaces. One visual voice from the landing screen through
+     to the credits, instead of a cinematic front door opening onto a
+     plain office. */
+  --paper:        #F4EBD9;  /* primary text on dark */
+  --paper-dim:    rgba(244, 235, 217, 0.66);  /* secondary text */
+  --paper-faint:  rgba(244, 235, 217, 0.42);  /* captions, meta */
+  --glass:        rgba(244, 235, 217, 0.055); /* panel fill */
+  --glass-strong: rgba(244, 235, 217, 0.10);  /* raised panel */
+  --glass-line:   rgba(244, 235, 217, 0.16);  /* 1px edge — required
+                                                  for glass to read as
+                                                  glass at all */
+
+  /* ---- the near-black the canvas sits against ----
+     The brief says NOT pure black. This is ink navy pulled down until
+     it reads as depth rather than as a colour, so the region moods
+     glow against it instead of fighting a flat void. */
+  --canvas-deep:  #0E1626;
+
+  /* ============================================================
+     SCENE MOODS — canvas only. Lighting tint, fog tint, marker glow,
+     region identity. NEVER a UI fill.
+     Reference codes from the brief: PANTONE 4975 CP, 17-0911 TCX,
+     19-5918 TCX, 20-0161 TPM. All four are APPROXIMATIONS — the same
+     caveat as the ink navy above.
+     ============================================================ */
+  --scene-north:  #4A6B3F;  /* forest   — PANTONE 17-0911 TCX approx */
+  --scene-south:  #1D5A6E;  /* teal     — PANTONE 19-5918 TCX approx */
+  --scene-east:   #7A2E3A;  /* burgundy — PANTONE 4975 CP   approx */
+  --scene-west:   #A88B5C;  /* sand     — PANTONE 20-0161 TPM approx */
+
+  /* Regions with no printed reference in the brief are derived from
+     the two remaining members of the six-region set. Named honestly
+     rather than assigned a Pantone code we were not given. */
+  --scene-central:#8A6D4F;  /* earth brown — matches v1 marker --m-other */
+  --scene-northeast:#5F7040; /* moss      — matches v1 --moss */
+
+  /* ---- type ----
+     Self-hosted (public/fonts), latin subset only. Cormorant carries
+     the display voice — high-contrast enough to read as a heritage
+     publication rather than a dashboard; Inter does all the work in
+     controls and small labels where a serif would smear. */
+  --serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --sans:  "Inter", "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+  --deva:  "Noto Sans Devanagari", "Inter", sans-serif;
+
+  /* Display sizes, used by the hero and any section that needs to
+     announce itself. Kept here so type scale lives in one place. */
+  --text-hero:    clamp(2.6rem, 7vw, 6.2rem);
+  --text-section: clamp(1.7rem, 3.4vw, 2.9rem);
+  --text-lead:    clamp(0.98rem, 1.25vw, 1.18rem);
+  --track-caps:   0.2em;
+
+  /* ---- geometry ---- */
+  --radius:      14px;
+  --radius-sm:   8px;
+  --radius-pill: 999px;
+  --nav-h:       56px;
+  --shadow:      0 2px 4px rgba(22, 36, 61, .06),
+                 0 14px 34px rgba(22, 36, 61, .16);
+  --shadow-lift: 0 6px 12px rgba(22, 36, 61, .10),
+                 0 22px 48px rgba(22, 36, 61, .24);
+
+  /* ---- motion ----
+     Every camera move and panel transition uses these, so nothing in
+     the app snaps. The brief caps a single camera move at ~90 degrees
+     of rotation; nothing here is tuned to exceed that. */
+  --ease-glide:  cubic-bezier(.45, 0, .2, 1);   /* camera push-in, glide */
+  --ease-panel:  cubic-bezier(.22, .61, .36, 1); /* slide-in panels */
+  --dur-fast:    180ms;
+  --dur-base:    320ms;
+  --dur-camera:  1200ms;   /* push-in, inside the brief's 1–1.5s window */
+  --dur-filter:  700ms;    /* dim/rise, inside the brief's 0.6–0.8s window */
+}

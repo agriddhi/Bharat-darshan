@@ -1,0 +1,103 @@
+/* ui/HoverPreview.module.css
+
+   A fixed dock at the lower left, deliberately NOT a tooltip that
+   follows the cursor. A tooltip over a 3D scene has to fight the
+   canvas for z-order, flips at every screen edge, and sits exactly
+   where the pointer already is — so it is either occluded by the hand
+   or it covers the very object being hovered. A dock never moves, is
+   always legible against the soft-stone surface, and lets you read the
+   card while still seeing the marker you are pointing at.
+   ============================================================ */
+
+.card {
+  position: fixed;
+  left: clamp(12px, 2vw, 22px);
+  bottom: 62px;
+  z-index: 35;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  width: min(320px, calc(100vw - 24px));
+  padding: 9px;
+  background: color-mix(in srgb, var(--soft-stone) 96%, transparent);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--ochre);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lift);
+
+  /* enter / leave glide — nothing snaps, per the motion rules */
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--dur-base) var(--ease-panel),
+    transform var(--dur-base) var(--ease-panel);
+  pointer-events: none;
+}
+
+.shown {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.thumb {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  background: var(--surface-sunk);
+}
+
+.body {
+  min-width: 0;
+}
+
+.name {
+  font-family: var(--serif);
+  font-size: 1.04rem;
+  font-weight: 600;
+  color: var(--ink-navy);
+  line-height: 1.2;
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-sunk);
+  color: color-mix(in srgb, var(--ink-navy) 76%, transparent);
+  border: 1px solid var(--line);
+}
+
+/* ochre outline on the type tag: it is the thing you would click to
+   filter, and ochre is this app's only interactive signal */
+.tagAccent {
+  border-color: var(--ochre);
+  color: var(--ink-navy);
+}
+
+.state {
+  font-size: 0.71rem;
+  color: color-mix(in srgb, var(--ink-navy) 62%, transparent);
+  margin-top: 4px;
+}
+
+@media (max-width: 720px) {
+  .card {
+    bottom: 54px;
+    width: calc(100vw - 24px);
+  }
+}

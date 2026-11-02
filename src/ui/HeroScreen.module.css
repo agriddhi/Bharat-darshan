@@ -1,0 +1,823 @@
+/* ============================================================
+   ui/HeroScreen.module.css — the cinematic landing screen.
+
+   WHAT MAKES THIS LOOK LIKE THE REFERENCE SITES
+   Four stacked layers, in this order, and none of them are optional:
+
+     1. a photograph, slowly moving (Ken Burns)
+     2. an atmosphere grade — colour, light rays, drifting fog
+     3. a vignette + grain, which is what makes a photo read as film
+        rather than as a JPEG
+     4. glass panels floating on top of all of it
+
+   The grain and vignette are doing more work than they look like.
+   Without them a bright photograph behind white text looks like a
+   banner ad; with them it looks lit. If you delete anything here,
+   delete the last.
+   ============================================================ */
+
+.hero {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  overflow: hidden;
+  background: var(--canvas-deep);
+  /* Entering the archive fades the whole hero out. The world beneath
+     is already mounted and animating, so nothing reloads. */
+  transition: opacity 900ms var(--ease-glide), transform 900ms var(--ease-glide);
+}
+
+.heroOut {
+  opacity: 0;
+  transform: scale(1.06);
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------
+   1. THE PHOTOGRAPHS
+   ------------------------------------------------------------ */
+
+.stage {
+  position: absolute;
+  inset: 0;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  /* Crossfade is slow on purpose — 2.4s. A fast cut between
+     monuments reads as a slideshow; a slow dissolve reads as one
+     continuous scene changing its light. */
+  transition: opacity 2400ms var(--ease-glide);
+  will-change: opacity;
+}
+
+.slideOn {
+  opacity: 1;
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Each slide drifts a different direction so the rotation never
+     shows a repeating pattern. 26s per pass — slow enough that you
+     notice it only if you stare. */
+  animation: kenburns 26s linear infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.16) translate3d(-2.2%, -1.8%, 0);
+  }
+}
+
+/* Alternate drift directions, assigned per slide index. */
+.slide:nth-child(2n) .photo {
+  animation-name: kenburnsAlt;
+}
+.slide:nth-child(3n) .photo {
+  animation-name: kenburnsAlt2;
+}
+
+@keyframes kenburnsAlt {
+  from {
+    transform: scale(1.14) translate3d(-2%, 1.6%, 0);
+  }
+  to {
+    transform: scale(1.02) translate3d(1.4%, 0, 0);
+  }
+}
+
+@keyframes kenburnsAlt2 {
+  from {
+    transform: scale(1.03) translate3d(1.8%, 1.4%, 0);
+  }
+  to {
+    transform: scale(1.15) translate3d(-1.4%, -1.6%, 0);
+  }
+}
+
+/* ------------------------------------------------------------
+   2. THE ATMOSPHERE
+   ------------------------------------------------------------ */
+
+/* Unifies the rotation. The photos come from different photographers
+   on different days, so their colour temperature disagrees — one
+   wash brings them into a single scene. */
+.grade {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 78% 12%, rgba(222, 164, 68, 0.20), transparent 58%),
+    linear-gradient(196deg, rgba(22, 36, 61, 0.30) 0%, transparent 42%),
+    linear-gradient(0deg, rgba(14, 22, 38, 0.94) 0%, rgba(14, 22, 38, 0.44) 34%, transparent 66%);
+  mix-blend-mode: normal;
+  pointer-events: none;
+}
+
+/* Soft light raking in from the upper right, slowly breathing. */
+.rays {
+  position: absolute;
+  inset: -25%;
+  background: conic-gradient(
+    from 200deg at 74% -8%,
+    transparent 0deg,
+    rgba(255, 241, 220, 0.16) 9deg,
+    transparent 19deg,
+    transparent 32deg,
+    rgba(255, 241, 220, 0.10) 40deg,
+    transparent 49deg,
+    transparent 70deg,
+    rgba(255, 241, 220, 0.13) 79deg,
+    transparent 90deg
+  );
+  filter: blur(22px);
+  opacity: 0.5;
+  mix-blend-mode: screen;
+  animation: rayDrift 34s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes rayDrift {
+  from {
+    transform: rotate(-2.5deg) translateX(-1.5%);
+    opacity: 0.38;
+  }
+  to {
+    transform: rotate(2.5deg) translateX(1.5%);
+    opacity: 0.62;
+  }
+}
+
+/* Two fog banks crossing at different speeds. The speed difference is
+   what sells depth — one layer alone reads as a gradient. */
+.fog {
+  position: absolute;
+  left: -40%;
+  right: -40%;
+  height: 52%;
+  background: radial-gradient(
+    58% 100% at 50% 100%,
+    rgba(205, 200, 184, 0.30),
+    rgba(205, 200, 184, 0.10) 46%,
+    transparent 74%
+  );
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.fogA {
+  bottom: -14%;
+  animation: fogDrift 46s linear infinite alternate;
+}
+
+.fogB {
+  bottom: -26%;
+  height: 64%;
+  opacity: 0.55;
+  animation: fogDriftB 70s linear infinite alternate;
+}
+
+@keyframes fogDrift {
+  from {
+    transform: translateX(-6%);
+  }
+  to {
+    transform: translateX(6%);
+  }
+}
+
+@keyframes fogDriftB {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(-5%);
+  }
+}
+
+/* ------------------------------------------------------------
+   3. VIGNETTE + GRAIN
+   ------------------------------------------------------------ */
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    118% 88% at 50% 44%,
+    transparent 40%,
+    rgba(14, 22, 38, 0.52) 82%,
+    rgba(14, 22, 38, 0.86) 100%
+  );
+  pointer-events: none;
+}
+
+/* Animated film grain. SVG turbulence filtered through CSS — no image
+   file, no video, and it costs one composited layer. */
+.grain {
+  position: absolute;
+  inset: -120%;
+  width: 340%;
+  height: 340%;
+  opacity: 0.13;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='180' height='180' filter='url(%23n)'/></svg>");
+  animation: grainShift 620ms steps(6) infinite;
+}
+
+@keyframes grainShift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  20% {
+    transform: translate3d(-6%, 4%, 0);
+  }
+  40% {
+    transform: translate3d(5%, -5%, 0);
+  }
+  60% {
+    transform: translate3d(-4%, -3%, 0);
+  }
+  80% {
+    transform: translate3d(6%, 3%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* ------------------------------------------------------------
+   4. CONTENT
+   ------------------------------------------------------------ */
+
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+}
+
+/* ---- nav: tiny, tracked, uppercase ---- */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: clamp(16px, 2.4vw, 30px) clamp(18px, 4vw, 56px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f4efe4;
+}
+
+.mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--ochre);
+  transform: rotate(45deg);
+  box-shadow: 0 0 16px rgba(222, 164, 68, 0.85);
+}
+
+.brandName {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2.6vw, 34px);
+}
+
+.link {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: rgba(244, 239, 228, 0.72);
+  text-decoration: none;
+  padding: 6px 2px;
+  border-bottom: 1px solid transparent;
+  transition: color var(--dur-fast), border-color var(--dur-fast);
+}
+
+.link:hover {
+  color: var(--ochre);
+  border-bottom-color: var(--ochre);
+}
+
+/* ---- the headline block ---- */
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 clamp(18px, 4vw, 56px);
+}
+
+.copy {
+  max-width: 640px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: clamp(14px, 2vw, 22px);
+}
+
+.eyebrowLine {
+  width: clamp(28px, 5vw, 56px);
+  height: 1px;
+  background: linear-gradient(90deg, var(--ochre), transparent);
+}
+
+.headline {
+  font-family: var(--serif);
+  font-size: var(--text-hero);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  color: #fbf7ef;
+  margin: 0 0 clamp(16px, 2vw, 26px);
+  text-shadow: 0 6px 40px rgba(14, 22, 38, 0.75);
+}
+
+/* The second half sits in ochre-tinted italic — the same trick the
+   reference sites use to break a headline into two beats. */
+.headlineEm {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ochre);
+  display: block;
+}
+
+.lead {
+  font-family: var(--sans);
+  font-size: var(--text-lead);
+  font-weight: 400;
+  line-height: 1.68;
+  color: rgba(244, 239, 228, 0.80);
+  max-width: 50ch;
+  margin: 0 0 clamp(24px, 3vw, 38px);
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 26px;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-navy);
+  background: var(--ochre);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 34px rgba(222, 164, 68, 0.34);
+  transition: transform var(--dur-fast) var(--ease-panel),
+    box-shadow var(--dur-fast), background-color var(--dur-fast);
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--ochre) 88%, #fff);
+  box-shadow: 0 16px 42px rgba(222, 164, 68, 0.46);
+}
+
+.ctaArrow {
+  transition: transform var(--dur-fast) var(--ease-panel);
+}
+
+.cta:hover .ctaArrow {
+  transform: translateX(4px);
+}
+
+.ctaGhost {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 50px;
+  padding: 13px 24px;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(244, 239, 228, 0.92);
+  background: rgba(244, 239, 228, 0.07);
+  border: 1px solid rgba(244, 239, 228, 0.28);
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(10px);
+  transition: border-color var(--dur-fast), background-color var(--dur-fast);
+}
+
+.ctaGhost:hover {
+  border-color: var(--ochre);
+  background: rgba(222, 164, 68, 0.14);
+}
+
+/* ---- facts strip ---- */
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(20px, 4vw, 46px);
+  margin-top: clamp(28px, 4vw, 46px);
+}
+
+.fact {
+  min-width: 92px;
+}
+
+.factNum {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ochre);
+}
+
+.factLabel {
+  font-family: var(--sans);
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(244, 239, 228, 0.62);
+  margin-top: 6px;
+}
+
+/* ---- glass card: the site currently on screen ---- */
+
+.card {
+  position: absolute;
+  right: clamp(18px, 4vw, 56px);
+  bottom: clamp(74px, 9vh, 108px);
+  z-index: 5;
+  width: min(310px, calc(100vw - 36px));
+  padding: 13px;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  /* THE glass treatment: a real backdrop blur over a near-transparent
+     fill, with a 1px light edge. Omit the edge and it stops reading
+     as glass and starts reading as a grey box. */
+  background: linear-gradient(
+    145deg,
+    rgba(244, 239, 228, 0.16),
+    rgba(244, 239, 228, 0.05)
+  );
+  border: 1px solid rgba(244, 239, 228, 0.26);
+  border-radius: var(--radius);
+  backdrop-filter: blur(18px) saturate(1.3);
+  -webkit-backdrop-filter: blur(18px) saturate(1.3);
+  box-shadow: 0 20px 50px rgba(14, 22, 38, 0.5);
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 700ms var(--ease-panel) 500ms,
+    transform 700ms var(--ease-panel) 500ms;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cardIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  border-color: rgba(222, 164, 68, 0.75);
+}
+
+.cardThumb {
+  width: 66px;
+  height: 66px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.cardBody {
+  min-width: 0;
+  flex: 1;
+}
+
+.cardKicker {
+  font-family: var(--sans);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 4px;
+}
+
+.cardName {
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #fbf7ef;
+  margin-bottom: 4px;
+}
+
+.cardMeta {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: rgba(244, 239, 228, 0.72);
+}
+
+.cardGo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 7px;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ochre);
+}
+
+/* ---- slide dots ---- */
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(24px, 3.4vh, 38px);
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 26px;
+  height: 3px;
+  border-radius: var(--radius-pill);
+  background: rgba(244, 239, 228, 0.28);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color var(--dur-base), width var(--dur-base);
+}
+
+.dotOn {
+  background: var(--ochre);
+  width: 46px;
+}
+
+/* ---- enter hint ---- */
+
+.hint {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(46px, 6vh, 66px);
+  transform: translateX(-50%);
+  z-index: 5;
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(244, 239, 228, 0.5);
+  white-space: nowrap;
+  animation: hintPulse 3.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes hintPulse {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    opacity: 0.92;
+    transform: translateX(-50%) translateY(3px);
+  }
+}
+
+/* ---- entrance stagger: everything rises in sequence ---- */
+
+.rise {
+  opacity: 0;
+  transform: translateY(22px);
+  animation: rise 900ms var(--ease-panel) forwards;
+}
+
+.rise1 {
+  animation-delay: 180ms;
+}
+.rise2 {
+  animation-delay: 320ms;
+}
+.rise3 {
+  animation-delay: 460ms;
+}
+.rise4 {
+  animation-delay: 600ms;
+}
+.rise5 {
+  animation-delay: 760ms;
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------------------------------------
+   RESPONSIVE
+
+   The card is absolutely positioned bottom-right, and the copy block
+   is 640px wide. Below roughly 1040px those two boxes overlap — the
+   "100% Sourced" fact ends up underneath the glass card. Moving the
+   card into the document flow has to happen at that width, not at the
+   860px where the nav links give up, or the collision ships.
+   ------------------------------------------------------------ */
+
+/* Card would run under the copy below this width — put it in flow.
+   Also tighten the whole stack: the hero carries an eyebrow, a
+   headline, a paragraph, two buttons, four facts and a card, and
+   between roughly 1040px and 700px tall that no longer fits between
+   the nav and the dots. Shrinking the type and the gaps is the honest
+   fix — letting the blocks overlap instead is what was happening. */
+@media (max-width: 1040px) {
+  .card {
+    position: static;
+    /* The 50px is clearance for the absolutely-positioned dots below.
+       Any less and the card sits on top of them. */
+    margin: 0 clamp(18px, 4vw, 56px) 50px;
+    width: auto;
+    max-width: 420px;
+    padding: 10px;
+    gap: 10px;
+  }
+  .cardThumb {
+    width: 54px;
+    height: 54px;
+  }
+  .cardName {
+    font-size: 1.04rem;
+  }
+  .cardGo {
+    margin-top: 5px;
+  }
+
+  .hint {
+    display: none;
+  }
+  .dots {
+    bottom: 18px;
+  }
+
+  /* type + spacing, pulled in */
+  .headline {
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    margin-bottom: 14px;
+  }
+  .eyebrow {
+    margin-bottom: 13px;
+  }
+  .lead {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 48ch;
+  }
+  .facts {
+    margin-top: 22px;
+    gap: 26px;
+  }
+  .factNum {
+    font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  }
+  .cta,
+  .ctaGhost {
+    min-height: 46px;
+    padding: 11px 22px;
+  }
+}
+
+@media (max-width: 860px) {
+  .links {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .main {
+    align-items: flex-start;
+    padding-top: clamp(14px, 5vh, 40px);
+  }
+  .headline {
+    font-size: clamp(2rem, 8.2vw, 2.9rem);
+    line-height: 1.02;
+    margin-bottom: 12px;
+  }
+  .eyebrow {
+    font-size: 0.6rem;
+    margin-bottom: 11px;
+  }
+  .lead {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 16px;
+  }
+  .ctaRow {
+    gap: 9px;
+  }
+  .cta,
+  .ctaGhost {
+    min-height: 44px;
+    padding: 10px 18px;
+    font-size: 0.82rem;
+  }
+  .facts {
+    gap: 17px;
+    margin-top: 16px;
+  }
+  .factNum {
+    font-size: 1.3rem;
+  }
+  .factLabel {
+    font-size: 0.57rem;
+    letter-spacing: 0.12em;
+  }
+  /* 46px keeps the card clear of the dots pinned at bottom:18px —
+     an 8px margin let them sit on top of each other. */
+  .card {
+    margin-bottom: 46px;
+    padding: 9px;
+  }
+  .cardThumb {
+    width: 50px;
+    height: 50px;
+  }
+  .dots {
+    gap: 6px;
+  }
+  .dot {
+    width: 18px;
+  }
+  .dotOn {
+    width: 32px;
+  }
+}
+
+/* Users who ask for less motion get a still frame: the photo stops
+   drifting, the grain stops shifting, and only the crossfade
+   remains — which is what carries the meaning anyway. */
+@media (prefers-reduced-motion: reduce) {
+  .photo,
+  .rays,
+  .fog,
+  .grain,
+  .hint {
+    animation: none !important;
+  }
+  .slide {
+    transition-duration: 400ms;
+  }
+  .rise {
+    animation-duration: 1ms;
+    animation-delay: 0ms !important;
+  }
+}

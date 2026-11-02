@@ -1,0 +1,398 @@
+/* ui/StoryPanel.module.css
+
+   A slide-in panel over the 3D, soft-stone surface, navy ink, ochre
+   accents. Maximum two accent colours per panel, per the brief: ochre
+   for interactive things and the ochre-tinted hairline for structure.
+   Nothing here uses a scene mood colour — those belong to the canvas.
+   ============================================================ */
+
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  background: rgba(22, 36, 61, 0.34);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--dur-base) var(--ease-panel);
+}
+
+.scrimOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  width: min(468px, 100vw);
+  display: flex;
+  flex-direction: column;
+  background: var(--soft-stone);
+  border-left: 1px solid var(--line);
+  box-shadow: var(--shadow-lift);
+
+  transform: translateX(102%);
+  transition: transform var(--dur-base) var(--ease-panel);
+}
+
+.panelOpen {
+  transform: translateX(0);
+}
+
+/* ---- header ---- */
+
+.head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px 11px;
+  background: var(--soft-stone);
+  border-bottom: 1px solid var(--line);
+}
+
+.headText {
+  flex: 1;
+  min-width: 0;
+}
+
+.kicker {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ink-navy) 60%, transparent);
+  margin-bottom: 3px;
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.14;
+  color: var(--ink-navy);
+  margin: 0;
+}
+
+.titleHi {
+  font-family: var(--deva);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--ink-navy) 68%, transparent);
+  margin-top: 3px;
+}
+
+.close {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--ink-navy);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transition: border-color var(--dur-fast), background-color var(--dur-fast);
+}
+
+.close:hover {
+  border-color: var(--ochre);
+  background: color-mix(in srgb, var(--ochre) 18%, transparent);
+}
+
+/* ---- scrollable body ---- */
+
+.body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 16px 22px;
+  scrollbar-width: thin;
+}
+
+/* ---- photos ---- */
+
+.photos {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 15px;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: var(--surface-sunk);
+  border: 1px solid var(--line);
+}
+
+.caption {
+  font-size: 0.7rem;
+  color: color-mix(in srgb, var(--ink-navy) 62%, transparent);
+  margin-top: -3px;
+}
+
+/* ---- text blocks ---- */
+
+.section {
+  margin-bottom: 16px;
+}
+
+.sectionLabel {
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ink-navy) 58%, transparent);
+  margin-bottom: 7px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--line);
+}
+
+.prose {
+  font-size: 0.93rem;
+  line-height: 1.68;
+  color: var(--ink-navy);
+  margin: 0;
+}
+
+.stage {
+  margin-bottom: 12px;
+}
+
+.stageTitle {
+  font-family: var(--serif);
+  font-size: 1.03rem;
+  font-weight: 600;
+  color: var(--ink-navy);
+  margin-bottom: 3px;
+}
+
+/* ---- quick facts ---- */
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.fact {
+  padding: 8px 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.factLabel {
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ink-navy) 56%, transparent);
+  margin-bottom: 2px;
+}
+
+.factValue {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: var(--ink-navy);
+  line-height: 1.3;
+}
+
+/* ---- tags ---- */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 0.71rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: color-mix(in srgb, var(--ink-navy) 80%, transparent);
+}
+
+/* ---- sources ---- */
+
+.sourceList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.sourceLink {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  text-decoration: none;
+  color: var(--ink-navy);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--ochre);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--dur-fast), border-color var(--dur-fast);
+}
+
+.sourceLink:hover {
+  background: color-mix(in srgb, var(--ochre) 14%, var(--surface));
+  border-color: var(--ochre);
+}
+
+.sourceArrow {
+  color: var(--ochre);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sourceNote {
+  font-size: 0.71rem;
+  color: color-mix(in srgb, var(--ink-navy) 58%, transparent);
+  margin-top: 6px;
+}
+
+.plainList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  font-size: 0.83rem;
+  color: color-mix(in srgb, var(--ink-navy) 82%, transparent);
+}
+
+.plainList li {
+  padding-left: 13px;
+  position: relative;
+}
+
+.plainList li::before {
+  content: '·';
+  position: absolute;
+  left: 3px;
+  color: var(--ochre);
+  font-weight: 700;
+}
+
+/* ---- folklore (only when present — it never is, today) ---- */
+
+.folklore {
+  padding: 11px 13px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-navy);
+  font-style: italic;
+}
+
+/* ---- actions ---- */
+
+.actions {
+  position: sticky;
+  bottom: 0;
+  display: grid;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--soft-stone);
+  border-top: 1px solid var(--line);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: background-color var(--dur-fast), border-color var(--dur-fast),
+    opacity var(--dur-fast);
+}
+
+/* ochre is the primary action — it means "do this" */
+.btnPrimary {
+  background: var(--ochre);
+  color: var(--ink-navy);
+}
+
+.btnPrimary:hover {
+  background: color-mix(in srgb, var(--ochre) 86%, var(--ink-navy));
+}
+
+.btnGhost {
+  background: transparent;
+  color: var(--ink-navy);
+  border-color: var(--line);
+}
+
+.btnGhost:hover {
+  border-color: var(--ochre);
+}
+
+/* full journey: disabled, and says why rather than just going dead */
+.btnDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnDisabled:hover {
+  background: var(--ochre);
+}
+
+.actionNote {
+  font-size: 0.72rem;
+  text-align: center;
+  color: color-mix(in srgb, var(--ink-navy) 62%, transparent);
+}
+
+/* ---- unesco / protection badges ---- */
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.badge {
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--ochre) 22%, transparent);
+  border: 1px solid var(--ochre);
+  color: var(--ink-navy);
+}
+
+@media (max-width: 560px) {
+  .panel {
+    width: 100vw;
+    border-left: 0;
+  }
+  .facts {
+    grid-template-columns: 1fr;
+  }
+}
