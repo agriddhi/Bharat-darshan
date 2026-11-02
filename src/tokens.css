@@ -73,6 +73,22 @@
      glow against it instead of fighting a flat void. */
   --canvas-deep:  #0E1626;
 
+  /* ---- three structural values, not palette colours ----
+     No one chose these for expression; they are the ground a
+     photograph rests on and the white a heading is set in. They were
+     originally written as raw hexes inside eight component files —
+     which meant this file was *nearly* the single source of truth
+     rather than actually being it. A palette with three exceptions
+     scattered across eight files is a palette that has five
+     exceptions by next week, so they are named here instead. */
+  --ground:       #0A1120;  /* behind a photo, before it loads, and as
+                               the base of the gallery floor */
+  --ground-deep:  #0B1322;  /* the far edge of that floor gradient */
+  --paper-bright: #FBF7EF;  /* headings on dark — one step above
+                               --paper, so a title reads as standing
+                               clear of the body copy rather than
+                               merely matching it */
+
   /* ============================================================
      SCENE MOODS — canvas only. Lighting tint, fog tint, marker glow,
      region identity. NEVER a UI fill.

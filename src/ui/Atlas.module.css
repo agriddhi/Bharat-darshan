@@ -44,7 +44,7 @@
   background:
     radial-gradient(120% 55% at 50% 104%, rgba(222, 164, 68, 0.15), transparent 62%),
     radial-gradient(90% 60% at 50% -10%, rgba(65, 106, 129, 0.16), transparent 68%),
-    linear-gradient(to bottom, #0a1120, var(--canvas-deep) 60%, #0b1322);
+    linear-gradient(to bottom, var(--ground), var(--canvas-deep) 60%, var(--ground-deep));
 }
 
 /* The faint grid on the back wall. Purely spatial cue — it gives the
@@ -95,7 +95,7 @@
   aspect-ratio: 3 / 4;
   border-radius: 3px;
   overflow: hidden;
-  background: #0a1120;
+  background: var(--ground);
   text-decoration: none;
   color: inherit;
   transform-style: preserve-3d;
@@ -207,7 +207,7 @@
   font-size: 1.26rem;
   font-weight: 600;
   line-height: 1.16;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0 0 4px;
 }
 

@@ -187,7 +187,7 @@ export function AtlasPage() {
               fontWeight: 500,
               lineHeight: 1,
               letterSpacing: '-0.02em',
-              color: '#fbf7ef',
+              color: 'var(--paper-bright)',
               margin: 0,
             }}
           >
@@ -306,7 +306,7 @@ export function AtlasPage() {
                 fontFamily: 'var(--serif)',
                 fontSize: 'clamp(1.6rem, 4vw, 2.4rem)',
                 fontWeight: 600,
-                color: '#fbf7ef',
+                color: 'var(--paper-bright)',
                 margin: '0 0 12px',
               }}
             >

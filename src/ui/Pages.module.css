@@ -94,7 +94,7 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.02em;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0;
 }
 
@@ -146,7 +146,7 @@
   font-size: clamp(1.5rem, 3vw, 2.15rem);
   font-weight: 600;
   line-height: 1.14;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0;
 }
 
@@ -267,7 +267,7 @@
   font-family: var(--serif);
   font-size: clamp(1.7rem, 4vw, 2.7rem);
   font-weight: 600;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0 0 12px;
 }
 
@@ -317,7 +317,7 @@
   height: 54px;
   object-fit: cover;
   border-radius: var(--radius-sm);
-  background: #0a1120;
+  background: var(--ground);
 }
 
 .stopBody {
@@ -329,7 +329,7 @@
   font-size: 1.24rem;
   font-weight: 600;
   line-height: 1.2;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   text-decoration: none;
 }
 
@@ -407,7 +407,7 @@
   font-family: var(--serif);
   font-size: clamp(1.5rem, 3vw, 2.1rem);
   font-weight: 600;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   line-height: 1.1;
 }
 
@@ -471,7 +471,7 @@
   font-family: var(--serif);
   font-size: 1.08rem;
   font-weight: 600;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   line-height: 1.2;
 }
 
@@ -556,7 +556,7 @@
   position: relative;
   height: clamp(190px, 30vh, 320px);
   overflow: hidden;
-  background: #0a1120;
+  background: var(--ground);
 }
 
 .qPhotoImg {
@@ -598,7 +598,7 @@
   font-size: clamp(1.3rem, 2.8vw, 1.85rem);
   font-weight: 600;
   line-height: 1.26;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0 0 22px;
 }
 
@@ -748,7 +748,7 @@
   font-family: var(--serif);
   font-size: clamp(1.6rem, 4vw, 2.6rem);
   font-weight: 600;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 26px 0 10px;
 }
 
@@ -811,7 +811,7 @@
 }
 
 .tableSite {
-  color: #fbf7ef;
+  color: var(--paper-bright);
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
@@ -854,7 +854,7 @@
 }
 
 .dontStrong {
-  color: #fbf7ef;
+  color: var(--paper-bright);
   font-weight: 600;
 }
 
@@ -887,7 +887,7 @@
   font-family: var(--serif);
   font-size: 1.3rem;
   font-weight: 600;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   line-height: 1.2;
 }
 
@@ -929,7 +929,7 @@
   aspect-ratio: 3 / 4;
   border-radius: var(--radius);
   overflow: hidden;
-  background: #0a1120;
+  background: var(--ground);
   border: 1px solid var(--glass-line);
   text-decoration: none;
   color: inherit;
@@ -1003,7 +1003,7 @@
   font-size: 1.32rem;
   font-weight: 600;
   line-height: 1.16;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0 0 4px;
 }
 

@@ -363,7 +363,7 @@
   font-weight: 500;
   line-height: 0.98;
   letter-spacing: -0.015em;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0 0 clamp(16px, 2vw, 26px);
   text-shadow: 0 6px 40px rgba(14, 22, 38, 0.75);
 }
@@ -549,7 +549,7 @@
   font-size: 1.18rem;
   font-weight: 600;
   line-height: 1.15;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin-bottom: 4px;
 }
 

@@ -28,7 +28,7 @@
   position: relative;
   height: clamp(300px, 52vh, 560px);
   overflow: hidden;
-  background: #0a1120;
+  background: var(--ground);
 }
 
 .photo {
@@ -141,7 +141,7 @@
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.018em;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0;
   text-shadow: 0 6px 40px rgba(14, 22, 38, 0.8);
 }
@@ -343,7 +343,7 @@
   font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 600;
   line-height: 1.1;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0;
 }
 
@@ -454,7 +454,7 @@
   font-size: clamp(1.2rem, 2.2vw, 1.6rem);
   font-weight: 600;
   line-height: 1.2;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0 0 9px;
 }
 
@@ -730,7 +730,7 @@
   font-family: var(--serif);
   font-size: 1.22rem;
   font-weight: 600;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   line-height: 1.2;
 }
 
@@ -753,7 +753,7 @@
   font-family: var(--serif);
   font-size: clamp(2rem, 5vw, 3.4rem);
   font-weight: 600;
-  color: #fbf7ef;
+  color: var(--paper-bright);
   margin: 0 0 14px;
 }
 
