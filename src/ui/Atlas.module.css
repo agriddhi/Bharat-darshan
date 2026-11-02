@@ -77,7 +77,11 @@
      reading as a tilting card. */
   transform: rotateY(var(--yaw, 0deg)) rotateX(var(--pitch, 0deg))
     translateZ(var(--push, 0px));
-  transition: transform 620ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* This transition is the smoothing — it damps the raw pointer
+     position so the wall follows rather than snaps. It is what makes
+     writing the custom property on every pointermove cheap enough to
+     do without a frame throttle. */
+  transition: transform 400ms cubic-bezier(0.22, 0.61, 0.36, 1);
   will-change: transform;
 }
 

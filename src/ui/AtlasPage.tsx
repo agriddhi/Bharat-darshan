@@ -47,7 +47,6 @@ export function AtlasPage() {
 
   const roomRef = useRef<HTMLDivElement>(null)
   const wallRef = useRef<HTMLDivElement>(null)
-  const rafRef = useRef<number | null>(null)
 
   const shown = useMemo(
     () => (filters.region ? SITES.filter((x) => x.region === filters.region) : SITES),
@@ -61,26 +60,32 @@ export function AtlasPage() {
   }, [])
 
   /* ---- pointer parallax ----
-     One listener, one element, one custom property each. The handler
-     is throttled to a frame so a fast pointer cannot queue up style
-     writes faster than the compositor can use them. */
+     Deliberately NOT throttled through requestAnimationFrame.
+
+     The first version scheduled the style write inside rAF and
+     guarded with `if (frame !== null) return`. That is a classic
+     footgun: if the frame callback is ever delayed — a backgrounded
+     tab, a throttled compositor, a headless run — the guard flag is
+     never cleared and the control is permanently dead from then on,
+     with no error and nothing to inspect. Setting two custom
+     properties is far cheaper than the cost of that failure mode, so
+     the handler writes directly. The 400ms transition on .wall does
+     the smoothing that the throttle was doing, and it cannot get
+     stuck. */
   const onPointerMove = useCallback((e: PointerEvent) => {
     const wall = wallRef.current
     const room = roomRef.current
     if (!wall || !room) return
 
-    if (rafRef.current !== null) return
+    const rect = room.getBoundingClientRect()
+    if (rect.width === 0 || rect.height === 0) return
 
-    rafRef.current = requestAnimationFrame(() => {
-      rafRef.current = null
-      const rect = room.getBoundingClientRect()
-      // -0.5 .. 0.5 across the room
-      const nx = (e.clientX - rect.left) / rect.width - 0.5
-      const ny = (e.clientY - rect.top) / rect.height - 0.5
+    // -0.5 .. 0.5 across the room
+    const nx = (e.clientX - rect.left) / rect.width - 0.5
+    const ny = (e.clientY - rect.top) / rect.height - 0.5
 
-      wall.style.setProperty('--yaw', `${(-nx * MAX_YAW * 2).toFixed(2)}deg`)
-      wall.style.setProperty('--pitch', `${(ny * MAX_PITCH * 2).toFixed(2)}deg`)
-    })
+    wall.style.setProperty('--yaw', `${(-nx * MAX_YAW * 2).toFixed(2)}deg`)
+    wall.style.setProperty('--pitch', `${(ny * MAX_PITCH * 2).toFixed(2)}deg`)
   }, [])
 
   const onPointerLeave = useCallback(() => {
@@ -111,7 +116,6 @@ export function AtlasPage() {
     return () => {
       room.removeEventListener('pointermove', onPointerMove)
       room.removeEventListener('pointerleave', onPointerLeave)
-      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current)
     }
   }, [onPointerMove, onPointerLeave])
 

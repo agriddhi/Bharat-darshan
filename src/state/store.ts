@@ -1,16 +1,28 @@
 /* ============================================================
    state/store.ts — one store for the whole app.
 
-   Why zustand rather than context: the 3D scene reads and writes this
-   state from inside the render loop (a marker's glow depends on whether
-   it is filtered in), and context would re-render the entire canvas
-   tree on every keystroke in the search box. A zustand store lets the
-   scene subscribe to just the slice it needs.
+   Why zustand rather than context: several surfaces read and write
+   this state independently — the archive index filters, the atlas
+   filters by the same axis, site pages add stops, the journey page
+   removes them. With context, typing one character in the search
+   box would re-render every one of those. With zustand each
+   subscribes to the slice it actually reads and the rest stay
+   still.
+
+   WHAT THIS STORE USED TO HOLD AND NO LONGER DOES
+   It previously carried activeView, panelOpen, selectedId,
+   hoveredId, playing, playIndex and quizOpen — the machinery of a
+   single-screen app where a drawer slid over a canvas. When the
+   panels became pages, the URL replaced all of it: there is no
+   "current view" to store because the address bar already says.
+   Deleting those fields rather than leaving them dormant is the
+   point — dead state is state someone has to reason about on every
+   future edit.
 
    THE JOURNEY RULE IS ENFORCED HERE, NOT IN THE UI.
    v1 allowed a maximum of 5 stops. That limit lives in addToJourney so
    it cannot be bypassed by a button someone forgets to disable — the
-   disabled state in the panel is a courtesy, this is the actual rule.
+   disabled state on the page is a courtesy, this is the actual rule.
    ============================================================ */
 
 import { create } from 'zustand'
@@ -24,8 +36,6 @@ export type { Filters }
 /** Maximum journey stops. Carried over from v1 unchanged. */
 export const JOURNEY_MAX = 5
 
-export type ViewId = 'world' | 'story' | 'passport' | 'quiz' | 'credits'
-
 /** No filters set — every site matches. */
 export const EMPTY_FILTERS: Filters = {
   region: null,
@@ -35,89 +45,44 @@ export const EMPTY_FILTERS: Filters = {
 }
 
 interface Store {
-  /* --- what is on screen --- */
-  activeView: ViewId
-  selectedId: string | null
-  hoveredId: string | null
-  panelOpen: boolean
-
-  /* --- what the user is looking for --- */
+  /* --- what the reader is looking for --- */
   filters: Filters
   query: string
 
-  /* --- the route --- */
+  /* --- what they have built --- */
   journey: string[]
-  playing: boolean
-  /** Index of the stop currently framed by the camera during playback. */
-  playIndex: number
-
   /**
-   * Sites the user has marked as visited. Separate from `journey` in v1
-   * too — a route stop and a "I have seen this" tick are different
+   * Sites the user has marked as visited. Separate from `journey` in
+   * v1 too — a route stop and a "I have seen this" tick are different
    * claims, and four of the five badges are written against this list
    * rather than against the route. Collapsing them would silently
    * change which badges earn.
    */
   visited: string[]
 
-  /* --- quiz --- */
-  quizOpen: boolean
-
   /* --- actions --- */
-  setView: (v: ViewId) => void
-  select: (id: string | null) => void
-  hover: (id: string | null) => void
-  setPanel: (open: boolean) => void
-
   setFilter: <K extends keyof Filters>(key: K, value: Filters[K]) => void
   clearFilters: () => void
   setQuery: (q: string) => void
 
+  /** Returns false when already present or when the route is full. */
   addToJourney: (id: string) => boolean
   removeFromJourney: (id: string) => void
   clearJourney: () => void
-  setPlaying: (p: boolean) => void
-  setPlayIndex: (i: number) => void
 
   /** v1's mark-as-visited toggle. */
   toggleVisited: (id: string) => void
   isVisited: (id: string) => boolean
-
-  setQuizOpen: (open: boolean) => void
 }
 
 export const useStore = create<Store>()(
   persist(
     (set, get) => ({
-      activeView: 'world',
-      selectedId: null,
-      hoveredId: null,
-      panelOpen: false,
-
       filters: { ...EMPTY_FILTERS },
       query: '',
 
       journey: [],
-      playing: false,
-      playIndex: 0,
       visited: [],
-
-      quizOpen: false,
-
-      setView: (v) => set({ activeView: v, panelOpen: v !== 'world' }),
-
-      select: (id) =>
-        set({
-          selectedId: id,
-          // selecting a site opens its story; clearing one returns to the
-          // bare world rather than leaving a stale panel up
-          activeView: id ? 'story' : 'world',
-          panelOpen: id !== null,
-        }),
-
-      hover: (id) => set({ hoveredId: id }),
-
-      setPanel: (open) => set({ panelOpen: open, activeView: open ? get().activeView : 'world' }),
 
       setFilter: (key, value) =>
         set((s) => ({ filters: { ...s.filters, [key]: value } })),
@@ -138,10 +103,7 @@ export const useStore = create<Store>()(
       removeFromJourney: (id) =>
         set((s) => ({ journey: s.journey.filter((x) => x !== id) })),
 
-      clearJourney: () => set({ journey: [], playing: false, playIndex: 0 }),
-
-      setPlaying: (p) => set({ playing: p }),
-      setPlayIndex: (i) => set({ playIndex: i }),
+      clearJourney: () => set({ journey: [] }),
 
       toggleVisited: (id) =>
         set((s) => ({
@@ -151,23 +113,16 @@ export const useStore = create<Store>()(
         })),
 
       isVisited: (id) => get().visited.includes(id),
-
-      setQuizOpen: (open) => set({ quizOpen: open, activeView: open ? 'quiz' : 'world' }),
     }),
     {
       name: 'bharat-darshan-v2',
       // The journey AND the visited list survive a refresh — both are
       // things a user built up over a session and would be annoyed to
-      // lose. Filters, query and the selected site are session
-      // behaviour: restoring them would make the app reopen in a state
-      // the user did not ask for.
+      // lose. Filters and query are session behaviour: restoring them
+      // would make the app reopen in a state the reader did not ask
+      // for, which is the same reasoning v1 used.
       partialize: (s) => ({ journey: s.journey, visited: s.visited }),
       version: 1,
     }
   )
 )
-
-/** Convenience selectors — keeps components from re-rendering on unrelated changes. */
-export const useJourney = () => useStore((s) => s.journey)
-export const useIsInJourney = (id: string) =>
-  useStore((s) => s.journey.includes(id))

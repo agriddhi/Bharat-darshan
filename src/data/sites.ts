@@ -95,10 +95,11 @@ export function isShown(site: Site, f: Filters, query: string): boolean {
   return matchesFilters(site, f) && matchesQuery(site, query)
 }
 
-/** The subset of sites the scene should render as active right now. */
-export function visibleSites(f: Filters, query: string): Site[] {
-  return SITES.filter((s) => isShown(s, f, query))
-}
+/* NOTE: this module previously also exported `visibleSites()` and
+   `regionToken()`. Both existed only to feed the 3D field, which was
+   replaced by the atlas gallery. Removing them rather than leaving
+   them means there is exactly one way to ask "what is shown", and it
+   is the one the counter and the grid both use. */
 
 /* ---- formatting helpers shared by the UI ---- */
 
@@ -106,9 +107,4 @@ export function visibleSites(f: Filters, query: string): Site[] {
 export function titleCase(v: string): string {
   if (!v) return v
   return v.charAt(0).toUpperCase() + v.slice(1)
-}
-
-/** Region mood token, for the UI to tint a chip with. */
-export function regionToken(region: string): string {
-  return `var(--scene-${region.toLowerCase()})`
 }
