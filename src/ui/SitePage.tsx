@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    ui/SitePage.tsx — one site, one page, all of it.
 
    WHAT THIS REPLACES
@@ -267,6 +267,19 @@ export function SitePage({ id }: Props) {
                 </span>
               </span>
             </a>
+          </section>
+        )}
+
+        {/* ---- folklore and nearby ---- */}
+        {site.folkloreNote && (
+          <section className={`${s.section} ${s.prose}`}>
+            <div className={s.sectionHead}>
+              <span className={s.sectionNum} aria-hidden="true">
+                ·
+              </span>
+              <h2 className={s.sectionTitle}>{t('folklore')}</h2>
+            </div>
+            <p className={s.history}>{site.folkloreNote}</p>
           </section>
         )}
 

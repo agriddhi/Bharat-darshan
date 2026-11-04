@@ -453,6 +453,7 @@ const STRINGS = {
   },
   openRecord: { en: 'Open the record', hi: 'अभिलेख खोलें' },
   journeyRoute: { en: 'Journey route', hi: 'यात्रा मार्ग' },
+  folklore: { en: 'Folklore and nearby', hi: 'लोककथा और आसपास' },
 
   /* ---- pipeline ---- */
   pipelineEyebrow: { en: 'How it was made', hi: 'कैसे बना' },
