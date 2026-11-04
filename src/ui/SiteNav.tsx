@@ -37,6 +37,7 @@ const LINKS: Array<{ key: Parameters<ReturnType<typeof useT>>[0]; to: Route }> =
   { key: 'navQuiz', to: { name: 'quiz' } },
   { key: 'navAbout', to: { name: 'about' } },
   { key: 'navPipeline', to: { name: 'pipeline' } },
+  { key: 'navFolklore', to: { name: 'folklore' } },
 ]
 
 export function SiteNav({ route, back }: Props) {

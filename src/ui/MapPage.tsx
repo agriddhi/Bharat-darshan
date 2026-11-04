@@ -190,7 +190,7 @@ export function MapPage() {
           </span>
         </div>
 
-        <div className={m.mapFrame}>
+        <div className={m.frame}>
           <MapContainer
             center={center}
             zoom={5}

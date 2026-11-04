@@ -57,6 +57,7 @@ const STRINGS = {
   navQuiz: { en: 'Quiz', hi: 'प्रश्नोत्तरी' },
   navAbout: { en: 'About', hi: 'परिचय' },
   navPipeline: { en: 'How it was made', hi: 'कैसे बना' },
+  navFolklore: { en: 'Folklore', hi: 'लोककथा' },
   navMain: { en: 'Main', hi: 'मुख्य' },
 
   /* ---- the language switch itself ---- */

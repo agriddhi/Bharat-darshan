@@ -37,6 +37,7 @@ import { JourneyPage } from './ui/JourneyPage'
 import { QuizPage } from './ui/QuizPage'
 import { AboutPage } from './ui/AboutPage'
 import { PipelinePage } from './ui/PipelinePage'
+import { FolklorePage } from './ui/FolklorePage'
 
 export default function App() {
   const route = useRoute()
@@ -91,9 +92,11 @@ function Page({ route }: { route: Route }) {
     case 'quiz':
       return <QuizPage />
     case 'about':
+      return <AboutPage />
     case 'pipeline':
       return <PipelinePage />
-      return <AboutPage />
+    case 'folklore':
+      return <FolklorePage />
     default:
       // parseRoute should never produce this, but an exhaustive default
       // means a new Route member cannot ship without a page behind it.
