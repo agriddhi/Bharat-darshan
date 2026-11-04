@@ -200,9 +200,11 @@ have and did not.
   gap. Where a field was empty in the source, it is empty here.
 - **No invented sources.** Every URL was already in the archive or was verified
   as a real page. No placeholder links.
-- **No folklore was written.** The schema has a folklore field. It is `null` on
-  all 25 sites, because fabricating folk narrative would be the easiest way to
-  break this project's whole premise.
+- **Folklore, where verified.** The schema has a `folkloreNote` field. It was
+  `null` on all 25 sites because fabricating folk narrative would be the
+  easiest way to break this project's whole premise. It now carries a
+  sourced note for every site - local legend and nearby attractions -
+  each citing its Wikipedia article.
 - **No unverified UNESCO labels.** A site is marked as a World Heritage property
   only where an official inscription reference exists in the data.
 - **No hidden incompleteness.** Where the first version marked a field `TODO` —
