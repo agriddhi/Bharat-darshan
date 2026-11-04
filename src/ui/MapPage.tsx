@@ -69,7 +69,7 @@ export function MapPage() {
           <MapContainer
             center={center}
             zoom={5}
-            scrollWheelZoom={false}
+            scrollWheelZoom={true}
             className={m.map}
           >
             <TileLayer

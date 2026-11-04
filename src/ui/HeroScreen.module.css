@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    ui/HeroScreen.module.css — the cinematic landing screen.
 
    WHAT MAKES THIS LOOK LIKE THE REFERENCE SITES
@@ -323,6 +323,39 @@
   display: flex;
   align-items: center;
   gap: clamp(16px, 2.6vw, 34px);
+}
+
+.langSwitch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: clamp(8px, 1.4vw, 18px);
+  padding: 2px;
+  border: 1px solid rgba(244, 239, 228, 0.22);
+  border-radius: 999px;
+}
+
+.langBtn {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(244, 239, 228, 0.6);
+  background: transparent;
+  border: 0;
+  padding: 3px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.langBtn:hover {
+  color: rgba(244, 239, 228, 0.9);
+}
+
+.langOn {
+  color: var(--ochre, #DEA044);
+  background: rgba(222, 160, 68, 0.14);
 }
 
 .link {

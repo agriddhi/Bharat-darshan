@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    ui/HeroScreen.tsx — the first screen.
 
    WHY A SEPARATE SCREEN RATHER THAN STRAIGHT INTO THE 3D FIELD
@@ -23,6 +23,7 @@ import { useEffect, useMemo, useState } from 'react'
 import s from './HeroScreen.module.css'
 import { SITES, getSite } from '../data/sites'
 import { useT, useLang, typeLabel } from '../i18n'
+import { useStore } from '../state/store'
 import { navigate } from '../router'
 
 /**
@@ -57,6 +58,7 @@ export function HeroScreen({ onEnter }: Props) {
 
   const t = useT()
   const lang = useLang()
+  const setLang = useStore((st) => st.setLang)
 
   // Only keep slides whose photo actually resolves. A hero with an
   // empty frame in it is worse than a shorter rotation.
@@ -164,6 +166,22 @@ export function HeroScreen({ onEnter }: Props) {
             </button>
             <button className={s.link} onClick={() => navigate({ name: 'journey' })}>
               {t('heroPassport')}
+            </button>
+          </div>
+          <div className={s.langSwitch} role="group" aria-label="Language">
+            <button
+              className={`${s.langBtn} ${lang === 'en' ? s.langOn : ''}`}
+              aria-pressed={lang === 'en'}
+              onClick={() => setLang('en')}
+            >
+              EN
+            </button>
+            <button
+              className={`${s.langBtn} ${lang === 'hi' ? s.langOn : ''}`}
+              aria-pressed={lang === 'hi'}
+              onClick={() => setLang('hi')}
+            >
+              हिं
             </button>
           </div>
         </nav>
