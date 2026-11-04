@@ -107,6 +107,28 @@
   --scene-central:#8A6D4F;  /* earth brown — matches v1 marker --m-other */
   --scene-northeast:#5F7040; /* moss      — matches v1 --moss */
 
+  /* ============================================================
+     ERA MOODS — background washes for the timeline only.
+     Never a UI fill, never text, never an interactive accent.
+
+     These deliberately reuse four values that already exist in this
+     file instead of inventing new ones: a timeline with its own
+     palette would put colours on screen that appear nowhere else in
+     the app. Ochre is pointedly NOT among them — it is the
+     interactive accent, and a full-bleed ochre wash would destroy
+     the one signal telling a reader what is clickable.
+
+     The order below is chronological and that is the only ordering
+     claim the page makes. Nothing here encodes a date: the timeline
+     is positioned by era because the data has no year field, and
+     years are shown on individual cards only where a construction
+     date genuinely exists in the record.
+     ============================================================ */
+  --era-ancient:   #5F7040;  /* moss       — overgrown ruin      */
+  --era-medieval:  #BF8250;  /* terracotta — temple stone        */
+  --era-mughal:    #9D473A;  /* rust       — red sandstone       */
+  --era-colonial:  #416A81;  /* steel blue — colonial civic      */
+
   /* ---- type ----
      Self-hosted (public/fonts), latin subset only. Cormorant carries
      the display voice — high-contrast enough to read as a heritage

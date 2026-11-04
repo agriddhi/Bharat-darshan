@@ -1,11 +1,16 @@
 /* ============================================================
-   ui/Pages.module.css — shared shell for Journey, Quiz, About, Atlas.
+   ui/Pages.module.css — shared shell for Journey, Quiz and About.
 
-   These four pages differ in content but not in structure: a header
+   These three pages differ in content but not in structure: a header
    with a photograph behind it, a reading column, and a set of
-   sections divided by hairlines. Writing that four times would
-   guarantee the four pages drift apart after the first styling
+   sections divided by hairlines. Writing that three times would
+   guarantee the three pages drift apart after the first styling
    change, so it lives here once.
+
+   The timeline does NOT use this shell. It has no reading column —
+   it is a sequence of bands rather than an article — so forcing it
+   into this structure would have made the page fight its own
+   layout. It ships its own Timeline.module.css instead.
 
    The one rule this file holds to: sections are separated by rules
    and space, never by boxes. A page made of nested cards reads as a

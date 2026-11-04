@@ -26,11 +26,13 @@
 import { useMemo } from 'react'
 import s from './Pages.module.css'
 import { SITES, getSite } from '../data/sites'
+import { useT } from '../i18n'
 import { href } from '../router'
 
 const HEAD_PHOTO = 'media/meenakshi.jpg'
 
 export function AboutPage() {
+  const t = useT()
   /* Credits are derived once from the data — see the note in the
      header comment about why this is not a literal array. */
   const credits = useMemo(
@@ -81,16 +83,15 @@ export function AboutPage() {
         <div className={s.headInner}>
           <div className={s.eyebrow}>
             <span className={s.eyebrowLine} aria-hidden="true" />
-            <span>About this archive</span>
+            <span>{t('aboutEyebrow')}</span>
           </div>
           <h1 className={s.title}>
-            Every claim,
-            <span className={s.titleEm}>with its source attached.</span>
+            {t('aboutTitle1')}
+            <span className={s.titleEm}>{t('aboutTitle2')}</span>
           </h1>
           <p className={s.lede}>
-            {SITES.length} monuments, {credits.length} credited photographs,{' '}
-            {sourceIndex.length} distinct citations, and a written account of the
-            things this project chose not to do.
+            {SITES.length} {t('aboutLede1')} {credits.length} {t('aboutLede2')}{' '}
+            {sourceIndex.length} {t('aboutLede3')} {t('aboutLede4')}
           </p>
         </div>
       </header>
@@ -99,8 +100,8 @@ export function AboutPage() {
         {/* ================= WHAT WE DID NOT DO ================= */}
         <section className={s.section}>
           <div className={s.sectionHead}>
-            <h2 className={s.sectionTitle}>What we deliberately did not do</h2>
-            <span className={s.sectionNote}>The rules this build was held to</span>
+            <h2 className={s.sectionTitle}>{t('didNotDo')}</h2>
+            <span className={s.sectionNote}>{t('rulesNote')}</span>
           </div>
 
           <ul className={s.donts}>
@@ -109,9 +110,8 @@ export function AboutPage() {
                 —
               </span>
               <span>
-                <span className={s.dontStrong}>No invented facts.</span> No dates,
-                dimensions, quotations or transcriptions were added to fill a gap. Where
-                a field was empty in the source archive, it is empty here.
+                <span className={s.dontStrong}>{t('dontFacts')}</span>{' '}
+                {t('dontFactsBody')}
               </span>
             </li>
 
@@ -120,9 +120,8 @@ export function AboutPage() {
                 —
               </span>
               <span>
-                <span className={s.dontStrong}>No invented sources.</span> Every URL on
-                this site was already in the archive or was verified as a real,
-                reachable page. No placeholder links, no “coming soon” citations.
+                <span className={s.dontStrong}>{t('dontSources')}</span>{' '}
+                {t('dontSourcesBody')}
               </span>
             </li>
 
@@ -131,10 +130,9 @@ export function AboutPage() {
                 —
               </span>
               <span>
-                <span className={s.dontStrong}>No folklore was written.</span> The
-                schema has a folklore field. It is <code>null</code> on all{' '}
-                {SITES.length} sites, because fabricating folk narrative to satisfy a
-                field would be the single easiest way to break this project's premise.
+                <span className={s.dontStrong}>{t('dontFolklore')}</span>{' '}
+                {t('dontFolkloreA')} <code>null</code> {t('dontFolkloreOn')}{' '}
+                {SITES.length} {t('sitesOblique')} {t('dontFolkloreB')}
               </span>
             </li>
 
@@ -143,9 +141,8 @@ export function AboutPage() {
                 —
               </span>
               <span>
-                <span className={s.dontStrong}>No unverified UNESCO labels.</span> A site
-                is marked as a World Heritage property only where the official
-                inscription reference exists in the data.
+                <span className={s.dontStrong}>{t('dontUnesco')}</span>{' '}
+                {t('dontUnescoBody')}
               </span>
             </li>
 
@@ -154,10 +151,8 @@ export function AboutPage() {
                 —
               </span>
               <span>
-                <span className={s.dontStrong}>No hidden incompleteness.</span> Where v1
-                marked a field TODO — most often the image for one of the five story
-                stages — the TODO is shown rather than quietly dropped or filled with a
-                stock photograph.
+                <span className={s.dontStrong}>{t('dontHidden')}</span>{' '}
+                {t('dontHiddenBody')}
               </span>
             </li>
 
@@ -166,10 +161,8 @@ export function AboutPage() {
                 —
               </span>
               <span>
-                <span className={s.dontStrong}>No backend, no accounts, no keys.</span>{' '}
-                The whole archive is a static bundle plus a data file. It runs offline
-                after first load, costs nothing to host, and there is no database to
-                keep patched.
+                <span className={s.dontStrong}>{t('dontBackend')}</span>{' '}
+                {t('dontBackendBody')}
               </span>
             </li>
 
@@ -178,9 +171,8 @@ export function AboutPage() {
                 —
               </span>
               <span>
-                <span className={s.dontStrong}>No borrowed design.</span> Layout, type
-                and colour were built for this project. Photographs are the only
-                third-party material, and each one is credited below.
+                <span className={s.dontStrong}>{t('dontDesign')}</span>{' '}
+                {t('dontDesignBody')}
               </span>
             </li>
           </ul>
@@ -189,26 +181,25 @@ export function AboutPage() {
         {/* ================= PHOTO CREDITS ================= */}
         <section className={s.section}>
           <div className={s.sectionHead}>
-            <h2 className={s.sectionTitle}>Photograph credits</h2>
+            <h2 className={s.sectionTitle}>{t('photoCredits')}</h2>
             <span className={s.sectionNote}>
-              {credits.length} images · {photographerCount} photographers
+              {credits.length} {t('images')} · {photographerCount}{' '}
+              {t('photographers')}
             </span>
           </div>
 
           <p className={s.body} style={{ marginBottom: 18 }}>
-            Generated directly from the data file rather than maintained by hand, so a
-            credit can never disagree with the record it describes. Each row links to
-            the site that uses the image.
+            {t('creditsIntro')}
           </p>
 
           <div className={s.tableWrap}>
             <table className={s.table}>
               <thead>
                 <tr>
-                  <th>Site</th>
-                  <th>Photographer</th>
-                  <th>Licence</th>
-                  <th>File</th>
+                  <th>{t('thSite')}</th>
+                  <th>{t('thPhotographer')}</th>
+                  <th>{t('thLicence')}</th>
+                  <th>{t('thFile')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -232,24 +223,23 @@ export function AboutPage() {
         {/* ================= SOURCE INDEX ================= */}
         <section className={s.section}>
           <div className={s.sectionHead}>
-            <h2 className={s.sectionTitle}>Source index</h2>
+            <h2 className={s.sectionTitle}>{t('sourceIndexTitle')}</h2>
             <span className={s.sectionNote}>
-              {sourceIndex.length} distinct citations
+              {sourceIndex.length} {t('citations')}
             </span>
           </div>
 
           <p className={s.body} style={{ marginBottom: 18 }}>
-            Every external reference used anywhere in the archive, de-duplicated. A
-            citation used by several sites appears once, with the sites listed.
+            {t('sourceIntro')}
           </p>
 
           <div className={s.tableWrap}>
             <table className={s.table}>
               <thead>
                 <tr>
-                  <th>Source</th>
-                  <th>Address</th>
-                  <th>Used by</th>
+                  <th>{t('thSource')}</th>
+                  <th>{t('thAddress')}</th>
+                  <th>{t('thUsedBy')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -264,7 +254,7 @@ export function AboutPage() {
                     <td>
                       {src.sites.length <= 3
                         ? src.sites.join(', ')
-                        : `${src.sites.slice(0, 3).join(', ')} +${src.sites.length - 3} more`}
+                        : `${src.sites.slice(0, 3).join(', ')} +${src.sites.length - 3} ${t('more')}`}
                     </td>
                   </tr>
                 ))}
@@ -276,68 +266,45 @@ export function AboutPage() {
         {/* ================= HOW IT WAS BUILT ================= */}
         <section className={s.section}>
           <div className={s.sectionHead}>
-            <h2 className={s.sectionTitle}>How it was built</h2>
+            <h2 className={s.sectionTitle}>{t('howBuilt')}</h2>
           </div>
 
           <p className={s.body}>
-            The archive began as a static site with its records held in a single
-            JavaScript data file. Those records were migrated field by field into a
-            typed JSON schema for this build — the mapping is written down in{' '}
-            <code>MIGRATION.md</code>, which is generated by the migration script
-            itself so the notes cannot drift away from what the script actually did.
+            {t('howBuilt1')} <code>MIGRATION.md</code> {t('howBuilt1b')}
           </p>
 
-          <p className={s.body}>
-            Nothing is fetched at runtime. Filtering, search, distances, badges and the
-            quiz all read the same data file, which is why the count in the archive
-            header always matches the cards underneath it — there is only one definition
-            of “currently shown” in the codebase.
-          </p>
+          <p className={s.body}>{t('howBuilt2')}</p>
 
-          <p className={s.body}>
-            Distances use the haversine formula and are always labelled approximate,
-            because a straight-line figure presented as a journey would be misleading.
-            Badges and their tests are carried over from the first version verbatim, so
-            the two builds agree about what has been earned.
-          </p>
+          <p className={s.body}>{t('howBuilt3')}</p>
         </section>
 
         {/* ================= TEAM ================= */}
         <section className={s.section}>
           <div className={s.sectionHead}>
-            <h2 className={s.sectionTitle}>Team</h2>
-            <span className={s.sectionNote}>Three roles</span>
+            <h2 className={s.sectionTitle}>{t('team')}</h2>
+            <span className={s.sectionNote}>{t('threeRoles')}</span>
           </div>
 
           <div className={s.team}>
             <div className={s.member}>
-              <div className={s.memberRole}>Architecture &amp; data</div>
+              <div className={s.memberRole}>{t('roleArchitecture')}</div>
               <div className={s.memberName}>—</div>
-              <div className={s.memberNote}>
-                Schema design, the migration pipeline, the source-verification rules and
-                the build system.
-              </div>
-              <span className={s.todo}>TODO: name and contact</span>
+              <div className={s.memberNote}>{t('noteArchitecture')}</div>
+              <span className={s.todo}>{t('todoName')}</span>
             </div>
 
             <div className={s.member}>
-              <div className={s.memberRole}>Interface &amp; interaction</div>
+              <div className={s.memberRole}>{t('roleInterface')}</div>
               <div className={s.memberName}>—</div>
-              <div className={s.memberNote}>
-                The archive interface, the site and story pages, the atlas gallery, and
-                the type and colour system.
-              </div>
-              <span className={s.todo}>TODO: name and contact</span>
+              <div className={s.memberNote}>{t('noteInterface')}</div>
+              <span className={s.todo}>{t('todoName')}</span>
             </div>
 
             <div className={s.member}>
-              <div className={s.memberRole}>Content &amp; sources</div>
+              <div className={s.memberRole}>{t('roleContent')}</div>
               <div className={s.memberName}>—</div>
-              <div className={s.memberNote}>
-                The written records, the citation checking, the Hindi translations and
-                the quiz material.
-              </div>
-              <span className={s.todo}>TODO: name and contact</span>
+              <div className={s.memberNote}>{t('noteContent')}</div>
+              <span className={s.todo}>{t('todoName')}</span>
             </div>
           </div>
         </section>

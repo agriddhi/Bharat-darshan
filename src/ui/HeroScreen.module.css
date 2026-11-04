@@ -293,12 +293,30 @@
   box-shadow: 0 0 16px rgba(222, 164, 68, 0.85);
 }
 
+.brandText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
 .brandName {
   font-family: var(--sans);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: var(--track-caps);
   text-transform: uppercase;
+}
+
+/* The Devanagari half of the mark.
+   No uppercase transform and no --track-caps: neither does anything
+   useful to Devanagari, and the tracking that follows from that rule
+   pulls the matras away from the consonants they belong to. */
+.brandDev {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ochre);
 }
 
 .links {
@@ -424,28 +442,6 @@
 
 .cta:hover .ctaArrow {
   transform: translateX(4px);
-}
-
-.ctaGhost {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  min-height: 50px;
-  padding: 13px 24px;
-  font-family: var(--sans);
-  font-size: 0.88rem;
-  font-weight: 500;
-  color: rgba(244, 239, 228, 0.92);
-  background: rgba(244, 239, 228, 0.07);
-  border: 1px solid rgba(244, 239, 228, 0.28);
-  border-radius: var(--radius-pill);
-  backdrop-filter: blur(10px);
-  transition: border-color var(--dur-fast), background-color var(--dur-fast);
-}
-
-.ctaGhost:hover {
-  border-color: var(--ochre);
-  background: rgba(222, 164, 68, 0.14);
 }
 
 /* ---- facts strip ---- */
@@ -729,8 +725,7 @@
   .factNum {
     font-size: clamp(1.3rem, 2.2vw, 1.7rem);
   }
-  .cta,
-  .ctaGhost {
+  .cta {
     min-height: 46px;
     padding: 11px 22px;
   }
@@ -764,8 +759,7 @@
   .ctaRow {
     gap: 9px;
   }
-  .cta,
-  .ctaGhost {
+  .cta {
     min-height: 44px;
     padding: 10px 18px;
     font-size: 0.82rem;

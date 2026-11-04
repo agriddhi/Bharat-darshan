@@ -33,6 +33,7 @@ import {
   earnedBadges,
   BADGES,
 } from '../state/journey'
+import { useT, useLang, regionLabel, eraLabel } from '../i18n'
 import { href } from '../router'
 
 const HEAD_PHOTO = 'media/golden-temple.jpg'
@@ -42,6 +43,9 @@ export function JourneyPage() {
   const visited = useStore((st) => st.visited)
   const removeFromJourney = useStore((st) => st.removeFromJourney)
   const clearJourney = useStore((st) => st.clearJourney)
+
+  const t = useT()
+  const lang = useLang()
 
   // Two-step clear. An ordered route is expensive to rebuild and
   // cheap to destroy, so it should take two deliberate clicks.
@@ -61,20 +65,15 @@ export function JourneyPage() {
         <div className={s.headInner}>
           <div className={s.eyebrow}>
             <span className={s.eyebrowLine} aria-hidden="true" />
-            <span>Your passport</span>
+            <span>{t('journeyEyebrow')}</span>
           </div>
           <h1 className={s.title}>
-            {stops.length} of {JOURNEY_MAX} stops,
+            {stops.length} {t('of')} {JOURNEY_MAX} {t('journeyStops')},{' '}
             <span className={s.titleEm}>
-              {earned.length} of {BADGES.length} badges.
+              {earned.length} {t('of')} {BADGES.length} {t('journeyBadges')}
             </span>
           </h1>
-          <p className={s.lede}>
-            Build a route of up to five monuments and the archive will work out how far
-            apart they are. Badges are earned by marking sites as visited — which is a
-            different thing from putting them on a route, and the two are counted
-            separately for that reason.
-          </p>
+          <p className={s.lede}>{t('journeyLede')}</p>
         </div>
       </header>
 
@@ -82,9 +81,9 @@ export function JourneyPage() {
         {/* ================= THE ROUTE ================= */}
         <section className={s.section}>
           <div className={s.sectionHead}>
-            <h2 className={s.sectionTitle}>Your route</h2>
+            <h2 className={s.sectionTitle}>{t('yourRoute')}</h2>
             <span className={s.sectionNote}>
-              {stops.length} / {JOURNEY_MAX} stops
+              {stops.length} / {JOURNEY_MAX} {t('journeyStops')}
             </span>
           </div>
 
@@ -93,13 +92,13 @@ export function JourneyPage() {
               <div className={s.emptyMark} aria-hidden="true">
                 ⌖
               </div>
-              <h3 className={s.emptyTitle}>No stops yet</h3>
+              <h3 className={s.emptyTitle}>{t('noStopsYet')}</h3>
               <p className={s.emptyBody}>
-                Open any site and choose <strong>“Add to journey”</strong>. Five is the
-                maximum — a route you cannot hold in your head is not a route.
+                {t('noStops1')} <strong>{t('addJourneyQuote')}</strong>
+                {t('noStops2')}
               </p>
               <a className={s.btnPrimary} href={href({ name: 'sites' })} style={{ padding: '11px 24px', borderRadius: 'var(--radius-pill)', textDecoration: 'none', display: 'inline-flex' }}>
-                Browse the archive
+                {t('browseArchive')}
               </a>
             </div>
           ) : (
@@ -111,7 +110,7 @@ export function JourneyPage() {
 
                   return (
                     <li key={site.id} className={s.stop}>
-                      <span className={s.stopNum} aria-label={`Stop ${i + 1}`}>
+                      <span className={s.stopNum} aria-label={`${t('stopWord')} ${i + 1}`}>
                         {i + 1}
                       </span>
 
@@ -126,15 +125,15 @@ export function JourneyPage() {
                           className={s.stopTitle}
                           href={href({ name: 'site', id: site.id })}
                         >
-                          {site.title}
+                          {lang === 'hi' && site.nameHi ? site.nameHi : site.title}
                         </a>
                         <div className={s.stopMeta}>
-                          {site.state} · {site.region} · {site.era}
+                          {site.state} · {regionLabel(site.region, lang)} ·{' '}
+                          {eraLabel(site.era, lang)}
                         </div>
                         {leg !== null && (
                           <div className={s.stopLeg}>
-                            ← {formatKm(leg)} from the previous stop (approx. straight
-                            line)
+                            ← {formatKm(leg)} {t('fromPrev')}
                           </div>
                         )}
                       </div>
@@ -142,8 +141,8 @@ export function JourneyPage() {
                       <button
                         className={s.stopRemove}
                         onClick={() => removeFromJourney(site.id)}
-                        aria-label={`Remove ${site.title} from the route`}
-                        title="Remove from route"
+                        aria-label={`${t('removeFromRoute')}: ${site.title}`}
+                        title={t('removeFromRoute')}
                       >
                         ✕
                       </button>
@@ -155,32 +154,26 @@ export function JourneyPage() {
               {/* ---- totals ---- */}
               <div className={s.totals}>
                 <div className={s.total}>
-                  <div className={s.totalLabel}>Total length</div>
+                  <div className={s.totalLabel}>{t('totalLength')}</div>
                   <div className={s.totalValue}>{formatKm(totalKm)}</div>
-                  <div className={s.totalNote}>
-                    Approx. straight-line distance across all legs. Not a road distance.
-                  </div>
+                  <div className={s.totalNote}>{t('totalNote')}</div>
                 </div>
 
                 <div className={s.total}>
-                  <div className={s.totalLabel}>At a relaxed pace</div>
+                  <div className={s.totalLabel}>{t('relaxedPace')}</div>
                   <div className={s.totalValue}>
                     ~{estimatedHours(totalKm).toFixed(1)} h
                   </div>
-                  <div className={s.totalNote}>
-                    A rough estimate at 55 km/h, offered only as a sense of scale.
-                  </div>
+                  <div className={s.totalNote}>{t('paceNote')}</div>
                 </div>
 
                 <div className={s.total}>
-                  <div className={s.totalLabel}>Stops remaining</div>
+                  <div className={s.totalLabel}>{t('stopsRemaining')}</div>
                   <div className={s.totalValue}>
                     {JOURNEY_MAX - stops.length}
                   </div>
                   <div className={s.totalNote}>
-                    {stops.length >= JOURNEY_MAX
-                      ? 'The route is full. Remove a stop to add another.'
-                      : 'Add another monument from any site page.'}
+                    {stops.length >= JOURNEY_MAX ? t('routeFull') : t('addAnother')}
                   </div>
                 </div>
               </div>
@@ -190,15 +183,15 @@ export function JourneyPage() {
                 {confirming ? (
                   <>
                     <button className={s.btnDanger} onClick={() => { clearJourney(); setConfirming(false) }}>
-                      Yes, clear all {stops.length} stops
+                      {t('yesClearAll')} {stops.length} {t('journeyStops')}
                     </button>
                     <button className={s.btnGhost} onClick={() => setConfirming(false)}>
-                      Keep the route
+                      {t('keepRoute')}
                     </button>
                   </>
                 ) : (
                   <button className={s.btnGhost} onClick={() => setConfirming(true)}>
-                    Clear route
+                    {t('clearRoute')}
                   </button>
                 )}
               </div>
@@ -209,24 +202,30 @@ export function JourneyPage() {
         {/* ================= BADGES ================= */}
         <section className={s.section}>
           <div className={s.sectionHead}>
-            <h2 className={s.sectionTitle}>Badges</h2>
+            <h2 className={s.sectionTitle}>{t('badgesTitle')}</h2>
             <span className={s.sectionNote}>
-              {earned.length} earned · {visitedSites.length} sites visited
+              {earned.length} {t('earned')} · {visitedSites.length} {t('sitesVisited')}
             </span>
           </div>
 
           <div className={s.badges}>
             {BADGES.map((b) => {
               const on = earned.some((e) => e.id === b.id)
+              const name = lang === 'hi' ? b.hi : b.en
+              const hint = lang === 'hi' ? b.hintHi : b.hintEn
               return (
                 <div key={b.id} className={`${s.badgeCard} ${on ? s.badgeCardOn : ''}`}>
                   <span className={s.badgeIcon} aria-hidden="true">
                     {on ? '✓' : '○'}
                   </span>
                   <div>
-                    <div className={s.badgeName}>{b.en}</div>
+                    <div className={s.badgeName}>{name}</div>
                     <div className={s.badgeHint}>
-                      {on ? `Earned — ${b.hintEn.replace(/^(Mark|Fill)/, 'You did: $1')}` : b.hintEn}
+                      {on
+                        ? lang === 'hi'
+                          ? `${t('earnedDash')} ${hint}`
+                          : `Earned — ${hint.replace(/^(Mark|Fill)/, 'You did: $1')}`
+                        : hint}
                     </div>
                   </div>
                 </div>
@@ -238,16 +237,14 @@ export function JourneyPage() {
         {/* ================= VISITED ================= */}
         <section className={s.section}>
           <div className={s.sectionHead}>
-            <h2 className={s.sectionTitle}>Marked as visited</h2>
-            <span className={s.sectionNote}>{visitedSites.length} sites</span>
+            <h2 className={s.sectionTitle}>{t('markedVisited')}</h2>
+            <span className={s.sectionNote}>
+              {visitedSites.length} {t('sitesWordCap')}
+            </span>
           </div>
 
           {visitedSites.length === 0 ? (
-            <p className={s.body}>
-              Nothing marked yet. “Visited” is separate from the route — it is the
-              archive's record of what you have actually seen, and four of the five
-              badges are counted against it rather than against your route.
-            </p>
+            <p className={s.body}>{t('nothingMarked')}</p>
           ) : (
             <div className={s.btnRow}>
               {visitedSites.map((site) => (
@@ -257,7 +254,7 @@ export function JourneyPage() {
                   href={href({ name: 'site', id: site.id })}
                   style={{ padding: '9px 17px', fontSize: '0.8rem' }}
                 >
-                  ✓ {site.title}
+                  ✓ {lang === 'hi' && site.nameHi ? site.nameHi : site.title}
                 </a>
               ))}
             </div>

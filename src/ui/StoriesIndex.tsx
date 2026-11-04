@@ -23,7 +23,8 @@
 
 import { useMemo, useState } from 'react'
 import s from './Editorial.module.css'
-import { SITES, AVAILABLE_REGIONS, titleCase } from '../data/sites'
+import { SITES, AVAILABLE_REGIONS } from '../data/sites'
+import { useT, useLang, regionLabel, typeLabel } from '../i18n'
 import { href } from '../router'
 import type { Site } from '../data/types'
 
@@ -34,6 +35,8 @@ const HEAD_PHOTO = 'media/rani-ki-vav.jpg'
 interface StoryEntry {
   site: Site
   teaser: string
+  /** Same opening sentence, in Hindi, where the record has one. */
+  teaserHi: string | null
   stages: number
 }
 
@@ -44,8 +47,12 @@ function buildShelf(): StoryEntry[] {
     return {
       site,
       // Verbatim opening of the first stage. Trimmed only for display
-      // length, never reworded.
+      // length, never reworded. Both languages are carried because the
+      // shelf is built once and read under either setting — computing
+      // it per-language would mean rebuilding the whole list on every
+      // toggle press for the sake of one sentence.
       teaser: first.body,
+      teaserHi: first.bodyHi ?? null,
       stages: site.story!.length,
     }
   })
@@ -54,6 +61,8 @@ function buildShelf(): StoryEntry[] {
 export function StoriesIndex() {
   const shelf = useMemo(buildShelf, [])
   const [region, setRegion] = useState<string | null>(null)
+  const t = useT()
+  const lang = useLang()
 
   const shown = region ? shelf.filter((e) => e.site.region === region) : shelf
 
@@ -72,28 +81,24 @@ export function StoriesIndex() {
         <div className={s.headInner}>
           <div className={s.eyebrow}>
             <span className={s.eyebrowLine} aria-hidden="true" />
-            <span>Stories</span>
+            <span>{t('storiesEyebrow')}</span>
           </div>
           <h1 className={s.title}>
-            Every monument,
-            <span className={s.titleEm}>told in five parts.</span>
+            {t('storiesTitle1')}
+            <span className={s.titleEm}>{t('storiesTitle2')}</span>
           </h1>
-          <p className={s.lede}>
-            Why it was built, who built it, what to notice in its architecture, how it
-            changed over time, and why it matters today. Each account is written from
-            the record and carries the sources it was drawn from.
-          </p>
+          <p className={s.lede}>{t('storiesLede')}</p>
         </div>
       </header>
 
       {/* ================= REGION CHIPS ================= */}
-      <div className={s.chips} role="group" aria-label="Filter stories by region">
+      <div className={s.chips} role="group" aria-label={t('storiesByRegion')}>
         <button
           className={`${s.chip} ${region === null ? s.chipOn : ''}`}
           aria-pressed={region === null}
           onClick={() => setRegion(null)}
         >
-          All regions
+          {t('allRegions')}
           <span className={s.chipCount}>{shelf.length}</span>
         </button>
 
@@ -104,7 +109,7 @@ export function StoriesIndex() {
             aria-pressed={region === r}
             onClick={() => setRegion(region === r ? null : r)}
           >
-            {r}
+            {regionLabel(r, lang)}
             <span className={s.chipCount}>{counts.get(r) ?? 0}</span>
           </button>
         ))}
@@ -113,14 +118,14 @@ export function StoriesIndex() {
       {/* ================= GRID ================= */}
       {shown.length === 0 ? (
         <div className={s.empty}>
-          <h2 className={s.emptyTitle}>No stories from this region</h2>
+          <h2 className={s.emptyTitle}>{t('noStoriesTitle')}</h2>
           <p className={s.emptyBody}>
-            Nothing in the archive carries a written narrative for {region} yet.
+            {t('noStoriesBody')} {region ? regionLabel(region, lang) : ''}
           </p>
         </div>
       ) : (
         <div className={s.grid}>
-          {shown.map(({ site, teaser, stages }) => {
+          {shown.map(({ site, teaser, teaserHi, stages }) => {
             const photo = site.media.find((m) => m.kind === 'photo') ?? site.media[0]
 
             return (
@@ -139,19 +144,23 @@ export function StoriesIndex() {
                     />
                   )}
                   <div className={s.cardPhotoScrim} />
-                  <span className={s.cardRegion}>{site.region}</span>
+                  <span className={s.cardRegion}>{regionLabel(site.region, lang)}</span>
                 </div>
 
                 <div className={s.cardBody}>
-                  <h2 className={s.cardTitle}>{site.title}</h2>
-                  <p className={s.cardTeaser}>{teaser}</p>
+                  <h2 className={s.cardTitle}>
+                    {lang === 'hi' && site.nameHi ? site.nameHi : site.title}
+                  </h2>
+                  <p className={s.cardTeaser}>
+                    {lang === 'hi' && teaserHi ? teaserHi : teaser}
+                  </p>
 
                   <div className={s.cardFoot}>
                     <span className={s.cardCount}>
-                      {stages} stages · {titleCase(site.type)}
+                      {stages} {t('stages')} · {typeLabel(site.type, lang)}
                     </span>
                     <span className={s.cardRead}>
-                      Read <span aria-hidden="true">→</span>
+                      {t('readStory')} <span aria-hidden="true">→</span>
                     </span>
                   </div>
                 </div>

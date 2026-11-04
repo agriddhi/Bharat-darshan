@@ -9,9 +9,14 @@
    field too, and it stays true now that the field is gone.
 
    FILTERS LIVE IN THE STORE, NOT IN THIS COMPONENT
-   Which means the atlas page, the story pages and this index all
-   agree about what is currently selected — and a reader who filters
-   here and then visits the atlas sees the same subset.
+   The count above and the cards below are both computed from
+   isShown(), so they cannot disagree. The store is also what the
+   search box writes to, which is why a filter set here survives
+   navigating away and coming back.
+
+   The timeline is the one surface that ignores all of it. It shows
+   all twenty-five in chronological order whatever is selected here,
+   because a timeline with three sites on it has no span to show.
    ============================================================ */
 
 import s from './SitesIndex.module.css'
@@ -23,6 +28,7 @@ import {
   isShown,
 } from '../data/sites'
 import { useStore } from '../state/store'
+import { useT, useLang, regionLabel, typeLabel, eraLabel } from '../i18n'
 import { href, type Route } from '../router'
 
 /** Opens the index with a photograph rather than with empty dark. */
@@ -35,6 +41,13 @@ export function SitesIndex() {
   const setQuery = useStore((st) => st.setQuery)
   const clearFilters = useStore((st) => st.clearFilters)
   const visited = useStore((st) => st.visited)
+
+  /* Named `tr` rather than `t`: this file maps over AVAILABLE_TYPES
+     and site.tags with a parameter it also wanted to call `t`, and a
+     shadowed translation function silently returns the key name in
+     every dropdown. */
+  const tr = useT()
+  const lang = useLang()
 
   const shown = SITES.filter((x) => isShown(x, filters, query))
   const activeCount =
@@ -55,33 +68,29 @@ export function SitesIndex() {
         <div className={s.headInner}>
           <div className={s.eyebrow}>
             <span className={s.eyebrowLine} aria-hidden="true" />
-            <span>The archive</span>
+            <span>{tr('sitesEyebrow')}</span>
           </div>
           <h1 className={s.title}>
-            Twenty-five sites,
-            <span className={s.titleEm}>each with its sources.</span>
+            {tr('sitesTitle1')}
+            <span className={s.titleEm}>{tr('sitesTitle2')}</span>
           </h1>
-          <p className={s.lede}>
-            Every entry carries the photograph, the licence that permits its use, the
-            official record it was checked against, and a written account of what the
-            place is and why it matters. Nothing here is stated without a citation.
-          </p>
+          <p className={s.lede}>{tr('sitesLede')}</p>
         </div>
       </header>
 
       {/* ================= FILTERS ================= */}
       <div className={s.filters}>
         <label className={s.field}>
-          <span className="sr-only">Region</span>
+          <span className="sr-only">{tr('filterRegion')}</span>
           <select
             className={`${s.select} ${filters.region ? s.selectOn : ''}`}
             value={filters.region ?? ''}
             onChange={(e) => setFilter('region', e.target.value || null)}
           >
-            <option value="">All regions</option>
+            <option value="">{tr('allRegions')}</option>
             {AVAILABLE_REGIONS.map((r) => (
               <option key={r} value={r}>
-                {r}
+                {regionLabel(r, lang)}
               </option>
             ))}
           </select>
@@ -97,10 +106,10 @@ export function SitesIndex() {
             value={filters.type ?? ''}
             onChange={(e) => setFilter('type', e.target.value || null)}
           >
-            <option value="">All types</option>
-            {AVAILABLE_TYPES.map((t) => (
-              <option key={t} value={t}>
-                {t.charAt(0).toUpperCase() + t.slice(1)}
+            <option value="">{tr('allTypes')}</option>
+            {AVAILABLE_TYPES.map((ty) => (
+              <option key={ty} value={ty}>
+                {typeLabel(ty, lang)}
               </option>
             ))}
           </select>
@@ -110,16 +119,16 @@ export function SitesIndex() {
         </label>
 
         <label className={s.field}>
-          <span className="sr-only">Era</span>
+          <span className="sr-only">{tr('filterEra')}</span>
           <select
             className={`${s.select} ${filters.era ? s.selectOn : ''}`}
             value={filters.era ?? ''}
             onChange={(e) => setFilter('era', e.target.value || null)}
           >
-            <option value="">All eras</option>
+            <option value="">{tr('allEras')}</option>
             {AVAILABLE_ERAS.map((era) => (
               <option key={era} value={era}>
-                {era}
+                {eraLabel(era, lang)}
               </option>
             ))}
           </select>
@@ -129,14 +138,14 @@ export function SitesIndex() {
         </label>
 
         <label className={s.field}>
-          <span className="sr-only">Has a linked document</span>
+          <span className="sr-only">{tr('filterDoc')}</span>
           <select
             className={`${s.select} ${filters.hasDocument ? s.selectOn : ''}`}
             value={filters.hasDocument ? 'yes' : ''}
             onChange={(e) => setFilter('hasDocument', e.target.value === 'yes')}
           >
-            <option value="">Any record type</option>
-            <option value="yes">Has a linked document</option>
+            <option value="">{tr('anyRecord')}</option>
+            <option value="yes">{tr('hasLinked')}</option>
           </select>
           <span className={s.chev} aria-hidden="true">
             ▼
@@ -151,15 +160,15 @@ export function SitesIndex() {
             className={s.search}
             type="search"
             value={query}
-            placeholder="Search sites, states, types…"
-            aria-label="Search the archive"
+            placeholder={tr('searchPlaceholder')}
+            aria-label={tr('searchLabel')}
             onChange={(e) => setQuery(e.target.value)}
           />
           {query && (
             <button
               className={s.clearSearch}
               onClick={() => setQuery('')}
-              aria-label="Clear search"
+              aria-label={tr('clearSearch')}
             >
               ✕
             </button>
@@ -167,12 +176,12 @@ export function SitesIndex() {
         </div>
 
         <span className={`${s.counter} ${anyActive ? s.counterOn : ''}`} aria-live="polite">
-          {shown.length} of {SITES.length} shown
+          {shown.length} {tr('of')} {SITES.length} {tr('shown')}
         </span>
 
         {anyActive && (
           <button className={s.clear} onClick={clearFilters}>
-            Clear all
+            {tr('clearAll')}
           </button>
         )}
       </div>
@@ -181,13 +190,10 @@ export function SitesIndex() {
       <div className={s.grid}>
         {shown.length === 0 ? (
           <div className={s.empty}>
-            <h2 className={s.emptyTitle}>Nothing matches that</h2>
-            <p className={s.emptyBody}>
-              No site in the archive satisfies every filter you have set. Try removing
-              one, or search for something broader.
-            </p>
+            <h2 className={s.emptyTitle}>{tr('nothingMatches')}</h2>
+            <p className={s.emptyBody}>{tr('emptyBody')}</p>
             <button className={s.emptyReset} onClick={clearFilters}>
-              Show all {SITES.length} sites
+              {tr('showAll')} {SITES.length} {tr('sitesWord')}
             </button>
           </div>
         ) : (
@@ -216,7 +222,11 @@ export function SitesIndex() {
                 <div className={s.cardScrim} />
 
                 {seen && (
-                  <span className={s.cardTick} title="You marked this as visited" aria-label="Visited">
+                  <span
+                    className={s.cardTick}
+                    title={tr('visitedTitle')}
+                    aria-label={tr('visited')}
+                  >
                     ✓
                   </span>
                 )}
@@ -225,22 +235,33 @@ export function SitesIndex() {
                   {(site.isUnesco || site.isOfficiallyProtected) && (
                     <div className={s.cardBadges}>
                       {site.isUnesco && (
-                        <span className={`${s.badge} ${s.badgeUnesco}`}>UNESCO</span>
+                        <span className={`${s.badge} ${s.badgeUnesco}`}>
+                          {tr('unescoShort')}
+                        </span>
                       )}
                       {site.isOfficiallyProtected && (
-                        <span className={s.badge}>{site.protectedBy ?? 'Protected'}</span>
+                        <span className={s.badge}>
+                          {site.protectedBy ?? tr('protected')}
+                        </span>
                       )}
                     </div>
                   )}
 
-                  <h2 className={s.cardTitle}>{site.title}</h2>
+                  {/* In Hindi the card carries the Hindi name rather than
+                      the English one. Showing ताजमहल under a heading that
+                      still read "Taj Mahal" is the same half-broken switch
+                      the chrome was fixed for — the reader asked for Hindi
+                      and the first thing on the card has to answer that. */}
+                  <h2 className={s.cardTitle}>
+                    {lang === 'hi' && site.nameHi ? site.nameHi : site.title}
+                  </h2>
 
                   <div className={s.cardMeta}>
                     <span>{site.state}</span>
                     <span className={s.cardDot} aria-hidden="true" />
-                    <span>{site.type.charAt(0).toUpperCase() + site.type.slice(1)}</span>
+                    <span>{typeLabel(site.type, lang)}</span>
                     <span className={s.cardDot} aria-hidden="true" />
-                    <span>{site.era}</span>
+                    <span>{eraLabel(site.era, lang)}</span>
                   </div>
                 </div>
               </a>

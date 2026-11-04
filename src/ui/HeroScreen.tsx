@@ -21,7 +21,9 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import s from './HeroScreen.module.css'
-import { SITES, getSite, titleCase } from '../data/sites'
+import { SITES, getSite } from '../data/sites'
+import { useT, useLang, typeLabel } from '../i18n'
+import { navigate } from '../router'
 
 /**
  * The hero rotation, ordered for contrast: a night shot, a close
@@ -52,6 +54,9 @@ export function HeroScreen({ onEnter }: Props) {
   const [index, setIndex] = useState(0)
   const [gone, setGone] = useState(false)
   const [broken, setBroken] = useState<Set<string>>(() => new Set())
+
+  const t = useT()
+  const lang = useLang()
 
   // Only keep slides whose photo actually resolves. A hero with an
   // empty frame in it is worse than a shorter rotation.
@@ -133,17 +138,32 @@ export function HeroScreen({ onEnter }: Props) {
         <nav className={s.nav}>
           <div className={`${s.brand} ${s.rise} ${s.rise1}`}>
             <span className={s.mark} aria-hidden="true" />
-            <span className={s.brandName}>Bharat Darshan</span>
+            {/* Stacked rather than inline: the Devanagari sits under the
+                Latin name so the two read as one lockup instead of two
+                titles fighting. It is the name, not a translation of it —
+                the other site stacks them the same way and it is the one
+                thing on that landing page worth taking. */}
+            <span className={s.brandText}>
+              <span className={s.brandName}>Bharat Darshan</span>
+              <span className={s.brandDev} lang="hi">
+                {t('brandDevanagari')}
+              </span>
+            </span>
           </div>
+          {/* All three used to call enter(), so "Stories" opened the
+              archive index and "Passport" opened it too — three labels,
+              one destination. They now go where they say. Archive keeps
+              the fade because that transition was designed for it; the
+              other two navigate directly. */}
           <div className={`${s.links} ${s.rise} ${s.rise2}`}>
             <button className={s.link} onClick={() => enter()}>
-              Archive
+              {t('heroArchive')}
             </button>
-            <button className={s.link} onClick={() => enter()}>
-              Stories
+            <button className={s.link} onClick={() => navigate({ name: 'stories' })}>
+              {t('navStories')}
             </button>
-            <button className={s.link} onClick={() => enter()}>
-              Passport
+            <button className={s.link} onClick={() => navigate({ name: 'journey' })}>
+              {t('heroPassport')}
             </button>
           </div>
         </nav>
@@ -152,48 +172,41 @@ export function HeroScreen({ onEnter }: Props) {
           <div className={s.copy}>
             <div className={`${s.eyebrow} ${s.rise} ${s.rise1}`}>
               <span className={s.eyebrowLine} aria-hidden="true" />
-              <span>An unstructured archive, made legible</span>
+              <span>{t('heroEyebrow')}</span>
             </div>
 
             <h1 className={`${s.headline} ${s.rise} ${s.rise2}`}>
-              Twenty-five monuments,
-              <span className={s.headlineEm}>one atlas of India.</span>
+              {t('heroTitle1')}
+              <span className={s.headlineEm}>{t('heroTitle2')}</span>
             </h1>
 
-            <p className={`${s.lead} ${s.rise} ${s.rise3}`}>
-              Photographs, inscriptions and official citations, pulled together from
-              scattered heritage records — then given a map, a search, and a
-              route you can actually travel. Every claim carries its source.
-            </p>
+            <p className={`${s.lead} ${s.rise} ${s.rise3}`}>{t('heroLead')}</p>
 
             <div className={`${s.ctaRow} ${s.rise} ${s.rise4}`}>
               <button className={s.cta} onClick={() => enter()}>
-                Enter the archive
+                {t('enterArchive')}
                 <span className={s.ctaArrow} aria-hidden="true">
                   →
                 </span>
-              </button>
-              <button className={s.ctaGhost} onClick={() => enter('taj-mahal')}>
-                Start with the Taj Mahal
               </button>
             </div>
 
             <div className={`${s.facts} ${s.rise} ${s.rise5}`}>
               <div className={s.fact}>
                 <div className={s.factNum}>{SITES.length}</div>
-                <div className={s.factLabel}>Sites</div>
+                <div className={s.factLabel}>{t('factSites')}</div>
               </div>
               <div className={s.fact}>
                 <div className={s.factNum}>{regions}</div>
-                <div className={s.factLabel}>Regions</div>
+                <div className={s.factLabel}>{t('factRegions')}</div>
               </div>
               <div className={s.fact}>
                 <div className={s.factNum}>{eras}</div>
-                <div className={s.factLabel}>Eras</div>
+                <div className={s.factLabel}>{t('factEras')}</div>
               </div>
               <div className={s.fact}>
                 <div className={s.factNum}>100%</div>
-                <div className={s.factLabel}>Sourced</div>
+                <div className={s.factLabel}>{t('factSourced')}</div>
               </div>
             </div>
           </div>
@@ -216,20 +229,20 @@ export function HeroScreen({ onEnter }: Props) {
               }}
             />
             <div className={s.cardBody}>
-              <div className={s.cardKicker}>Now showing</div>
+              <div className={s.cardKicker}>{t('nowShowing')}</div>
               <div className={s.cardName}>{current.title}</div>
               <div className={s.cardMeta}>
-                {titleCase(current.type)} · {current.state}
+                {typeLabel(current.type, lang)} · {current.state}
               </div>
               <span className={s.cardGo}>
-                View in archive <span aria-hidden="true">→</span>
+                {t('viewInArchive')} <span aria-hidden="true">→</span>
               </span>
             </div>
           </button>
         )}
 
         {/* slide dots */}
-        <div className={s.dots} role="tablist" aria-label="Hero photographs">
+        <div className={s.dots} role="tablist" aria-label={t('heroPhotos')}>
           {slides.map((site, i) => (
             <button
               key={site.id}
@@ -242,7 +255,13 @@ export function HeroScreen({ onEnter }: Props) {
           ))}
         </div>
 
-        <div className={s.hint}>Drag · scroll · click a site</div>
+        {/* Was "Drag · scroll · click a site" — a promise this screen
+            could not keep. The landing view is a fixed slideshow: there
+            is nothing to drag and nothing to scroll, so the line read as
+            an instruction to try gestures that do nothing. It now says
+            the one thing here that is true and that a reader would not
+            otherwise guess: the glass card is a button. */}
+        <div className={s.hint}>{t('heroHint')}</div>
       </div>
     </div>
   )

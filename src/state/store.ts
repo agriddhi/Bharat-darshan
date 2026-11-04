@@ -2,12 +2,19 @@
    state/store.ts — one store for the whole app.
 
    Why zustand rather than context: several surfaces read and write
-   this state independently — the archive index filters, the atlas
-   filters by the same axis, site pages add stops, the journey page
+   this state independently — the archive index filters, site pages
+   add stops, the journey page
    removes them. With context, typing one character in the search
    box would re-render every one of those. With zustand each
    subscribes to the slice it actually reads and the rest stay
    still.
+
+   What does NOT read this store: the timeline. It deliberately
+   shows all twenty-five sites in chronological order regardless of
+   the index filters, because a timeline with three sites on it has
+   no span to show — its whole value is seeing the shape of the
+   whole archive at once. That is a design choice rather than an
+   oversight, and it is why no filter state is imported there.
 
    WHAT THIS STORE USED TO HOLD AND NO LONGER DOES
    It previously carried activeView, panelOpen, selectedId,
@@ -44,10 +51,27 @@ export const EMPTY_FILTERS: Filters = {
   hasDocument: false,
 }
 
+/**
+ * Which language the interface and the prose are read in.
+ *
+ * The archive has carried Hindi since v1 — nameHi, descriptionHi,
+ * historyHi and a titleHi/bodyHi pair on all 125 story stages — but
+ * nothing ever read it. The data was bilingual and the app was not.
+ * This field is the switch that was missing, not new content.
+ *
+ * `en` is the default because the citations, source titles and
+ * credit lines are English in the record, and a reader who has not
+ * asked for Hindi should not be handed a page they cannot read.
+ */
+export type Lang = 'en' | 'hi'
+
 interface Store {
   /* --- what the reader is looking for --- */
   filters: Filters
   query: string
+
+  /* --- how they want to read it --- */
+  lang: Lang
 
   /* --- what they have built --- */
   journey: string[]
@@ -65,6 +89,9 @@ interface Store {
   clearFilters: () => void
   setQuery: (q: string) => void
 
+  /** Swap every translated string on screen. */
+  setLang: (lang: Lang) => void
+
   /** Returns false when already present or when the route is full. */
   addToJourney: (id: string) => boolean
   removeFromJourney: (id: string) => void
@@ -81,6 +108,8 @@ export const useStore = create<Store>()(
       filters: { ...EMPTY_FILTERS },
       query: '',
 
+      lang: 'en',
+
       journey: [],
       visited: [],
 
@@ -90,6 +119,8 @@ export const useStore = create<Store>()(
       clearFilters: () => set({ filters: { ...EMPTY_FILTERS }, query: '' }),
 
       setQuery: (q) => set({ query: q }),
+
+      setLang: (lang) => set({ lang }),
 
       /* ---- journey, max 5, enforced here ---- */
       addToJourney: (id) => {
@@ -121,7 +152,16 @@ export const useStore = create<Store>()(
       // lose. Filters and query are session behaviour: restoring them
       // would make the app reopen in a state the reader did not ask
       // for, which is the same reasoning v1 used.
-      partialize: (s) => ({ journey: s.journey, visited: s.visited }),
+      //
+      // Language is persisted for the opposite reason to filters: it
+      // is not a transient action, it is who the reader is. Resetting
+      // a Hindi reader to English on every visit would be the most
+      // annoying bug this app could ship.
+      partialize: (s) => ({
+        journey: s.journey,
+        visited: s.visited,
+        lang: s.lang,
+      }),
       version: 1,
     }
   )

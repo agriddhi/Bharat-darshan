@@ -24,30 +24,33 @@
    it has not been rewritten to do it.
    ============================================================ */
 
-import { useState } from 'react'
 import s from './Editorial.module.css'
-import { getSite, SITES, titleCase } from '../data/sites'
+import { getSite, SITES } from '../data/sites'
+import { useT, useLang, regionLabel, eraLabel, typeLabel } from '../i18n'
+import { useStore } from '../state/store'
 import { href } from '../router'
 
 interface Props {
   id: string
 }
 
-type Lang = 'en' | 'hi'
-
 export function StoryPage({ id }: Props) {
   const site = getSite(id)
-  const [lang, setLang] = useState<Lang>('en')
+
+  /* Store state, not local: a toggle here used to reset to English on
+     every navigation away and disagreed with the switch in the nav. */
+  const lang = useLang()
+  const setLang = useStore((st) => st.setLang)
+  const t = useT()
 
   if (!site) {
     return (
       <div className={s.page}>
         <div className={s.empty}>
-          <h2 className={s.emptyTitle}>No story matches “{id}”</h2>
-          <p className={s.emptyBody}>
-            The link may be mistyped. Every narrative in the archive is listed on the
-            stories page.
-          </p>
+          <h2 className={s.emptyTitle}>
+            {t('noStoryMatches')} “{id}”
+          </h2>
+          <p className={s.emptyBody}>{t('noStoryBody')}</p>
         </div>
       </div>
     )
@@ -76,25 +79,29 @@ export function StoryPage({ id }: Props) {
           <div className={s.eyebrow}>
             <span className={s.eyebrowLine} aria-hidden="true" />
             <span>
-              {site.region} · {site.state}
+              {regionLabel(site.region, lang)} · {site.state}
             </span>
           </div>
 
-          <h1 className={s.articleTitle}>{site.title}</h1>
+          <h1 className={s.articleTitle}>
+            {lang === 'hi' && site.nameHi ? site.nameHi : site.title}
+          </h1>
 
           {firstStage && (
             <div className={s.articleSub}>
-              {hi && firstStage.titleHi ? firstStage.titleHi : firstStage.title} — and
-              four more stages
+              {hi && firstStage.titleHi ? firstStage.titleHi : firstStage.title} —{' '}
+              {Math.max(stages.length - 1, 0)} {t('moreStages')}
             </div>
           )}
 
           <div className={s.articleMeta}>
-            <span>{titleCase(site.type)}</span>
+            <span>{typeLabel(site.type, lang)}</span>
             <span aria-hidden="true">·</span>
-            <span>{site.era}</span>
+            <span>{eraLabel(site.era, lang)}</span>
             <span aria-hidden="true">·</span>
-            <span>{stages.length} stages</span>
+            <span>
+              {stages.length} {t('stages')}
+            </span>
 
             {hasHindi && (
               <span
@@ -106,7 +113,7 @@ export function StoryPage({ id }: Props) {
                   overflow: 'hidden',
                 }}
                 role="group"
-                aria-label="Content language"
+                aria-label={t('contentLanguage')}
               >
                 <button
                   className={s.chip}
@@ -168,30 +175,18 @@ export function StoryPage({ id }: Props) {
             )}
 
             {stage.image === null && (
-              <div className={s.stageImagePending}>
-                Image for this stage — TODO. v1 carried no licensed photograph for it
-                and none has been sourced since.
-              </div>
+              <div className={s.stageImagePending}>{t('stageImagePending')}</div>
             )}
           </section>
         ))}
 
-        {stages.length === 0 && (
-          <p className={s.stageBody}>
-            This record has no written narrative yet. The archive does not summarise a
-            site it has no account for — see the site page for the verified facts and
-            sources that do exist.
-          </p>
-        )}
+        {stages.length === 0 && <p className={s.stageBody}>{t('noNarrativeYet')}</p>}
 
         {/* ================= FOOT ================= */}
         <footer className={s.articleFoot}>
-          <p className={s.footNote}>
-            Written from the record. The site page carries the official source, every
-            citation, the image licence and the quick facts.
-          </p>
+          <p className={s.footNote}>{t('writtenFromRecord')}</p>
           <a className={s.footLink} href={href({ name: 'site', id: site.id })}>
-            Open the full record <span aria-hidden="true">→</span>
+            {t('openFullRecord')} <span aria-hidden="true">→</span>
           </a>
         </footer>
       </div>

@@ -97,9 +97,10 @@ export function isShown(site: Site, f: Filters, query: string): boolean {
 
 /* NOTE: this module previously also exported `visibleSites()` and
    `regionToken()`. Both existed only to feed the 3D field, which was
-   replaced by the atlas gallery. Removing them rather than leaving
-   them means there is exactly one way to ask "what is shown", and it
-   is the one the counter and the grid both use. */
+   removed when the single-screen canvas became a set of pages.
+   Removing them rather than leaving them means there is exactly one
+   way to ask "what is shown", and it is the one the counter and the
+   grid both use. */
 
 /* ---- formatting helpers shared by the UI ---- */
 

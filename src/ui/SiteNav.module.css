@@ -88,6 +88,54 @@
   background: rgba(222, 164, 68, 0.14);
 }
 
+/* ---- language switch ----
+   Two halves in one pill. Segmented rather than a dropdown because
+   with exactly two options the whole control is the label: a reader
+   sees हिं exists without having to open anything. */
+
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: clamp(4px, 1vw, 10px);
+  padding: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+  flex-shrink: 0;
+}
+
+.langBtn {
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--paper-faint);
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 5px 9px;
+  cursor: pointer;
+  line-height: 1;
+  transition: color var(--dur-fast), background-color var(--dur-fast);
+}
+
+.langBtn:hover {
+  color: var(--paper);
+}
+
+/* The active half takes ochre, same rule as the active nav link:
+   the one thing here that says which state you are in. */
+.langOn {
+  color: var(--ochre);
+  background: rgba(222, 164, 68, 0.16);
+}
+
+.langBtn:focus-visible {
+  outline: 2px solid var(--ochre);
+  outline-offset: 2px;
+}
+
 /* ---- back link, shown on detail pages ---- */
 
 .back {

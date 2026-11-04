@@ -26,6 +26,7 @@
 import { useMemo, useState } from 'react'
 import s from './Pages.module.css'
 import { SITES } from '../data/sites'
+import { useT, useLang } from '../i18n'
 import { href } from '../router'
 import type { QuizItem, Site } from '../data/types'
 
@@ -62,6 +63,8 @@ const LETTERS = ['A', 'B', 'C', 'D']
 
 export function QuizPage() {
   const pool = useMemo(buildPool, [])
+  const t = useT()
+  const lang = useLang()
 
   const [session, setSession] = useState<PoolEntry[]>(() => shuffle(pool).slice(0, SESSION))
   const [index, setIndex] = useState(0)
@@ -124,32 +127,27 @@ export function QuizPage() {
               {correct}/{session.length}
             </div>
             <div className={s.resultOf}>
-              {pct}% correct · best streak {bestStreak}
+              {pct}
+              {t('pctCorrect')} {t('bestStreak')} {bestStreak}
             </div>
 
             <h1 className={s.resultTitle}>
-              {pct >= 80
-                ? 'You were paying attention.'
-                : pct >= 50
-                  ? 'A fair start — the stories will fill the gaps.'
-                  : 'The archive is there when you want it.'}
+              {pct >= 80 ? t('scoreHigh') : pct >= 50 ? t('scoreMid') : t('scoreLow')}
             </h1>
 
             <p className={s.resultBody}>
-              {pct >= 80
-                ? 'You know these places well. The stories section goes deeper on the ones you have not opened yet.'
-                : 'Every question above links to the record it came from. Read the ones you missed and run the quiz again — the questions are reshuffled each time.'}
+              {pct >= 80 ? t('scoreBodyHigh') : t('scoreBodyRest')}
             </p>
 
             <div className={s.btnRow} style={{ justifyContent: 'center' }}>
               <button className={s.btnPrimary} onClick={restart}>
-                Run another {SESSION}
+                {t('runAnother')} {SESSION}
               </button>
               <a className={s.btnGhost} href={href({ name: 'stories' })} style={{ textDecoration: 'none' }}>
-                Read the stories
+                {t('readStories')}
               </a>
               <a className={s.btnGhost} href={href({ name: 'sites' })} style={{ textDecoration: 'none' }}>
-                Browse all sites
+                {t('browseAllSites')}
               </a>
             </div>
           </div>
@@ -164,11 +162,8 @@ export function QuizPage() {
       <div className={s.page}>
         <div className={s.wrap}>
           <div className={s.empty}>
-            <h2 className={s.emptyTitle}>No questions in the archive</h2>
-            <p className={s.emptyBody}>
-              This build has no quiz items, so there is nothing to ask. The archive does
-              not invent questions to fill the space.
-            </p>
+            <h2 className={s.emptyTitle}>{t('noQuestions')}</h2>
+            <p className={s.emptyBody}>{t('noQuestionsBody')}</p>
           </div>
         </div>
       </div>
@@ -193,17 +188,13 @@ export function QuizPage() {
         <div className={s.headInner}>
           <div className={s.eyebrow}>
             <span className={s.eyebrowLine} aria-hidden="true" />
-            <span>Quiz</span>
+            <span>{t('quizEyebrow')}</span>
           </div>
           <h1 className={s.title}>
-            {session.length} questions,
-            <span className={s.titleEm}>drawn from the archive.</span>
+            {session.length} {t('questions')}
+            <span className={s.titleEm}>{t('quizTitle2')}</span>
           </h1>
-          <p className={s.lede}>
-            Every question, option and explanation below comes straight from the data
-            file — the same text the site pages cite. Answer, then read where the fact
-            came from.
-          </p>
+          <p className={s.lede}>{t('quizLede')}</p>
         </div>
       </header>
 
@@ -212,10 +203,10 @@ export function QuizPage() {
         <div className={s.quizTop}>
           <div className={`${s.streak} ${streak >= 3 ? s.streakOn : ''}`}>
             {streak >= 3 ? '🔥 ' : ''}
-            {streak} in a row
+            {streak} {t('inARow')}
           </div>
 
-          <div className={s.progress} role="progressbar" aria-label="Quiz progress">
+          <div className={s.progress} role="progressbar" aria-label={t('quizProgress')}>
             {session.map((_, i) => (
               <span
                 key={i}
@@ -252,17 +243,23 @@ export function QuizPage() {
             )}
             <div className={s.qPhotoScrim} />
             <div className={s.qPhotoTag}>
-              Detail · {current.site.state}
+              {t('detail')} · {current.site.state}
             </div>
           </div>
 
           <div className={s.qBody}>
-            <h2 className={s.qText}>{current.item.q}</h2>
+            <h2 className={s.qText}>
+              {lang === 'hi' && current.item.qHi ? current.item.qHi : current.item.q}
+            </h2>
 
             <div className={s.options}>
               {current.item.options.map((opt, i) => {
                 const isAnswer = i === current.item.answer
                 const isPicked = picked === i
+                const label =
+                  lang === 'hi' && current.item.optionsHi?.[i]
+                    ? current.item.optionsHi[i]
+                    : opt
 
                 let cls = ''
                 if (revealed && isAnswer) cls = s.optionRight
@@ -278,7 +275,7 @@ export function QuizPage() {
                     <span className={s.optionKey} aria-hidden="true">
                       {revealed && isAnswer ? '✓' : revealed && isPicked ? '✕' : LETTERS[i]}
                     </span>
-                    <span>{opt}</span>
+                    <span>{label}</span>
                   </button>
                 )
               })}
@@ -288,14 +285,18 @@ export function QuizPage() {
             {revealed && (
               <div className={s.reveal}>
                 <div className={s.revealTitle}>
-                  {picked === current.item.answer ? 'Correct' : 'Not quite'}
+                  {picked === current.item.answer ? t('correct') : t('notQuite')}
                 </div>
-                <p className={s.revealBody}>{current.item.explain}</p>
+                <p className={s.revealBody}>
+                  {lang === 'hi' && current.item.explainHi
+                    ? current.item.explainHi
+                    : current.item.explain}
+                </p>
                 <a
                   className={s.revealLink}
                   href={href({ name: 'site', id: current.site.id })}
                 >
-                  Open the record for {current.site.title} →
+                  {t('openRecordFor')} {current.site.title} →
                 </a>
               </div>
             )}
@@ -305,10 +306,10 @@ export function QuizPage() {
         {/* ---- advance ---- */}
         <div className={s.btnRow} style={{ marginTop: 24 }}>
           <button className={s.btnPrimary} disabled={!revealed} onClick={next}>
-            {index + 1 >= session.length ? 'See your score' : 'Next question'}
+            {index + 1 >= session.length ? t('seeScore') : t('nextQuestion')}
           </button>
           <button className={s.btnGhost} onClick={restart}>
-            Shuffle again
+            {t('shuffleAgain')}
           </button>
         </div>
       </div>

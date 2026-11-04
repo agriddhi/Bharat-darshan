@@ -15,6 +15,8 @@
    ============================================================ */
 
 import { href, sectionOf, type Route } from '../router'
+import { useT, useLang } from '../i18n'
+import { useStore } from '../state/store'
 import s from './SiteNav.module.css'
 
 interface Props {
@@ -23,20 +25,26 @@ interface Props {
   back?: { label: string; to: Route }
 }
 
-const LINKS: Array<{ label: string; to: Route }> = [
-  { label: 'Sites', to: { name: 'sites' } },
-  { label: 'Stories', to: { name: 'stories' } },
-  { label: 'Atlas', to: { name: 'atlas' } },
-  { label: 'Journey', to: { name: 'journey' } },
-  { label: 'Quiz', to: { name: 'quiz' } },
-  { label: 'About', to: { name: 'about' } },
+/* Labels come from i18n rather than being literals here, so the nav
+   is the one place a reader can flip the whole app's language and
+   see every label change under them. */
+const LINKS: Array<{ key: Parameters<ReturnType<typeof useT>>[0]; to: Route }> = [
+  { key: 'navSites', to: { name: 'sites' } },
+  { key: 'navStories', to: { name: 'stories' } },
+  { key: 'navTimeline', to: { name: 'timeline' } },
+  { key: 'navJourney', to: { name: 'journey' } },
+  { key: 'navQuiz', to: { name: 'quiz' } },
+  { key: 'navAbout', to: { name: 'about' } },
 ]
 
 export function SiteNav({ route, back }: Props) {
   const active = sectionOf(route)
+  const t = useT()
+  const lang = useLang()
+  const setLang = useStore((st) => st.setLang)
 
   return (
-    <nav className={s.nav} aria-label="Main">
+    <nav className={s.nav} aria-label={t('navMain')}>
       {/* flexShrink:0, not minWidth:0 — with min-width:0 the left
           cluster is allowed to collapse to zero and its children then
           overflow underneath the nav links, which is how the back
@@ -64,15 +72,39 @@ export function SiteNav({ route, back }: Props) {
           const on = active === sectionOf(l.to)
           return (
             <a
-              key={l.label}
+              key={l.key}
               href={href(l.to)}
               className={`${s.link} ${on ? s.linkOn : ''}`}
               aria-current={on ? 'page' : undefined}
             >
-              {l.label}
+              {t(l.key)}
             </a>
           )
         })}
+
+        {/* The switch. Two buttons rather than a checkbox or a select:
+            there are exactly two languages, both need to be visible at
+            once so a reader can see Hindi is an option, and a segmented
+            control is the only form where the current state is obvious
+            without reading a label. */}
+        <span className={s.lang} role="group" aria-label={t('langLabel')}>
+          <button
+            type="button"
+            className={`${s.langBtn} ${lang === 'en' ? s.langOn : ''}`}
+            aria-pressed={lang === 'en'}
+            onClick={() => setLang('en')}
+          >
+            {t('langEn')}
+          </button>
+          <button
+            type="button"
+            className={`${s.langBtn} ${lang === 'hi' ? s.langOn : ''}`}
+            aria-pressed={lang === 'hi'}
+            onClick={() => setLang('hi')}
+          >
+            {t('langHi')}
+          </button>
+        </span>
       </div>
     </nav>
   )

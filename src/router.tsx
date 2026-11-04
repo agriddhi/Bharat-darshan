@@ -29,7 +29,7 @@ export type Route =
   | { name: 'site'; id: string }
   | { name: 'stories' }
   | { name: 'story'; id: string }
-  | { name: 'atlas' }
+  | { name: 'timeline' }
   | { name: 'journey' }
   | { name: 'quiz' }
   | { name: 'about' }
@@ -55,8 +55,13 @@ export function parseRoute(hash: string): Route {
       return { name: 'stories' }
     case 'story':
       return tail ? { name: 'story', id: decodeURIComponent(tail) } : FALLBACK
+    case 'timeline':
+      return { name: 'timeline' }
     case 'atlas':
-      return { name: 'atlas' }
+      // The page this route used to serve was replaced by the
+      // timeline. Keeping the old hash working costs one line and
+      // saves a bookmark from silently landing on the home screen.
+      return { name: 'timeline' }
     case 'journey':
       return { name: 'journey' }
     case 'quiz':
@@ -80,8 +85,8 @@ export function routeToHash(route: Route): string {
       return '#/stories'
     case 'story':
       return `#/story/${encodeURIComponent(route.id)}`
-    case 'atlas':
-      return '#/atlas'
+    case 'timeline':
+      return '#/timeline'
     case 'journey':
       return '#/journey'
     case 'quiz':
@@ -143,8 +148,8 @@ export function sectionOf(route: Route): string {
     case 'stories':
     case 'story':
       return 'stories'
-    case 'atlas':
-      return 'atlas'
+    case 'timeline':
+      return 'timeline'
     case 'journey':
       return 'journey'
     case 'quiz':

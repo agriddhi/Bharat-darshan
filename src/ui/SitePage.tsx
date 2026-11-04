@@ -16,21 +16,23 @@
    nothing. Where v1 marked a field TODO, this page shows the TODO.
 
    THE LANGUAGE TOGGLE
-   It switches the *content*, not the interface. The chrome stays in
-   English because it is navigation, not archive material; the site
-   records — story, history, description — flip to Hindi where a
-   translation exists. Where one does not, the English is kept rather
-   than leaving a hole, and nothing is machine-translated to fill it.
+   It switches the content AND the chrome, driven by one field in the
+   store. An earlier pass switched only the record text on the
+   reasoning that navigation is not archive material — sound, and now
+   wrong: a reader who presses हिं and finds "Quick facts" sitting
+   above a Hindi paragraph is being told the switch is half-broken.
+   The prose was always the harder half and it already existed in the
+   data, so the chrome came along with it. Where a field has no
+   Hindi, the English stands; nothing is machine-translated to fill
+   the gap.
    ============================================================ */
 
-import { useState } from 'react'
 import s from './SitePage.module.css'
 import { SITES, getSite, titleCase } from '../data/sites'
 import { useStore, JOURNEY_MAX } from '../state/store'
+import { useT, useLang } from '../i18n'
 import { href, type Route } from '../router'
 import type { Site } from '../data/types'
-
-type Lang = 'en' | 'hi'
 
 interface Props {
   id: string
@@ -45,7 +47,15 @@ export function SitePage({ id }: Props) {
   const toggleVisited = useStore((st) => st.toggleVisited)
   const isVisited = useStore((st) => st.isVisited)
 
-  const [lang, setLang] = useState<Lang>('en')
+  /* The language lives in the store, not in component state. It used
+     to be a local useState, which meant the toggle reset to English
+     every time the reader moved to another site — press हिं, read one
+     page, tap the next, and you are back in English. As store state
+     it survives navigation and matches the switch in the nav, so the
+     two controls can never disagree about what is selected. */
+  const lang = useLang()
+  const setLang = useStore((st) => st.setLang)
+  const t = useT()
 
   if (!site) return <Missing id={id} />
 
@@ -101,20 +111,18 @@ export function SitePage({ id }: Props) {
           className={`${s.btn} ${inJourney ? s.btnOn : s.btnGhost}`}
           disabled={atCap}
           title={
-            atCap
-              ? `The route already has ${JOURNEY_MAX} stops — remove one first`
-              : undefined
+            atCap ? t('journeyFullTitle') : undefined
           }
           onClick={() => (inJourney ? removeFromJourney(site.id) : addToJourney(site.id))}
         >
-          {inJourney ? '✓ In your journey' : atCap ? 'Journey full (5)' : '＋ Add to journey'}
+          {inJourney ? t('inJourney') : atCap ? t('journeyFull') : t('addToJourney')}
         </button>
 
         <button
           className={`${s.btn} ${visited ? s.btnOn : s.btnGhost}`}
           onClick={() => toggleVisited(site.id)}
         >
-          {visited ? '✓ Visited' : 'Mark as visited'}
+          {visited ? t('visited') : t('markVisited')}
         </button>
 
         {hasHindi(site) && (
@@ -137,7 +145,7 @@ export function SitePage({ id }: Props) {
         )}
 
         <span className={s.counter}>
-          {index + 1} of {SITES.length}
+          {index + 1} {t('of')} {SITES.length}
         </span>
       </div>
 
@@ -145,7 +153,7 @@ export function SitePage({ id }: Props) {
       <main className={s.wrap}>
         {/* ---- lede ---- */}
         <section className={`${s.section} ${s.prose}`}>
-          <div className={s.eyebrow}>What this is</div>
+          <div className={s.eyebrow}>{t('whatThisIs')}</div>
           {hi && site.descriptionHi ? (
             <p className={s.ledeHi}>{site.descriptionHi}</p>
           ) : (
@@ -160,7 +168,7 @@ export function SitePage({ id }: Props) {
               <span className={s.sectionNum} aria-hidden="true">
                 ·
               </span>
-              <h2 className={s.sectionTitle}>Quick facts</h2>
+              <h2 className={s.sectionTitle}>{t('quickFacts')}</h2>
             </div>
             <div className={s.facts}>
               {site.quickFacts.map((f) => (
@@ -181,9 +189,9 @@ export function SitePage({ id }: Props) {
                 ·
               </span>
               <div>
-                <h2 className={s.sectionTitle}>The story</h2>
+                <h2 className={s.sectionTitle}>{t('theStory')}</h2>
                 <div className={s.eyebrow} style={{ marginBottom: 0, marginTop: 6 }}>
-                  Five stages · {site.story.length} sections
+                  {t('fiveStages')} · {site.story.length} {t('sections')}
                 </div>
               </div>
             </div>
@@ -229,7 +237,7 @@ export function SitePage({ id }: Props) {
               <span className={s.sectionNum} aria-hidden="true">
                 ·
               </span>
-              <h2 className={s.sectionTitle}>History</h2>
+              <h2 className={s.sectionTitle}>{t('history')}</h2>
             </div>
             {hi && site.historyHi ? (
               <p className={s.historyHi}>{site.historyHi}</p>
@@ -246,13 +254,13 @@ export function SitePage({ id }: Props) {
               <span className={s.sectionNum} aria-hidden="true">
                 ·
               </span>
-              <h2 className={s.sectionTitle}>360° view</h2>
+              <h2 className={s.sectionTitle}>{t('view360')}</h2>
             </div>
             <a className={s.official} href={site.pano360} target="_blank" rel="noreferrer">
               <span className={s.officialMark}>360</span>
               <span>
                 <span className={s.officialLabel}>
-                  Open the panorama of {site.title}
+                  {t('openPanorama')} {site.title}
                 </span>
                 <span className={s.officialUrl} style={{ display: 'block' }}>
                   {site.pano360Note ?? site.pano360}
@@ -268,7 +276,7 @@ export function SitePage({ id }: Props) {
             <span className={s.sectionNum} aria-hidden="true">
               ·
             </span>
-            <h2 className={s.sectionTitle}>Sources</h2>
+            <h2 className={s.sectionTitle}>{t('sources')}</h2>
           </div>
 
           {/* The official record leads, because it is the one the whole
@@ -283,7 +291,7 @@ export function SitePage({ id }: Props) {
               <span className={s.officialMark}>Official</span>
               <span>
                 <span className={s.officialLabel}>
-                  {site.officialSource.label ?? 'Official record'}
+                  {site.officialSource.label ?? t('officialRecord')}
                 </span>
                 <span className={s.officialUrl} style={{ display: 'block' }}>
                   {site.officialSource.url}
@@ -325,19 +333,19 @@ export function SitePage({ id }: Props) {
             <span className={s.sectionNum} aria-hidden="true">
               ·
             </span>
-            <h2 className={s.sectionTitle}>Image credit</h2>
+            <h2 className={s.sectionTitle}>{t('imageCredit')}</h2>
           </div>
           <div className={s.credits}>
             <div className={s.creditItem}>
-              <div className={s.creditLabel}>Photographer</div>
+              <div className={s.creditLabel}>{t('photographer')}</div>
               <div className={s.creditValue}>{site.credits.photographer}</div>
             </div>
             <div className={s.creditItem}>
-              <div className={s.creditLabel}>Licence</div>
+              <div className={s.creditLabel}>{t('licence')}</div>
               <div className={s.creditValue}>{site.credits.license}</div>
             </div>
             <div className={s.creditItem}>
-              <div className={s.creditLabel}>File</div>
+              <div className={s.creditLabel}>{t('file')}</div>
               <div className={s.creditValue}>{site.credits.filename}</div>
             </div>
           </div>
@@ -368,7 +376,7 @@ export function SitePage({ id }: Props) {
         <nav className={s.pager} aria-label="Adjacent sites">
           {prev ? (
             <a className={s.pagerLink} href={href({ name: 'site', id: prev.id })}>
-              <span className={s.pagerDir}>← Previous</span>
+              <span className={s.pagerDir}>{t('previous')}</span>
               <span className={s.pagerName}>{prev.title}</span>
               <span className={s.pagerMeta}>
                 {prev.state} · {prev.era}
@@ -380,7 +388,7 @@ export function SitePage({ id }: Props) {
 
           {next && (
             <a className={`${s.pagerLink} ${s.pagerNext}`} href={href({ name: 'site', id: next.id })}>
-              <span className={s.pagerDir}>Next →</span>
+              <span className={s.pagerDir}>{t('next')}</span>
               <span className={s.pagerName}>{next.title}</span>
               <span className={s.pagerMeta}>
                 {next.state} · {next.era}
@@ -398,12 +406,13 @@ export function SitePage({ id }: Props) {
    ============================================================ */
 
 function Badges({ site }: { site: Site }) {
+  const t = useT()
   const out: React.ReactNode[] = []
 
   if (site.isUnesco) {
     out.push(
       <span key="unesco" className={`${s.badge} ${s.badgeUnesco}`}>
-        UNESCO World Heritage
+        {t('unescoWorld')}
         {site.isUnescoRef ? ` · ${site.isUnescoRef}` : ''}
       </span>
     )
@@ -412,7 +421,7 @@ function Badges({ site }: { site: Site }) {
   if (site.isOfficiallyProtected) {
     out.push(
       <span key="prot" className={s.badge}>
-        {site.protectedBy ?? 'Officially protected'}
+        {site.protectedBy ?? t('officiallyProtected')}
       </span>
     )
   }
@@ -427,7 +436,7 @@ function Badges({ site }: { site: Site }) {
         rel="noreferrer"
         style={{ textDecoration: 'none' }}
       >
-        Government record ↗
+        {t('governmentRecord')} ↗
       </a>
     )
   }
@@ -446,18 +455,18 @@ function hasHindi(site: Site): boolean {
 }
 
 function Missing({ id }: { id: string }) {
+  const t = useT()
   const fallback: Route = { name: 'sites' }
   return (
     <div className={s.page}>
       <div className={s.missing}>
-        <div className={s.eyebrow}>Not in the archive</div>
-        <h1 className={s.missingTitle}>No site matches “{id}”</h1>
-        <p className={s.missingBody}>
-          The link may be mistyped, or the record may have been renamed. Every site in
-          the archive is listed on the index page.
-        </p>
+        <div className={s.eyebrow}>{t('notInArchive')}</div>
+        <h1 className={s.missingTitle}>
+          {t('noSiteMatches')} “{id}”
+        </h1>
+        <p className={s.missingBody}>{t('missingBody')}</p>
         <a className={`${s.btn} ${s.btnPrimary}`} href={href(fallback)}>
-          Browse all {SITES.length} sites
+          {t('browseAll')} {SITES.length} {t('sitesWord')}
         </a>
       </div>
     </div>

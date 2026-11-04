@@ -31,7 +31,7 @@ import { SitesIndex } from './ui/SitesIndex'
 import { SitePage } from './ui/SitePage'
 import { StoriesIndex } from './ui/StoriesIndex'
 import { StoryPage } from './ui/StoryPage'
-import { AtlasPage } from './ui/AtlasPage'
+import { TimelinePage } from './ui/TimelinePage'
 import { JourneyPage } from './ui/JourneyPage'
 import { QuizPage } from './ui/QuizPage'
 import { AboutPage } from './ui/AboutPage'
@@ -80,8 +80,8 @@ function Page({ route }: { route: Route }) {
       return <StoriesIndex />
     case 'story':
       return <StoryPage id={route.id} />
-    case 'atlas':
-      return <AtlasPage />
+    case 'timeline':
+      return <TimelinePage />
     case 'journey':
       return <JourneyPage />
     case 'quiz':

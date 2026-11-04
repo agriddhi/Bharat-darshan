@@ -29,8 +29,7 @@ body,
 
 body {
   /* No sideways scroll ever. Vertical scrolling belongs to the pages;
-     the hero and the atlas canvas are both fixed and manage their own
-     framing. */
+     the hero manages its own framing as a fixed full-screen view. */
   overflow-x: hidden;
   background: var(--canvas-deep);
   color: var(--paper);
