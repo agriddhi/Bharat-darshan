@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharat Darshan — Pitch Deck</title>
+<style>
+  :root {
+    --soft-stone: #CDC8B8;
+    --ochre: #DEA044;
+    --terracotta: #BF8250;
+    --rust: #9D473A;
+    --steel-blue: #416A81;
+    --ink-navy: #16243D;
+    --bg: #0e1624;
+    --paper: #e8e4d8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: var(--bg); color: var(--paper); overflow: hidden; }
+  .deck { width: 100vw; height: 100vh; position: relative; }
+  .slide {
+    position: absolute; inset: 0; padding: 60px 80px; display: none; flex-direction: column;
+    justify-content: center; background: var(--bg);
+  }
+  .slide.active { display: flex; }
+  .slide::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 80% 20%, rgba(222,164,68,0.08), transparent 60%);
+    pointer-events: none;
+  }
+  .slide-num { position: absolute; bottom: 24px; right: 32px; font-size: 0.7rem; opacity: 0.4; letter-spacing: 0.1em; }
+  h1 { font-size: 3rem; font-weight: 600; line-height: 1.1; margin-bottom: 16px; color: var(--paper); }
+  h1 .accent { color: var(--ochre); font-style: italic; }
+  h2 { font-size: 1.8rem; font-weight: 600; margin-bottom: 12px; color: var(--ochre); }
+  h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; color: var(--paper); }
+  p { font-size: 1.1rem; line-height: 1.6; opacity: 0.85; max-width: 900px; }
+  .subtitle { font-size: 1.3rem; opacity: 0.7; margin-bottom: 24px; font-style: italic; }
+  .tag { display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(222,160,68,0.15); color: var(--ochre); border: 1px solid var(--ochre); margin-bottom: 16px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 16px; }
+  .card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 24px; }
+  .metric { font-size: 2.4rem; font-weight: 700; color: var(--ochre); line-height: 1; }
+  .metric-label { font-size: 0.85rem; opacity: 0.6; margin-top: 4px; }
+  .bullet { padding-left: 24px; list-style: none; }
+  .bullet li { position: relative; margin-bottom: 10px; font-size: 1.05rem; line-height: 1.5; }
+  .bullet li::before { content: '—'; position: absolute; left: 0; color: var(--ochre); }
+  .bar { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
+  .bar-fill { height: 8px; background: var(--ochre); border-radius: 4px; }
+  .bar-label { font-size: 0.8rem; opacity: 0.6; min-width: 120px; }
+  .foot { position: absolute; bottom: 24px; left: 80px; font-size: 0.7rem; opacity: 0.4; }
+  .nav-hint { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); font-size: 0.7rem; opacity: 0.4; }
+  @media print { .slide { page-break-after: always; } .nav-hint { display: none; } }
+</style>
+</head>
+<body>
+<div class="deck">
+  <!-- Slide 1: Title -->
+  <div class="slide active">
+    <div class="tag">Track 2 · HC26-CULT01 · Blithchron '27</div>
+    <h1>Bharat Darshan<br><span class="accent">Heritage Atlas India</span></h1>
+    <p class="subtitle">Twenty-five monuments, one atlas of India.</p>
+    <p>A geospatial, bilingual, source-cited heritage archive — map, timeline, stories, and folklore, built for IIT Gandhinagar's Blithchron '27.</p>
+    <div class="foot">Team of 3 · Deadline: 4 Nov 2026, 6:30 PM IST</div>
+    <span class="slide-num">01 / 10</span>
+  </div>
+
+  <!-- Slide 2: Problem -->
+  <div class="slide">
+    <h2>The Problem</h2>
+    <p>India's heritage exists in static reports, scattered archives, and disconnected tourism pages. There is no single place where a student, tourist, or researcher can:</p>
+    <ul class="bullet">
+      <li>Explore monuments spatially on a map</li>
+      <li>Read verified folklore tied to each site</li>
+      <li>Walk a chronological timeline across eras</li>
+      <li>Track their own journey through monuments</li>
+    </ul>
+    <p style="margin-top:16px; opacity:0.6; font-size:0.95rem;">The gap: <strong>location-based, interactive mapping with folklore and architectural discovery</strong> — exactly the innovation pathway we chose.</p>
+    <span class="slide-num">02 / 10</span>
+  </div>
+
+  <!-- Slide 3: Solution -->
+  <div class="slide">
+    <h2>The Solution</h2>
+    <p><strong>Bharat Darshan</strong> — a heritage atlas that combines spatial mapping, verified folklore, and a chronological narrative into one bilingual web app.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>🗺️ Heritage Map</h3>
+        <p>25 monuments as teardrop pins on Leaflet. Region/type filters. Journey route as dashed polyline. Click any pin → photo, facts, actions.</p>
+      </div>
+      <div class="card">
+        <h3>📜 Folklore & Nearby</h3>
+        <p>640–960 word verified folklore notes per site. Local legends + nearby attractions. Each cites Wikipedia.</p>
+      </div>
+      <div class="card">
+        <h3>⏱️ Timeline</h3>
+        <p>Four eras (Ancient · Medieval · Mughal · Colonial). All 25 sites regardless of filter. Honest date rules.</p>
+      </div>
+      <div class="card">
+        <h3>📖 Stories</h3>
+        <p>Five-stage narrative per monument. Standfirst, stages, Hindi translation. Same text on site page — no duplication.</p>
+      </div>
+    </div>
+    <span class="slide-num">03 / 10</span>
+  </div>
+
+  <!-- Slide 4: Architecture -->
+  <div class="slide">
+    <h2>System Architecture</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Data Layer</h3>
+        <p><code>sites.json</code> — single source of truth. 25 sites, 125 story stages, 75 quiz questions, 127 facts, 47 sources, 20 TODOs.</p>
+      </div>
+      <div class="card">
+        <h3>State</h3>
+        <p>Zustand store: journey, visited, lang. Persisted to localStorage. Versioned migrations.</p>
+      </div>
+      <div class="card">
+        <h3>Routing</h3>
+        <p>Hand-rolled hash router (no react-router). 11 pages, all deep-linkable. GitHub Pages compatible.</p>
+      </div>
+      <div class="card">
+        <h3>i18n</h3>
+        <p>~90 keys EN+HI. Global toggle. <code>pick()</code> falls back to English. Nothing machine-translated.</p>
+      </div>
+    </div>
+    <span class="slide-num">04 / 10</span>
+  </div>
+
+  <!-- Slide 5: Innovation Pathway -->
+  <div class="slide">
+    <h2>Innovation Pathway: Geospatial / Immersive Web</h2>
+    <p>We chose the pathway that fits our stack: <strong>location-based, interactive mapping with folklore and architectural discovery.</strong></p>
+    <ul class="bullet">
+      <li><strong>Travel routes</strong> — journey route as dashed ochre polyline with numbered pins</li>
+      <li><strong>Folklore</strong> — 640–960 word verified notes per site, in map popups + dedicated pages</li>
+      <li><strong>Architectural discoveries</strong> — nearby attractions in every folklore note</li>
+      <li><strong>Spatial exploration</strong> — click pins → preview card (photo, facts, actions)</li>
+    </ul>
+    <p style="margin-top:16px; opacity:0.6; font-size:0.95rem;">CV/3D and NLP/OCR were considered but not feasible in remaining time — documented in README.</p>
+    <span class="slide-num">05 / 10</span>
+  </div>
+
+  <!-- Slide 6: Key Features -->
+  <div class="slide">
+    <h2>Key Features</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Heritage Map</h3>
+        <p>25 teardrop pins (type-coloured). Region + type filters. Scroll-zoom. Rich popups with photos.</p>
+      </div>
+      <div class="card">
+        <h3>Timeline</h3>
+        <p>4 eras. All 25 sites regardless of filter. Honest date rules — TODO stays TODO.</p>
+      </div>
+      <div class="card">
+        <h3>Journey Route</h3>
+        <p>Mark visited. Add to journey. Dashed polyline with numbered pins on map.</p>
+      </div>
+      <div class="card">
+        <h3>Quiz</h3>
+        <p>75 questions, 3 per site. Score tracking. Bilingual.</p>
+      </div>
+    </div>
+    <span class="slide-num">06 / 10</span>
+  </div>
+
+  <!-- Slide 7: UI/UX -->
+  <div class="slide">
+    <h2>UI/UX Design</h2>
+    <ul class="bullet">
+      <li><strong>Palette:</strong> softStone, ochre (sole accent), terracotta, rust, steelBlue, ink navy — ≤2 accents per panel</li>
+      <li><strong>Bilingual:</strong> EN | हिं toggle on every page. Chrome + content translated.</li>
+      <li><strong>Responsive:</strong> Desktop → tablet → mobile. Map → bottom sheet on small screens.</li>
+      <li><strong>Accessibility:</strong> Keyboard navigation on map pins. Focus rings. Screen-reader labels.</li>
+      <li><strong>No fabrication:</strong> 20 TODOs stay TODO. 25 folkloreNote null→sourced. 125 story images null.</li>
+    </ul>
+    <span class="slide-num">07 / 10</span>
+  </div>
+
+  <!-- Slide 8: Data Honesty -->
+  <div class="slide">
+    <h2>Data Honesty (No Fabrication)</h2>
+    <p>Our core differentiator: <strong>nothing is invented.</strong></p>
+    <div class="grid-2">
+      <div class="card">
+        <div class="metric">20</div>
+        <div class="metric-label">TODOs stay TODO</div>
+      </div>
+      <div class="card">
+        <div class="metric">25/25</div>
+        <div class="metric-label">folkloreNote now sourced (was null)</div>
+      </div>
+      <div class="card">
+        <div class="metric">125/125</div>
+        <div class="metric-label">story.image stays null</div>
+      </div>
+      <div class="card">
+        <div class="metric">47</div>
+        <div class="metric-label">sources, 127 facts, 102,987 chars prose</div>
+      </div>
+    </div>
+    <p style="margin-top:16px; opacity:0.6; font-size:0.9rem;">Where a legend could not be verified, the field stays null — no narrative is invented to fill a gap.</p>
+    <span class="slide-num">08 / 10</span>
+  </div>
+
+  <!-- Slide 9: Technical Execution -->
+  <div class="slide">
+    <h2>Technical Execution</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Stack</h3>
+        <p>React 18 + TypeScript + Vite. Leaflet 1.9.4. Zustand. No react-router (hand-rolled hash router).</p>
+      </div>
+      <div class="card">
+        <h3>Build</h3>
+        <p><code>tsc -b && vite build</code> — exit 0, 1.9s. 118 modules. Clean tree.</p>
+      </div>
+      <div class="card">
+        <h3>Code Quality</h3>
+        <p>Typed routes. CSS modules. No fabrication. Source-cited. Documented migration.</p>
+      </div>
+      <div class="card">
+        <h3>Scalability</h3>
+        <p>Static JSON data file. Hash routing. Works on any static host. Offline-capable (except map tiles).</p>
+      </div>
+    </div>
+    <span class="slide-num">09 / 10</span>
+  </div>
+
+  <!-- Slide 10: Team & Close -->
+  <div class="slide">
+    <h2>Team & Next Steps</h2>
+    <div class="grid-2" style="margin-top:24px;">
+      <div class="card">
+        <h3>Role Cards</h3>
+        <p>TODO: name and contact — all three team members</p>
+      </div>
+      <div class="card">
+        <h3>Next</h3>
+        <p>GitHub push · 2–3 min walkthrough video · ≤10-slide deck PDF</p>
+      </div>
+    </div>
+    <p style="margin-top:24px; font-size:1.1rem; opacity:0.7;">Built for Blithchron '27, IIT Gandhinagar · Track 2 / HC26-CULT01</p>
+    <span class="slide-num">10 / 10</span>
+  </div>
+</div>
+<div class="nav-hint">← → arrow keys to navigate · Print to PDF for submission</div>
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
+  function show(i) {
+    slides[current].classList.remove('active');
+    current = Math.max(0, Math.min(slides.length - 1, i));
+    slides[current].classList.add('active');
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ') show(current + 1);
+    if (e.key === 'ArrowLeft') show(current - 1);
+  });
+</script>
+</body>
+</html>
