@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    ui/SiteNav.module.css — navigation for the inner pages.
 
    Deliberately NOT the TopBar. TopBar carries filters, a search box
@@ -176,6 +176,25 @@
    already contains a link to every section it points at, so "← All
    sites" is a convenience, while the brand mark is the only route
    home. */
+@media (max-width: 960px) {
+  .nav {
+    gap: 12px;
+    padding-left: clamp(12px, 3vw, 24px);
+    padding-right: clamp(12px, 3vw, 24px);
+  }
+  .links {
+    gap: 0;
+  }
+  .link {
+    font-size: 0.62rem;
+    letter-spacing: 0.05em;
+    padding: 6px 5px;
+  }
+  .langBtn {
+    padding: 2px 6px;
+    font-size: 0.58rem;
+  }
+}
 @media (max-width: 720px) {
   .nav {
     gap: 10px;
