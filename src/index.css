@@ -99,3 +99,23 @@ a {
     scroll-behavior: auto !important;
   }
 }
+
+/* Heritage map pins — global because Leaflet renders them outside
+   React's module scope. Ochre to match the rest of the interface. */
+.bd-pin {
+  background: transparent;
+  border: 0;
+}
+.bd-pin-dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--ochre, #DEA044);
+  border: 2px solid var(--ink, #16243D);
+  box-shadow: 0 0 0 2px rgba(222, 160, 68, 0.35);
+  transition: transform 0.15s ease;
+}
+.bd-pin:hover .bd-pin-dot {
+  transform: scale(1.25);
+}

@@ -52,6 +52,7 @@ const STRINGS = {
   navSites: { en: 'Sites', hi: 'स्थल' },
   navStories: { en: 'Stories', hi: 'कहानियाँ' },
   navTimeline: { en: 'Timeline', hi: 'कालक्रम' },
+  navMap: { en: 'Map', hi: 'नक्शा' },
   navJourney: { en: 'Journey', hi: 'यात्रा' },
   navQuiz: { en: 'Quiz', hi: 'प्रश्नोत्तरी' },
   navAbout: { en: 'About', hi: 'परिचय' },
@@ -440,6 +441,16 @@ const STRINGS = {
     hi: 'लिखित अभिलेख, हवाला-जाँच, हिन्दी अनुवाद और प्रश्नोत्तरी सामग्री।',
   },
   todoName: { en: 'TODO: name and contact', hi: 'TODO: नाम और संपर्क' },
+
+  /* ---- map ---- */
+  mapEyebrow: { en: 'The map', hi: 'नक्शा' },
+  mapTitle1: { en: 'Twenty-five sites,', hi: 'पच्चीस स्थल,' },
+  mapTitle2: { en: 'on the map.', hi: 'नक्शे पर।' },
+  mapLede: {
+    en: 'Every site in the archive, placed where it stands. Click a marker to open its record. The map is the one part of this site that fetches tiles from the open map — everything else runs on the data file alone.',
+    hi: 'संग्रह का हर स्थल, जहाँ वह खड़ा है वहीं रखा गया। अभिलेख खोलने के लिए चिह्न पर क्लिक करें। नक्शा इस साइट का वह एकमात्र हिस्सा है जो खुला नक्शा (ओपन मैप) से टाइलें लाता है — बाक़ी सब केवल डेटा फ़ाइल पर चलता है।',
+  },
+  openRecord: { en: 'Open the record', hi: 'अभिलेख खोलें' },
 
   /* ---- era names ---- */
   eraAncient: { en: 'Ancient', hi: 'प्राचीन' },

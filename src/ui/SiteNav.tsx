@@ -32,6 +32,7 @@ const LINKS: Array<{ key: Parameters<ReturnType<typeof useT>>[0]; to: Route }> =
   { key: 'navSites', to: { name: 'sites' } },
   { key: 'navStories', to: { name: 'stories' } },
   { key: 'navTimeline', to: { name: 'timeline' } },
+  { key: 'navMap', to: { name: 'map' } },
   { key: 'navJourney', to: { name: 'journey' } },
   { key: 'navQuiz', to: { name: 'quiz' } },
   { key: 'navAbout', to: { name: 'about' } },

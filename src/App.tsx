@@ -1,12 +1,12 @@
 /* ============================================================
-   App.tsx — the routed composition root.
+   App.tsx Ã¢â‚¬â€ the routed composition root.
 
    WHAT CHANGED AND WHY
    The first version of v2 treated the whole app as one screen: a
    canvas plus panels sliding over it, with no navigation at all.
    That model failed on contact with the content. A five-part
    narrative, a history, twelve quick facts, a Hindi translation and
-   a source list do not fit in a 468px drawer — 87% of the archive's
+   a source list do not fit in a 468px drawer Ã¢â‚¬â€ 87% of the archive's
    writing was invisible because the container was too small.
 
    So pages came back. The rule now is:
@@ -14,7 +14,7 @@
      the URL is the page, and every page has room.
 
    There is still exactly one canvas in the application and it still
-   never reloads anything — navigation swaps what is drawn on top of
+   never reloads anything Ã¢â‚¬â€ navigation swaps what is drawn on top of
    it. What changed is that the top layer is a document rather than a
    drawer.
 
@@ -32,6 +32,7 @@ import { SitePage } from './ui/SitePage'
 import { StoriesIndex } from './ui/StoriesIndex'
 import { StoryPage } from './ui/StoryPage'
 import { TimelinePage } from './ui/TimelinePage'
+import { MapPage } from './ui/MapPage'
 import { JourneyPage } from './ui/JourneyPage'
 import { QuizPage } from './ui/QuizPage'
 import { AboutPage } from './ui/AboutPage'
@@ -58,7 +59,7 @@ export default function App() {
   )
 }
 
-/** Which page is behind us, for the "← Back" affordance in the nav. */
+/** Which page is behind us, for the "Ã¢â€ Â Back" affordance in the nav. */
 function backTarget(route: Route): { label: string; to: Route } | undefined {
   switch (route.name) {
     case 'site':
@@ -82,6 +83,8 @@ function Page({ route }: { route: Route }) {
       return <StoryPage id={route.id} />
     case 'timeline':
       return <TimelinePage />
+    case 'map':
+      return <MapPage />
     case 'journey':
       return <JourneyPage />
     case 'quiz':

@@ -1,12 +1,12 @@
 /* ============================================================
-   router.tsx — hash-based routing, hand-rolled.
+   router.tsx ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â hash-based routing, hand-rolled.
 
    WHY NOT react-router
    Two reasons, both practical rather than ideological:
 
    1. Hash routes (site/#/site/taj-mahal) work on any static host with
       zero server configuration. GitHub Pages, Netlify drop, a bare
-      folder on a USB stick — all identical. Path routes need a
+      folder on a USB stick ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â all identical. Path routes need a
       rewrite rule, and "it 404s on the deploy" is a bad way to find
       that out the night before a deadline.
 
@@ -16,7 +16,7 @@
 
    THE URL IS THE ONLY SOURCE OF TRUTH
    Nothing stores "the current page" in component state. If the URL
-   says you are on a site page, you are on a site page — which means
+   says you are on a site page, you are on a site page ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â which means
    refresh, back button, and a shared link all behave, without any of
    them being specially handled.
    ============================================================ */
@@ -30,6 +30,7 @@ export type Route =
   | { name: 'stories' }
   | { name: 'story'; id: string }
   | { name: 'timeline' }
+  | { name: 'map' }
   | { name: 'journey' }
   | { name: 'quiz' }
   | { name: 'about' }
@@ -49,7 +50,7 @@ export function parseRoute(hash: string): Route {
     case 'sites':
       return { name: 'sites' }
     case 'site':
-      // a missing id is a bad link, not a crash — fall back
+      // a missing id is a bad link, not a crash ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â fall back
       return tail ? { name: 'site', id: decodeURIComponent(tail) } : FALLBACK
     case 'stories':
       return { name: 'stories' }
@@ -62,6 +63,9 @@ export function parseRoute(hash: string): Route {
       // timeline. Keeping the old hash working costs one line and
       // saves a bookmark from silently landing on the home screen.
       return { name: 'timeline' }
+    case 'map':
+    case 'heritage-map':
+      return { name: 'map' }
     case 'journey':
       return { name: 'journey' }
     case 'quiz':
@@ -87,6 +91,8 @@ export function routeToHash(route: Route): string {
       return `#/story/${encodeURIComponent(route.id)}`
     case 'timeline':
       return '#/timeline'
+    case 'map':
+      return '#/map'
     case 'journey':
       return '#/journey'
     case 'quiz':
@@ -123,7 +129,7 @@ export function useRoute(): Route {
     }
     window.addEventListener('hashchange', onChange)
     // In case the hash changed between the initial read and the effect
-    // attaching — rare, but it would otherwise strand the app on a
+    // attaching ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â rare, but it would otherwise strand the app on a
     // stale page.
     onChange()
     return () => window.removeEventListener('hashchange', onChange)
@@ -150,6 +156,8 @@ export function sectionOf(route: Route): string {
       return 'stories'
     case 'timeline':
       return 'timeline'
+    case 'map':
+      return 'map'
     case 'journey':
       return 'journey'
     case 'quiz':
