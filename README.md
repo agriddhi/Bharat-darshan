@@ -1,4 +1,4 @@
-# Bharat Darshan — Heritage Atlas India
+﻿# Bharat Darshan — Heritage Atlas India
 
 A browsable archive of 25 Indian monuments. Every entry carries a photograph, the
 licence that permits its use, the official record it was checked against, and a
@@ -262,11 +262,14 @@ starting from a clean state makes the tour read the same for everyone.
    route, the distance and the badge count.
 7. **2:15** — Open the timeline and scroll through the four era bands, then
    point out that all 25 sites are on it whatever the archive filter is set to.
-8. **2:30** — Answer one quiz question correctly, then one wrongly, so the
+8. **2:25** — Open the map and click one pin; the popup carries the name and
+    a link to the record. Mention that this is the one page that fetches
+    anything from the network.
+9. **2:30** — Answer one quiz question correctly, then one wrongly, so the
    explanation and the link back to the record are both visible.
-9. **2:45** — About page: the generated credits table, the source index, and the
+10. **2:45** — About page: the generated credits table, the source index, and the
    "what we deliberately did not do" list.
-10. **2:55** — Close on the landing screen.
+11. **2:55** — Close on the landing screen.
 
 ---
 
