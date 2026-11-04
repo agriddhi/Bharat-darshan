@@ -119,7 +119,15 @@
           "Aurangzeb"
         ],
         "answer": 1,
-        "explain": "Shah Jahan had it built as a tomb for his wife Mumtaz Mahal."
+        "explain": "Shah Jahan had it built as a tomb for his wife Mumtaz Mahal.",
+        "qHi": "ताज महल किसने बनवाया?",
+        "optionsHi": [
+          "अकबर",
+          "शाह जहाँ",
+          "हुमायूँ",
+          "औरंगज़ेब"
+        ],
+        "explainHi": "शाह जहाँ ने इसे अपनी पत्नी मुमताज़ महल की समाधि के रूप में बनवाया।"
       },
       {
         "q": "Which UNESCO World Heritage number is the Taj Mahal?",
@@ -130,7 +138,15 @@
           "No. 524"
         ],
         "answer": 2,
-        "explain": "It was inscribed in 1983 under number 252."
+        "explain": "It was inscribed in 1983 under number 252.",
+        "qHi": "ताज महल यूनेस्को विश्व धरोहर सूची में किस क्रमांक पर है?",
+        "optionsHi": [
+          "क्रमांक 233",
+          "क्रमांक 241",
+          "क्रमांक 252",
+          "क्रमांक 524"
+        ],
+        "explainHi": "इसे 1983 में क्रमांक 252 के रूप में सूचीबद्ध किया गया।"
       },
       {
         "q": "What is pietra dura?",
@@ -141,7 +157,15 @@
           "A garden channel"
         ],
         "answer": 1,
-        "explain": "Pietra dura is the technique of setting cut stones into marble to form pictures and patterns."
+        "explain": "Pietra dura is the technique of setting cut stones into marble to form pictures and patterns.",
+        "qHi": "पिएत्रा ड्यूरा क्या है?",
+        "optionsHi": [
+          "संगमरमर की नक्काशी की एक शैली",
+          "संगमरमर में अर्ध-बहुमूल्य पत्थर जड़ना",
+          "मीनार का एक प्रकार",
+          "बाग़ की नहर"
+        ],
+        "explainHi": "पिएत्रा ड्यूरा कटे हुए पत्थरों को संगमरमर में जड़कर चित्र और नमूने बनाने की तकनीक है।"
       }
     ],
     "isUnesco": true,
@@ -278,7 +302,15 @@
           "Beas"
         ],
         "answer": 1,
-        "explain": "The shrine stands in the middle of the Amrit Sarovar, the pool that gives Amritsar its name."
+        "explain": "The shrine stands in the middle of the Amrit Sarovar, the pool that gives Amritsar its name.",
+        "qHi": "नदी जैसे किस तालाब के चारों ओर यह तीर्थ बना है?",
+        "optionsHi": [
+          "गंगा",
+          "अमृत सरोवर",
+          "यमुना",
+          "व्यास"
+        ],
+        "explainHi": "यह तीर्थ अमृत सरोवर के बीचोंबीच है — उसी तालाब से अमृतसर का नाम पड़ा।"
       },
       {
         "q": "Which scripture was installed inside in 1604?",
@@ -289,7 +321,15 @@
           "Gita"
         ],
         "answer": 0,
-        "explain": "Guru Arjan Dev compiled the Adi Granth and installed it in the shrine in 1604."
+        "explain": "Guru Arjan Dev compiled the Adi Granth and installed it in the shrine in 1604.",
+        "qHi": "1604 में अंदर कौन-सी ग्रंथ स्थापित किया गया?",
+        "optionsHi": [
+          "गुरु ग्रंथ साहिब (आदि ग्रंथ)",
+          "ऋग्वेद",
+          "त्रिपिटक",
+          "गीता"
+        ],
+        "explainHi": "गुरु अर्जन देव ने आदि ग्रंथ को संकलित किया और 1604 में उसे तीर्थ में स्थापित किया।"
       },
       {
         "q": "How many doors does the shrine have?",
@@ -300,7 +340,15 @@
           "Eight"
         ],
         "answer": 2,
-        "explain": "Four doors, one on each side, symbolising welcome to people from every direction."
+        "explain": "Four doors, one on each side, symbolising welcome to people from every direction.",
+        "qHi": "तीर्थ में कितने दरवाज़े हैं?",
+        "optionsHi": [
+          "एक",
+          "दो",
+          "चार",
+          "आठ"
+        ],
+        "explainHi": "चार दरवाज़े, हर तरफ़ एक — हर दिशा से लोगों के स्वागत का प्रतीक।"
       }
     ],
     "isUnesco": false,
@@ -436,7 +484,15 @@
           "Firoz Shah Tughlaq"
         ],
         "answer": 1,
-        "explain": "Qutb-ud-din Aibak began it in 1192; Iltutmish completed the upper storeys."
+        "explain": "Qutb-ud-din Aibak began it in 1192; Iltutmish completed the upper storeys.",
+        "qHi": "कुतुब मीनार की शुरुआत किसने की?",
+        "optionsHi": [
+          "इल्तुतमिश",
+          "कुतबुद्दीन ऐबक",
+          "अलाउद्दीन ख़िलजी",
+          "फ़िरोज़ शाह तुघलक़"
+        ],
+        "explainHi": "कुतबुद्दीन ऐबक ने इसे 1192 में शुरू किया; ऊपरी मंज़िलें इल्तुतमिश ने पूरी कीं।"
       },
       {
         "q": "How tall is the minaret?",
@@ -447,7 +503,15 @@
           "About 93 metres"
         ],
         "answer": 2,
-        "explain": "It stands roughly 73 metres tall."
+        "explain": "It stands roughly 73 metres tall.",
+        "qHi": "मीनार कितनी ऊँची है?",
+        "optionsHi": [
+          "लगभग 33 मीटर",
+          "लगभग 53 मीटर",
+          "लगभग 73 मीटर",
+          "लगभग 93 मीटर"
+        ],
+        "explainHi": "यह लगभग 73 मीटर ऊँची है।"
       },
       {
         "q": "What other famous object sits in the same complex?",
@@ -458,7 +522,15 @@
           "Iron Stupa of Delhi"
         ],
         "answer": 0,
-        "explain": "The Iron Pillar of Delhi stands in the same courtyard."
+        "explain": "The Iron Pillar of Delhi stands in the same courtyard.",
+        "qHi": "उसी परिसर में कौन-सा और प्रसिद्ध वस्तु है?",
+        "optionsHi": [
+          "दिल्ली का लौह स्तंभ",
+          "सारनाथ का अशोक स्तंभ",
+          "सांची की बुद्ध प्रतिमा",
+          "दिल्ली का लौह स्तूप"
+        ],
+        "explainHi": "दिल्ली का लौह स्तंभ उसी आँगन में खड़ा है।"
       }
     ],
     "isUnesco": true,
@@ -594,7 +666,15 @@
           "Mughal"
         ],
         "answer": 1,
-        "explain": "Hampi was the capital of the Vijayanagara Empire from the 14th to the 16th century."
+        "explain": "Hampi was the capital of the Vijayanagara Empire from the 14th to the 16th century.",
+        "qHi": "किस साम्राज्य की राजधानी हम्पी थी?",
+        "optionsHi": [
+          "चोल",
+          "विजयनगर",
+          "मौर्य",
+          "मुग़ल"
+        ],
+        "explainHi": "हम्पी 14वीं से 16वीं शताब्दी तक विजयनगर साम्राज्य की राजधानी थी।"
       },
       {
         "q": "Which famous stone chariot stands at Hampi?",
@@ -605,7 +685,15 @@
           "At Mahabalipuram"
         ],
         "answer": 1,
-        "explain": "The stone chariot is part of the Vittala temple complex at Hampi."
+        "explain": "The stone chariot is part of the Vittala temple complex at Hampi.",
+        "qHi": "हम्पी में कौन-सा प्रसिद्ध पत्थर का रथ है?",
+        "optionsHi": [
+          "कोणार्क में",
+          "विट्ठल मंदिर में",
+          "सांची में",
+          "महाबलीपुरम में"
+        ],
+        "explainHi": "पत्थर का रथ हम्पी के विट्ठल मंदिर परिसर का हिस्सा है।"
       },
       {
         "q": "When did Hampi lose its status as a capital?",
@@ -616,7 +704,15 @@
           "After 1653"
         ],
         "answer": 0,
-        "explain": "After the Battle of Talikota in 1565 the city was sacked and largely abandoned."
+        "explain": "After the Battle of Talikota in 1565 the city was sacked and largely abandoned.",
+        "qHi": "हम्पी ने कब राजधानी का दर्ज़ा खोया?",
+        "optionsHi": [
+          "1565 के बाद",
+          "1192 के बाद",
+          "1947 के बाद",
+          "1653 के बाद"
+        ],
+        "explainHi": "1565 की तालिकोटा की लड़ाई के बाद शहर लूट लिया गया और मुख्यतः छोड़ दिया गया।"
       }
     ],
     "isUnesco": true,
@@ -752,7 +848,15 @@
           "Srirangam"
         ],
         "answer": 1,
-        "explain": "It stands in Madurai, on the banks of the Vaigai river."
+        "explain": "It stands in Madurai, on the banks of the Vaigai river.",
+        "qHi": "मीनाक्षी मंदिर किस शहर में है?",
+        "optionsHi": [
+          "तंजावुर",
+          "मदुरै",
+          "कांचीपुरम",
+          "श्रीरंगम"
+        ],
+        "explainHi": "यह मदुरै में, वैगई नदी के किनारे है।"
       },
       {
         "q": "What are the tall gateway towers called?",
@@ -763,7 +867,15 @@
           "Stupas"
         ],
         "answer": 1,
-        "explain": "Gopurams are the tall, sculpture-covered gateway towers of Dravidian temples."
+        "explain": "Gopurams are the tall, sculpture-covered gateway towers of Dravidian temples.",
+        "qHi": "ऊँचे प्रवेश-द्वारों के टावर क्या कहलाते हैं?",
+        "optionsHi": [
+          "शिखर",
+          "गोपुरम",
+          "तोरण",
+          "स्तूप"
+        ],
+        "explainHi": "गोपुरम द्रविड़ मंदिरों के ऊँचे, मूर्तियों से ढके प्रवेश-द्वार-टावर होते हैं।"
       },
       {
         "q": "Which dynasty largely rebuilt the present structure?",
@@ -774,7 +886,15 @@
           "Chera"
         ],
         "answer": 1,
-        "explain": "Much of the visible temple dates from the Nayak period of the 16th–17th centuries."
+        "explain": "Much of the visible temple dates from the Nayak period of the 16th–17th centuries.",
+        "qHi": "वर्तमान संरचना का निर्माण मुख्यतः किस वंश ने करवाया?",
+        "optionsHi": [
+          "चोल",
+          "नायक",
+          "पल्लव",
+          "चेर"
+        ],
+        "explainHi": "दिखने वाले मंदिर का बड़ा हिस्सा 16–17वीं शताब्दी के नायक काल का है।"
       }
     ],
     "isUnesco": false,
@@ -910,7 +1030,15 @@
           "1739"
         ],
         "answer": 1,
-        "explain": "It was built in 1591 by Muhammad Quli Qutb Shah."
+        "explain": "It was built in 1591 by Muhammad Quli Qutb Shah.",
+        "qHi": "चारमीनार किस वर्ष बना?",
+        "optionsHi": [
+          "1519",
+          "1591",
+          "1653",
+          "1739"
+        ],
+        "explainHi": "इसे 1591 में मोहम्मद कुली कुतब शाह ने बनवाया।"
       },
       {
         "q": "How many arches open onto the main roads?",
@@ -921,7 +1049,15 @@
           "Six"
         ],
         "answer": 2,
-        "explain": "Four grand arches face the four main roads of the old city — hence 'Charminar'."
+        "explain": "Four grand arches face the four main roads of the old city — hence 'Charminar'.",
+        "qHi": "मुख्य सड़कों पर कितने मेहराब खुलते हैं?",
+        "optionsHi": [
+          "दो",
+          "तीन",
+          "चार",
+          "छह"
+        ],
+        "explainHi": "चार भव्य मेहराब पुराने शहर की चार मुख्य सड़कों की ओर हैं — इसी से ‘चारमीनार’ नाम पड़ा।"
       },
       {
         "q": "What sits on the top storey?",
@@ -932,7 +1068,15 @@
           "A clock"
         ],
         "answer": 1,
-        "explain": "A mosque occupies the top storey of the Charminar."
+        "explain": "A mosque occupies the top storey of the Charminar.",
+        "qHi": "सबसे ऊपरी मंज़िल पर क्या है?",
+        "optionsHi": [
+          "संग्रहालय",
+          "मस्जिद",
+          "महल का हॉल",
+          "घड़ी"
+        ],
+        "explainHi": "चारमीनार की सबसे ऊपरी मंज़िल पर एक मस्जिद है।"
       }
     ],
     "isUnesco": false,
@@ -1068,7 +1212,15 @@
           "Fortifications"
         ],
         "answer": 1,
-        "explain": "They served as Buddhist viharas — places to live, study and pray."
+        "explain": "They served as Buddhist viharas — places to live, study and pray.",
+        "qHi": "अजंता गुफाएँ मूलतः किस लिए थीं?",
+        "optionsHi": [
+          "शाही अन्न-भंडार",
+          "मठ और प्रार्थना-हॉल",
+          "खदान",
+          "क़िलेबंदी"
+        ],
+        "explainHi": "यह बौद्ध विहार थे — रहने, पढ़ने और प्रार्थना के स्थान।"
       },
       {
         "q": "In which year were they rediscovered?",
@@ -1079,7 +1231,15 @@
           "1847"
         ],
         "answer": 1,
-        "explain": "A British hunting party came across them in 1819."
+        "explain": "A British hunting party came across them in 1819.",
+        "qHi": "इनकी पुनर्खोज किस वर्ष हुई?",
+        "optionsHi": [
+          "1619",
+          "1819",
+          "1919",
+          "1847"
+        ],
+        "explainHi": "एक ब्रिटिश शिकारी दल को ये 1819 में मिलीं।"
       },
       {
         "q": "Which famous painted figure is in Cave 1?",
@@ -1090,7 +1250,15 @@
           "Hanuman"
         ],
         "answer": 0,
-        "explain": "The Padmapani bodhisattva holding a lotus is one of Ajanta's best-known paintings."
+        "explain": "The Padmapani bodhisattva holding a lotus is one of Ajanta's best-known paintings.",
+        "qHi": "गुफ़ा 1 में कौन-सी प्रसिद्ध चित्रित आकृति है?",
+        "optionsHi": [
+          "पद्मपाणि बोधिसत्व",
+          "अशोक",
+          "नटराज",
+          "हनुमान"
+        ],
+        "explainHi": "कमल थामे पद्मपाणि बोधिसत्व अजंता के सबसे चर्चित चित्रों में से एक है।"
       }
     ],
     "isUnesco": true,
@@ -1230,7 +1398,15 @@
           "Krishnadevaraya"
         ],
         "answer": 0,
-        "explain": "Queen Udayamati built it as a memorial to her husband, King Bhima I."
+        "explain": "Queen Udayamati built it as a memorial to her husband, King Bhima I.",
+        "qHi": "रानी की वाव किसने बनवाई?",
+        "optionsHi": [
+          "रानी उदयमति",
+          "सम्राट अशोक",
+          "शाह जहाँ",
+          "कृष्णदेवराय"
+        ],
+        "explainHi": "रानी उदयमति ने इसे अपने पति राजा भीम प्रथम की स्मृति में बनवाया।"
       },
       {
         "q": "How many levels does it descend?",
@@ -1241,7 +1417,15 @@
           "Nine"
         ],
         "answer": 2,
-        "explain": "It goes down seven levels."
+        "explain": "It goes down seven levels.",
+        "qHi": "यह कितनी मंज़िलें नीचे उतरती है?",
+        "optionsHi": [
+          "तीन",
+          "पाँच",
+          "सात",
+          "नौ"
+        ],
+        "explainHi": "यह सात मंज़िलें नीचे उतरती है।"
       },
       {
         "q": "Why did the sculptures survive so well?",
@@ -1252,7 +1436,15 @@
           "They were underground vaults"
         ],
         "answer": 1,
-        "explain": "Flood silt buried and sealed the stepwell, which protected the carvings until excavation in 1963."
+        "explain": "Flood silt buried and sealed the stepwell, which protected the carvings until excavation in 1963.",
+        "qHi": "मूर्तियाँ इतनी अच्छी तरह क्यों बच गईं?",
+        "optionsHi": [
+          "वे संगमरमर की थीं",
+          "वे कीचड़ के नीचे दब गई थीं",
+          "उन्हें 2014 में फिर से बनाया गया",
+          "वे भूमिगत कक्ष थे"
+        ],
+        "explainHi": "बाढ़ की कीचड़ ने बावड़ी को दबाकर सील दिया, जिससे नक्काशी 1963 के उत्खनन तक सुरक्षित रही।"
       }
     ],
     "isUnesco": true,
@@ -1392,7 +1584,15 @@
           "A fortress"
         ],
         "answer": 1,
-        "explain": "It is built as Surya's chariot, complete with wheels and horses."
+        "explain": "It is built as Surya's chariot, complete with wheels and horses.",
+        "qHi": "कोणार्क मंदिर किस आकार में बनाया गया है?",
+        "optionsHi": [
+          "कमल",
+          "सूर्य देव का रथ",
+          "स्तूप",
+          "दुर्ग"
+        ],
+        "explainHi": "इसे सूर्य के रथ के रूप में बनाया गया है, पहियों और घोड़ों सहित।"
       },
       {
         "q": "How many carved wheels are there?",
@@ -1403,7 +1603,15 @@
           "Thirty-two"
         ],
         "answer": 2,
-        "explain": "There are 24 wheels, and their spokes can be read as a sundial."
+        "explain": "There are 24 wheels, and their spokes can be read as a sundial.",
+        "qHi": "कितने नक्काशीदार पहिये हैं?",
+        "optionsHi": [
+          "सात",
+          "बारह",
+          "चौबीस",
+          "बत्तीस"
+        ],
+        "explainHi": "24 पहिये हैं, और उनकी तिल्लियों को सूर्य-घड़ी के रूप में पढ़ा जा सकता है।"
       },
       {
         "q": "Which dynasty built it?",
@@ -1414,7 +1622,15 @@
           "Rajput Sisodia"
         ],
         "answer": 0,
-        "explain": "It was built under the Eastern Ganga dynasty of Odisha in the 13th century."
+        "explain": "It was built under the Eastern Ganga dynasty of Odisha in the 13th century.",
+        "qHi": "किस वंश ने इसे बनवाया?",
+        "optionsHi": [
+          "पूर्वी गंगा",
+          "चंदेल",
+          "चोल",
+          "राजपूत सिसोदिया"
+        ],
+        "explainHi": "इसे 13वीं शताब्दी में ओडिशा के पूर्वी गंगा वंश के अधीन बनाया गया।"
       }
     ],
     "isUnesco": true,
@@ -1550,7 +1766,15 @@
           "Qutb-ud-din Aibak"
         ],
         "answer": 0,
-        "explain": "Ashoka had it built in the 3rd century BCE to enshrine Buddhist relics."
+        "explain": "Ashoka had it built in the 3rd century BCE to enshrine Buddhist relics.",
+        "qHi": "सांची का महान स्तूप किसने बनवाया?",
+        "optionsHi": [
+          "सम्राट अशोक",
+          "शाह जहाँ",
+          "कृष्णदेवराय",
+          "कुतबुद्दीन ऐबक"
+        ],
+        "explainHi": "अशोक ने इसे ई.पू. तीसरी शताब्दी में बौद्ध अवशेष रखने के लिए बनवाया।"
       },
       {
         "q": "How many carved toranas surround it?",
@@ -1561,7 +1785,15 @@
           "Eight"
         ],
         "answer": 2,
-        "explain": "Four elaborately carved gateways stand at the cardinal points."
+        "explain": "Four elaborately carved gateways stand at the cardinal points.",
+        "qHi": "चारों ओर कितने नक्काशीदार तोरण हैं?",
+        "optionsHi": [
+          "दो",
+          "तीन",
+          "चार",
+          "आठ"
+        ],
+        "explainHi": "चार विस्तृत नक्काशीदार द्वार चारों दिशाओं में खड़े हैं।"
       },
       {
         "q": "How is the Buddha usually shown on them?",
@@ -1572,7 +1804,15 @@
           "Not at all"
         ],
         "answer": 1,
-        "explain": "Early Buddhist art often used symbols — a footprint, an empty throne — rather than a human image."
+        "explain": "Early Buddhist art often used symbols — a footprint, an empty throne — rather than a human image.",
+        "qHi": "उन पर बुद्ध को आमतौर पर कैसे दर्शाया जाता है?",
+        "optionsHi": [
+          "केवल मानव रूप में",
+          "पदचिह्न जैसे प्रतीकों से",
+          "घोड़े के रूप में",
+          "बिल्कुल नहीं"
+        ],
+        "explainHi": "प्रारंभिक बौद्ध कला अक्सर मानव प्रतिमा के बजाय प्रतीकों का उपयोग करती थी — पदचिह्न, ख़ाली सिंहासन।"
       }
     ],
     "isUnesco": true,
@@ -1709,7 +1949,15 @@
           "Mughal"
         ],
         "answer": 0,
-        "explain": "The Chandela dynasty built them between the 10th and 12th centuries."
+        "explain": "The Chandela dynasty built them between the 10th and 12th centuries.",
+        "qHi": "खजुराहो मंदिर किस वंश ने बनवाए?",
+        "optionsHi": [
+          "चंदेल",
+          "चोल",
+          "गुप्त",
+          "मुग़ल"
+        ],
+        "explainHi": "चंदेल वंश ने इन्हें 10वीं से 12वीं शताब्दी के बीच बनवाया।"
       },
       {
         "q": "Roughly how many of the original temples survive?",
@@ -1720,7 +1968,15 @@
           "About 85"
         ],
         "answer": 1,
-        "explain": "About twenty survive out of an original group of roughly eighty-five."
+        "explain": "About twenty survive out of an original group of roughly eighty-five.",
+        "qHi": "मूल मंदिरों में से लगभग कितने बचे हैं?",
+        "optionsHi": [
+          "लगभग 5",
+          "लगभग 20",
+          "लगभग 50",
+          "लगभग 85"
+        ],
+        "explainHi": "लगभग पचासी मंदिरों में से लगभग बीस बचे हैं।"
       },
       {
         "q": "Which is the largest temple there?",
@@ -1731,7 +1987,15 @@
           "Sun Temple"
         ],
         "answer": 0,
-        "explain": "The Kandariya Mahadeva temple is the largest and most elaborately carved."
+        "explain": "The Kandariya Mahadeva temple is the largest and most elaborately carved.",
+        "qHi": "वहाँ सबसे बड़ा मंदिर कौन-सा है?",
+        "optionsHi": [
+          "कंदारिया महादेव",
+          "विरुपाक्ष",
+          "बृहदीश्वरर",
+          "सूर्य मंदिर"
+        ],
+        "explainHi": "कंदारिया महादेव मंदिर सबसे बड़ा और सबसे विस्तृत नक्काशीदार है।"
       }
     ],
     "isUnesco": true,
@@ -1867,7 +2131,15 @@
           "Aurangzeb"
         ],
         "answer": 2,
-        "explain": "Shah Jahan founded Shahjahanabad and built the Red Fort as its centre."
+        "explain": "Shah Jahan founded Shahjahanabad and built the Red Fort as its centre.",
+        "qHi": "किस सम्राट ने मुग़ल राजधानी दिल्ली ले जाकर लाल क़िला बनवाया?",
+        "optionsHi": [
+          "अकबर",
+          "जहाँगीर",
+          "शाह जहाँ",
+          "औरंगज़ेब"
+        ],
+        "explainHi": "शाह जहाँ ने शाहजहानाबाद बसाया और उसके केंद्र के रूप में लाल क़िला बनवाया।"
       },
       {
         "q": "Which hall inside the fort was used for public audience?",
@@ -1878,7 +2150,15 @@
           "Moti Masjid"
         ],
         "answer": 0,
-        "explain": "The Diwan-i-Am was the hall of public audience, where the emperor appeared before ordinary petitioners."
+        "explain": "The Diwan-i-Am was the hall of public audience, where the emperor appeared before ordinary petitioners.",
+        "qHi": "क़िले के अंदर कौन-सा हॉल सार्वजनिक दर्शन के लिए इस्तेमाल होता था?",
+        "optionsHi": [
+          "दीवान-ए-आम",
+          "दीवान-ए-ख़ास",
+          "रंग महल",
+          "मोती मस्जिद"
+        ],
+        "explainHi": "दीवान-ए-आम सार्वजनिक दर्शन का हॉल था, जहाँ सम्राट साधारण याचकों के सामने प्रकट होता था।"
       },
       {
         "q": "What gives the fort its common name?",
@@ -1889,7 +2169,15 @@
           "Its white marble"
         ],
         "answer": 1,
-        "explain": "The walls are built of red sandstone, hence Lal Qila — the Red Fort."
+        "explain": "The walls are built of red sandstone, hence Lal Qila — the Red Fort.",
+        "qHi": "क़िले को उसका आम नाम किससे मिला?",
+        "optionsHi": [
+          "स्वर्ण गुंबद",
+          "लाल बलुआ पत्थर की दीवारें",
+          "ख़ाई",
+          "सफ़ेद संगमरमर"
+        ],
+        "explainHi": "दीवारें लाल बलुआ पत्थर की हैं, इसीलिए इसे लाल क़िला कहा जाता है।"
       }
     ],
     "isUnesco": true,
@@ -2025,7 +2313,15 @@
           "Shah Jahan"
         ],
         "answer": 2,
-        "explain": "His first wife, Haji Begum (Bega Begum), had it built after his death in 1556."
+        "explain": "His first wife, Haji Begum (Bega Begum), had it built after his death in 1556.",
+        "qHi": "हुमायूँ का मक़बरा किसने बनवाया?",
+        "optionsHi": [
+          "हुमायूँ ने स्वयं",
+          "अकबर",
+          "हाजी बेगम",
+          "शाह जहाँ"
+        ],
+        "explainHi": "उनकी पहली पत्नी हाजी बेगम (बेगा बेगम) ने उनकी मृत्यु 1556 के बाद इसे बनवाया।"
       },
       {
         "q": "Which later monument is often compared to it?",
@@ -2036,7 +2332,15 @@
           "Hawa Mahal"
         ],
         "answer": 1,
-        "explain": "The dome, charbagh and plinth arrangement anticipates the Taj Mahal by two generations."
+        "explain": "The dome, charbagh and plinth arrangement anticipates the Taj Mahal by two generations.",
+        "qHi": "किस बाद के स्मारक की अक्सर इससे तुलना होती है?",
+        "optionsHi": [
+          "कुतुब मीनार",
+          "ताज महल",
+          "चारमीनार",
+          "हवा महल"
+        ],
+        "explainHi": "गुंबद, चारबाग़ और चबूतरे की व्यवस्था ताज महल को दो पीढ़ी पहले ही संकेत करती है।"
       },
       {
         "q": "What type of garden does the tomb sit at the centre of?",
@@ -2047,7 +2351,15 @@
           "Water garden only"
         ],
         "answer": 0,
-        "explain": "It stands at the centre of a charbagh — a garden divided into four quarters by water channels."
+        "explain": "It stands at the centre of a charbagh — a garden divided into four quarters by water channels.",
+        "qHi": "मक़बरा किस प्रकार के बाग़ के बीच में है?",
+        "optionsHi": [
+          "चारबाग़",
+          "सीढ़ीदार बाग़",
+          "वन-कुंज",
+          "केवल जल-बाग़"
+        ],
+        "explainHi": "यह चारबाग़ के बीच में है — जल-नहरों से चार हिस्सों में बँटा बाग़।"
       }
     ],
     "isUnesco": true,
@@ -2183,7 +2495,15 @@
           "Aurangzeb"
         ],
         "answer": 1,
-        "explain": "Akbar began the stone fort around 1565, replacing earlier defences."
+        "explain": "Akbar began the stone fort around 1565, replacing earlier defences.",
+        "qHi": "वर्तमान लाल बलुआ-पत्थर के क़िले की शुरुआत किस सम्राट ने की?",
+        "optionsHi": [
+          "बाबर",
+          "अकबर",
+          "जहाँगीर",
+          "औरंगज़ेब"
+        ],
+        "explainHi": "अकबर ने लगभग 1565 में पत्थर का क़िला शुरू किया, पहले की रक्षा-व्यवस्था की जगह।"
       },
       {
         "q": "Which Mughal emperor spent his last years imprisoned here?",
@@ -2194,7 +2514,15 @@
           "Bahadur Shah Zafar"
         ],
         "answer": 2,
-        "explain": "Shah Jahan was imprisoned here by Aurangzeb and is said to have watched the Taj Mahal from the fort."
+        "explain": "Shah Jahan was imprisoned here by Aurangzeb and is said to have watched the Taj Mahal from the fort.",
+        "qHi": "किस मुग़ल सम्राट ने अपने अंतिम वर्ष यहाँ क़ैद में बिताए?",
+        "optionsHi": [
+          "हुमायूँ",
+          "अकबर",
+          "शाह जहाँ",
+          "बहादुर शाह ज़फ़र"
+        ],
+        "explainHi": "शाह जहाँ को औरंगज़ेब ने यहाँ क़ैद किया और कहा जाता है कि वह क़िले से ताज महल देखा करते थे।"
       },
       {
         "q": "What material are the later palaces inside built from?",
@@ -2205,7 +2533,15 @@
           "Basalt"
         ],
         "answer": 2,
-        "explain": "Shah Jahan's palaces, including the Khas Mahal and Musamman Burj, are marble, unlike Akbar's sandstone works."
+        "explain": "Shah Jahan's palaces, including the Khas Mahal and Musamman Burj, are marble, unlike Akbar's sandstone works.",
+        "qHi": "अंदर के बाद के महल किस सामग्री से बने हैं?",
+        "optionsHi": [
+          "लाल बलुआ पत्थर",
+          "ईंट और चूना",
+          "सफ़ेद संगमरमर",
+          "बेसाल्ट"
+        ],
+        "explainHi": "शाह जहाँ के महल — ख़ास महल और मुसम्मन बुर्ज सहित — संगमरमर के हैं, अकबर की बलुआ-पत्थर की रचनाओं के विपरीत।"
       }
     ],
     "isUnesco": true,
@@ -2342,7 +2678,15 @@
           "Shah Jahan"
         ],
         "answer": 2,
-        "explain": "Akbar founded it in the 1570s after visiting the saint Salim Chishti."
+        "explain": "Akbar founded it in the 1570s after visiting the saint Salim Chishti.",
+        "qHi": "किस सम्राट ने फ़तेहपुर सीकरी को अपनी राजधानी बनाया?",
+        "optionsHi": [
+          "बाबर",
+          "हुमायूँ",
+          "अकबर",
+          "शाह जहाँ"
+        ],
+        "explainHi": "अकबर ने संत सलीम चिश्ती की यात्रा के बाद 1570 के दशक में इसे बसाया।"
       },
       {
         "q": "Why is the city most often said to have been abandoned?",
@@ -2353,7 +2697,15 @@
           "Famine in the plains"
         ],
         "answer": 1,
-        "explain": "Water supply for a city of that size on the ridge is the most commonly given reason, though the explanation is debated."
+        "explain": "Water supply for a city of that size on the ridge is the most commonly given reason, though the explanation is debated.",
+        "qHi": "शहर के छोड़े जाने का सबसे आम कारण क्या बताया जाता है?",
+        "optionsHi": [
+          "शत्रु आक्रमण",
+          "पानी जुटाने में कठिनाई",
+          "भूकंप",
+          "मैदानों में अकाल"
+        ],
+        "explainHi": "पहाड़ी पर इतने बड़े शहर की पानी-आपूर्ति सबसे आम कारण बताया जाता है, हालाँकि यह व्याख्या विवादित है।"
       },
       {
         "q": "What is the Panch Mahal?",
@@ -2364,7 +2716,15 @@
           "A five-level stepwell"
         ],
         "answer": 0,
-        "explain": "The Panch Mahal is an open, five-storey structure of columns with no enclosing walls."
+        "explain": "The Panch Mahal is an open, five-storey structure of columns with no enclosing walls.",
+        "qHi": "पंच महल क्या है?",
+        "optionsHi": [
+          "पाँच मंज़िला खुला स्तंभ-मंडप",
+          "पाँच-गुंबदी मस्जिद",
+          "पाँच-द्वार वाला प्रवेश",
+          "पाँच-स्तरीय बावड़ी"
+        ],
+        "explainHi": "पंच महल बिना बाहरी दीवारों की पाँच मंज़िलों वाली स्तंभों की खुली संरचना है।"
       }
     ],
     "isUnesco": true,
@@ -2500,7 +2860,15 @@
           "To mark the city boundary"
         ],
         "answer": 1,
-        "explain": "He reasoned that larger masonry instruments would be more accurate than small brass ones."
+        "explain": "He reasoned that larger masonry instruments would be more accurate than small brass ones.",
+        "qHi": "जय सिंह द्वितीय ने इतने बड़े यंत्र क्यों बनवाए?",
+        "optionsHi": [
+          "आने वाले राजाओं को प्रभावित करने के लिए",
+          "मापन की त्रुटि कम करने के लिए",
+          "बाग़ को छाया देने के लिए",
+          "शहर की सीमा चिह्नित करने के लिए"
+        ],
+        "explainHi": "उनका तर्क था कि बड़े पत्थर के यंत्र छोटे पीतल के यंत्रों से अधिक सटीक होंगे।"
       },
       {
         "q": "What is the Samrat Yantra?",
@@ -2511,7 +2879,15 @@
           "A star map wall"
         ],
         "answer": 1,
-        "explain": "It is a giant equinoctial sundial whose gnomon shadows a curved quadrant."
+        "explain": "It is a giant equinoctial sundial whose gnomon shadows a curved quadrant.",
+        "qHi": "सम्रत यंत्र क्या है?",
+        "optionsHi": [
+          "जलाशय",
+          "विशाल विषुव सूर्य-घड़ी",
+          "पवन-दिशासूचक",
+          "तारा-नक्शे की दीवार"
+        ],
+        "explainHi": "यह विशाल विषुव सूर्य-घड़ी है जिसकी छाया-सूचक एक वक्र चतुर्थांश पर पड़ती है।"
       },
       {
         "q": "Who commissioned the observatory?",
@@ -2522,7 +2898,15 @@
           "Tipu Sultan"
         ],
         "answer": 2,
-        "explain": "Sawai Jai Singh II, the Rajput ruler of Jaipur, designed and built it in the early 18th century."
+        "explain": "Sawai Jai Singh II, the Rajput ruler of Jaipur, designed and built it in the early 18th century.",
+        "qHi": "वेधशाला किसने बनवाई?",
+        "optionsHi": [
+          "अकबर",
+          "महाराणा प्रताप",
+          "सवाई जय सिंह द्वितीय",
+          "टीपू सुल्तान"
+        ],
+        "explainHi": "जयपुर के राजपूत शासक सवाई जय सिंह द्वितीय ने 18वीं शताब्दी की शुरुआत में इसे डिज़ाइन और निर्माण करवाया।"
       }
     ],
     "isUnesco": true,
@@ -2660,7 +3044,15 @@
           "52"
         ],
         "answer": 2,
-        "explain": "There are 34 caves — 12 Buddhist, 17 Hindu and 5 Jain."
+        "explain": "There are 34 caves — 12 Buddhist, 17 Hindu and 5 Jain.",
+        "qHi": "एलोरा में कितनी गुफाएँ हैं?",
+        "optionsHi": [
+          "12",
+          "22",
+          "34",
+          "52"
+        ],
+        "explainHi": "34 गुफाएँ हैं — 12 बौद्ध, 17 हिंदू और 5 जैन।"
       },
       {
         "q": "What is unusual about the Kailasa temple?",
@@ -2671,7 +3063,15 @@
           "It is the smallest structure at the site"
         ],
         "answer": 1,
-        "explain": "The whole temple was excavated top-down from one rock, making it monolithic."
+        "explain": "The whole temple was excavated top-down from one rock, making it monolithic.",
+        "qHi": "कैलास मंदिर में क्या असाधारण है?",
+        "optionsHi": [
+          "इसे आयातित संगमरमर से बनाया गया",
+          "यह एक ही चट्टान को ऊपर से नीचे काटकर बनाया गया",
+          "इसकी छत नहीं है",
+          "यह स्थल की सबसे छोटी संरचना है"
+        ],
+        "explainHi": "पूरा मंदिर एक ही चट्टान से ऊपर से नीचे की ओर खोदा गया, जिससे यह एकशिला बना।"
       },
       {
         "q": "Which three traditions carved caves here?",
@@ -2682,7 +3082,15 @@
           "Jain, Sikh and Buddhist"
         ],
         "answer": 0,
-        "explain": "Buddhist, Hindu and Jain communities all worked on the same cliff."
+        "explain": "Buddhist, Hindu and Jain communities all worked on the same cliff.",
+        "qHi": "यहाँ गुफाएँ काटने वाली तीन परंपराएँ कौन-सी हैं?",
+        "optionsHi": [
+          "हिंदू, बौद्ध और जैन",
+          "मुस्लिम, ईसाई और हिंदू",
+          "बौद्ध, ज़ोरोस्त्रियन और मुस्लिम",
+          "जैन, सिख और बौद्ध"
+        ],
+        "explainHi": "बौद्ध, हिंदू और जैन तीनों समुदाय एक ही चट्टान पर काम करते रहे।"
       }
     ],
     "isUnesco": true,
@@ -2818,7 +3226,15 @@
           "Vijayanagara"
         ],
         "answer": 1,
-        "explain": "It was built by the Pallavas in the 8th century."
+        "explain": "It was built by the Pallavas in the 8th century.",
+        "qHi": "तट मंदिर किस वंश ने बनवाया?",
+        "optionsHi": [
+          "चोल",
+          "पल्लव",
+          "पांड्य",
+          "विजयनगर"
+        ],
+        "explainHi": "इसे पल्लवों ने 8वीं शताब्दी में बनवाया।"
       },
       {
         "q": "How many shrines does the complex contain?",
@@ -2829,7 +3245,15 @@
           "Five"
         ],
         "answer": 2,
-        "explain": "Two large shrines, one facing east and one west, plus a smaller one between them."
+        "explain": "Two large shrines, one facing east and one west, plus a smaller one between them.",
+        "qHi": "परिसर में कितने तीर्थ हैं?",
+        "optionsHi": [
+          "एक",
+          "दो",
+          "तीन",
+          "पाँच"
+        ],
+        "explainHi": "दो बड़े तीर्थ — एक पूर्व की ओर और एक पश्चिम की ओर — तथा उनके बीच एक छोटा।"
       },
       {
         "q": "Why does the stone look more worn than inland temples?",
@@ -2840,7 +3264,15 @@
           "It was rebuilt in the 19th century"
         ],
         "answer": 1,
-        "explain": "Centuries of sea salt and coastal wind have weathered the granite."
+        "explain": "Centuries of sea salt and coastal wind have weathered the granite.",
+        "qHi": "पत्थर भीतरी मंदिरों से अधिक घिसा क्यों दिखता है?",
+        "optionsHi": [
+          "इसे जान-बूझकर चमकाया गया",
+          "समुद्री नमक और हवा ने इसे घिसा है",
+          "यह नरम पत्थर है",
+          "इसे 19वीं शताब्दी में फिर से बनाया गया"
+        ],
+        "explainHi": "सदियों के समुद्री नमक और तटीय हवा ने ग्रेनाइट को घिस दिया है।"
       }
     ],
     "isUnesco": true,
@@ -2976,7 +3408,15 @@
           "Vikramaditya VI"
         ],
         "answer": 0,
-        "explain": "Raja Raja Chola I commissioned it around 1003–1010 CE."
+        "explain": "Raja Raja Chola I commissioned it around 1003–1010 CE.",
+        "qHi": "बृहदीश्वर मंदिर किसने बनवाया?",
+        "optionsHi": [
+          "राज राज चोल प्रथम",
+          "कृष्ण देव राय",
+          "पल्लव नरसिंहवर्मन",
+          "विक्रमादित्य षष्ठ"
+        ],
+        "explainHi": "राज राज चोल प्रथम ने इसे ई.सं. 1003–1010 के आसपास बनवाया।"
       },
       {
         "q": "About how tall is the vimana?",
@@ -2987,7 +3427,15 @@
           "110 metres"
         ],
         "answer": 2,
-        "explain": "The tower over the sanctum rises to roughly 66 metres."
+        "explain": "The tower over the sanctum rises to roughly 66 metres.",
+        "qHi": "विमान कितना ऊँचा है?",
+        "optionsHi": [
+          "20 मीटर",
+          "40 मीटर",
+          "66 मीटर",
+          "110 मीटर"
+        ],
+        "explainHi": "गर्भगृह के ऊपर का टावर लगभग 66 मीटर ऊँचा उठता है।"
       },
       {
         "q": "Why is the temple listed as one of the 'Great Living Chola Temples'?",
@@ -2998,7 +3446,15 @@
           "It is still being carved"
         ],
         "answer": 1,
-        "explain": "It is still an active temple, not a ruin — worship never stopped."
+        "explain": "It is still an active temple, not a ruin — worship never stopped.",
+        "qHi": "मंदिर को ‘महान जीवित चोल मंदिरों’ में क्यों गिना जाता है?",
+        "optionsHi": [
+          "इसे हाल ही में फिर से बनाया गया",
+          "वहाँ पूजा बिना रुके चलती रही",
+          "यह जीवित लकड़ी से बना है",
+          "इसे अभी भी काटा जा रहा है"
+        ],
+        "explainHi": "यह अभी भी सक्रिय मंदिर है, खंडहर नहीं — पूजा कभी नहीं रुकी।"
       }
     ],
     "isUnesco": true,
@@ -3129,7 +3585,15 @@
           "It is still standing behind the new one"
         ],
         "answer": 1,
-        "explain": "The earlier wooden palace burned during Dasara festivities in 1897."
+        "explain": "The earlier wooden palace burned during Dasara festivities in 1897.",
+        "qHi": "इस स्थान के पुराने महल का क्या हुआ?",
+        "optionsHi": [
+          "उसे सड़क के लिए गिराया गया",
+          "वह 1897 में जल गया",
+          "वह ज़मीन में धँस गया",
+          "वह नए महल के पीछे अभी भी खड़ा है"
+        ],
+        "explainHi": "पुराना लकड़ी का महल 1897 में दशहरा उत्सव के दौरान जल गया।"
       },
       {
         "q": "Which architectural style is the palace usually described as?",
@@ -3140,7 +3604,15 @@
           "Mughal"
         ],
         "answer": 2,
-        "explain": "It openly blends Hindu, Moorish, Rajput and Gothic elements — the Indo-Saracenic style."
+        "explain": "It openly blends Hindu, Moorish, Rajput and Gothic elements — the Indo-Saracenic style.",
+        "qHi": "महल को आमतौर पर किस वास्तुकला शैली का कहा जाता है?",
+        "optionsHi": [
+          "द्रविड़",
+          "गॉथिक",
+          "इंडो-सरासेनिक",
+          "मुग़ल"
+        ],
+        "explainHi": "यह खुले तौर पर हिंदू, मूर, राजपूत और गॉथिक तत्व मिलाता है — इंडो-सरासेनिक शैली।"
       },
       {
         "q": "Why is it included here even though it is not UNESCO listed?",
@@ -3151,7 +3623,15 @@
           "It was recently added"
         ],
         "answer": 2,
-        "explain": "We deliberately include living, non-ASI heritage alongside archaeological sites."
+        "explain": "We deliberately include living, non-ASI heritage alongside archaeological sites.",
+        "qHi": "यूनेस्को सूची में न होते हुए भी इसे यहाँ क्यों रखा गया?",
+        "optionsHi": [
+          "यह यूनेस्को की अस्थायी सूची का स्थान है",
+          "यह भारतीय पुरातत्व सर्वेक्षण का संरक्षित स्मारक है",
+          "यह अलग तरह की धरोहर दिखाता है — अब संग्रहालय के रूप में इस्तेमाल होने वाला वंश-निवास",
+          "इसे हाल ही में जोड़ा गया"
+        ],
+        "explainHi": "हम जान-बूझकर पुरातात्विक स्थलों के साथ जीवित, ग़ैर-ASI धरोहर भी रखते हैं।"
       }
     ],
     "isUnesco": false,
@@ -3288,7 +3768,15 @@
           "It was built in a single decade"
         ],
         "answer": 1,
-        "explain": "Mosques, temples, stepwells, forts and tanks are spread across the plain and hillside."
+        "explain": "Mosques, temples, stepwells, forts and tanks are spread across the plain and hillside.",
+        "qHi": "धरोहर-उद्यानों में चम्पानर को क्या असाधारण बनाता है?",
+        "optionsHi": [
+          "इसमें पत्थर की इमारतें नहीं हैं",
+          "स्मारक एक ही परिसर में नहीं, बल्कि बिना खोदे गए परिदृश्य में बिखरे हैं",
+          "यह पूरी तरह भूमिगत है",
+          "यह एक ही दशक में बना"
+        ],
+        "explainHi": "मस्जिदें, मंदिर, बावड़ियाँ, क़िले और तालाब मैदान और पहाड़ी दोनों में फैले हैं।"
       },
       {
         "q": "Which ruler made Champaner the capital of the Gujarat Sultanate?",
@@ -3299,7 +3787,15 @@
           "Gujarat Shah"
         ],
         "answer": 1,
-        "explain": "Mahmud Begada made it a capital in the late 15th and early 16th centuries."
+        "explain": "Mahmud Begada made it a capital in the late 15th and early 16th centuries.",
+        "qHi": "किस शासक ने चम्पानर को गुजरात सल्तनत की राजधानी बनाया?",
+        "optionsHi": [
+          "अहमद शाह प्रथम",
+          "महमूद बेगड़ा",
+          "बहादुर शाह",
+          "गुजरात शाह"
+        ],
+        "explainHi": "महमूद बेगड़ा ने 15वीं शताब्दी के अंत और 16वीं की शुरुआत में इसे राजधानी बनाया।"
       },
       {
         "q": "Why is Hindu temple carving visible inside Islamic buildings here?",
@@ -3310,7 +3806,15 @@
           "It is a restoration error"
         ],
         "answer": 1,
-        "explain": "Local craftspeople carried their own carving vocabulary into the Sultanate-era work."
+        "explain": "Local craftspeople carried their own carving vocabulary into the Sultanate-era work.",
+        "qHi": "यहाँ इस्लामी इमारतों के अंदर हिंदू मंदिर की नक्काशी क्यों दिखती है?",
+        "optionsHi": [
+          "ये एक ही इमारत हैं",
+          "स्थानीय हिंदू और जैन कारीगरों ने सल्तनत की इमारतों पर काम किया",
+          "मस्जिदें पहले मंदिर थे",
+          "यह जीर्णोद्धार की त्रुटि है"
+        ],
+        "explainHi": "स्थानीय कारीगर सल्तनत-काल के काम में अपनी नक्काशी की भाषा लेकर आए।"
       }
     ],
     "isUnesco": true,
@@ -3441,7 +3945,15 @@
           "A naval battle"
         ],
         "answer": 1,
-        "explain": "It marked the royal landing at Bombay in 1911, which happened before the arch was finished."
+        "explain": "It marked the royal landing at Bombay in 1911, which happened before the arch was finished.",
+        "qHi": "यह मेहराब किसकी स्मृति में बनाया गया था?",
+        "optionsHi": [
+          "भारतीय स्वतंत्रता",
+          "1911 में किंग जॉर्ज पंचम और क्वीन मैरी का आगमन",
+          "बंदरगाह का उद्घाटन",
+          "एक नौसैनिक लड़ाई"
+        ],
+        "explainHi": "यह 1911 में बॉम्बे में शाही आगमन का चिह्न था, जो मेहराब के पूरा होने से पहले हुआ।"
       },
       {
         "q": "What happened at the Gateway in 1948?",
@@ -3452,7 +3964,15 @@
           "It was briefly underwater"
         ],
         "answer": 1,
-        "explain": "The last British troops to leave India paraded through it in 1948."
+        "explain": "The last British troops to leave India paraded through it in 1948.",
+        "qHi": "1948 में गेटवे पर क्या हुआ?",
+        "optionsHi": [
+          "उस पर बम गिरा",
+          "भारत छोड़ने वाले अंतिम ब्रिटिश सैनिक उससे होकर गुज़रे",
+          "उसका नाम बदला गया",
+          "वह कुछ समय के लिए पानी में डूब गया"
+        ],
+        "explainHi": "भारत छोड़ने वाले अंतिम ब्रिटिश सैनिक 1948 में उससे होकर परेड करके गुज़रे।"
       },
       {
         "q": "Why is it included here despite not being UNESCO listed?",
@@ -3463,7 +3983,15 @@
           "It was a mistake"
         ],
         "answer": 2,
-        "explain": "We deliberately span eras and protection statuses rather than only UNESCO archaeology."
+        "explain": "We deliberately span eras and protection statuses rather than only UNESCO archaeology.",
+        "qHi": "यूनेस्को सूची में न होते हुए भी इसे यहाँ क्यों रखा?",
+        "optionsHi": [
+          "इसे 2024 में जोड़ा गया",
+          "यह ASI संरक्षित है",
+          "यह प्राचीन स्थलों के साथ 20वीं शताब्दी की औपनिवेशिक धरोहर दिखाता है",
+          "यह एक ग़लती थी"
+        ],
+        "explainHi": "हम जान-बूझकर केवल यूनेस्को पुरातत्व तक सीमित न रहकर कालखंडों और संरक्षण-स्थितियों में फैले रहते हैं।"
       }
     ],
     "isUnesco": false,
@@ -3599,7 +4127,15 @@
           "The Buddha's death"
         ],
         "answer": 2,
-        "explain": "The temple marks the spot where the Buddha is said to have attained enlightenment."
+        "explain": "The temple marks the spot where the Buddha is said to have attained enlightenment.",
+        "qHi": "यह मंदिर किस घटना का चिह्न है?",
+        "optionsHi": [
+          "बुद्ध का जन्म",
+          "बुद्ध का पहला उपदेश",
+          "बुद्ध की ज्ञान-प्राप्ति",
+          "बुद्ध की मृत्यु"
+        ],
+        "explainHi": "मंदिर उस स्थान का चिह्न है जहाँ बुद्ध को ज्ञान प्राप्त होना कहा जाता है।"
       },
       {
         "q": "How old is the tall tower visitors see today?",
@@ -3610,7 +4146,15 @@
           "It is a modern replica"
         ],
         "answer": 1,
-        "explain": "The core is ancient, but the dominant tower was rebuilt in the late 19th century."
+        "explain": "The core is ancient, but the dominant tower was rebuilt in the late 19th century.",
+        "qHi": "आज जो ऊँचा टावर दिखता है, वह कितना पुराना है?",
+        "optionsHi": [
+          "यह मूल गुप्त संरचना है",
+          "यह मुख्यतः 19वीं शताब्दी का जीर्णोद्धार है",
+          "इसे 1990 के दशक में बनाया गया",
+          "यह आधुनिक प्रतिकृति है"
+        ],
+        "explainHi": "आधार प्राचीन है, पर प्रमुख टावर 19वीं शताब्दी के अंत में फिर से बनाया गया।"
       },
       {
         "q": "Who directed the 19th-century restoration?",
@@ -3621,7 +4165,15 @@
           "R.D. Banerji"
         ],
         "answer": 1,
-        "explain": "Alexander Cunningham of the Archaeological Survey of India directed the work."
+        "explain": "Alexander Cunningham of the Archaeological Survey of India directed the work.",
+        "qHi": "19वीं शताब्दी के जीर्णोद्धार का निर्देशन किसने किया?",
+        "optionsHi": [
+          "जॉन मार्शल",
+          "अलेक्ज़ेंडर कनिंघम",
+          "मॉर्टिमर व्हीलर",
+          "आर.डी. बनर्जी"
+        ],
+        "explainHi": "भारतीय पुरातत्व सर्वेक्षण के अलेक्ज़ेंडर कनिंघम ने इस काम का निर्देशन किया।"
       }
     ],
     "isUnesco": true,
@@ -3757,7 +4309,15 @@
           "About 2,000"
         ],
         "answer": 2,
-        "explain": "The cluster contains more than 700 shelters."
+        "explain": "The cluster contains more than 700 shelters.",
+        "qHi": "भीमबेटका में लगभग कितने चट्टान-आश्रय हैं?",
+        "optionsHi": [
+          "24",
+          "120",
+          "700 से अधिक",
+          "लगभग 2,000"
+        ],
+        "explainHi": "इस समूह में 700 से अधिक आश्रय हैं।"
       },
       {
         "q": "What makes the paintings unusually valuable as an archive?",
@@ -3768,7 +4328,15 @@
           "They use imported pigment"
         ],
         "answer": 1,
-        "explain": "Later figures are drawn over earlier ones, so many periods share one rock face."
+        "explain": "Later figures are drawn over earlier ones, so many periods share one rock face.",
+        "qHi": "इन चित्रों को संग्रह के रूप में क्या असाधारण मूल्यवान बनाता है?",
+        "optionsHi": [
+          "वे सोने से बने हैं",
+          "वे पुरापाषाण से मध्यकाल तक की अवधि परत-दर-परत फैले हैं",
+          "उन पर कलाकारों के हस्ताक्षर हैं",
+          "वे आयातित रंग का उपयोग करते हैं"
+        ],
+        "explainHi": "बाद की आकृतियाँ पहले की ऊपर बनी हैं, इसलिए कई काल एक ही चट्टान-सतह साझा करते हैं।"
       },
       {
         "q": "Who is the earliest painting attributed to?",
@@ -3779,7 +4347,15 @@
           "V.S. Wakankar"
         ],
         "answer": 1,
-        "explain": "The paintings cannot be attributed to named individuals; claiming otherwise would be invention."
+        "explain": "The paintings cannot be attributed to named individuals; claiming otherwise would be invention.",
+        "qHi": "सबसे पुराने चित्र को किसका माना जाता है?",
+        "optionsHi": [
+          "कोई नामित गुप्त दरबारी कलाकार",
+          "कोई अनाम समुदाय — कलाकार पहचाने नहीं जा सकते",
+          "अलेक्ज़ेंडर कनिंघम",
+          "वी.एस. वाक़णकर"
+        ],
+        "explainHi": "चित्रों को किसी नामित व्यक्ति को नहीं दिया जा सकता; ऐसा कहना कल्पना होती।"
       }
     ],
     "isUnesco": true,
@@ -3910,7 +4486,15 @@
           "A Sikh takht"
         ],
         "answer": 1,
-        "explain": "It is counted among the oldest Shakti pithas in Shakta tradition."
+        "explain": "It is counted among the oldest Shakti pithas in Shakta tradition.",
+        "qHi": "कामाख्या किस प्रकार का स्थान है?",
+        "optionsHi": [
+          "बौद्ध मठ",
+          "शक्ति पीठ",
+          "जैन बसदी",
+          "सिख तख़्त"
+        ],
+        "explainHi": "इसे शाक्त परंपरा के सबसे पुराने शक्ति पीठों में गिना जाता है।"
       },
       {
         "q": "Where does it stand?",
@@ -3921,7 +4505,15 @@
           "Inside a fort"
         ],
         "answer": 1,
-        "explain": "It sits on Nilachal hill overlooking Guwahati."
+        "explain": "It sits on Nilachal hill overlooking Guwahati.",
+        "qHi": "यह कहाँ स्थित है?",
+        "optionsHi": [
+          "ब्रह्मपुत्र के किनारे मैदान पर",
+          "गुवाहाटी के ऊपर नीलाचल पहाड़ी पर",
+          "एक द्वीप पर",
+          "क़िले के अंदर"
+        ],
+        "explainHi": "यह गुवाहाटी को देखती नीलाचल पहाड़ी पर स्थित है।"
       },
       {
         "q": "Why does this entry give fewer dates than others?",
@@ -3932,7 +4524,15 @@
           "Dates are secret"
         ],
         "answer": 1,
-        "explain": "Where the evidence is unclear we mark it TODO rather than invent a date."
+        "explain": "Where the evidence is unclear we mark it TODO rather than invent a date.",
+        "qHi": "यह प्रविष्टि दूसरों से कम तिथियाँ क्यों देती है?",
+        "optionsHi": [
+          "टीम भूल गई",
+          "पुनर्निर्माण-क्रम तय नहीं, इसलिए हम अनुमान नहीं लगाते",
+          "मंदिर का कोई इतिहास नहीं",
+          "तिथियाँ गुप्त हैं"
+        ],
+        "explainHi": "जहाँ प्रमाण अस्पष्ट हैं, वहाँ हम तिथि गढ़ने के बजाय TODO लिखते हैं।"
       }
     ],
     "isUnesco": false,

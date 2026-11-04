@@ -72,6 +72,15 @@ export interface QuizItem {
   /** Index into options. */
   answer: number
   explain: string
+
+  /* Hindi, written alongside the English rather than instead of it.
+     All 75 items currently carry all three; they are optional in the
+     type because the interface falls back to the English when a field
+     is absent, so an untranslated question renders as itself rather
+     than as a hole. */
+  qHi?: string
+  optionsHi?: string[]
+  explainHi?: string
 }
 
 export interface Site {
