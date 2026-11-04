@@ -91,11 +91,11 @@ export function FolkloreSitePage({ id }: Props) {
         )}
 
         <div className={s.articleFoot}>
-          <a href={`#/site/${site.id}`} className={s.chip}>
-            Open the full record →
+          <a href="#/folklore" className={`${s.chip} ${s.chipOn}`}>
+            All folklore entries →
           </a>
-          <a href="#/folklore" className={s.chip}>
-            All folklore →
+          <a href={`#/site/${site.id}`} className={s.chip}>
+            Open full site record →
           </a>
         </div>
       </div>

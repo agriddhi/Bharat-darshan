@@ -86,11 +86,11 @@ export function FolklorePage() {
               </div>
 
               <div className={s.articleFoot}>
-                <a href={`#/folklore/${site.id}`} className={s.chip}>
+                <a href={`#/folklore/${site.id}`} className={`${s.chip} ${s.chipOn}`}>
                   Read full folklore →
                 </a>
                 <a href={`#/site/${site.id}`} className={s.chip}>
-                  Open the record →
+                  Open the full record →
                 </a>
               </div>
             </section>
