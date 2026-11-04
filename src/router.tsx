@@ -36,6 +36,7 @@ export type Route =
   | { name: 'about' }
   | { name: 'pipeline' }
   | { name: 'folklore' }
+  | { name: 'folkloreSite'; id: string }
 
 /** Unknown hashes land here rather than on a blank screen. */
 const FALLBACK: Route = { name: 'home' }
@@ -75,7 +76,9 @@ export function parseRoute(hash: string): Route {
     case 'pipeline':
       return { name: 'pipeline' }
     case 'folklore':
-      return { name: 'folklore' }
+      return tail ? { name: 'folkloreSite', id: decodeURIComponent(tail) } : { name: 'folklore' }
+    case 'folkloreSite':
+      return tail ? { name: 'folkloreSite', id: decodeURIComponent(tail) } : FALLBACK
     case 'about':
       return { name: 'about' }
     default:
@@ -109,6 +112,8 @@ export function routeToHash(route: Route): string {
       return '#/pipeline'
     case 'folklore':
       return '#/folklore'
+    case 'folkloreSite':
+      return `#/folklore/${encodeURIComponent(route.id)}`
   }
 }
 
@@ -177,6 +182,8 @@ export function sectionOf(route: Route): string {
     case 'pipeline':
       return 'pipeline'
     case 'folklore':
+      return 'folklore'
+    case 'folkloreSite':
       return 'folklore'
   }
 }
