@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    i18n.ts — the switch the archive never had.
 
    WHAT WAS ALREADY TRUE
@@ -56,6 +56,7 @@ const STRINGS = {
   navJourney: { en: 'Journey', hi: 'यात्रा' },
   navQuiz: { en: 'Quiz', hi: 'प्रश्नोत्तरी' },
   navAbout: { en: 'About', hi: 'परिचय' },
+  navPipeline: { en: 'How it was made', hi: 'कैसे बना' },
   navMain: { en: 'Main', hi: 'मुख्य' },
 
   /* ---- the language switch itself ---- */
@@ -451,6 +452,15 @@ const STRINGS = {
     hi: 'संग्रह का हर स्थल, जहाँ वह खड़ा है वहीं रखा गया। अभिलेख खोलने के लिए चिह्न पर क्लिक करें। नक्शा इस साइट का वह एकमात्र हिस्सा है जो खुला नक्शा (ओपन मैप) से टाइलें लाता है — बाक़ी सब केवल डेटा फ़ाइल पर चलता है।',
   },
   openRecord: { en: 'Open the record', hi: 'अभिलेख खोलें' },
+
+  /* ---- pipeline ---- */
+  pipelineEyebrow: { en: 'How it was made', hi: 'कैसे बना' },
+  pipelineTitle1: { en: 'From one JavaScript file', hi: 'एक जावास्क्रिप्ट फ़ाइल से' },
+  pipelineTitle2: { en: 'to a typed archive.', hi: 'टाइप्ड संग्रह तक।' },
+  pipelineLede: {
+    en: 'The archive began as a static site whose records lived in a single JavaScript data file. This page is the map of how that file became the one you are reading now.',
+    hi: 'संग्रह की शुरुआत एक स्थिर साइट से हुई जिसके अभिलेख एक ही जावास्क्रिप्ट डेटा फ़ाइल में थे। यह पेज उस फ़ाइल के इस फ़ाइल में बदलने का नक्शा है।',
+  },
 
   /* ---- era names ---- */
   eraAncient: { en: 'Ancient', hi: 'प्राचीन' },

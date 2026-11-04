@@ -1,5 +1,5 @@
 /* ============================================================
-   ui/SiteNav.tsx — the navigation shared by every inner page.
+   ui/SiteNav.tsx â€” the navigation shared by every inner page.
 
    WHY THIS EXISTS SEPARATELY FROM TopBar
    TopBar is a tool: six region selects, four era selects, a search
@@ -9,7 +9,7 @@
 
    So there are two bars, and they are used in different places on
    purpose. This one never changes size, never reflows, and carries
-   no state at all — it reads the URL and paints a highlight. That
+   no state at all â€” it reads the URL and paints a highlight. That
    makes it safe to sticky-position over any page without worrying
    about what it will do when the data changes underneath it.
    ============================================================ */
@@ -36,6 +36,7 @@ const LINKS: Array<{ key: Parameters<ReturnType<typeof useT>>[0]; to: Route }> =
   { key: 'navJourney', to: { name: 'journey' } },
   { key: 'navQuiz', to: { name: 'quiz' } },
   { key: 'navAbout', to: { name: 'about' } },
+  { key: 'navPipeline', to: { name: 'pipeline' } },
 ]
 
 export function SiteNav({ route, back }: Props) {
@@ -46,7 +47,7 @@ export function SiteNav({ route, back }: Props) {
 
   return (
     <nav className={s.nav} aria-label={t('navMain')}>
-      {/* flexShrink:0, not minWidth:0 — with min-width:0 the left
+      {/* flexShrink:0, not minWidth:0 â€” with min-width:0 the left
           cluster is allowed to collapse to zero and its children then
           overflow underneath the nav links, which is how the back
           link ended up printed on top of "Sites" on a 360px screen. */}
@@ -62,7 +63,7 @@ export function SiteNav({ route, back }: Props) {
               /
             </span>
             <a className={s.back} href={href(back.to)}>
-              <span aria-hidden="true">←</span> {back.label}
+              <span aria-hidden="true">â†</span> {back.label}
             </a>
           </>
         )}
