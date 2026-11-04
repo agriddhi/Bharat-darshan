@@ -1,99 +1,79 @@
 /* ============================================================
-   ui/FolklorePage.tsx — folklore and nearby, long-form prose.
+   ui/FolklorePage.tsx — folklore index as cards, like the image.
 
-   Uses Editorial.module.css so it reads as the archive's
-   narrative register: standfirst, stages, hairlines —
-   the same visual family as StoryPage but with folklore
-   as the subject rather than the monument's own stages.
+   Each card: hero photo, region chip, title, short teaser,
+   meta line (stages / source), prominent READ button.
+   Clicking READ opens the full folklore detail page.
    ============================================================ */
 
 import s from './Editorial.module.css'
-import { useLang } from '../i18n'
+import { useLang, regionLabel } from '../i18n'
 import { SITES } from '../data/sites'
 
 export function FolklorePage() {
   const lang = useLang()
-
   const items = SITES.filter((site) => site.folkloreNote)
-  const heroSite = items[0]
-  const heroPhoto = heroSite?.media?.find((m: any) => m.kind === 'photo') ?? heroSite?.media?.[0]
 
   return (
     <main className={s.page}>
       {/* ================= HEAD ================= */}
-      <header className={s.articleHead}>
-        {heroPhoto && (
-          <img className={s.articlePhoto} src={heroPhoto.src} alt="" aria-hidden="true" />
-        )}
-        <div className={s.articleHeadScrim} />
-        <div className={s.articleHeadInner}>
+      <header className={s.head}>
+        <div className={s.headInner}>
           <div className={s.eyebrow}>
             <span className={s.eyebrowLine} aria-hidden="true" />
             <span>Folklore & Nearby Attractions</span>
           </div>
-          <h1 className={s.articleTitle}>Folklore and the Land Around It</h1>
-          <div className={s.articleSub}>
-            Verified local legends and nearby attractions for {items.length} sites —
-            each entry cited from its source.
-          </div>
-          <div className={s.articleMeta}>
-            <span>All sites</span>
+          <h1 className={s.title}>Folklore and the Land Around It</h1>
+          <p className={s.lede}>
+            Every monument stands in a landscape that carries its own stories.
+            Below are verified folklore notes and nearby attractions for
+            {items.length} sites — each citing its source.
+          </p>
+          <div className={s.articleMeta} style={{ marginTop: 8 }}>
+            <span>{items.length} sites</span>
             <span aria-hidden="true">·</span>
             <span>Sourced from Wikipedia</span>
           </div>
         </div>
       </header>
 
-      {/* ================= BODY ================= */}
-      <div className={s.body}>
-        <p className={s.standfirst}>
-          Every monument in this archive stands in a landscape that carries its own stories —
-          legends that predate the building, myths that grew around it, and places nearby that share
-          the same air. The folklore notes below are drawn from verified sources, primarily Wikipedia,
-          and are presented here as long-form prose: each site receives a full narrative treatment,
-          with the legend first and the nearby attractions that share its region described in detail.
-          Where a legend could not be verified, the site is omitted — no narrative is invented to
-          fill a gap.
-        </p>
-
-        {items.map((site, i) => {
+      {/* ================= CARDS ================= */}
+      <div className={s.grid}>
+        {items.map((site) => {
           const note = site.folkloreNote || ''
-          // Split at "Nearby," or "Nearby and" if present, otherwise treat entire note as folklore
-          const splitPoint = note.match(/Nearby[,\s]/i) ? note.match(/Nearby[,\s]/i)?.index || -1 : -1
-          const folkloreText = splitPoint > 0 ? note.slice(0, splitPoint).trim() : note
-          const nearbyText = splitPoint > 0 ? note.slice(splitPoint + 1).trim() : null
+          const splitPoint = note.match(/Nearby[,\s]/i)
+            ? note.match(/Nearby[,\s]/i)?.index ?? -1
+            : -1
+          const teaser = splitPoint > 0 ? note.slice(0, splitPoint).trim() : note
+          const photo = site.media?.find((m) => m.kind === 'photo') ?? site.media?.[0]
 
           return (
-            <section key={site.id} className={s.stage} id={`folklore-${site.id}`}>
-              <div className={s.stageNum} aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
-              <h2 className={s.stageTitle}>
-                <a href={`#/site/${site.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+            <a
+              key={site.id}
+              href={`#/folklore/${site.id}`}
+              className={s.card}
+              role="button"
+              aria-label={`Read folklore for ${site.title}`}
+            >
+              {photo && (
+                <div className={s.cardPhotoWrap}>
+                  <img className={s.cardPhoto} src={photo.src} alt="" aria-hidden="true" />
+                  <span className={s.cardRegion}>{regionLabel(site.region, lang)}</span>
+                </div>
+              )}
+              <div className={s.cardBody}>
+                <h3 className={s.cardTitle}>
                   {lang === 'hi' && site.nameHi ? site.nameHi : site.title}
-                </a>
-                <span style={{ display: 'block', fontSize: '0.75rem', opacity: 0.6, marginTop: 4 }}>
-                  {site.city}, {site.region}
-                </span>
-              </h2>
-
-              <div className={s.stageBody}>
-                <p>{folkloreText}</p>
-                {nearbyText && (
-                  <p>
-                    <strong style={{ color: 'var(--ochre, #DEA044)' }}>Nearby and local — </strong>
-                    {nearbyText}
-                  </p>
-                )}
+                </h3>
+                <p className={s.cardTeaser}>{teaser}</p>
+                <div className={s.cardFoot}>
+                  <span className={s.cardCount}>READ →</span>
+                  <span style={{ fontSize: '0.7rem', opacity: 0.5 }}>
+                    {site.city}
+                  </span>
+                </div>
               </div>
-
-              <div className={s.articleFoot}>
-                <a href={`#/folklore/${site.id}`} className={`${s.chip} ${s.chipOn}`}>
-                  Read full folklore →
-                </a>
-                <a href={`#/site/${site.id}`} className={s.chip}>
-                  Open the full record →
-                </a>
-              </div>
-            </section>
+            </a>
           )
         })}
       </div>
