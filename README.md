@@ -61,8 +61,15 @@ reading it.
   ┌──────────────────────────────────────────────────────────┐
   │  src/ui/                      THE PAGES                  │
   │  HeroScreen · SitesIndex · SitePage · StoriesIndex       │
-  │  StoryPage · AtlasPage · JourneyPage · QuizPage          │
+  │  StoryPage · TimelinePage · JourneyPage · QuizPage       │
   │  AboutPage · SiteNav                                    │
+  └──────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+  ┌──────────────────────────────────────────────────────────┐
+  │  src/i18n.ts                  THE LANGUAGE               │
+  │  one dictionary, EN and हिं, for every heading and label │
+  │  the pages call it; it picks the *Hi fields from the data│
   └──────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -80,9 +87,11 @@ is nowhere for it to come from.
 
 **Why is there a separate `store`?**
 Because the same choices show up in more than one place. Filter the archive to
-South India and the atlas should show South India too. Rather than each page
-keeping its own copy of that choice — which is how two pages end up disagreeing
-— there is one place it is kept, and both pages read it.
+South India, navigate to a site and come back — the filter has to still be
+there. Rather than each page keeping its own copy of that choice — which is how
+two pages end up disagreeing — there is one place it is kept, and both pages
+read it. The language toggle lives here for the same reason: the switch in the
+nav and the switch on an article have to be the same switch.
 
 **Why is there a separate `router`?**
 So that every page has its own web address. `#/site/taj-mahal` can be sent to
@@ -101,7 +110,7 @@ host to be configured for it.
 | `#/site/…` | One monument in full — story, history, facts, sources, credits. |
 | `#/stories` | The same writing, set as long-form articles. |
 | `#/story/…` | One narrative, given a page of its own. |
-| `#/atlas` | All 25 photographs hung as prints on a wall you can move. |
+| `#/timeline` | All 25 sites in the order they were built, in four era bands. |
 | `#/journey` | Build a route of up to five stops; see how far apart they are. |
 | `#/quiz` | 75 questions drawn from the archive. |
 | `#/about` | Photo credits, the source index, and what we chose not to do. |
@@ -246,10 +255,13 @@ starting from a clean state makes the tour read the same for everyone.
    the reset button.
 4. **1:05** — Open one site. Scroll it. Point out the five-part story, the quick
    facts, and that every claim has a source underneath it.
-5. **1:40** — Toggle the content to Hindi on the same page.
+5. **1:40** — Press **हिं** in the nav and watch the whole page — headings,
+   story stages, quick facts — switch to Hindi. Stay on the page and open a
+   second one to show it sticks.
 6. **1:55** — Add it to the journey, then open the journey page and show the
    route, the distance and the badge count.
-7. **2:15** — Open the atlas and move the pointer so the wall tilts.
+7. **2:15** — Open the timeline and scroll through the four era bands, then
+   point out that all 25 sites are on it whatever the archive filter is set to.
 8. **2:30** — Answer one quiz question correctly, then one wrongly, so the
    explanation and the link back to the record are both visible.
 9. **2:45** — About page: the generated credits table, the source index, and the
