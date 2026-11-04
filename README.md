@@ -110,10 +110,10 @@ host to be configured for it.
 | `#/site/…` | One monument in full — story, history, facts, sources, credits. |
 | `#/stories` | The same writing, set as long-form articles. |
 | `#/story/…` | One narrative, given a page of its own. |
-| `#/timeline` | All 25 sites in the order they were built, in four era bands. |
+| `#/timeline` | All 25 sites in the order they were built, in four era bands. |\n| `#/map` | All 25 sites on a map. The one page that fetches map tiles. |
 | `#/journey` | Build a route of up to five stops; see how far apart they are. |
 | `#/quiz` | 75 questions drawn from the archive. |
-| `#/about` | Photo credits, the source index, and what we chose not to do. |
+| `#/about` | Photo credits, the source index, and what we chose not to do. |\n| `#/pipeline` | How the archive was made: the pipeline, the schema, the rules. |
 
 ---
 
@@ -209,7 +209,7 @@ have and did not.
   usually the image for one of the five story stages — the `TODO` is shown
   rather than quietly dropped or filled with a stock photograph.
 - **No backend, no accounts, no API keys.** The site is a static bundle plus one
-  data file. It runs offline after first load and costs nothing to host.
+  data file. The archive itself runs offline after first load and costs\n  nothing to host. The one exception is the heritage map, which fetches\n  OpenStreetMap tiles on demand — the only network the site makes.
 - **No borrowed design.** Layout, type and colour were built for this project.
   Photographs are the only third-party material.
 
